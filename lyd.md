@@ -24,4 +24,9 @@ eksempel:
 * Beskriv sammenhængen mellem de bevægelsen af luftmolekylerne og grafen nederst, kom ind på overtryk og undertryk.
 * Lav om på amplituden og beskriv hvad der ændrer sig og hvad der ikke ændrer sig.
 * Lav om på frekvensen og beskriv igen hvad der ændrer sig og hvad der ikke ændrer sig.
-* Vurder om hastigheden af bølgen er konstant når frekvensen ændres.
+* Hvilken sammenhæng finder i mellem bølgelængden og frekvensen?
+* Vurder om fart af bølgen er konstant når frekvensen ændres.
+
+I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt også, måske, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen memllem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
+
+$ v = f·\lambda $
