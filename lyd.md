@@ -27,4 +27,17 @@ eksempel:
 * Hvilken sammenhæng finder i mellem bølgelængden og frekvensen?
 * Vurder om fart af bølgen er konstant når frekvensen ændres.
 
-I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt også, måske, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen memllem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:$v = f\cdot\lambda$
+I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt også, måske, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen memllem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
+
+$v = f\cdot\lambda$
+
+Hvis farten er konstant må bølgelænden altså gå blive mindre når frekvensen bliver større. Lydens hastighed i luft ved $30^\circ$ er $v = 343\text{m/s}$.
+
+### Øvelse
+Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave frekvenser ( dybe toner).
+* Beskriv hvordan en udendørskoncert vil lyde i det setup.
+
+### Øvelse
+Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imponerende. Hvis vi isolerer bølgelængden i ligningen for lydens fart er det $\lambda = \frac{v}{f}$.
+* Brug formlen til at beregne bølgelængden for den dybeste og lyseste tone man kan høre.
+* Hvis bølgelængden svarer til halvdelen af et rums længden kan lyden forstærke sig selv, kaldet resonans. Beregn hvilken frekvens dit værelse resonerer og prøv det af.
