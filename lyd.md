@@ -29,4 +29,4 @@ eksempel:
 
 I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt også, måske, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen memllem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
 
-$ v = f·\lambda $
+$ v = f\cdot\lambda $
