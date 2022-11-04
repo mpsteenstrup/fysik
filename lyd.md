@@ -59,7 +59,7 @@ Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave 
 Når et lyn slår ned ser vi først glimtet og hører derefter braget. Det skyldes at lys bevæger sig næsten $900$ tusinde gange så hurtigt som lyden. Lys fart er $c = 299792458 m/s \approx 3.0\cdot 10^8 m/s$.
 
 Når du ser et lyn og hører et tordenbrag er det derfor tiden det tager for lyden at nå dig som giver forsinkelsen.
-* Beregn afstanden til et lyn når braget er $1$ sekund forsinket. Du skal bruge formlen $ x = v*t $ hvor $x$ er afstanden og $t$ forsinkelsen.
+* Beregn afstanden til et lyn når braget er $1$ sekund forsinket. Du skal bruge formlen $x = v\cdot t$ hvor $x$ er afstanden og $t$ forsinkelsen.
 
 
 
