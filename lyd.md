@@ -21,7 +21,7 @@ eksempel:
 ### Illustration af lydbølger
 Simuleringen viser en lydbølge som bevæger sig fra venstre mod højre.
 ![Bølger og lyd](billeder/waveSound.png)
-[link: lydbølger](https://www.geogebra.org/material/iframe/id/925705)
+[link: lydbølger, kilde ophysics.com](https://www.geogebra.org/material/iframe/id/925705)
 ### Øvelse
 * Kør simuleringen og beskriv i ord hvordan luftmolekylerne bevæger sig.
 * Beskriv sammenhængen mellem de bevægelsen af luftmolekylerne og grafen nederst, kom ind på overtryk og undertryk.
@@ -54,6 +54,14 @@ Lydens hastighed i luft ved $20^\circ$ er $v = 343\text{m/s}$.
 ### Øvelse
 Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave frekvenser ( dybe toner).
 * Beskriv hvordan en udendørskoncert vil lyde i det setup.
+
+### Øvelse
+Når et lyn slår ned ser vi først glimtet og hører derefter braget. Det skyldes at lys bevæger sig næsten $900$ tusinde gange så hurtigt som lyden. Lys fart er $c = 299792458 m/s \approx 3.0\cdot 10^8 m/s$.
+
+Når du ser et lyn og hører et tordenbrag er det derfor tiden det tager for lyden at nå dig som giver forsinkelsen.
+* Beregn afstanden til et lyn når braget er $1$ sekund forsinket. Du skal bruge formlen $ x = v*t $ hvor $x$ er afstanden og $t$ forsinkelsen.
+
+
 
 ### Øvelse
 Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imponerende. Hvis vi isolerer bølgelængden i ligningen for lydens fart er det $\lambda = \frac{v}{f}$.
