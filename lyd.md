@@ -1,22 +1,25 @@
 # Lyd og Bølger
-Lyd er svingninger som forplanter sig gennem et medie. Oftest oplever vi det når lyde bevæger sig gennem atmosfærisk luft hvor det er luftmolekylerne som svinger frem og tilbage. Når man hører en tone bliver svinger molekylerne periodisk og danner skiftevis over og undertryk. Jo større trykforskellen er jo højere hører vi lyden.
+Lyd er svingninger som forplanter sig gennem et medie. Oftest oplever vi det når lyde bevæger sig gennem atmosfærisk luft hvor det er luftmolekylerne som svinger frem og tilbage. Når man hører en tone svinger molekylerne periodisk og danner skiftevis over og undertryk. Jo større trykforskellen er jo højere hører vi lyden.
 
 Fysiske størrelser når en tone skal beskrives:
 * $f$, Frekvensen, hvor mange gange den svinger hvert sekund, enhed hertz, Hz.
 * $P$, Perioden, hvor lang tid der går mellem hver bølge, enhed sekund, s.
-* $\lambda$, Bølgelængde, hvor langt der er mellem hver bølge, enhed meter, m.
+* $\lambda$ lambda, Bølgelængde, hvor langt der er mellem hver bølge, enhed meter, m.
 * $v$, Fart, hvor hurtigt bølgen bevæger sig, enhed m/s.
 
 Sammenhængen mellem perioden og frekvensen er
 $f = \frac{1}{P}$
 
 eksempel:
-* Du gynger frem og tilbage og en hel svingning tager 2 sekunder. Frekvensen er derfor $f = \frac{1}{2\text{s}} = 0.5\text{Hz}$
+* Du gynger frem og tilbage og en hel svingning tager 2 sekunder. Efter 1 sekund er du kommet halvejs frem og tibage og frekvensen er derfor $f = \frac{1}{2\text{s}} = 0.5\text{Hz}$.
 * En elitesportskvinde kan have en hvilepuls på 30 slag per minut. Omregnet til sekunder giver det en frekvens på $f = \frac{30}{60 \text{s}} = 0.5\text{Hz}$. Vi får derfor igen en perioden på 2 sekunder som ved gyngeturen.
 
-
+# Øvelse
+* Mål din puls ved at tage tid på 10 slag og omregn til slag per minut.
+* Udregn frekvensen og perioden for din puls.
 
 ### Illustration af lydbølger
+Simuleringen viser en lydbølge som bevæger sig fra venstre mod højre.
 ![Bølger og lyd](billeder/waveSound.png)
 [link: lydbølger](https://www.geogebra.org/material/iframe/id/925705)
 ### Øvelse
@@ -27,12 +30,20 @@ eksempel:
 * Hvilken sammenhæng finder i mellem bølgelængden og frekvensen?
 * Vurder om fart af bølgen er konstant når frekvensen ændres.
 
-I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt også, måske, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen memllem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
+I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt også, måske, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen mellem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
 
 $v = f\cdot\lambda$
 
 Hvis farten er konstant må bølgelænden altså gå blive mindre når frekvensen bliver større. Lydens hastighed i luft ved $30^\circ$ er $v = 343\text{m/s}$.
 
+## Eksempel
+Forestil dig at du står på en strand og ser bølgerne kommer ind. Du vurderer bølgelængden til at være 8 meter. Du tager et stopur og vurdere at der går 2 sekunder mellem hver bælge. Vi kender nu følgende:
+
+$\lambda = 8$m
+$P = 2$s
+Først regner vi frekvens til $f = \frac{1}{P} = \frac{1}{2s}=0.5Hz$
+Vi ved nu at der kommer en halv bølge på et sekund. Den samlede hastighed må så være, $v = 0.5Hz\cdot 8m = 4m/s$.
+Vi har altså findet bølgernes hastighed til $v = 4m/s$.
 ### Øvelse
 Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave frekvenser ( dybe toner).
 * Beskriv hvordan en udendørskoncert vil lyde i det setup.
