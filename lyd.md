@@ -37,9 +37,11 @@ $v = f\cdot\lambda$
 Hvis farten er konstant må bølgelænden altså gå blive mindre når frekvensen bliver større. Lydens hastighed i luft ved $30^\circ$ er $v = 343\text{m/s}$.
 
 ## Eksempel
+![bølger og strand](billeder/wave.png)
 Forestil dig at du står på en strand og ser bølgerne kommer ind. Du vurderer bølgelængden til at være 8 meter. Du tager et stopur og vurdere at der går 2 sekunder mellem hver bælge. Vi kender nu følgende:
 * $\lambda = 8m$
 * $P = 2s$
+
 Først regner vi frekvens til $f = \frac{1}{P} = \frac{1}{2s}=0.5Hz$.
 
 Vi ved nu at der kommer en halv bølge på et sekund. Den samlede hastighed må så være, $v = 0.5Hz\cdot 8m = 4m/s$.
