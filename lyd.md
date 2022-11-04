@@ -49,7 +49,7 @@ Vi ved nu at der kommer en halv bølge på et sekund. Den samlede hastighed må 
 Vi har altså findet bølgernes hastighed til $v = 4m/s$.
 
 ## Lydens fart i atmosfærisk luft.
-Lydens hastighed i luft ved $30^\circ$ er $v = 343\text{m/s}$.
+Lydens hastighed i luft ved $20^\circ$ er $v = 343\text{m/s}$.
 
 ### Øvelse
 Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave frekvenser ( dybe toner).
