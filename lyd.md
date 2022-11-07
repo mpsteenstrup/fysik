@@ -68,6 +68,13 @@ Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imp
 * Brug formlen til at beregne bølgelængden for den dybeste og lyseste tone man kan høre.
 * Hvis bølgelængden svarer til halvdelen af et rums længden kan lyden forstærke sig selv, kaldet resonans. Beregn hvilken frekvens dit værelse resonerer og prøv det af.
 
+### Øvelse
+Vi skal prøve at finde sammenhængen mellem hastigheden for en bølge i en slinky ved transversal og longitudinal bølge.
+![longitudinal og transversal bølge](billeder/longTransWave.png)
+
+
+
+
 # Stående bølger
 
 ![Simulering af stående bølger](billeder/fundamental.png)
