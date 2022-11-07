@@ -88,7 +88,7 @@ Transversalbølger
 * Beregn farten ud fra formlen, $v = f\cdot\lambda$.
 
 Sammenlign resultatet fra de for forsøg og udregn en procentvis afvigelse mellem dem. Den beregnes med,
-$\text{procentvis afvigelse} = \frac{v_{transversalbølger}-v_{longitudinalbølger}}{v_{transversalbølger}}\cdot 100\text{%}$. 
+$\text{procentvis afvigelse} = \frac{v_{transversalbølger}-v_{longitudinalbølger}}{v_{transversalbølger}}\cdot 100\text{%}$. kommer det med? 
 
 
 # Stående bølger
