@@ -70,7 +70,7 @@ Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imp
 
 ### Øvelse
 Vi skal prøve at finde sammenhængen mellem hastigheden for en bølge i en slinky ved transversal og longitudinal bølge.
-![longitudinal og transversal bølge](billeder/longTransWave.png)
+![longitudinal og transversal bølge](billeder/longTransWave.jpg)
 
 
 
