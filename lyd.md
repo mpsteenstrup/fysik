@@ -76,7 +76,7 @@ Vi skal prøve at finde sammenhængen mellem farten for en bølge i en slinky ve
 NB! det er vigtigt at I har samme afstand mellem jer i de to forsøg.
 ![longitudinal](https://youtu.be/0I9zmd3ZAag)
 ![transversal](https://youtu.be/Ra4_vPdYW7k)
-<video src="billeder/transversal.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://youtu.be/Ra4_vPdYW7k" controls="controls" style="max-width: 730px;">
 </video>
 Longitudinalbølger
 * Hold slinky mellem jer og sæt én enkelt transversalbølge i gang.
