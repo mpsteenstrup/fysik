@@ -70,4 +70,8 @@ Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imp
 
 # Stående bølger
 
+![Simulering af stående bølger](billeder/fundamental.png)
 [Simulering af stående bølger](http://ophysics.com/waves6.html)
+
+![Stående bølge på streng](billeder/waveString.png)
+[Stående bølge på streng](http://ophysics.com/waves9.html)
