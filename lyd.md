@@ -74,7 +74,8 @@ Vi skal prøve at finde sammenhængen mellem farten for en bølge i en slinky ve
 
 ### Forsøgsbeskrivelse
 NB! det er vigtigt at I har samme afstand mellem jer i de to forsøg.
-
+![longitudinal](billeder/longitudinal_2.mp4)
+![transversal](billeder/transversal.mp4)
 Longitudinalbølger
 * Hold slinky mellem jer og sæt én enkelt transversalbølge i gang.
 * Tag en film af bevægelsen.
@@ -87,8 +88,8 @@ Transversalbølger
 * Mål frekvensen og bølgelængden.
 * Beregn farten ud fra formlen, $v = f\cdot\lambda$.
 
-Sammenlign resultatet fra de for forsøg og udregn en procentvis afvigelse mellem dem. Den beregnes med,
-$\text{procentvis afvigelse} = \frac{v_{transversalbølger}-v_{longitudinalbølger}}{v_{transversalbølger}}\cdot 100\text{%}$. kommer det med? 
+Sammenlign resultatet fra de to forsøg og udregn en procentvis afvigelse mellem dem. Den beregnes med,
+$\text{procentvis afvigelse} = \frac{v_{transversalbølger}-v_{longitudinalbølger}}{v_{transversalbølger}}\cdot 100$%.
 
 
 # Stående bølger
