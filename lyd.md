@@ -69,22 +69,27 @@ Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imp
 * Hvis bølgelængden svarer til halvdelen af et rums længden kan lyden forstærke sig selv, kaldet resonans. Beregn hvilken frekvens dit værelse resonerer og prøv det af.
 
 ## Forsøg med slinky
-Vi skal prøve at finde sammenhængen mellem hastigheden for en bølge i en slinky ved transversal og longitudinal bølge.
+Vi skal prøve at finde sammenhængen mellem farten for en bølge i en slinky ved transversal og longitudinal bølge.
 ![longitudinal og transversal bølge](billeder/longTransWave.jpg)
 
 ### Forsøgsbeskrivelse
 NB! det er vigtigt at I har samme afstand mellem jer i de to forsøg.
 
-Transversalbølger
+Longitudinalbølger
 * Hold slinky mellem jer og sæt én enkelt transversalbølge i gang.
 * Tag en film af bevægelsen.
 * Mål hvor lang tid det tager for bølger at komme til enden med Logger Pro.
 * Brug formlen $v = x/t$ til at beregne hastigheden.
-Longitudinalbølger
+
+Transversalbølger
 * Lav svingninger med jeres slinky, så I får stående bølger.
 * Optag en video af bevægelsen.
 * Mål frekvensen og bølgelængden.
 * Beregn farten ud fra formlen, $v = f\cdot\lambda$.
+
+Sammenlign resultatet fra de for forsøg og udregn en procentvis afvigelse mellem dem. Den beregnes med,
+$\text{procentvis afvigelse} = \frac{v_{Transversalbølger}-v_{Longitudinalbølger}}{v_{Transversalbølger}}\cdot 100 % $
+
 
 # Stående bølger
 ![Simulering af stående bølger](billeder/fundamental.png)
