@@ -67,3 +67,7 @@ Når du ser et lyn og hører et tordenbrag er det derfor tiden det tager for lyd
 Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imponerende. Hvis vi isolerer bølgelængden i ligningen for lydens fart er det $\lambda = \frac{v}{f}$.
 * Brug formlen til at beregne bølgelængden for den dybeste og lyseste tone man kan høre.
 * Hvis bølgelængden svarer til halvdelen af et rums længden kan lyden forstærke sig selv, kaldet resonans. Beregn hvilken frekvens dit værelse resonerer og prøv det af.
+
+# Stående bølger
+
+[Simulering af stående bølger](http://ophysics.com/waves6.html)
