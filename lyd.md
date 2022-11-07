@@ -68,15 +68,25 @@ Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imp
 * Brug formlen til at beregne bølgelængden for den dybeste og lyseste tone man kan høre.
 * Hvis bølgelængden svarer til halvdelen af et rums længden kan lyden forstærke sig selv, kaldet resonans. Beregn hvilken frekvens dit værelse resonerer og prøv det af.
 
-### Øvelse
+## Forsøg med slinky
 Vi skal prøve at finde sammenhængen mellem hastigheden for en bølge i en slinky ved transversal og longitudinal bølge.
 ![longitudinal og transversal bølge](billeder/longTransWave.jpg)
 
+### Forsøgsbeskrivelse
+NB! det er vigtigt at I har samme afstand mellem jer i de to forsøg.
 
-
+Transversalbølger
+* Hold slinky mellem jer og sæt én enkelt transversalbølge i gang.
+* Tag en film af bevægelsen.
+* Mål hvor lang tid det tager for bølger at komme til enden med Logger Pro.
+* Brug formlen $v = x/t$ til at beregne hastigheden.
+Longitudinalbølger
+* Lav svingninger med jeres slinky, så I får stående bølger.
+* Optag en video af bevægelsen.
+* Mål frekvensen og bølgelængden.
+* Beregn farten ud fra formlen, $v = f\cdot\lambda$.
 
 # Stående bølger
-
 ![Simulering af stående bølger](billeder/fundamental.png)
 [Simulering af stående bølger](http://ophysics.com/waves6.html)
 
