@@ -103,7 +103,7 @@ Simulering af stående bølger.
 
 # Interferens
 Simulering af interferens.
-![Interferens](billeder/interferens_1.png =250x250)
+![Interferens](billeder/interferens_1.png)
 [link: Interferens](https://www.desmos.com/calculator/av4cypshx9)
 
 ### Øvelse
