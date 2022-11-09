@@ -102,8 +102,10 @@ Simulering af stående bølger.
 [Stående bølge på streng](http://ophysics.com/waves9.html)
 
 # Interferens
-
-
-
+Simulering af interferens.
 ![Interferens](billeder/interferens_1.png)
 [link: Interferens](https://www.desmos.com/calculator/av4cypshx9)
+
+### Øvelse
+Forestil jer at vi har tiden ud af x aksensen.
+* Beskriv hvordan den stiplede bølge ændrer sig når du flytter på den blå kurve. I skal komme ind på amplitude og periode.
