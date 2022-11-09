@@ -109,3 +109,6 @@ Simulering af interferens.
 ### Øvelse
 Forestil jer at vi har tiden ud af x aksensen.
 * Beskriv hvordan den stiplede bølge ændrer sig når du flytter på den blå kurve. I skal komme ind på amplitude og periode.
+
+
+(superposition)[https://www.desmos.com/calculator/7kmnwux624]
