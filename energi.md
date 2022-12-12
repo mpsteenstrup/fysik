@@ -15,4 +15,4 @@ $$E_{pot}=m⋅g⋅h$$
 ### øvelse
 * Angiv navnene for $m,g,h$.
 * Angiv enhederne for $m,g,h$
-* lidt svær men prøv. Hvilken mærkelig enhed må energi også have udover joule  når man ser på enhederne i udtrykket m⋅g⋅h=          ( svar; $\text{J=kg⋅m}^2/\text{s}^2$, hvilket jo bare er $E=m⋅c2$ ).
+* lidt svær men prøv. Hvilken mærkelig enhed må energi også have udover joule  når man ser på enhederne i udtrykket $m⋅g⋅h$         ( svar; $\text{J=kg⋅m}^2/\text{s}^2$, hvilket jo bare er $E=m⋅c2$ ).
