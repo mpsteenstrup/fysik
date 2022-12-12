@@ -13,6 +13,6 @@ Den potentielle energien afhænger af højden, h, på følgende måde
 $$E_{pot}=m⋅g⋅h$$
 
 ### øvelse
-* Angiv navnene for m=__________________,    g=_________________,   h=_______________
+* Angiv navnene for $m=__________________$,    g=_________________, h=_______________
 * Angiv enhederne for m=__________________,    g=_________________,   h=_______________
-* lidt svær men prøv. Hvilken mærkelig enhed må energi også have udover joule  når man ser på enhederne i udtrykket m⋅g⋅h=          ( svar; $text{J=kg⋅m}^2/\text{s}^2$, hvilket jo bare er $E=m⋅c2$ ). 
+* lidt svær men prøv. Hvilken mærkelig enhed må energi også have udover joule  når man ser på enhederne i udtrykket m⋅g⋅h=          ( svar; $\text{J=kg⋅m}^2/\text{s}^2$, hvilket jo bare er $E=m⋅c2$ ).
