@@ -38,5 +38,5 @@ $$E_{kin}=\frac{1}{2}⋅m⋅v^2$$
 * Tjek at $E_{kin}$ har samme enhed som $E_{pot}$.
 
 ### Eksempel
-En bil har en masse på $m=1200$kg og vil med en fart på
+En bil har en masse på $ m = 1200 $ kg og vil med en fart på
  $v=50\text{km}/\text{timen}=13\text{m/s}$ have en kinetisk energi på $E_{kin}=\frac{1}{2}⋅1200\text{kg}⋅13\text{m/s}^2=116 000$J.
