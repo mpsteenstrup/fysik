@@ -93,7 +93,5 @@ Der kan ske transformation mellem forskellige energiformer,  eks. kan potentiel 
 ## Energikvalitet
 Energikvalitet refererer til det brugbare arbejde, som en given mængde energi kan udføre. Jo højere energikvaliteten er, jo lettere er det at transformere den til andre energiformer uden tab i form at termisk energi. Termisk energi har generelt den laveste energikvalitet, med mindre der er tale om høj varme.
 
-
-
 ## Termisk ligevægt
 Termisk ligevægt er en tilstand, hvor temperaturen er den samme i alle deler af et system. Det betyder, at varmen ikke længere flyder fra det ene område til det andet, og at der ikke længere er nogen nettovarmestrøm i systemet. Når et system er i termisk ligevægt, er det i en form for energi-ligevægt, hvilket betyder, at der ikke er nogen nettovarmestrøm i systemet.
