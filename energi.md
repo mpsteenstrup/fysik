@@ -53,4 +53,4 @@ $$\Delta E_{kin}+\Delta E_{pot}=0$$
 
 Vi kan bruge denne vide til at finde hastigheden af et faldende objekt hvis vi kender den potentielle energi. Den ligning man skal løse er $m⋅g⋅h=\frac{1}{2}m⋅v^2$, hvor det er $v$ vi gerne vil finde.
 
-Hvad hvis vi kan se bort fra luftmodstanden? ![Brian Cox feather drop experiment video](https://www.youtube.com/watch?v=E43-CfukEgs).
+Hvad hvis vi kan se bort fra luftmodstanden? [Brian Cox feather drop experiment video](https://www.youtube.com/watch?v=E43-CfukEgs).
