@@ -42,7 +42,7 @@ En bil har en masse på $m=1200\text{kg}$ og vil med en fart på
  $v=50\text{km}/\text{timen}=13\text{m/s}$ have en kinetisk energi på
 
 
- $E_{kin}=\frac{1}{2} 1200\text{kg} 13 \text{m}/\text{s}^2 = 116 000$J.
+ $E_{kin}=\frac{1}{2} 1200\text{kg} 13 \text{m}/\text{s}^2 = $ 116 000J.
 
 ### Øvelse
 * Hvad er bilens energi hvis den kører 100 km/timen og 130 km/timen
