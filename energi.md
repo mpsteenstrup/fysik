@@ -60,5 +60,4 @@ Rundetårn er 34,8 meter højt.
 * Løs ligningen og vis at hastigheden er v= 2g⋅h.
 * Hvor meget er den kinetiske og potentielle energi af en liter mælk på toppen af rundetårn?
 * Hvis man lader den falde, med hvilken hastighed rammer den så jorden?
-![Rundetårn](billeder/rundetaarn.jpg)
- <img src="billeder/rundetaarn.jpg" width="100" height="100">
+ <img src="billeder/rundetaarn.jpg" width="160">
