@@ -54,3 +54,10 @@ $$\Delta E_{kin}+\Delta E_{pot}=0$$
 Vi kan bruge denne vide til at finde hastigheden af et faldende objekt hvis vi kender den potentielle energi. Den ligning man skal løse er $m⋅g⋅h=\frac{1}{2}m⋅v^2$, hvor det er $v$ vi gerne vil finde.
 
 Hvad hvis vi kan se bort fra luftmodstanden? [Brian Cox feather drop experiment video](https://www.youtube.com/watch?v=E43-CfukEgs).
+
+### Øvelse
+Rundetårn er 34,8 meter højt.
+* Løs ligningen og vis at hastigheden er v= 2g⋅h.
+* Hvor meget er den kinetiske og potentielle energi af en liter mælk på toppen af rundetårn?
+* Hvis man lader den falde, med hvilken hastighed rammer den så jorden?
+![Rundetårn](billeder/rundetaarn.jpg)
