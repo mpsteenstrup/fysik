@@ -86,4 +86,4 @@ Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboar
 ## Energiformer
 
 
-![Energiformer](dokumenter/områdestudier i fysik Energi Former og Forbrug.pdf)
+![Energiformer](dokumenter/energiformerPotKin.pdf)
