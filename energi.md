@@ -84,6 +84,10 @@ Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboar
 
 
 ## Energiformer
+Dokumentet giver forskellige energiformer fordelt efter om de hører til potentiel eller kinetisk energi.
+[Energiformer](dokumenter/energiformerPotKin.pdf)
+Der kan ske transformation mellem forskellige energiformer,  eks. kan potentiel energi i et vandreservoir transformeres til bevægelsesenergi i en turbine.
+### Øvelse
+* Gemmengå dokumentet og overvej hvilke der kan transformeres til hvilke.
 
-![Energiformer](dokumenter/energiformerPotKin.pdf)
-[embed]dokumenter/energiformerPotKin.pdf[/embed]
+## Energikvalitet
