@@ -40,3 +40,17 @@ $$E_{kin}=\frac{1}{2}⋅m⋅v^2$$
 ### Eksempel
 En bil har en masse på $m=1200\text{kg}$ og vil med en fart på
  $v=50\text{km}/\text{timen}=13\text{m/s}$ have en kinetisk energi på $E_{kin}=\frac{1}{2} 1200\text{kg} 13\text{m/s}^2 = 116 000$J.
+
+### Øvelse
+* Hvad er bilens energi hvis den kører 100 km/timen og 130 km/timen
+* Overvej hvad disse beregninger kan,fortælle jer om risikoen ved at køre hurtigt.
+
+## Energien er bevaret.
+Energibevarelse gælder selvfølgeligt også for potentiel og kinetisk energi. Vi kan omdanne potentiel energi til kinetisk energi ved eks. at lade et objekt falde, eller omvendt fra kinetisk til potentiel energi ved at lave kaste en bold op i luften.
+Hvis vi kun ser på potentiel og kinetisk energi kan bevarelsessætningen skrives som,
+
+$$\Delat E_{kin}+\Delat E_{pot}=0$$
+
+Vi kan bruge denne vide til at finde hastigheden af et faldende objekt hvis vi kender den potentielle energi. Den ligning man skal løse er $m⋅g⋅h=\frac{1}{2}m⋅v^2$, hvor det er $v$ vi gerne vil finde.
+
+Hvad hvis vi kan se bort fra luftmodstanden? ![Brian Cox feather drop experiment video](https://www.youtube.com/watch?v=E43-CfukEgs).
