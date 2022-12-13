@@ -64,11 +64,20 @@ Rundetårn er 34,8 meter højt.
 * Hvis man lader den falde, med hvilken hastighed rammer den så jorden?
 <center><img src="billeder/rundetaarn.jpg" width="160"></center>
 
+### Forsøg
+Forsøg 1.
+Sammenhængen mellem potentiel og kinetisk energi gælder også når vi kaster bolde op i luften. I skal finde ud med hvilken hastighed I kan kaste bolde op i luften.
+Vurder hvor højt op I kan kaster en bolden og brug jeres viden om potentiel og kinetisk energi til at bestemme hastigheden af bolden da den slap hånden.
 
+Forsøg 2.
+Kast igen bolden op i luften, men tag her tid på hvor langt tid det tager før den lander. Brug formlen $v = g·t^2$, til at bestemme starthastigheden.
 
+### Øvelse
+Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboarder, [LINK](https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html)
 
-<iframe src="https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html"
-        width="800"
-        height="600"
-        allowfullscreen>
-</iframe>
+* Vælg Intro og lad pigen køre på rampen.
+* Vælg Energy i venstre hjørne og beskriv hvordan kinetisk og potentiel energi skifter.
+* Klik på Graphs og prøv at fortolk graferne.
+* Vælg tid ud af x-aksen, Time knappen. Hvordan kan I fortolke graferne?
+*  Tilføj friktion, Friction, og beskriv hvad der sker med den kinetiske og potentielle energi. Hvad er der blevet af energien?
+* Prøv selv at lave en bane i Playground.
