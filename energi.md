@@ -49,7 +49,7 @@ En bil har en masse på $m=1200\text{kg}$ og vil med en fart på
 Energibevarelse gælder selvfølgeligt også for potentiel og kinetisk energi. Vi kan omdanne potentiel energi til kinetisk energi ved eks. at lade et objekt falde, eller omvendt fra kinetisk til potentiel energi ved at lave kaste en bold op i luften.
 Hvis vi kun ser på potentiel og kinetisk energi kan bevarelsessætningen skrives som,
 
-$$\Delat E_{kin}+\Delat E_{pot}=0$$
+$$\Delta E_{kin}+\Delta E_{pot}=0$$
 
 Vi kan bruge denne vide til at finde hastigheden af et faldende objekt hvis vi kender den potentielle energi. Den ligning man skal løse er $m⋅g⋅h=\frac{1}{2}m⋅v^2$, hvor det er $v$ vi gerne vil finde.
 
