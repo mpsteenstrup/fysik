@@ -81,3 +81,9 @@ Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboar
 * Vælg tid ud af x-aksen, Time knappen. Hvordan kan I fortolke graferne?
 *  Tilføj friktion, Friction, og beskriv hvad der sker med den kinetiske og potentielle energi. Hvad er der blevet af energien?
 * Prøv selv at lave en bane i Playground.
+
+
+## Energiformer
+
+
+![Energiformer](dokumenter/områdestudier i fysik Energi Former og Forbrug.pdf)
