@@ -39,7 +39,10 @@ $$E_{kin}=\frac{1}{2}⋅m⋅v^2$$
 
 ### Eksempel
 En bil har en masse på $m=1200\text{kg}$ og vil med en fart på
- $v=50\text{km}/\text{timen}=13\text{m/s}$ have en kinetisk energi på $E_{kin}=\frac{1}{2} 1200\text{kg} 13\text{m/s}^2 = 116 000$J.
+ $v=50\text{km}/\text{timen}=13\text{m/s}$ have en kinetisk energi på
+
+
+ $E_{kin}=\frac{1}{2} 1200\text{kg} 13 \text{m}/\text{s}^2 = 116 000$J.
 
 ### Øvelse
 * Hvad er bilens energi hvis den kører 100 km/timen og 130 km/timen
@@ -57,7 +60,7 @@ Hvad hvis vi kan se bort fra luftmodstanden? [Brian Cox feather drop experiment 
 
 ### Øvelse
 Rundetårn er 34,8 meter højt.
-* Løs ligningen og vis at hastigheden er v= 2g⋅h.
+* Løs ligningen og vis at hastigheden er $v= \sqrt{2·g⋅h}$.
 * Hvor meget er den kinetiske og potentielle energi af en liter mælk på toppen af rundetårn?
 * Hvis man lader den falde, med hvilken hastighed rammer den så jorden?
  <img src="billeder/rundetaarn.jpg" width="160">
