@@ -85,5 +85,5 @@ Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboar
 
 ## Energiformer
 
-
 ![Energiformer](dokumenter/energiformerPotKin.pdf)
+[embed]dokumenter/energiformerPotKin.pdf[/embed]
