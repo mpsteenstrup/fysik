@@ -63,3 +63,12 @@ Rundetårn er 34,8 meter højt.
 * Hvor meget er den kinetiske og potentielle energi af en liter mælk på toppen af rundetårn?
 * Hvis man lader den falde, med hvilken hastighed rammer den så jorden?
 <center><img src="billeder/rundetaarn.jpg" width="160"></center>
+
+
+
+
+<iframe src="https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html"
+        width="800"
+        height="600"
+        allowfullscreen>
+</iframe>
