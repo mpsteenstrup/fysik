@@ -97,7 +97,7 @@ Energikvalitet refererer til det brugbare arbejde, som en given mængde energi k
 Termisk ligevægt er en tilstand, hvor temperaturen er den samme i alle deler af et system. Det betyder, at varmen ikke længere flyder fra det ene område til det andet, og at der ikke længere er nogen nettovarmestrøm i systemet. Når et system er i termisk ligevægt, er det i en form for energi-ligevægt, hvilket betyder, at der ikke er nogen nettovarmestrøm i systemet.
 
 ## Nyttevirkning
-Nyttevirkningen er forholdet mellem den nyttiggjorte energi og den tilførte energi. Den har det græske bogstav eta, $\eta$ og beregnes med
+Nyttevirkningen er forholdet mellem den nyttiggjorte energi og den tilførte energi. Den har det græske bogstav **eta**, $\eta$ og beregnes med
 $$
 \eta = \frac{E_{nyttig}}{E_{tilført}}
 $$
