@@ -97,5 +97,20 @@ Energikvalitet refererer til det brugbare arbejde, som en given mængde energi k
 Termisk ligevægt er en tilstand, hvor temperaturen er den samme i alle deler af et system. Det betyder, at varmen ikke længere flyder fra det ene område til det andet, og at der ikke længere er nogen nettovarmestrøm i systemet. Når et system er i termisk ligevægt, er det i en form for energi-ligevægt, hvilket betyder, at der ikke er nogen nettovarmestrøm i systemet.
 
 ## Nyttevirkning
+Nyttevirkningen er forholdet mellem den nyttiggjorte energi og den tilførte energi. Den har det græske bogstav eta, $\eta$ og beregnes med
+$$
+\eta = \frac{E_{nyttig}}{E_tilført}
+$$
+
+### Eksempel
+En 17kg kettle-bell løftes af stærke Torben fra gulvet og 2,0 meter op. Stærke Torben bruger $E_{tilført} = 400$J på løftet. Den tilførte potentielle energi er $E_{nytte} = m\dcot g \cdot h = 17\text{kg}\cdot 9,82\frac{\texgt{m}}{\text{s}^2}\cdot 2,0\text{m} = 334\text{J}$. Nyttevirkningen af Torbens løft er
+$$
+\eta =  \frac{E_{nyttig}}{E_tilført} = \frac{334\text{J}}{400\text{J}} = 0.84
+$$.
+
+Torben bruger altså $84$% af energien på løftet mens $16$% går til spilde som varme i Torbens krop.
+### Øvelse
+
+* 
 
 ![Batteri eller brint](billeder/elektriskbil.jpg)
