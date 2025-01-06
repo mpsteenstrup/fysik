@@ -102,6 +102,12 @@ $$
 \eta = \frac{E_{nyttig}}{E_{tilført}}
 $$
 
+Nyttevirkningen er forholdet mellem den nyttiggjorte energi og den tilførte energi. Den har det græske bogstav **eta**, $\eta$ og beregnes med
+
+$$
+\eta = \frac{E_{nyttig}}{E_{tilført}}
+$$
+
 ### Eksempel
 En 17kg kettle-bell løftes af stærke Torben fra gulvet og 2,0 meter op. Stærke Torben bruger $E_{tilført} = 400$J på løftet. Den tilførte potentielle energi er $E_{nytte} = m\cdot g \cdot h = 17\text{kg}\cdot 9,82\frac{\text{m}}{\text{s}^2}\cdot 2,0\text{m} = 334\text{J}$. Nyttevirkningen af Torbens løft er
 
