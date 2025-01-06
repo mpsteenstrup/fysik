@@ -12,7 +12,7 @@ Hvert sekund forøges farten altså med ca. $35\text{km/time}$.
 ### Regning med enheder
 I fysik bruger vi enheder for at vise hvad vi måler. Det giver for en fysiker ikke mening at sige at "temperaturen er 7", for 7 hvad? At temperaturen er "7 grader celcius" er til gængælde en glimrende oplysning, hvis man vil vide om man skal tage en sweater på. På samme måde viser enheden for tyngdeaccelerationen $\text{m/s}^2$ hvordan hastigheden ændrer sig hvert sekund.
 
-Når man regner med enheder skal de ikke indgå i beregningen som tal gør. To heste som hver vejer $400$kg til tilsammen veje $2\cdot 400\text{kg} = 800\text{kg}$. Tilsvarende vil en udspringer efter ét sekund have en hastighed på $v = 9.82\text{m/s}^2·2\text{s} = 19.6\text{m/s}$. I princippet ganger man her enhederne så, $\frac{\text{m}}{\text{s}^2}·\text{s} = \frac{m}{s}$, men hvis man holder sig til standardenheder i sine beregninger kan man godt nøjes med at sætte den rigtige enhed på til sidst.
+Når man regner med enheder skal de ikke indgå i beregningen som tal gør. To heste som hver vejer $400$kg til tilsammen veje $2\cdot 400\text{kg} = 800\text{kg}$. Tilsvarende vil en udspringer efter ét sekund have en hastighed på $v = 9.82\text{m/s}^2\cdot 2\text{s} = 19.6\text{m/s}$. I princippet ganger man her enhederne så, $\frac{\text{m}}{\text{s}^2}\cdot \text{s} = \frac{m}{s}$, men hvis man holder sig til standardenheder i sine beregninger kan man godt nøjes med at sætte den rigtige enhed på til sidst.
 
 
 ### Øvelse
@@ -59,7 +59,7 @@ Hvad hvis vi kan se bort fra luftmodstanden? [Brian Cox feather drop experiment 
 
 ### Øvelse
 Rundetårn er 34,8 meter højt.
-* Løs ligningen og vis at hastigheden er $v= \sqrt{2·g⋅h}$.
+* Løs ligningen og vis at hastigheden er $v= \sqrt{2\cdot g\cdot h}$.
 * Hvor meget er den kinetiske og potentielle energi af en liter mælk på toppen af rundetårn?
 * Hvis man lader den falde, med hvilken hastighed rammer den så jorden?
 <center><img src="billeder/rundetaarn.jpg" width="160"></center>
@@ -70,7 +70,7 @@ Sammenhængen mellem potentiel og kinetisk energi gælder også når vi kaster b
 Vurder hvor højt op I kan kaster en bolden og brug jeres viden om potentiel og kinetisk energi til at bestemme hastigheden af bolden da den slap hånden.
 
 Forsøg 2.
-Kast igen bolden op i luften, men tag her tid på hvor langt tid det tager før den lander. Brug formlen $v = g·t^2$, til at bestemme starthastigheden.
+Kast igen bolden op i luften, men tag her tid på hvor langt tid det tager før den lander. Brug formlen $v = g\cdot t^2$, til at bestemme starthastigheden.
 
 ### Øvelse
 Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboarder, [LINK](https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html)
@@ -111,6 +111,24 @@ $$
 $$
 
 Torben bruger altså $84\%$ af energien på løftet mens $16\%$ går til spilde som varme i Torbens krop.
+
+
+## Energienheden kWh
+Kilowatt-time (kWh) er en enhed for energi, der ofte bruges til at måle elektrisk energi. En kilowatt-time svarer til den energi, der bruges, når en effekt på én kilowatt (1000 watt) forbruges i én time. Det er en praktisk enhed til at beskrive energiforbrug i husholdninger og industri, da det giver en nem måde at forstå, hvor meget energi der bruges over tid.
+
+For eksempel, hvis en elektrisk ovn med en effekt på 2 kW er tændt i 3 timer, vil den bruge:
+
+$$
+2 \text{kW} \cdot 3 \text{timer} = 6 \text{kWh}
+$$
+
+Energiforbruget i kWh kan også omregnes til joule (J), som er den grundlæggende enhed for energi i det internationale enhedssystem (SI). En kWh svarer til 3.6 millioner joule (J):
+
+$$
+1 \text{kWh} = 3.6 \cdot 10^6 \text{J}
+$$
+
+Kilowatt-timer bruges ofte på elregninger for at vise, hvor meget energi en husstand har brugt i en given periode, og dermed hvor meget de skal betale for deres elforbrug.
 
 
 ### Øvelse
