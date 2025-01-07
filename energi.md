@@ -139,6 +139,21 @@ $$
 
 Kilowatt-timer bruges ofte på elregninger for at vise, hvor meget energi en husstand har brugt i en given periode, og dermed hvor meget de skal betale for deres elforbrug.
 
+### Danskers energiforbrug
+
+Hvis man tager det samlede energiforbrug i Danmark og fordeler det på alle danskere svarer det til en daglig energiforbrug på $E_{total}=90.6\text{kWh}$. Det er den samlede energi i det offentlige, private virksomheder og i husholdninger. Hvis man kun ser på elforbruget svarer det til et dagligt forbrug på $E_{el}=15.6\text{kWh}$, mens det personlige elforbrug per dag er $E_{el-husholdninger} = 4.38\text{kWh}$.
+
+$$
+\begin{align*}
+&E_{total} &= 90.6 \text{kWh} \\
+&E_{el} &= 15.6 \text{kWh} \\
+&E_{el-husholdninger} &= 4.38 \text{kWh}
+\end{align*}
+$$
+
+
+Det gennemsnitlige energiforbrug
+
 
 ### Øvelse
 Nedenfor er en oversigt over energiomsætningen ved elektriske køretøjer. Den venstre er omsætningen fra strøm over brint til energi i bilen. Den højre er fra strøm gennem batteri og til energi i bilen. 
