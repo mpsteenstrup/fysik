@@ -112,6 +112,25 @@ $$
 
 Torben bruger altså $84\%$ af energien på løftet mens $16\%$ går til spilde som varme i Torbens krop.
 
+## Øvelse: Beregning af nyttevirkning med Gravitricity
+![Gravitricity](https://gravitricity.com/wp-content/uploads/2023/11/gravistore-system-features-graphic.png)
+Forestil dig, at Gravitricity bruger et system, hvor en vægt på 5000 kg løftes op til en højde af 100 meter for at lagre energi. Når energien skal bruges, sænkes vægten, og den potentielle energi omdannes til elektrisk energi. Systemet bruger 5.5 MJ (megajoule) energi på at løfte vægten. Beregn nyttevirkningen af systemet.
+
+1. Beregn den tilførte potentielle energi ved hjælp af formlen $E_{nytte} = m \cdot g \cdot h$, hvor $m = 5000 \text{kg}$, $g = 9.82 \frac{\text{m}}{\text{s}^2}$ og $h = 100 \text{m}$.
+2. Brug resultatet fra trin 1 til at beregne nyttevirkningen ved hjælp af formlen $\eta = \frac{E_{nyttig}}{E_{tilført}}$.
+3. Diskuter, hvad resultatet fortæller om systemets effektivitet.
+
+
+
+2. Beregn nyttevirkningen:
+$$
+\eta = \frac{E_{nyttig}}{E_{tilført}} = \frac{4.91 \text{MJ}}{5.5 \text{MJ}} \approx 0.893 \approx 89.3\%
+$$
+
+3. Systemet bruger altså 89.3% af energien på at lagre og frigive energi, mens 10.7% går til spilde som varme eller andre former for energitab. Dette viser, at Gravitricity's system er meget effektivt til energilagring.
+
+
+
 
 ## Energienheden kWh
 Kilowatt-time (kWh) er en enhed for energi, der ofte bruges til at måle elektrisk energi. En kilowatt-time svarer til den energi, der bruges, når en effekt på én kilowatt (1000 watt) forbruges i én time. Det er en praktisk enhed til at beskrive energiforbrug i husholdninger og industri, da det giver en nem måde at forstå, hvor meget energi der bruges over tid.
@@ -138,3 +157,11 @@ Nedenfor er en oversigt over energiomsætningen ved elektriske køretøjer. Den 
 * Bestem nyttevirkningen af den forskellige teknologier.
 
 ![Batteri eller brint](billeder/elektriskbil.jpg)
+
+
+
+### Løsning
+1. Beregn den tilførte potentielle energi:
+$$
+E_{nytte} = 5000 \text{kg} \cdot 9.82 \frac{\text{m}}{\text{s}^2} \cdot 100 \text{m} = 4.91 \times 10^6 \text{J} = 4.91 \text{MJ}
+$$
