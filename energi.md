@@ -142,8 +142,7 @@ Kilowatt-timer bruges ofte på elregninger for at vise, hvor meget energi en hus
 ### Danskers energiforbrug
 
 
-
-Hvis man tager det samlede energiforbrug i Danmark og fordeler det på alle danskere svarer det til en daglig energiforbrug på $E_{total}=90.6\text{kWh}$. Det er den samlede energi i det offentlige, private virksomheder og i husholdninger. Hvis man kun ser på elforbruget svarer det til et dagligt forbrug på $E_{el}=15.6\text{kWh}$, mens det personlige elforbrug per dag er $E_{el-husholdninger} = 4.38\text{kWh}$. Tallene er fra 2023, ourworldindata.org. 
+Energiforbruget kan opgøres på mange måder alt efter hvor meget man tager med. Vi kalder det samlede energiforbrug fra det offentlige, private virksomheder og i husholdninger i Danmark, for $E_{total}$ . Hvis man kun ser på elforbruget, kalder vi det $E_{el}$. Elforbruget for husholdninger kaldes $E_{el-husholdninger}$. Tallene er fra 2023, ourworldindata.org. og viser det daglige forbrug
 
 $$
 \begin{align*}
@@ -153,8 +152,6 @@ $$
 \end{align*}
 $$
 
-
-Det gennemsnitlige energiforbrug
 
 
 ### Øvelse
