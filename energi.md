@@ -152,6 +152,27 @@ $$
 \end{align*}
 $$
 
+### Øvelse
+
+* Brug Maple til at omregne til joulse.
+
+## Danmarks energiforbrug
+Danmarks energiforbrug fordeler sig på forskellige typer
+
+![energiforbrug](billeder/energy_supply_demand_2022.png)
+
+Danmarks produktion af vind og sol i 2022 var $79\text{PJ} = 79\cdot 10^{15}\text{J}$.
+
+### Øvelse
+Brug figur 1.2 ovenfor til at komme med et estimat af.
+
+* Andelen af sol- og vind-energi produceret i Danmark.
+* Andelen af sol- og vind-energi i vores forbrug (andelen af Total energy supply).
+* Det menes at biofuel har ca. samme klimapåvirkning som kul, hvordan kan det være?
+* Baseret på det I har regnet ud, hvor landt mener I vi er kommet med den grønne omstilling?
+* Hvor stor en andel af Danmarks energi er import?
+* Hvad har det med forsyningssikkerhed at gøre?
+
 
 
 ### Øvelse
