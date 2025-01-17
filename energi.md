@@ -173,7 +173,18 @@ Brug figur 1.2 ovenfor til at komme med et estimat af.
 * Hvor stor en andel af Danmarks energi er import?
 * Hvad har det med forsyningssikkerhed at gøre?
 
+# Den globale udvikling i energi
+Globalt set ser fordelingen af energi sådan ud i 2023 og en meget optimistisk fremskrigning til 2050.
+![energi_2050](billeder/Energy_2050.png)
 
+Antagelser:
+* Energiforbruget er det samme i 2050 som i 2023
+* Andelen af find er tidoblet, [www.unep.or](https://www.unep.org/news-and-stories/story/new-report-envisages-10-fold-increase-global-wind-power-2050)
+* Andelen af kernekraft er 2.5 gange større, [www.iaea.org](https://www.iaea.org/newscenter/pressreleases/iaea-outlook-for-nuclear-power-increases-for-fourth-straight-year-adding-to-global-momentum-for-nuclear-expansion)
+* Solenergi er vokset til $9000$ TWh, [www.iea.org](https://www.iea.org/news/iea-sees-great-potential-for-solar-providing-up-to-a-quarter-of-world-electricity-by-2050)
+* Hydro vokser med $4$ %, per år.
+
+* Er det realistisk?
 
 ### Øvelse
 Nedenfor er en oversigt over energiomsætningen ved elektriske køretøjer. Den venstre er omsætningen fra strøm over brint til energi i bilen. Den højre er fra strøm gennem batteri og til energi i bilen. 
