@@ -37,7 +37,9 @@ $v = f\cdot\lambda$
 Hvis farten er konstant må bølgelænden altså gå blive mindre når frekvensen bliver større.
 
 ## Eksempel
+
 ![bølger og strand](billeder/wave.png)
+
 Forestil dig at du står på en strand og ser bølgerne kommer ind. Du vurderer bølgelængden til at være 8 meter. Du tager et stopur og vurdere at der går 2 sekunder mellem hver bælge. Vi kender nu følgende:
 * $\lambda = 8m$
 * $P = 2s$
@@ -48,8 +50,15 @@ Vi ved nu at der kommer en halv bølge på et sekund. Den samlede hastighed må 
 
 Vi har altså findet bølgernes hastighed til $v = 4m/s$.
 
+### Øvelse
+En violin udsender en lydbølge som bevæger sig gennem luften med en bølgelængde på $\lambda = 1.28\text{m}$ og får din trommehinde til at vibrere med en frekvens på $f=440\text{Hz}$ så du opfatter det som kaldes kammertonen.
+
+* Beregn hvor hurtigt lyden bevæger sig.
+* Beregn hvor lang tid der går fra tonen bliver udsendt til du hører den, hvis du står $100\text{m}$ fra violinen. 
+
+
 ## Lydens fart i atmosfærisk luft.
-Lydens hastighed i luft ved $20^\circ$ er $v = 343\text{m/s}$.
+Lydens hastighed i luft ved $20^\circ C$ er $v = 343\text{m/s}$.
 
 ### Øvelse
 Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave frekvenser ( dybe toner).
@@ -64,7 +73,11 @@ Når du ser et lyn og hører et tordenbrag er det derfor tiden det tager for lyd
 
 
 ### Øvelse
-Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imponerende. Hvis vi isolerer bølgelængden i ligningen for lydens fart er det $\lambda = \frac{v}{f}$.
+Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imponerende. Hvis vi isolerer bølgelængden i ligningen for lydens fart er det 
+$$
+\lambda = \frac{v}{f}
+$$.
+
 * Brug formlen til at beregne bølgelængden for den dybeste og lyseste tone man kan høre.
 * Hvis bølgelængden svarer til halvdelen af et rums længden kan lyden forstærke sig selv, kaldet resonans. Beregn hvilken frekvens dit værelse resonerer og prøv det af.
 
