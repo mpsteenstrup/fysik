@@ -53,7 +53,7 @@ Vi har altså findet bølgernes hastighed til $v = 4m/s$.
 ![bølger mod stranden](billeder/strand.png)
 
 ### Øvelse
-En violin udsender en lydbølge som bevæger sig gennem luften med en bølgelængde på $\lambda = 1.28\text{m}$ og får din trommehinde til at vibrere med en frekvens på $f=440\text{Hz}$ så du opfatter det som kaldes kammertonen.
+En violin udsender en lydbølge som bevæger sig gennem luften med en bølgelængde på $\lambda = 0.780\text{m}$ og får din trommehinde til at vibrere med en frekvens på $f=440\text{Hz}$ så du opfatter det som kaldes kammertonen.
 
 * Beregn hvor hurtigt lyden bevæger sig.
 * Beregn hvor lang tid der går fra tonen bliver udsendt til du hører den, hvis du står $100\text{m}$ fra violinen. 
