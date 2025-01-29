@@ -79,7 +79,7 @@ Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imp
 
 $$
 \lambda = \frac{v}{f}
-$$ .
+$$
 
 * Brug formlen til at beregne bølgelængden for den dybeste og lyseste tone man kan høre.
 * Hvis bølgelængden svarer til halvdelen af et rums længden kan lyden forstærke sig selv, kaldet resonans. Beregn hvilken frekvens dit værelse resonerer og prøv det af.
