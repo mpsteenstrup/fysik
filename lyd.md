@@ -75,7 +75,8 @@ Når du ser et lyn og hører et tordenbrag er det derfor tiden det tager for lyd
 
 
 ### Øvelse
-Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imponerende. Hvis vi isolerer bølgelængden i ligningen for lydens fart er det 
+Det menneskelige ører kan høre lyde mellem 20Hz og 20000Hz, hvilket er ret imponerende. Hvis vi isolerer bølgelængden i ligningen for lydens fart er det
+ 
 $$
 \lambda = \frac{v}{f}
 $$.
