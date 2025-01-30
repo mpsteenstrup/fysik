@@ -3,12 +3,12 @@ Lyd er svingninger som forplanter sig gennem et medie. Oftest oplever vi det nå
 
 Fysiske størrelser når en tone skal beskrives:
 * $f$, Frekvensen, hvor mange gange den svinger hvert sekund, enhed hertz, Hz.
-* $P$, Perioden, hvor lang tid der går mellem hver bølge, enhed sekund, s.
+* $T$, Perioden, hvor lang tid der går mellem hver bølge, enhed sekund, s.
 * $\lambda$ lambda, Bølgelængde, hvor langt der er mellem hver bølge, enhed meter, m.
 * $v$, Fart, hvor hurtigt bølgen bevæger sig, enhed m/s.
 
 Sammenhængen mellem perioden og frekvensen er
-$f = \frac{1}{P}$
+$f = \frac{1}{T}$
 
 eksempel:
 * Du gynger frem og tilbage og en hel svingning tager 2 sekunder. Efter 1 sekund er du kommet halvejs frem og tibage og frekvensen er derfor $f = \frac{1}{2\text{s}} = 0.5\text{Hz}$.
@@ -42,9 +42,9 @@ Hvis farten er konstant må bølgelænden altså gå blive mindre når frekvense
 
 Forestil dig at du står på en strand og ser bølgerne kommer ind. Du vurderer bølgelængden til at være 8 meter. Du tager et stopur og vurdere at der går 2 sekunder mellem hver bælge. Vi kender nu følgende:
 * $\lambda = 8m$
-* $P = 2s$
+* $T = 2s$
 
-Først regner vi frekvens til $f = \frac{1}{P} = \frac{1}{2s}=0.5Hz$.
+Først regner vi frekvens til $f = \frac{1}{T} = \frac{1}{2s}=0.5Hz$.
 
 Vi ved nu at der kommer en halv bølge på et sekund. Den samlede hastighed må så være, $v = 0.5Hz\cdot 8m = 4m/s$.
 
@@ -97,7 +97,7 @@ NB! det er vigtigt at I har samme afstand mellem jer i de to forsøg.
 Longitudinalbølger
 * Hold slinky mellem jer og sæt én enkelt transversalbølge i gang.
 * Tag en film af bevægelsen.
-* Mål hvor lang tid det tager for bølger at komme til enden med Logger Pro.
+* Mål hvor lang tid det tager for bølger at komme til enden.
 * Brug formlen $v = x/t$ til at beregne hastigheden.
 
 Transversalbølger
