@@ -60,7 +60,7 @@ En violin udsender en lydbølge som bevæger sig gennem luften med en bølgelæn
 
 
 ## Lydens fart i atmosfærisk luft.
-Lydens hastighed i luft ved $20^\circ C$ er $v = 343\text{m/s}$.
+Lydens hastighed i luft ved $20^\circ \text{C}$ er $v = 343\text{m/s}$.
 
 ### Øvelse
 Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave frekvenser ( dybe toner).
