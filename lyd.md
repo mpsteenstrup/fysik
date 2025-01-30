@@ -20,7 +20,7 @@ eksempel:
 
 ### Illustration af lydbølger
 Simuleringen viser en lydbølge som bevæger sig fra venstre mod højre.
-![Bølger og lyd](billeder/waveSound.png)
+[![Bølger og lyd](billeder/waveSound.png)](https://www.geogebra.org/material/iframe/id/925705)
 [link: lydbølger, kilde ophysics.com](https://www.geogebra.org/material/iframe/id/925705)
 ### Øvelse
 * Kør simuleringen og beskriv i ord hvordan luftmolekylerne bevæger sig.
@@ -115,12 +115,12 @@ Simulering af stående bølger.
 [![Simulering af stående bølger](billeder/fundamental.png)](http://ophysics.com/waves6.html)
 [Simulering af stående bølger](http://ophysics.com/waves6.html)
 
-![Stående bølge på streng](billeder/waveString.png)
+[![Stående bølge på streng](billeder/waveString.png)](http://ophysics.com/waves9.html)
 [Stående bølge på streng](http://ophysics.com/waves9.html)
 
 # Interferens
 Simulering af interferens.
-![Interferens](billeder/interferens_1.png)
+[![Interferens](billeder/interferens_1.png)](https://www.desmos.com/calculator/av4cypshx9)
 [link: Interferens](https://www.desmos.com/calculator/av4cypshx9)
 
 ### Øvelse
