@@ -112,7 +112,7 @@ $\text{procentvis afvigelse} = \frac{v_{transversalbølger}-v_{longitudinalbølg
 
 # Stående bølger
 Simulering af stående bølger.
-![Simulering af stående bølger](billeder/fundamental.png)
+[![Simulering af stående bølger](billeder/fundamental.png)](http://ophysics.com/waves6.html)
 [Simulering af stående bølger](http://ophysics.com/waves6.html)
 
 ![Stående bølge på streng](billeder/waveString.png)
