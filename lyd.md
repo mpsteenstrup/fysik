@@ -41,12 +41,12 @@ Hvis farten er konstant må bølgelænden altså gå blive mindre når frekvense
 ![bølger og strand](billeder/wave.png)
 
 Forestil dig at du står på en strand og ser bølgerne kommer ind. Du vurderer bølgelængden til at være 8 meter. Du tager et stopur og vurdere at der går 2 sekunder mellem hver bælge. Vi kender nu følgende:
-* $\lambda = 8m$
-* $T = 2s$
+* $\lambda = 8\text{m}$
+* $T = 2\text{s}$
 
-Først regner vi frekvens til $f = \frac{1}{T} = \frac{1}{2s}=0.5Hz$.
+Først regner vi frekvens til $f = \frac{1}{T} = \frac{1}{2s}=0.5\text{Hz}$.
 
-Vi ved nu at der kommer en halv bølge på et sekund. Den samlede hastighed må så være, $v = 0.5Hz\cdot 8m = 4m/s$.
+Vi ved nu at der kommer en halv bølge på et sekund. Den samlede hastighed må så være, $v = 0.5Hz\cdot 8m = 4\text{m/s}$.
 
 Vi har altså findet bølgernes hastighed til $v = 4m/s$.
 
@@ -67,7 +67,7 @@ Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave 
 * Beskriv hvordan en udendørskoncert vil lyde i det setup.
 
 ### Øvelse
-Når et lyn slår ned ser vi først glimtet og hører derefter braget. Det skyldes at lys bevæger sig næsten $900$ tusinde gange så hurtigt som lyden. Lys fart er $c = 299792458 m/s \approx 3.0\cdot 10^8 m/s$.
+Når et lyn slår ned ser vi først glimtet og hører derefter braget. Det skyldes at lys bevæger sig næsten $900$ tusinde gange så hurtigt som lyden. Lys fart er $c = 299792458 m/s \approx 3.0\cdot 10^8 \text{m/s}$.
 
 Når du ser et lyn og hører et tordenbrag er det derfor tiden det tager for lyden at nå dig som giver forsinkelsen.
 * Beregn afstanden til et lyn når braget er $3$ sekunder forsinket. Du skal bruge formlen $x = v\cdot t$ hvor $x$ er afstanden og $t$ forsinkelsen.
