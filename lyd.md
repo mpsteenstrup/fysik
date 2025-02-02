@@ -1,3 +1,17 @@
+## Introduktion til bølger
+
+Bølger er et grundlæggende fænomen i fysikken, der beskriver, hvordan energi udbredes gennem forskellige medier. De kan observeres i mange former, fra lydbølger i luften til lysbølger i rummet og vandbølger på havet. Bølger kan klassificeres som mekaniske eller elektromagnetiske. Mekaniske bølger, såsom lydbølger og seismiske bølger, kræver et medium for at udbrede sig, mens elektromagnetiske bølger, såsom lys og radiobølger, kan bevæge sig gennem vakuum. Forståelsen af bølger er afgørende for at forklare mange fysiske fænomener, herunder lydens udbredelse, lysbrydning og interferens. I de følgende kapitler vil vi udforske de forskellige typer af bølger, deres egenskaber og anvendelser i både naturen og teknologien.
+
+## Eksempel: En person taler i en mobiltelefon
+
+Forestil dig, at du taler i din mobiltelefon. Når du taler, skaber dine stemmebånd lydbølger, der bevæger sig gennem luften og fanges af mikrofonen i din telefon. Mikrofonen omdanner disse lydbølger til elektriske signaler, som derefter konverteres til digitale data.
+
+Disse digitale data sendes som elektromagnetiske bølger fra din telefon til den nærmeste telefonmast. Telefonmasten modtager signalet og videresender det gennem et netværk af master og kabler til modtagerens telefon. Undervejs kan signalet blive forstærket og behandlet for at sikre, at det når frem i god kvalitet.
+
+Når signalet når modtagerens telefon, omdannes de digitale data tilbage til elektriske signaler, som driver telefonens højttaler. Højttaleren omdanner de elektriske signaler tilbage til lydbølger, som modtageren kan høre. Hele denne proces sker næsten øjeblikkeligt, hvilket gør det muligt for folk at tale sammen i realtid, selvom de befinder sig langt fra hinanden.
+
+Dette eksempel illustrerer, hvordan både mekaniske bølger (lydbølger) og elektromagnetiske bølger (radiosignaler) spiller en afgørende rolle i moderne kommunikationsteknologi.
+
 # Lyd og Bølger
 Lyd er svingninger som forplanter sig gennem et medie. Oftest oplever vi det når lyde bevæger sig gennem atmosfærisk luft hvor det er luftmolekylerne som svinger frem og tilbage. Når man hører en tone svinger molekylerne periodisk og danner skiftevis over og undertryk. Jo større trykforskellen er jo højere hører vi lyden.
 
@@ -50,6 +64,8 @@ Vi ved nu at der kommer en halv bølge på et sekund. Den samlede hastighed må 
 
 Vi har altså findet bølgernes hastighed til $v = 4m/s$.
 
+### Bølger i vandet
+
 ![bølger mod stranden](billeder/strand.png)
 
 ### Øvelse
@@ -58,9 +74,16 @@ En violin udsender en lydbølge som bevæger sig gennem luften med en bølgelæn
 * Beregn hvor hurtigt lyden bevæger sig.
 * Beregn hvor lang tid der går fra tonen bliver udsendt til du hører den, hvis du står $100\text{m}$ fra violinen. 
 
+## Lydens fart i atmosfærisk luft
+Lydens hastighed i luft ved $20^\circ \text{C}$ er $v = 343\text{m/s}$. Lydens hastighed i luft er dog temperaturafhængig og kan beregnes ved hjælp af følgende formel:
 
-## Lydens fart i atmosfærisk luft.
-Lydens hastighed i luft ved $20^\circ \text{C}$ er $v = 343\text{m/s}$.
+$$
+v = 331.3 \text{m/s} \cdot \sqrt{1 + \frac{T}{273.15}}
+$$
+
+hvor $T$ er temperaturen i grader Celsius ($^\circ \text{C}$). 
+
+Denne temperaturafhængighed skyldes, at molekylerne i luften bevæger sig hurtigere ved højere temperaturer, hvilket gør det lettere for lydbølger at udbrede sig. Derfor vil lydens hastighed være højere på en varm dag sammenlignet med en kold dag.
 
 ### Øvelse
 Lad os lege med tanken at høje frekvenser ( lyse toner) var hurtigere end lave frekvenser ( dybe toner).
