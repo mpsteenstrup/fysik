@@ -152,3 +152,29 @@ Forestil jer at vi har tiden ud af x aksensen.
 
 
 (superposition)[https://www.desmos.com/calculator/7kmnwux624]
+
+## Interferens og resonans
+Konstruktiv interferens opstår, når to eller flere bølger mødes og kombineres for at skabe en bølge med større amplitude, så bølgerne forstærker hinanden.
+
+
+
+
+
+
+Alle systemer har en en eller flere egensvingninger. Egensvingning er den svingning en genstand svinger med hvis man eks. slår på den. En stemmegaffel har en helt bestemt egensvingning lige som en guitarstreng eller et krystalglas. Andre systemer er lidt mere mudrede, et bord eller en spand vand vil ikke svinge med én tone og vil hurtigt blive dæmpet.  
+
+**Resonans**
+Hvis man påvirker et system med systemets egensvinginig siges der at være resonans. Det kan også være to systemer som er kommer i resonans med hinande, hvorved deres svingninger forstærker hinanden.
+
+### Eksempel, gynge
+Børn der gynger vil gerne skubbes, men ikke hvis man bare skubber tilfældigt. Hvis skubbene har samme periode som svingningen i gyngen vil gyngen svinge højere og barnet vil blive glad. Der er konstruktiv interferens mellem skubbene og gyngens egensvingning.
+
+
+## Broer og konstruktiv interferens
+Der kan også opstå konstruktiv interferens med meget større ting. Et berømt eksempel er Tacoma Narrows Bridge, som kollapsede i 1940 på grund af vindinducerede vibrationer, der førte til konstruktiv interferens og resonans. Et andet eksempel er Millennium Bridge i London, som oplevede kraftige svingninger kort efter åbningen i 2000, hvilket skyldtes fodgængernes synkroniserede gang, der skabte konstruktiv interferens.
+
+
+[video: Tacoma Bridge Collaps 1940](https://youtu.be/XggxeuFDaDU)
+
+[video: Milennium Bridge 2020](https://youtu.be/y2FaOJxWqLE)
+
