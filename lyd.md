@@ -114,16 +114,19 @@ Vi skal prøve at finde sammenhængen mellem farten for en bølge i en slinky ve
 
 ### Forsøgsbeskrivelse
 NB! det er vigtigt at I har samme afstand mellem jer i de to forsøg.
+
 * [longitudinal](https://youtu.be/0I9zmd3ZAag)
 * [transversal](https://youtu.be/Ra4_vPdYW7k)
 
 Longitudinalbølger
+
 * Hold slinky mellem jer og sæt én enkelt transversalbølge i gang.
 * Tag en film af bevægelsen.
 * Mål hvor lang tid det tager for bølger at komme til enden.
 * Brug formlen $v = x/t$ til at beregne hastigheden.
 
 Transversalbølger
+
 * Lav svingninger med jeres slinky, så I får stående bølger.
 * Optag en video af bevægelsen.
 * Mål frekvensen og bølgelængden.
@@ -133,33 +136,29 @@ Sammenlign resultatet fra de to forsøg og udregn en procentvis afvigelse mellem
 $\text{procentvis afvigelse} = \frac{v_{transversalbølger}-v_{longitudinalbølger}}{v_{transversalbølger}}\cdot 100$%.
 
 
-# Stående bølger
-Simulering af stående bølger.
-[![Simulering af stående bølger](billeder/fundamental.png)](http://ophysics.com/waves6.html)
-[Simulering af stående bølger](http://ophysics.com/waves6.html)
 
-[![Stående bølge på streng](billeder/waveString.png)](http://ophysics.com/waves9.html)
-[Stående bølge på streng](http://ophysics.com/waves9.html)
 
-# Interferens
-Simulering af interferens.
+## Interferens
+Interferens opstår, når to eller flere bølger mødes og kombineres for at skabe en ny bølge. Hvis bølgen bliver forstærket siges der at være **konstruktiv interferens**. Hvis bølgen bliver formindsket siges der at være **destruktiv interferens**.
+
+
+### Simulering af interferens.
+Simuleringen viser tre bølger. Den stiblede er summen af den  grønne og den røde. 
+
+$$stiplet = grøn + rød $$
+
 [![Interferens](billeder/interferens_1.png)](https://www.desmos.com/calculator/av4cypshx9)
 [link: Interferens](https://www.desmos.com/calculator/av4cypshx9)
 
 ### Øvelse
 Forestil jer at vi har tiden ud af x aksensen.
-* Beskriv hvordan den stiplede bølge ændrer sig når du flytter på den blå kurve. I skal komme ind på amplitude og periode.
+
+* Beskriv hvordan den stiplede bølge ændrer sig når du flytter på den grønne kurve.
+* Hvornår er det **konstruktiv interferens**?
+* Hvornår er der **destruktiv interferens**?
 
 
-(superposition)[https://www.desmos.com/calculator/7kmnwux624]
-
-## Interferens og resonans
-Konstruktiv interferens opstår, når to eller flere bølger mødes og kombineres for at skabe en bølge med større amplitude, så bølgerne forstærker hinanden.
-
-
-
-
-
+## Resonans
 
 Alle systemer har en en eller flere egensvingninger. Egensvingning er den svingning en genstand svinger med hvis man eks. slår på den. En stemmegaffel har en helt bestemt egensvingning lige som en guitarstreng eller et krystalglas. Andre systemer er lidt mere mudrede, et bord eller en spand vand vil ikke svinge med én tone og vil hurtigt blive dæmpet.  
 
@@ -178,3 +177,10 @@ Der kan også opstå konstruktiv interferens med meget større ting. Et berømt 
 
 [video: Milennium Bridge 2020](https://youtu.be/y2FaOJxWqLE)
 
+# Stående bølger
+Simulering af stående bølger.
+[![Simulering af stående bølger](billeder/fundamental.png)](http://ophysics.com/waves6.html)
+[Simulering af stående bølger](http://ophysics.com/waves6.html)
+
+[![Stående bølge på streng](billeder/waveString.png)](http://ophysics.com/waves9.html)
+[Stående bølge på streng](http://ophysics.com/waves9.html)
