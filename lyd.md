@@ -159,7 +159,7 @@ Forestil jer at vi har tiden ud af x aksensen.
 
 ### Simulering as stående bølge
 
-[![Stående bølger](billeder/staaendeboelger.png)](staaendeboelger.html)
+[![Stående bølger](billeder/staaendeboelger.png)](https://mpsteenstrup.github.io/fysik/staaendeboelger.html)
 
 ### Øvelse
 Forestil jer at den blå og den røde bølge er bølger på en guitar-streng som bevæger sig frem og tilbage langs strengen. Den grønne er summen af de to bølger.
