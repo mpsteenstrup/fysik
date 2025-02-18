@@ -171,7 +171,7 @@ Forestil jer at den blå og den røde bølge er bølger på en guitar-streng som
 ### Bølger i to dimensioner
 Hvis man ser på bølger i vand udbreder de sig i to dimensioner, $x$ og $y$. Hvis man laver to kilder til bølger får man steder med konstruktiv og destruktiv interferens. 
 
-[[bølger i vand](billeder/boelgerivand.png)(http://ophysics.com/w12.html)]
+[![bølger i vand](billeder/boelgerivand.png)](http://ophysics.com/w12.html)
 
 ### Øvelse
 
