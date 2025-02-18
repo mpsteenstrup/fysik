@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standing Waves on Strings</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #header {
+            margin: 10px;
+            text-align: center;
+        }
+        #sliderContainer {
+            margin: 10px;
+            text-align: center;
+        }
+        #pauseButton {
+            margin: 10px;
+        }
+        #checkboxContainer {
+            margin: 10px;
+            text-align: center;
+        }
+        #markdownContainer {
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Stående bølge</h1>
+    </div>
+
+    <div id="markdownContainer"></div>
+        
+    <div id="sliderContainer">
+        <label for="freqSlider">Relativ frekvensforskel: </label>
+        <input type="range" id="freqSlider" min="0.0" max="4.0" step="0.1" value="1.0">
+        <span id="freqValue">1.0</span>
+
+        <label for="waveNumber">antal bølger: </label>
+        <input type="range" id="Wn" min="1" max="8.0" step="1" value="4.0">
+        <span id="waveNumberValue">4</span>
+    </div>
+    <button id="pauseButton">Pause</button>
+    <div id="checkboxContainer">
+        <label><input type="checkbox" id="wave2Checkbox"> Blå</label>
+        <label><input type="checkbox" id="wave1Checkbox"> Rød</label>
+        <label><input type="checkbox" id="wave3Checkbox"> Grøn (Blå + Rød)</label>
+    </div>
+
+    <script>
+        let L = 1.0; // Length of the string
+        let T = 2.0; // Period of the wave
+        let c = 1.0; // Wave speed
+        let k = 2 * Math.PI / L; // Wave number
+        let omega = omega2 = 2 * Math.PI / T; // Angular frequency
+        let A= 0.1; // Amplitude of the wave
+        let dx = 0.01; // Spatial discretization
+        let dt = 0.01; // Temporal discretization
+        let x = []; // Spatial coordinates
+        let t = 0; // Time variable
+        let frequencyRatio = 1.0; // Frequency ratio for the second wave
+        let waveNumber = 4;
+        let isPaused = false;
+
+        function setup() {
+            createCanvas(800, 400);
+            for (let i = 0; i <= L / dx; i++) {
+                x.push(i * dx);
+            }
+            frameRate(20);
+        }
+
+        function draw() {
+            if (!isPaused) {
+                background(255);
+                drawGridlines();
+                omega2 = frequencyRatio * omega;
+                k = waveNumber * 2 * Math.PI / L;
+                if (document.getElementById('wave1Checkbox').checked) {
+                    drawWave(A, 0, 'red');
+                }
+                if (document.getElementById('wave2Checkbox').checked) {
+                    drawWave(0, A, 'blue');
+                }
+                if (document.getElementById('wave3Checkbox').checked) {
+                    drawWave(A, A, 'green');
+                }
+            }
+        }
+
+        function drawWave(A1, A2, c) {
+            let y = [];
+            for (let i = 0; i < x.length; i++) {
+                y.push(A1 * Math.sin(k * x[i] + omega * t) + A2 * Math.sin(k * x[i] - omega2 * t));
+            }
+            beginShape();
+            noFill();
+            stroke(c);
+            strokeWeight(2);
+            for (let i = 0; i < x.length; i++) {
+                vertex(map(x[i], 0, L, 0, width), map(y[i], -2 * A, 2 * A, height / 2 + 100, height / 2 - 100));
+            }
+            endShape();
+            t += dt;
+        }
+
+        function drawGridlines() {
+            stroke(200);
+            strokeWeight(1);
+            // Vertical gridlines
+            for (let i = 0; i <= width; i += width / 10) {
+                line(i, 0, i, height);
+            }
+            // Horizontal gridlines
+            for (let i = 0; i <= height; i += height / 10) {
+                line(0, i, width, i);
+            }
+        }
+
+        function updateFrequencyRatio() {
+            frequencyRatio = document.getElementById('freqSlider').value;
+            frequencyRatio = parseFloat(document.getElementById('freqSlider').value).toFixed(1);
+            document.getElementById('freqValue').innerText = frequencyRatio;
+        }
+
+        function updateWaveNumber() {
+            waveNumber = document.getElementById('Wn').value;
+            document.getElementById('waveNumberValue').innerText = waveNumber;
+        }
+
+        function togglePause() {
+            isPaused = !isPaused;
+            document.getElementById('pauseButton').innerText = isPaused ? 'Resume' : 'Pause';
+        }
+
+        document.getElementById('freqSlider').addEventListener('input', updateFrequencyRatio);
+        document.getElementById('Wn').addEventListener('input', updateWaveNumber);
+        document.getElementById('pauseButton').addEventListener('click', togglePause);
+    </script>
+</body>
+</html>

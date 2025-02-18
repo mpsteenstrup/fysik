@@ -157,6 +157,16 @@ Forestil jer at vi har tiden ud af x aksensen.
 * Hvornår er det **konstruktiv interferens**?
 * Hvornår er der **destruktiv interferens**?
 
+### Simulering as stående bølge
+
+[![Stående bølger](billeder/staaendeboelger.png)](staaendeboelger.html)
+
+### Øvelse
+Forestil jer at den blå og den røde bølge er bølger på en guitar-streng som bevæger sig frem og tilbage langs strengen. Den grønne er summen af de to bølger.
+
+* Forklar hvorfor det hedder en stående bølge.
+* Lav om på den relative frekvens så den blå bølge ikke har samme frekvens som den røde. Hvad sker der med den grønne bølge?
+
 
 ## Resonans
 
