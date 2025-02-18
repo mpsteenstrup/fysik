@@ -168,6 +168,17 @@ Forestil jer at den blå og den røde bølge er bølger på en guitar-streng som
 * Lav om på den relative frekvens så den blå bølge ikke har samme frekvens som den røde. Hvad sker der med den grønne bølge?
 
 
+### Bølger i to dimensioner
+Hvis man ser på bølger i vand udbreder de sig i to dimensioner, $x$ og $y$. Hvis man laver to kilder til bølger får man steder med konstruktiv og destruktiv interferens. 
+
+[[bølger i vand](billeder/boelgerivand.png)(http://ophysics.com/w12.html)]
+
+### Øvelse
+
+* Forklar bevægelsen af den orange og den lilla bold. 
+
+
+
 ## Resonans
 
 Alle systemer har en en eller flere egensvingninger. Egensvingning er den svingning en genstand svinger med hvis man eks. slår på den. En stemmegaffel har en helt bestemt egensvingning lige som en guitarstreng eller et krystalglas. Andre systemer er lidt mere mudrede, et bord eller en spand vand vil ikke svinge med én tone og vil hurtigt blive dæmpet.  
