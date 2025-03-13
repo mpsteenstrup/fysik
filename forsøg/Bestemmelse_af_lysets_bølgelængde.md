@@ -8,6 +8,7 @@ Laser, Gitter, lineal
 
 ## Teori
 Gitterligningen giver sammenhængen mellem afstanden mellem spalterne $d$ i et gitter og bølgelængden af lyset $\lambda$, ordnen $n$, og den n'te ordens afbøjdningsvinklen $\theta_n$
+
 $$
 \sin(\theta_n) = \frac{n\cdot\lambda}{d}
 $$
@@ -18,6 +19,7 @@ $$
 
 
 På vores gitre står der hvor mange spalter der er per mm, men vi har brug for at vide hvor langt der er mellem spalterne. Omregningen er,
+
 $$
 d = \frac{1}{\text{antal spalter per meter}}
 $$
@@ -41,10 +43,13 @@ Vi skal bruge vores viden om retvinklede trekanter til at måle vinklen.
 ![vinkelmåling](/billeder/diffraktion2.png)
 
 Vi måler afstanden $a$ til skærmen, og afstanden $x_n$ til den n'te orden. Fra trigonometri ved vi at
+
 $$
 tan(\theta_n) = \frac{x_n}{a} .
 $$
+
 Vi kan isolere vinklen ved at bruge den inverse tangens,
+
 $$
 \theta_n = arcTan(\frac{x_n}{a})
 $$
