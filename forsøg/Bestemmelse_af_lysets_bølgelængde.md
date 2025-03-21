@@ -68,7 +68,9 @@ Udfyld tabellen og vis ved eksempelberegning hvordan I kommer frem til bølgelæ
 | $λ$ [m] |      |      |      |      |      |      |      |      |
 
 ## Databehandling
-Beregn den gennemsnitlige bølgelængde og sammenlign med app, [lys og bølgelængde](https://www.mpsteenstrup.dk/spektrum/spektrum.html), [wikipedia](https://en.wikipedia.org/wiki/Laser_pointer), eller spektrometer måling.
+Beregn den gennemsnitlige bølgelængde og sammenlign med app, [lys og bølgelængde](https://www.mpsteenstrup.dk/spektrum/spektrum.html), [wikipedia](https://en.wikipedia.org/wiki/Laser_pointer), eller spektrometer måling
+
+![spektrometer måling af laser bølgelængde](/billeder/laser_boelgelaengde.png)
 
 ## Udvidet databehandling
 Formålet med den udvidede databehandling er at kunne estimere præcisionen og identificere fejlkiler.
