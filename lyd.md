@@ -12,8 +12,12 @@ Når signalet når modtagerens telefon, omdannes de digitale data tilbage til el
 
 Dette eksempel illustrerer, hvordan både mekaniske bølger (lydbølger) og elektromagnetiske bølger (radiosignaler) spiller en afgørende rolle i moderne kommunikationsteknologi.
 
+### Øvelse: 
+* Lav en tegning af dig som ringer hjem. På tegningen skal man kunne se hvordan informationen bevæger sig som bølger.
+
+
 # Lyd og Bølger
-Lyd er svingninger som forplanter sig gennem et medie. Oftest oplever vi det når lyde bevæger sig gennem atmosfærisk luft hvor det er luftmolekylerne som svinger frem og tilbage. Når man hører en tone svinger molekylerne periodisk og danner skiftevis over og undertryk. Jo større trykforskellen er jo højere hører vi lyden.
+Lyd er svingninger som forplanter sig gennem et medie. Oftest oplever vi det når lyde bevæger sig gennem atmosfærisk luft hvor det er luftmolekylerne som svinger frem og tilbage. Når man hører en tone svinger molekylerne periodisk og danner skiftevis over og undertryk. Jo større trykforskellen er jo kraftigere hører vi lyden.
 
 Fysiske størrelser når en tone skal beskrives:
 * $f$, Frekvensen, hvor mange gange den svinger hvert sekund, enhed hertz, Hz.
@@ -25,7 +29,7 @@ Sammenhængen mellem perioden og frekvensen er
 $f = \frac{1}{T}$
 
 eksempel:
-* Du gynger frem og tilbage og en hel svingning tager 2 sekunder. Efter 1 sekund er du kommet halvejs frem og tibage og frekvensen er derfor $f = \frac{1}{2\text{s}} = 0.5\text{Hz}$.
+* Du gynger frem og tilbage og en hel svingning tager 2 sekunder. Efter 1 sekund er du kommet halvejs frem og tibage og frekvensen er derfor $f = \frac{1}{2\text{s}} = 0,5\text{Hz}$. Du foretager altså en halv svingning, hvert sekund.
 * En elitesportskvinde kan have en hvilepuls på 30 slag per minut. Omregnet til sekunder giver det en frekvens på $f = \frac{30}{60 \text{s}} = 0.5\text{Hz}$. Vi får derfor igen en perioden på 2 sekunder som ved gyngeturen.
 
 # Øvelse
@@ -33,12 +37,24 @@ eksempel:
 * Udregn frekvensen og perioden for din puls.
 
 ### Illustration af lydbølger
+
+[![video af lydbølgers udbredelse](billeder/lyd.png)](https://youtu.be/GnAvquGBmnY)
+
+
+
+
+
+
 Simuleringen viser en lydbølge som bevæger sig fra venstre mod højre.
 [![Bølger og lyd](billeder/waveSound.png)](https://www.geogebra.org/material/iframe/id/925705)
 [link: lydbølger, kilde ophysics.com](https://www.geogebra.org/material/iframe/id/925705)
 ### Øvelse
-* Kør simuleringen og beskriv i ord hvordan luftmolekylerne bevæger sig.
-* Beskriv sammenhængen mellem de bevægelsen af luftmolekylerne og grafen nederst, kom ind på overtryk og undertryk.
+De orange linjer illustrere luftmolekyler, så når linjerne er tæt sammen er der overtryk og når linjerne er langt fra hinanden er der undertryk.
+* Kør simuleringen og beskriv i ord hvordan der hvor luftmolekylerne er tæt sammen bevæger sig.
+* Se på en enkelt streg, hvordan bevæger den sig?
+* 
+
+* Beskriv sammenhængen mellem bevægelsen af luftmolekylerne og grafen nederst, kom ind på overtryk og undertryk.
 * Lav om på amplituden og beskriv hvad der ændrer sig og hvad der ikke ændrer sig.
 * Lav om på frekvensen og beskriv igen hvad der ændrer sig og hvad der ikke ændrer sig.
 * Hvilken sammenhæng finder i mellem bølgelængden og frekvensen?
