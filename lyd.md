@@ -37,13 +37,22 @@ eksempel:
 * Udregn frekvensen og perioden for din puls.
 
 ### Illustration af lydbølger
-
+Videoen viser hvordan en højttaler skubber til luftmolekylerne og derved skaber pulser hvor luftmolekylerne er tæt sammen og hvor de er langt fra hinanden.
 [![video af lydbølgers udbredelse](billeder/lyd.png)](https://youtu.be/GnAvquGBmnY)
 
+Højttalerens membran bevæger sig frem,
 
+* Højttaleren bevæger sig frem og skubber til luftmolekylerne lige foran højttaleren.
+* Luftmolekylerne bevæger sig mod højre og rammer ind i andre luftmolekyler.
+* De ramte luftmolekyler begynder at bevæge sid mod højre, mens dem som højttaleren satte i bevægelse bliver bremset. 
+* Denne proces fortsætter fremad og en bølge af tætte luftmolekyler bevæger sig fremad.
 
+Højttalerens membran bevæger sig tilbage,
 
+* Luftmolekylerne foran højttaleren har nu plads til at bevæge sig tilbage mod venstre.
+* Det skaber et område med spredte luftmolekyler.
 
+### Simulering af lyds udbredelse
 
 Simuleringen viser en lydbølge som bevæger sig fra venstre mod højre.
 [![Bølger og lyd](billeder/waveSound.png)](https://www.geogebra.org/material/iframe/id/925705)
