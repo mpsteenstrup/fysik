@@ -1,9 +1,12 @@
----
-layout: default
-title: Relativitetsteori
----
-
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 # Relativitetsteori
@@ -102,7 +105,7 @@ Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium, der står 
 * **Eksempel:** Hvis du taber en bold i et tog, der kører jævnt, falder den lodret ned præcis som i dit soveværelse.
 
 > **2. Princippet om lysets konstans**
-Lysets fart i vakuum har den samme værdi $c=299 792 458 \frac{\text{m}}{\text{s}} \approx 3\cdot 10^8 \frac{\text{m}}{\text{s}} $ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
+Lysets fart i vakuum har den samme værdi $c=299 792 458 \text{m/s} \approx 3\cdot 10^8 \frac{\text{m}}{\text{s}} $ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
 
 ## Addition af hastigheder 
 
