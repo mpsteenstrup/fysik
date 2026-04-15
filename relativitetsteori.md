@@ -1,14 +1,14 @@
 # Relativitetsteori
 
-Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **Relativitetsteorien**. Når vi bevæger os med hverdagshastigheder – som når vi cykler til skole eller kører i bil – virker verden logisk og forudsigelig. Men hvad sker der, når hastighederne nærmer sig lysets fart, eller når vi kigger på universets helt store strukturer? Albert Einstein revolutionerede vores forståelse af tid, rum og bevægelse ved at vise, at fysikkens love afhænger af, hvem der kigger, og hvordan de bevæger sig. I dette forløb skal vi udforske, hvorfor "samtidighed" er et relativt begreb, og hvordan verden ændrer sig, alt efter hvilket **initialsystem** vi befinder os i.
-
------
+Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **Relativitetsteorien**. Når vi bevæger os med hverdagshastigheder – som når vi cykler til skole eller kører i bil – virker verden logisk og forudsigelig. Men hvad sker der, når hastighederne nærmer sig lysets fart, eller når vi kigger på universets helt store strukturer? Albert Einstein revolutionerede vores forståelse af tid, rum og bevægelse ved at vise, at fysikkens love afhænger af, hvem der kigger, og hvordan de bevæger sig.
 
 ## Initialsystemer
 
 Et **initialsystem** er et koordinatsystem (eller en referenceramme), hvor Newtons første lov gælder. Det betyder kort fortalt, at hvis en genstand ikke påvirkes af en resulterende kraft, vil den enten ligge stille eller bevæge sig med en konstant hastighed i en retlinet bane.
 
 > **Definition:** Et initialsystem er en referenceramme, der ikke accelererer. Alle referencerammer, der bevæger sig med konstant hastighed i forhold til et initialsystem, er selv initialsystemer.
+
+![Initialsystemerne s og s'](billeder/initialsystem.png)
 
 ### Fysik i fysiklokalet vs. toget
 
@@ -31,11 +31,9 @@ Som I kan se er beskrivelsen helt ens eller helt omvendt hvis I vil. Dette er ne
 
 ### Tænkespørgsmål
 
-  * **Hvordan ser et fysikforsøg ud på ISS (Den Internationale Rumstation)?**
-  * **Hvorfor føles bevægelser her anderledes end i fysiklokalet?**
+  * Hvordan ser et fysikforsøg ud på ISS (Den Internationale Rumstation)?
+  * Hvorfor føles bevægelser her anderledes end i fysiklokalet?
 
-
------
 
 ## Øvelse: Hvor hurtigt bevæger du dig egentlig?
 
@@ -43,18 +41,22 @@ Selvom vi føler, at vi sidder stille i fysiklokalet, er vi i konstant og hurtig
 
 **Opgave 1: Jordens rotation**
 ![jorden](billeder/jorden.png)
-Jorden drejer om sin egen akse én gang pr. døgn. Da jorden er en kugle, afhænger din hastighed af din breddegrad. Ved ækvator er hastigheden højest, mens den er nul ved polerne. Omkredsen i cirklen kan beregnes som, 
+Jorden drejer om sin egen akse én gang pr. døgn. Da jorden er en kugle, afhænger din hastighed af din breddegrad. Ved ækvator er hastigheden højest, mens den er nul ved polerne. Omkredsen i cirklen kan beregnes som,
+
 $$
 d_{omkreds} = 2 \cdot \pi \cdot R_{jord} \cdot \cos(\phi).
 $$
+
 For København ,ca. $\phi = 55.67^{\circ}$ nordlig bredde og $R_{jord} \approx 6371 \text{ km}$.
 
 * Beregn $d_{omkreds}$.
 
 Hastigheden kan beregnes som længden man har bevæget sig divideret med hvor lang tid det har taget,
+
 $$
 v = \frac{d_{omkreds}}{T},
 $$
+
 hvor $T = 24 \text{ timer}$.
 
 * Beregn farten i km/t.
@@ -78,11 +80,9 @@ Vores solsystem er ikke stationært; det kredser om centrum af Mælkevejen i en 
 
 Lige som på ISS så bevæger vi os i cirkler, Jorden om egen akse, Jorden om Solen og Solen om galakse-centret.
 
-* Hvorfor er det vi oplever næsten et initialsystem.
+* Hvorfor er det vi oplever det som om vi er i et initialsystem, når vi faktisk bevæger os rundt i cirkler.
 
 Her er en beskrivelse af Einsteins to postulater, som de bør præsenteres i dit undervisningsmateriale. Disse to enkle antagelser er selve fundamentet, som hele den specielle relativitetsteori er bygget på.
-
----
 
 ## Einsteins to postulater
 
@@ -96,7 +96,7 @@ Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium, der står 
 * **Eksempel:** Hvis du taber en bold i et tog, der kører jævnt, falder den lodret ned præcis som i dit soveværelse.
 
 > **2. Princippet om lysets konstans**
-Lysets fart i vakuum har den samme værdi $c$ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
+Lysets fart i vakuum har den samme værdi $c=299 792 458 \frac{\text{m}}{\text{s}} \approx 3\cdot 10^8 \frac{\text{m}}{\text{s}} $ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
 
 Dette er det mest radikale postulat. I hverdagen er vi vant til, at hastigheder lægges sammen (hvis du kaster en bold med 20 km/t fra et tog, der kører 100 km/t, bevæger bolden sig med 120 km/t i forhold til skinnerne). Men for lyset gælder dette ikke.
 

@@ -160,9 +160,6 @@ Transversalbølger
 Sammenlign resultatet fra de to forsøg og udregn en procentvis afvigelse mellem dem. Den beregnes med,
 $\text{procentvis afvigelse} = \frac{v_{transversalbølger}-v_{longitudinalbølger}}{v_{transversalbølger}}\cdot 100$%.
 
-
-
-
 ## Interferens
 Interferens opstår, når to eller flere bølger mødes og kombineres for at skabe en ny bølge. Hvis bølgen bliver forstærket siges der at være **konstruktiv interferens**. Hvis bølgen bliver formindsket siges der at være **destruktiv interferens**.
 
