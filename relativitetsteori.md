@@ -133,7 +133,7 @@ Afstanden bolden har bevæget sig er givet ved hastigheden gange tiden $(x = v\c
 
 * Vis at det taget for at bolden rammer bagvæggen er $t_{bag} = 1\text{s}$.
 * Vis at det taget for at bolden rammer forvæggen er $t_{for} = 1\text{s}$.
-* Hvad kan manden i rumfartøjet konkludere om de to begivenheder?
+* Hvad kan personen i rumfartøjet konkludere om de to begivenheder?
 
 
 
@@ -191,14 +191,11 @@ Hvis du prøver at indsætte $c$ i de samme ligninger:
 
 Her bliver nævnerne forskellige ($c-200$ vs $c+200$), og derfor bliver tiderne observeret forskellige.
 
+### Konklusion
+Vi kan nu konkludere, at de to personer ikke ser lyset ramme samtidigt. Helt generelt viser den specielle relativitetsteori at to personer i relativ bevægelse i forhold til hinanden ikke er enige om hvornår noget sker.
 
+Hvis man skal svare på spørgsmålet "skete det samtidigt" kræver det at personerne står stille i forhold til hinanden.
 
-
-**Opgave 5**
-
-Dette er det mest radikale postulat. I hverdagen er vi vant til, at hastigheder lægges sammen (hvis du kaster en bold med 20 km/t fra et tog, der kører 100 km/t, bevæger bolden sig med 120 km/t i forhold til skinnerne). Men for lyset gælder dette ikke.
-
-* **Eksempel:** Hvis et rumskib flyver mod dig med halvt lysets hastighed og tænder lygterne, vil du måle lysets fart til at være $c$ ($ca. 300.000$ km/s) — ikke $1,5c$.
 
 
 
