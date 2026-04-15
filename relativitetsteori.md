@@ -38,9 +38,6 @@ Nu eksperimentet i fysiklokalet som dem på toget også kan se, vinduer igen.
 
 Som I kan se er beskrivelsen helt ens eller helt omvendt hvis I vil. Dette er netop **relativitetsprincippet**, hvor I ikke kan afgøre hvem der er i bevægelse og hvem der står stille.
 
-
-
-
 ### Tænkespørgsmål
 
   * Hvordan ser et fysikforsøg ud på ISS (Den Internationale Rumstation)?
@@ -106,7 +103,7 @@ Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium, der står 
 * **Eksempel:** Hvis du taber en bold i et tog, der kører jævnt, falder den lodret ned præcis som i dit soveværelse.
 
 > **2. Princippet om lysets konstans**
-Lysets fart i vakuum har den samme værdi $c=299 792 458 \text{m/s} \approx 3\cdot 10^8 \frac{\text{m}}{\text{s}} $ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
+Lysets fart i vakuum har den samme værdi $c=299 792 458 \text{m/s} \approx 3\cdot 10^8 \text{ m/s}$ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
 
 ## Eksperiment: lysets hastighed
 
@@ -127,7 +124,7 @@ Lad os skrue hastigheden af rumfartøjet op til 99% af lysets hastighed og lade 
 
 Den måde man addere hastigheder gælder altså ikke for lys og hastigheden er altid den samme!
 
-> ** Ifølge relativitetsteorien er alt relativt, undtagen lysets hastighed i vacuum som altid er den samme!**
+> **Ifølge relativitetsteorien er alt relativt, undtagen lysets hastighed i vacuum som altid er den samme!**
 
 ## Samtidighed
 Vi skal se på hvilken konsekvenser det at lysets hastighed er konstant har. Vi starter med at se på hvad det betyder for forståelsen af at noget sker samtidigt.
@@ -147,8 +144,6 @@ Afstanden bolden har bevæget sig er givet ved hastigheden gange tiden $(x = v\c
 * Vis at det taget for at bolden rammer bagvæggen er $t_{bag} = 1\text{s}$.
 * Vis at det taget for at bolden rammer forvæggen er $t_{for} = 1\text{s}$.
 * Hvad kan personen i rumfartøjet konkludere om de to begivenheder?
-
-
 
 ### Set fra Jorden
 Fra Jorden ser der lidt anderledes ud.
@@ -221,42 +216,45 @@ Når vi har accepteret Einsteins postulat om, at lysets fart er den samme for al
 
 ### Tankeeksperimentet med lysuret
 
-Forestil dig to personer: **Astrid**, der sidder i et tog, som kører med den konstante fart $v$, og **Bertil**, der står stille på perronen og kigger ind i toget, idet det suser forbi.
+[Se videoen fra 7:15 til 9:00](https://youtu.be/uTyAI1LbdgA?t=62)
 
-1.  **I Astrids system:** Hun har et lysur, hvor en lysstråle sendes lodret op fra gulvet, rammer et spejl i loftet og reflekteres ned igen. For Astrid bevæger lyset sig blot en lodret distance. Tiden det tager for lyset at nå loftet, kalder vi egen-tiden $\Delta t_0$. Da lysets fart er $c$, er distancen til loftet givet ved $c \cdot \Delta t_0$.
-2.  **I Bertils system:** Da toget bevæger sig fremad med farten $v$, ser Bertil lysstrålen bevæge sig skråt. Mens lyset bevæger sig opad, flytter spejlet sig nemlig vandret. For Bertil tilbagelægger lyset altså en længere distance på tiden $\Delta t$. Da lysets fart $c$ skal være den samme for Bertil, må tiden $\Delta t$ nødvendigvis være længere end Astrids $\Delta t_0$.
+I filmen udsender astronauten en lysstråle lodret op fra gulvet som rammer loftet. Ved at måle tiden det tager har han nu skabet et ur. Tiden det tager for lyset at nå loftet, kalder vi egen-tiden $t_0$. Da lysets fart er $c$, er distancen til loftet givet ved $c \cdot  t_0$.
+
+Fra Jorden skal vi tage bevægelsen af rumfartøjet med. Lysstrålen bevæger sig ikke kun op men også til siden og bruger tiden $t$. Da lysets fart $c$ skal være den samme, må tiden $ t$ nødvendigvis være længere end $t_0$.
 
 Dette fænomen kaldes **tidsforlængelse** (eller tidsdilatation).
 
 ### Udledning via Pythagoras
 
-Vi kan bruge din figur af trekanten til at finde den matematiske sammenhæng mellem de to tidsintervaller. Trekanten opstår, fordi vi betragter lysets vej fra Bertils synspunkt:
+![Tidsforlængelse](billeder/tidsforlængelse.png)
 
-  * **Den lodrette katete ($c \cdot \Delta t_0$):** Dette er den lodrette afstand til loftet (som set af Astrid).
-  * **Den vandrette katete ($v \cdot \Delta t$):** Dette er den afstand, toget har flyttet sig, mens lyset bevæger sig mod loftet (som set af Bertil).
-  * **Hypotenusen ($c \cdot \Delta t$):** Dette er den faktiske distance, som lyset tilbagelægger (som set af Bertil).
+Vi kan bruge figuren til at lave en retvinklet trekant.
+
+  * **Den lodrette katete ($c \cdot t_0$):** Dette er den lodrette afstand til loftet (som set af Astrid).
+  * **Den vandrette katete ($v \cdot  t$):** Dette er den afstand, toget har flyttet sig, mens lyset bevæger sig mod loftet (som set af Bertil).
+  * **Hypotenusen ($c \cdot  t$):** Dette er den faktiske distance, som lyset tilbagelægger (som set af Bertil).
 
 Ved at bruge Pythagoras' læresætning ($a^2 + b^2 = c^2$) på trekanten får vi:
 
-$$(v \cdot \Delta t)^2 + (c \cdot \Delta t_0)^2 = (c \cdot \Delta t)^2$$
+$$(v \cdot  t)^2 + (c \cdot  t_0)^2 = (c \cdot  t)^2$$
 
-Hvis vi isolerer $\Delta t$ (tiden målt af den stationære observatør), ender vi med den berømte formel for tidsforlængelse:
+Hvis vi isolerer $ t$ (tiden målt af den stationære observatør), ender vi med den berømte formel for tidsforlængelse:
 
-$$\Delta t = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+$$ t = \frac{ t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
 
-Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto større bliver nævneren, og $\Delta t$ bliver meget større end $\Delta t_0$.
+Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto større bliver nævneren, og $ t$ bliver meget større end $ t_0$.
 
 > **Vigtig pointe:** Tiden går langsomst for den person, der bevæger sig hurtigt i forhold til observatøren.
 
 ### Tænkespørgsmål
 
   * Hvorfor mærker vi ikke tidsforlængelse, når vi kører i et almindeligt tog med $180$ km/t?
-  * Hvad ville der ske med $\Delta t$, hvis man kunne rejse med præcis lysets hastighed ($v = c$)?
+  * Hvad ville der ske med $ t$, hvis man kunne rejse med præcis lysets hastighed ($v = c$)?
 
 -----
 
 **Øvelse: Myonernes rejse**
-Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort levetid ($\Delta t_0 \approx 2,2 \text{ µs}$), hvorefter de henfalder. Selvom de bevæger sig med næsten lysets hastighed, burde de matematisk set ikke kunne nå jordens overflade, før de dør – og alligevel måler vi dem her nede.
+Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort levetid ($ t_0 \approx 2,2 \text{ µs}$), hvorefter de henfalder. Selvom de bevæger sig med næsten lysets hastighed, burde de matematisk set ikke kunne nå jordens overflade, før de dør – og alligevel måler vi dem her nede.
 
   * Brug formlen for tidsforlængelse til at forklare, hvordan myonerne "overlever" turen ned til os.
 
@@ -281,7 +279,7 @@ Anders betragter sig selv som værende i et initialsystem. Han ser Beate rejse v
 1.  **Rejsetiden:** Hvor lang tid tager rejsen (tur-retur) ifølge Anders' ure?
     * *Hint: Brug $t = \frac{s}{v}$ for hele turen på 20 lysår.*
 2.  **Tidsforlængelse:** Anders ved, at tiden går langsommere for Beate, fordi hun bevæger sig i forhold til ham. Beregn Beates alder, når hun lander på Jorden igen, ved hjælp af formlen for tidsforlængelse:
-    $$\Delta t_0 = \Delta t \cdot \sqrt{1 - \frac{v^2}{c^2}}$$
+    $$ t_0 =  t \cdot \sqrt{1 - \frac{v^2}{c^2}}$$
 3.  **Hvem er ældst?** Hvor gamle er Anders og Beate henholdsvis, når de mødes igen?
 
 
