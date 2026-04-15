@@ -72,8 +72,6 @@ Vores solsystem er ikke stationært; det kredser om centrum af Mælkevejen i en 
 
   * Beregn solens (og dermed din) fart omkring galakse-centret i km/s?
 
-{@ref: Diagram der viser jordens forskellige bevægelser: Rotation om egen akse, kredsløb om solen og solsystemets bevægelse i Mælkevejen.}
-
 **Opgave 4: Så sid dog stille**
 
 * Forklar, ved at bruge ideen om initialsystemer, hvorfor kan kan sidde stille og roligt og drikke en kop te, når nu man bevæger sig så hurtigt!
@@ -162,7 +160,7 @@ Vi sætter dem lig hinanden:
 $$210 \cdot t = 10 + 200 \cdot t$$
 $$210t - 200t = 10$$
 $$10t = 10$$
-$$t_{for} = 1,0 \text{ s}$
+$$t_{for} = 1,0 \text{ s}$$
 
 ### 3. Udregning for bagvæggen
 Bagvæggen bevæger sig mod bolden. Vi skal finde det tidspunkt $t_b$, hvor de mødes.
@@ -222,8 +220,6 @@ Vi kan bruge din figur af trekanten til at finde den matematiske sammenhæng mel
   * **Den lodrette katete ($c \cdot \Delta t_0$):** Dette er den lodrette afstand til loftet (som set af Astrid).
   * **Den vandrette katete ($v \cdot \Delta t$):** Dette er den afstand, toget har flyttet sig, mens lyset bevæger sig mod loftet (som set af Bertil).
   * **Hypotenusen ($c \cdot \Delta t$):** Dette er den faktiske distance, som lyset tilbagelægger (som set af Bertil).
-
-{@ref: Geometrisk udledning af tidsforlængelse.}
 
 Ved at bruge Pythagoras' læresætning ($a^2 + b^2 = c^2$) på trekanten får vi:
 
