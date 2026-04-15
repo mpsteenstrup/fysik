@@ -116,9 +116,80 @@ Den måde man addere hastigheder gælder altså ikke for lys og hastigheden er a
 
 > ** Ifølge relativitetsteorien er alt relativt, undtagen lysets hastighed i vacuum som altid er den samme!**
 
-
-
 ## Samtidighed
+Vi skal se på hvilken konsekvenser det at lysets hastighed er konstant har. Vi starter med at se på hvad det betyder for forståelsen af at noget sker samtidigt.
+
+* [Se videoen fra 2:33 til 4:22](https://youtu.be/uTyAI1LbdgA?t=62)
+
+I videoen udsender personen i rumfartøjet to lysstråler og alt efter om man står på Jorden eller er i rumfartøjet ser det ikke ud til at de rammer endevæggene samtidigt. Lad os starte med at udregne hvordan det ser ud hvis det ikke er lys, men en bold han kaster.
+
+**Opgave 6: ikke relativistisk**
+
+Vi lader personen stå i midten af rumfartøjet og kaste to bolde en frem og en tilbage. Lad rumfartøjet være 20 meter langt og hastigheden han kaster med være $\om 10\frac{\text{m}}{\tex{s}}$. 
+
+
+### Set fra rumfartøjet
+Afstanden bolden har bevæget sig er givet ved hastigheden gange tiden $(x = v\cdot t)$.
+
+* Vis at det taget for at bolden rammer bagvæggen er $t_{bag} = 1\text{s}$.
+* Vis at det taget for at bolden rammer forvæggen er $t_{for} = 1\text{s}$.
+* Hvad kan manden i rumfartøjet konkludere om de to begivenheder?
+
+
+
+### Set fra Jorden
+Fra Jorden ser der lidt anderledes ud.
+* Rumfartøjets fart: $v = 200 \text{ m/s}$.
+* Boldenes fart relativt til skibet: $10 \text{ m/s}$.
+* Bold mod forvæg (fart set fra Jorden): $v_{for} = 200 + 10 = 210 \text{ m/s}$.
+* Bold mod bagvæg (fart set fra Jorden): $v_{bag} = 200 - 10 = 190 \text{ m/s}$.
+
+Vi lader $t = 0$ være affyringstidspunktet, hvor rumfartøjets midte er i $x = 0$.
+* Forvæggens startposition: $x = 10 \text{ m}$.
+* Bagvæggens startposition: $x = -10 \text{ m}$.
+
+
+### 2. Udregning for forvæggen
+Forvæggen bevæger sig væk fra bolden. Vi skal finde det tidspunkt $t_{for}$, hvor boldens position er lig med væggens position.
+
+Væggens position: $x_{væg}(t) = 10 + 200 \cdot t$
+Boldens position: $x_{bold}(t) = 210 \cdot t$
+
+* Sæt de to ligning lig hinanden og løs for $t_for$
+
+Løsning: 
+Vi sætter dem lig hinanden:
+$$210 \cdot t = 10 + 200 \cdot t$$
+$$210t - 200t = 10$$
+$$10t = 10$$
+$$t_{for} = 1,0 \text{ s}$
+
+### 3. Udregning for bagvæggen
+Bagvæggen bevæger sig mod bolden. Vi skal finde det tidspunkt $t_b$, hvor de mødes.
+
+Væggens position: $x_{væg}(t) = -10 + 200 \cdot t$
+
+Boldens position: $x_{bold}(t) = 190 \cdot t$
+
+* Sæt de to ligning lig hinanden og løs for $t_for$
+
+Løsning:
+$$190 \cdot t = -10 + 200 \cdot t$$
+$$-10t = -10$$
+$$t_b = 1,0 \text{ s}$$
+
+* Hvad mener personen op Jorden om samtidigheden af de to begivenheder?
+
+Med bolde er begivenhederne altså ens, men hvad med lys.
+
+### Hvorfor dette knækker med lys (Einstein)
+Hvis vi erstatter bolden med lys, må vi **ikke** bruge $v_{for} = 210\text{ m/s}$ og $v_{bag} = 190 \text{ m/s}$. Vi skal bruge $c$ ($300.000.000 \text{ m/s}$) begge steder.
+
+Hvis du prøver at indsætte $c$ i de samme ligninger:
+* $c \cdot t = 10 + 200 \cdot t \implies t_f = \frac{10}{c - 200}$
+* $c \cdot t = -10 + 200 \cdot t \implies t_b = \frac{10}{c + 200}$
+
+Her bliver nævnerne forskellige ($c-200$ vs $c+200$), og derfor bliver tiderne observeret forskellige.
 
 
 
