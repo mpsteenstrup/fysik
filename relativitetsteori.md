@@ -272,14 +272,14 @@ I opgave 1,2 og 3 udregnede vi hvor hurtigt vi bevæger os.
 **Opgave: Tvillingeparadokset**
 Tvillingeparadokset er et af de mest berømte tankeeksperimenter inden for den specielle relativitetsteori. Det illustrerer konsekvenserne af **tidsforlængelse** (tidsdilatation) på en meget menneskelig måde.
 
+![Scott og Mark Kelly.](billeder/twins.jpg)
+
 ### Scenariet
 Forestil dig tvillingerne **Anders** og **Beate**, der begge er fyldt 20 år.
 * **Anders** bliver hjemme på Jorden.
 * **Beate** stiger ombord på et ekstremt hurtigt rumskib og flyver mod en fjern stjerne, der ligger **10 lysår** væk.
 * Rumskibet bevæger sig med en konstant fart på $v = 0,8c$ (80 % af lysets hastighed).
 * Vi ser bort fra accelerationen i denne øvelse og antager, at hun skifter retning øjeblikkeligt ved stjernen.
-
----
 
 ### Del 1: Beregninger fra Jorden (Anders' perspektiv)
 Anders betragter sig selv som værende i et initialsystem. Han ser Beate rejse væk og vende tilbage.
@@ -290,25 +290,27 @@ Anders betragter sig selv som værende i et initialsystem. Han ser Beate rejse v
     $$ t_0 =  t \cdot \sqrt{1 - \frac{v^2}{c^2}}$$
 3.  **Hvem er ældst?** Hvor gamle er Anders og Beate henholdsvis, når de mødes igen?
 
-
-
 ### Del 2: Paradokset
 Beate kan også argumentere for, at *hun* er den, der står stille i sit rumskib, og at det er Jorden (og Anders), der suser væk fra hende med $0,8c$.
 
 * **Spørgsmål:** Hvis relativitetsprincippet siger, at alle initialsystemer er lige gode, hvorfor er det så ikke Anders, der er den yngste, når de mødes igen? Hvorfor er situationen ikke symmetrisk?
 
-
 ### Del 3: Løsningen
 For at løse paradokset skal vi kigge på definitionen af et initialsystem fra det første kapitel.
 
 * **Opgave:** Forklar hvorfor Beates rejse *ikke* kan beskrives som ét samlet initialsystem. 
-    * *Hint: Hvad sker der med Beate ved den fjerne stjerne, når hun skal hjem igen?*
+    * *Hint: Hvad sker der med Beate ved den fjerne stjerne, når hun skal hjem igen.
 * **Konklusion:** Hvorfor er det kun Anders' beregning fra Del 1, der er "den sande" for hele forløbet?
 
 ### Tænkespørgsmål
 Hvis Beate havde fløjet med $v = 0,99c$ i stedet for $0,8c$, hvordan ville aldersforskellen så have set ud? Prøv at lave en hurtig beregning og diskuter, hvad det betyder for vores muligheder for at udforske universet i fremtiden.
 
+### Kelly tvillingerne
+Scott Kelly er den person som har været længst på den internationale rumstation (ISS), 520 dage, men hans bror Mark Kelly blev på Jorden. Rumstationen bevæger sig med en fart på $7,67 \text{ km/s}$ og ifølge Wikipedia betyder det at han ældet ca. $8,6 \text{milli sekunder}$ i forhold til sin tvilling.
 
+**Opgave**
+
+* prøv at regn efter om Wikipedia har ret.
 
 **Øvelse: Myonernes rejse**
 Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort levetid ($ t_0 \approx 2,2 \text{ µs}$), hvorefter de henfalder. Selvom de bevæger sig med næsten lysets hastighed, burde de matematisk set ikke kunne nå jordens overflade, før de dør – og alligevel måler vi dem her nede.
