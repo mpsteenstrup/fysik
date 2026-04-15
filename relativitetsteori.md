@@ -312,12 +312,46 @@ Scott Kelly er den person som har været længst på den internationale rumstati
 
 * prøv at regn efter om Wikipedia har ret.
 
-**Øvelse: Myonernes rejse**
-Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort levetid ($ t_0 \approx 2,2 \text{ µs}$), hvorefter de henfalder. Selvom de bevæger sig med næsten lysets hastighed, burde de matematisk set ikke kunne nå jordens overflade, før de dør – og alligevel måler vi dem her nede.
 
-  * Brug formlen for tidsforlængelse til at forklare, hvordan myonerne "overlever" turen ned til os.
 
-## Øvelse: Tvillingeparadokset
+## længde-formindskelse
+
+[Se videoen fra 5:20 til 6:15](https://youtu.be/uTyAI1LbdgA?t=62)
+
+Forestil dig et rumskib, der rejser fra en stjerne til en anden med hastigheden $v$.
+
+* **Observatør på Jorden (System S):** Ser afstanden mellem stjernerne som en fast længde, $L_0$ (hvilelængden). Tiden det tager for rejsen, måles på Jordens ure som $t$.
+* **Observatør i rumskibet (System S'):** Rumskibet står stille i sit eget system. For rumskibet er det stjernerne, der suser forbi. Tiden for rejsen måles på rumskibets eget ur som $t_0$ (egentiden). Rumskibet måler afstanden som $L$.
+
+### 2. Definition af hastighed
+Hastighed er defineret som strækning divideret med tid ($v = \frac{s}{t}$). Da begge observatører skal måle den samme relative hastighed $v$ (ifølge relativitetsprincippet), kan vi opstille to ligninger:
+
+1.  **For Jorden:** $v = \frac{L_0}{t}$
+2.  **For rumskibet:** $v = \frac{L}{t_0}$
+
+Da $v$ er den samme, kan vi sætte de to udtryk for strækning op:
+$$L_0 = v \cdot t$$
+$$L = v \cdot t_0$$
+
+### 3. Substitution af tidsforlængelsen
+Vi ved fra din tidligere udledning, at sammenhængen mellem tiderne er:
+$$t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+
+Nu indsætter vi dette udtryk for $\Delta t$ i ligningen for $L_0$:
+$$L_0 = v \cdot \left( \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}} \right)$$
+
+
+
+### 4. Den færdige formel
+Vi ser nu, at leddet $v \cdott_0$ er det samme som $L$ (længden målt fra rumskibet). Vi kan derfor erstatte $v \cdott_0$ med $L$:
+$$L_0 = \frac{L}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+
+Hvis vi isolerer $L$ (den forkortede længde), får vi den endelige formel for længdeforkortelse:
+$$L = L_0 \cdot \sqrt{1 - \frac{v^2}{c^2}}$$
+
+### Konklusion
+Da udtrykket under kvadratroden altid er mindre end 1 (når $v < c$), vil den målte længde $L$ altid være **mindre** end hvilelængden $L_0$.
+
 
 
 
@@ -353,12 +387,17 @@ I virkeligheden er fysikken bagved dog anderledes:
 2.  **Relativistisk:** Lyset har altid farten $c$, men selve **rumtiden** er krummet så kraftigt inden for Schwarzschild-radiussen, at alle veje for lyset peger indad mod centrum.
 
 ### Eksempel 
-xx
-Prøv at lade eleverne beregne Schwarzschild-radiussen for Jorden. 
+
+Prøv at beregne Schwarzschild-radiussen for Jorden. 
 * Brug $M_{jord} \approx 5,97 \cdot 10^{24} \text{ kg}$.
 * De vil opdage, at hvis man pressede hele Jorden sammen til et sort hul, ville den kun være ca. **9 mm** i radius (på størrelse med en glaskugle)!
 
 Det giver dem en god forståelse for, hvor ekstremt kompakte sorte huller er i forhold til de initialsystemer, vi arbejdede med tidligere.
+
+**Øvelse: Myonernes rejse**
+Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort levetid ($ t_0 \approx 2,2 \text{ µs}$), hvorefter de henfalder. Selvom de bevæger sig med næsten lysets hastighed, burde de matematisk set ikke kunne nå jordens overflade, før de dør – og alligevel måler vi dem her nede.
+
+  * Brug formlen for tidsforlængelse til at forklare, hvordan myonerne "overlever" turen ned til os.
 
 
 
