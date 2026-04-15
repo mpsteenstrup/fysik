@@ -98,6 +98,33 @@ Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium, der står 
 > **2. Princippet om lysets konstans**
 Lysets fart i vakuum har den samme værdi $c=299 792 458 \frac{\text{m}}{\text{s}} \approx 3\cdot 10^8 \frac{\text{m}}{\text{s}} $ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
 
+## Addition af hastigheder 
+
+[Se videoen fra 1:00 til 2:33](https://youtu.be/uTyAI1LbdgA?t=62)
+
+**Opgave 5: addition af hastigheder**
+
+Vi lader rumfartøjet bevæge sig med en hastighed på $v_s = 200\frac{\text{m}}{\text{s}}$ i forhold til Jorden og bolden blive kastet med en hastighed i forhold til personen på $10\frac{\text{m}}{\text{s}}$.
+
+* Beregn den hastighed som en person på Jorden ser bolden bevæge sig med.
+
+Lad os skrue hastigheden af rumfartøjet op til 99% af lysets hastighed og lade personen tænde en lommelygte pegende frem idet han passere Jorden.
+* Med hvilken hastighed ser personen i rumfartøjet lyset bevæge sig med?
+* Med hvilken hastighed ser personen på Jorden lyset bevæge sig med?
+
+Den måde man addere hastigheder gælder altså ikke for lys og hastigheden er altid den samme!
+
+> ** Ifølge relativitetsteorien er alt relativt, undtagen lysets hastighed i vacuum som altid er den samme!**
+
+
+
+## Samtidighed
+
+
+
+
+**Opgave 5**
+
 Dette er det mest radikale postulat. I hverdagen er vi vant til, at hastigheder lægges sammen (hvis du kaster en bold med 20 km/t fra et tog, der kører 100 km/t, bevæger bolden sig med 120 km/t i forhold til skinnerne). Men for lyset gælder dette ikke.
 
 * **Eksempel:** Hvis et rumskib flyver mod dig med halvt lysets hastighed og tænder lygterne, vil du måle lysets fart til at være $c$ ($ca. 300.000$ km/s) — ikke $1,5c$.
