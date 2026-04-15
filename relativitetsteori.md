@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css">
 <script>
   window.MathJax = {
     tex: {
@@ -106,6 +107,9 @@ Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium, der står 
 
 > **2. Princippet om lysets konstans**
 Lysets fart i vakuum har den samme værdi $c=299 792 458 \text{m/s} \approx 3\cdot 10^8 \frac{\text{m}}{\text{s}} $ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
+
+## Eksperiment: lysets hastighed
+
 
 ## Addition af hastigheder 
 
