@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>relativitetsteori</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+      function toggleBox(id) {
+          var x = document.getElementById(id);
+          if (x.style.display === "block") { x.style.display = "none"; } 
+          else { x.style.display = "block"; }
+      }
+  </script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<h1 id="relativitetsteori">Relativitetsteori</h1>
+<p>Velkommen til et af de mest fascinerende og kontraintuitive emner i
+fysikken: <strong>Relativitetsteorien</strong>. Når vi bevæger os med
+hverdagshastigheder – som når vi cykler til skole eller kører i bil –
+virker verden logisk og forudsigelig. Men hvad sker der, når
+hastighederne nærmer sig lysets fart, eller når vi kigger på universets
+helt store strukturer? Albert Einstein revolutionerede vores forståelse
+af tid, rum og bevægelse ved at vise, at fysikkens love afhænger af,
+hvem der kigger, og hvordan de bevæger sig.</p>
+<h2 id="initialsystemer">Initialsystemer</h2>
+<p>Et <strong>initialsystem</strong> er et koordinatsystem (eller en
+referenceramme), hvor Newtons første lov gælder. Det betyder kort
+fortalt, at hvis en genstand ikke påvirkes af en resulterende kraft, vil
+den enten ligge stille eller bevæge sig med en konstant hastighed i en
+retlinet bane.</p>
+<blockquote>
+<p><strong>Definition:</strong> Et initialsystem er en referenceramme,
+der ikke accelererer. Alle referencerammer, der bevæger sig med konstant
+hastighed i forhold til et initialsystem, er selv initialsystemer.</p>
+</blockquote>
+<figure>
+<img src="billeder/initialsystem.png" alt="Initialsystemerne s og s’" />
+<figcaption aria-hidden="true">Initialsystemerne s og s’</figcaption>
+</figure>
+<h3 id="fysik-i-fysiklokalet-vs.-toget">Fysik i fysiklokalet
+vs. toget</h3>
+<p>Forestil dig, at du står i dit fysiklokale og et tog kører forbi,
+måske kan du se Hovedbanegården fra lokalet. I laver eksperiment med 1.d
+bevægelse af en bold som I lader falde. I toget er en klasse i gang med
+præcist det samme forsøg. Toget kører med en hastighed på <span
+class="math inline">\(20\frac{\text{km}}{\text{time}}\)</span>.</p>
+<p>Først eksperimentet i toget, som I kan se gennem vinduerne.</p>
+<ul>
+<li>Beskriv den kurve bolden beskriver vil følge set fra toget.</li>
+<li>Beskriv den kurve bolden vil følge set fra klasseloklalet.</li>
+</ul>
+<p>Nu eksperimentet i fysiklokalet som dem på toget også kan se, vinduer
+igen.</p>
+<ul>
+<li>Beskriv den kurve bolden vil følge set fra klasseloklalet.</li>
+<li>Beskriv den kurve bolden beskriver vil følge set fra toget.</li>
+</ul>
+<p>Som I kan se er beskrivelsen helt ens eller helt omvendt hvis I vil.
+Dette er netop <strong>relativitetsprincippet</strong>, hvor I ikke kan
+afgøre hvem der er i bevægelse og hvem der står stille.</p>
+<h3 id="tænkespørgsmål">Tænkespørgsmål</h3>
+<ul>
+<li>Hvordan ser et fysikforsøg ud på ISS (Den Internationale
+Rumstation)?</li>
+<li>Hvorfor føles bevægelser her anderledes end i fysiklokalet?</li>
+</ul>
+<h2 id="øvelse-hvor-hurtigt-bevæger-du-dig-egentlig">Øvelse: Hvor
+hurtigt bevæger du dig egentlig?</h2>
+<p>Selvom vi føler, at vi sidder stille i fysiklokalet, er vi i konstant
+og hurtig bevægelse gennem universet. Lad os regne på de hastigheder, vi
+normalt ignorerer.</p>
+<p><strong>Opgave 1: Jordens rotation</strong> <img
+src="billeder/jorden.png" alt="jorden" /> Jorden drejer om sin egen akse
+én gang pr. døgn. Da jorden er en kugle, afhænger din hastighed af din
+breddegrad. Ved ækvator er hastigheden højest, mens den er nul ved
+polerne. Omkredsen i cirklen kan beregnes som,</p>
+<p><span class="math display">\[
+d_{omkreds} = 2 \cdot \pi \cdot R_{jord} \cdot \cos(\phi).
+\]</span></p>
+<p>For København ,ca. <span class="math inline">\(\phi =
+55.67^{\circ}\)</span> nordlig bredde og <span
+class="math inline">\(R_{jord} \approx 6371 \text{ km}\)</span>.</p>
+<ul>
+<li>Beregn <span class="math inline">\(d_{omkreds}\)</span>.</li>
+</ul>
+<p>Hastigheden kan beregnes som længden man har bevæget sig divideret
+med hvor lang tid det har taget,</p>
+<p><span class="math display">\[
+v = \frac{d_{omkreds}}{T},
+\]</span></p>
+<p>hvor <span class="math inline">\(T = 24 \text{ timer}\)</span>.</p>
+<ul>
+<li>Beregn farten i km/t.</li>
+</ul>
+<p><strong>Opgave 2: Jorden omkring Solen</strong> Jorden bevæger sig i
+en næsten cirkulær bane om solen med en radius på ca. <span
+class="math inline">\(149,6 \text{ millioner km}\)</span> (1 AE). Tiden
+for et omløb er 1 år (<span class="math inline">\(365,25\)</span>
+døgn).</p>
+<ul>
+<li>Brug formlen for omkredsen i en cirkel til at beregne hvor langt
+Jorden har bevæget sig på ét år.</li>
+<li>Beregn Jordens fart i sin bane omkring Solen.</li>
+</ul>
+<p><strong>Opgave 3: Solen i Galaksen</strong> Vores solsystem er ikke
+stationært; det kredser om centrum af Mælkevejen i en afstand af ca.
+<span class="math inline">\(26.000\)</span> lysår. Et “galaktisk år”
+tager omkring <span class="math inline">\(230\)</span> millioner år.</p>
+<ul>
+<li>Beregn solens (og dermed din) fart omkring galakse-centret i
+km/s?</li>
+</ul>
+<p>{<span class="citation" data-cites="ref">@ref</span>: Diagram der
+viser jordens forskellige bevægelser: Rotation om egen akse, kredsløb om
+solen og solsystemets bevægelse i Mælkevejen.}</p>
+<p><strong>Opgave 4: Så sid dog stille</strong></p>
+<ul>
+<li>Forklar, ved at bruge ideen om initialsystemer, hvorfor kan kan
+sidde stille og roligt og drikke en kop te, når nu man bevæger sig så
+hurtigt!</li>
+</ul>
+<p>Lige som på ISS så bevæger vi os i cirkler, Jorden om egen akse,
+Jorden om Solen og Solen om galakse-centret.</p>
+<ul>
+<li>Hvorfor er det vi oplever det som om vi er i et initialsystem, når
+vi faktisk bevæger os rundt i cirkler.</li>
+</ul>
+<p>Her er en beskrivelse af Einsteins to postulater, som de bør
+præsenteres i dit undervisningsmateriale. Disse to enkle antagelser er
+selve fundamentet, som hele den specielle relativitetsteori er bygget
+på.</p>
+<h2 id="einsteins-to-postulater">Einsteins to postulater</h2>
+<p>I 1905 udgav Albert Einstein artiklen <em>“Om bevægede legemers
+elektrodynamik”</em>. Her opstillede han to grundlæggende antagelser,
+som udfordrede vores klassiske forståelse af fysikken:</p>
+<blockquote>
+<p><strong>1. Det specielle relativitetsprincip</strong> Fysikkens love
+er de samme i alle initialsystemer.</p>
+</blockquote>
+<p>Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium,
+der står stille på Jorden, vil du få nøjagtig samme resultat, hvis du
+udfører det i et tog eller et rumskib, der bevæger sig med konstant
+hastighed. Der findes altså ikke én “rigtig” hviletilstand i universet;
+al jævn bevægelse er relativ.</p>
+<ul>
+<li><strong>Eksempel:</strong> Hvis du taber en bold i et tog, der kører
+jævnt, falder den lodret ned præcis som i dit soveværelse.</li>
+</ul>
+<blockquote>
+<p><strong>2. Princippet om lysets konstans</strong> Lysets fart i
+vakuum har den samme værdi $c=299 792 458 ^8 $ for alle observatører,
+uanset deres egen bevægelse eller lyskildens bevægelse.</p>
+</blockquote>
+<p>Dette er det mest radikale postulat. I hverdagen er vi vant til, at
+hastigheder lægges sammen (hvis du kaster en bold med 20 km/t fra et
+tog, der kører 100 km/t, bevæger bolden sig med 120 km/t i forhold til
+skinnerne). Men for lyset gælder dette ikke.</p>
+<ul>
+<li><strong>Eksempel:</strong> Hvis et rumskib flyver mod dig med halvt
+lysets hastighed og tænder lygterne, vil du måle lysets fart til at være
+<span class="math inline">\(c\)</span> (<span class="math inline">\(ca.
+300.000\)</span> km/s) — ikke <span
+class="math inline">\(1,5c\)</span>.</li>
+</ul>
+<h3 id="hvorfor-er-det-vigtigt">Hvorfor er det vigtigt?</h3>
+<p>Kombinationen af disse to postulater tvinger os til at opgive tanken
+om, at tid og rum er absolutte. Hvis lysets fart skal være den samme for
+alle (postulat 2), mens fysikkens love skal gælde overalt (postulat 1),
+så bliver <strong>tiden</strong> nødt til at strække sig, og
+<strong>længder</strong> nødt til at trække sig sammen, når man bevæger
+sig hurtigt. Det er præcis det, vi så i udledningen af tidsforlængelsen
+med lysuret.</p>
+<h2 id="tidsforlængelse-når-tiden-strækker-sig">Tidsforlængelse: Når
+tiden strækker sig</h2>
+<p>Når vi har accepteret Einsteins postulat om, at lysets fart er den
+samme for alle observatører, uanset deres egen bevægelse, støder vi på
+en mærkværdig konsekvens: <strong>Tiden går ikke lige hurtigt for
+alle.</strong> For at forstå dette, bruger vi ofte et tankeeksperiment
+med et “lysur” placeret i et tog.</p>
+<h3 id="tankeeksperimentet-med-lysuret">Tankeeksperimentet med
+lysuret</h3>
+<p>Forestil dig to personer: <strong>Astrid</strong>, der sidder i et
+tog, som kører med den konstante fart <span
+class="math inline">\(v\)</span>, og <strong>Bertil</strong>, der står
+stille på perronen og kigger ind i toget, idet det suser forbi.</p>
+<ol type="1">
+<li><strong>I Astrids system:</strong> Hun har et lysur, hvor en
+lysstråle sendes lodret op fra gulvet, rammer et spejl i loftet og
+reflekteres ned igen. For Astrid bevæger lyset sig blot en lodret
+distance. Tiden det tager for lyset at nå loftet, kalder vi egen-tiden
+<span class="math inline">\(\Delta t_0\)</span>. Da lysets fart er <span
+class="math inline">\(c\)</span>, er distancen til loftet givet ved
+<span class="math inline">\(c \cdot \Delta t_0\)</span>.</li>
+<li><strong>I Bertils system:</strong> Da toget bevæger sig fremad med
+farten <span class="math inline">\(v\)</span>, ser Bertil lysstrålen
+bevæge sig skråt. Mens lyset bevæger sig opad, flytter spejlet sig
+nemlig vandret. For Bertil tilbagelægger lyset altså en længere distance
+på tiden <span class="math inline">\(\Delta t\)</span>. Da lysets fart
+<span class="math inline">\(c\)</span> skal være den samme for Bertil,
+må tiden <span class="math inline">\(\Delta t\)</span> nødvendigvis være
+længere end Astrids <span class="math inline">\(\Delta
+t_0\)</span>.</li>
+</ol>
+<p>Dette fænomen kaldes <strong>tidsforlængelse</strong> (eller
+tidsdilatation).</p>
+<h3 id="udledning-via-pythagoras">Udledning via Pythagoras</h3>
+<p>Vi kan bruge din figur af trekanten til at finde den matematiske
+sammenhæng mellem de to tidsintervaller. Trekanten opstår, fordi vi
+betragter lysets vej fra Bertils synspunkt:</p>
+<ul>
+<li><strong>Den lodrette katete (<span class="math inline">\(c \cdot
+\Delta t_0\)</span>):</strong> Dette er den lodrette afstand til loftet
+(som set af Astrid).</li>
+<li><strong>Den vandrette katete (<span class="math inline">\(v \cdot
+\Delta t\)</span>):</strong> Dette er den afstand, toget har flyttet
+sig, mens lyset bevæger sig mod loftet (som set af Bertil).</li>
+<li><strong>Hypotenusen (<span class="math inline">\(c \cdot \Delta
+t\)</span>):</strong> Dette er den faktiske distance, som lyset
+tilbagelægger (som set af Bertil).</li>
+</ul>
+<p>{<span class="citation" data-cites="ref">@ref</span>: Geometrisk
+udledning af tidsforlængelse.}</p>
+<p>Ved at bruge Pythagoras’ læresætning (<span class="math inline">\(a^2
++ b^2 = c^2\)</span>) på trekanten får vi:</p>
+<p><span class="math display">\[(v \cdot \Delta t)^2 + (c \cdot \Delta
+t_0)^2 = (c \cdot \Delta t)^2\]</span></p>
+<p>Hvis vi isolerer <span class="math inline">\(\Delta t\)</span> (tiden
+målt af den stationære observatør), ender vi med den berømte formel for
+tidsforlængelse:</p>
+<p><span class="math display">\[\Delta t = \frac{\Delta t_0}{\sqrt{1 -
+\frac{v^2}{c^2}}}\]</span></p>
+<p>Denne ligning viser, at jo tættere <span
+class="math inline">\(v\)</span> kommer på lysets hastighed <span
+class="math inline">\(c\)</span>, desto større bliver nævneren, og <span
+class="math inline">\(\Delta t\)</span> bliver meget større end <span
+class="math inline">\(\Delta t_0\)</span>.</p>
+<blockquote>
+<p><strong>Vigtig pointe:</strong> Tiden går langsomst for den person,
+der bevæger sig hurtigt i forhold til observatøren.</p>
+</blockquote>
+<h3 id="tænkespørgsmål-1">Tænkespørgsmål</h3>
+<ul>
+<li>Hvorfor mærker vi ikke tidsforlængelse, når vi kører i et
+almindeligt tog med <span class="math inline">\(180\)</span> km/t?</li>
+<li>Hvad ville der ske med <span class="math inline">\(\Delta
+t\)</span>, hvis man kunne rejse med præcis lysets hastighed (<span
+class="math inline">\(v = c\)</span>)?</li>
+</ul>
+<hr />
+<p><strong>Øvelse: Myonernes rejse</strong> Myoner er
+elementarpartikler, der skabes i atmosfæren. De har en meget kort
+levetid (<span class="math inline">\(\Delta t_0 \approx 2,2 \text{
+µs}\)</span>), hvorefter de henfalder. Selvom de bevæger sig med næsten
+lysets hastighed, burde de matematisk set ikke kunne nå jordens
+overflade, før de dør – og alligevel måler vi dem her nede.</p>
+<ul>
+<li>Brug formlen for tidsforlængelse til at forklare, hvordan myonerne
+“overlever” turen ned til os.</li>
+</ul>
+<h2 id="øvelse-tvillingeparadokset">Øvelse: Tvillingeparadokset</h2>
+<p>Tvillingeparadokset er et af de mest berømte tankeeksperimenter inden
+for den specielle relativitetsteori. Det illustrerer konsekvenserne af
+<strong>tidsforlængelse</strong> (tidsdilatation) på en meget
+menneskelig måde.</p>
+<hr />
+<h3 id="scenariet">Scenariet</h3>
+<p>Forestil dig tvillingerne <strong>Anders</strong> og
+<strong>Beate</strong>, der begge er fyldt 20 år. *
+<strong>Anders</strong> bliver hjemme på Jorden. *
+<strong>Beate</strong> stiger ombord på et ekstremt hurtigt rumskib og
+flyver mod en fjern stjerne, der ligger <strong>10 lysår</strong> væk. *
+Rumskibet bevæger sig med en konstant fart på <span
+class="math inline">\(v = 0,8c\)</span> (80 % af lysets hastighed). * Vi
+ser bort fra accelerationen i denne øvelse og antager, at hun skifter
+retning øjeblikkeligt ved stjernen.</p>
+<hr />
+<h3 id="del-1-beregninger-fra-jorden-anders-perspektiv">Del 1:
+Beregninger fra Jorden (Anders’ perspektiv)</h3>
+<p>Anders betragter sig selv som værende i et initialsystem. Han ser
+Beate rejse væk og vende tilbage.</p>
+<ol type="1">
+<li><strong>Rejsetiden:</strong> Hvor lang tid tager rejsen (tur-retur)
+ifølge Anders’ ure?
+<ul>
+<li><em>Hint: Brug <span class="math inline">\(t = \frac{s}{v}\)</span>
+for hele turen på 20 lysår.</em></li>
+</ul></li>
+<li><strong>Tidsforlængelse:</strong> Anders ved, at tiden går
+langsommere for Beate, fordi hun bevæger sig i forhold til ham. Beregn
+Beates alder, når hun lander på Jorden igen, ved hjælp af formlen for
+tidsforlængelse: <span class="math display">\[\Delta t_0 = \Delta t
+\cdot \sqrt{1 - \frac{v^2}{c^2}}\]</span></li>
+<li><strong>Hvem er ældst?</strong> Hvor gamle er Anders og Beate
+henholdsvis, når de mødes igen?</li>
+</ol>
+<h3 id="del-2-paradokset">Del 2: Paradokset</h3>
+<p>Beate kan også argumentere for, at <em>hun</em> er den, der står
+stille i sit rumskib, og at det er Jorden (og Anders), der suser væk fra
+hende med <span class="math inline">\(0,8c\)</span>.</p>
+<ul>
+<li><strong>Spørgsmål:</strong> Hvis relativitetsprincippet siger, at
+alle initialsystemer er lige gode, hvorfor er det så ikke Anders, der er
+den yngste, når de mødes igen? Hvorfor er situationen ikke
+symmetrisk?</li>
+</ul>
+<h3 id="del-3-løsningen">Del 3: Løsningen</h3>
+<p>For at løse paradokset skal vi kigge på definitionen af et
+initialsystem fra det første kapitel.</p>
+<ul>
+<li><strong>Opgave:</strong> Forklar hvorfor Beates rejse <em>ikke</em>
+kan beskrives som ét samlet initialsystem.
+<ul>
+<li><em>Hint: Hvad sker der med Beate ved den fjerne stjerne, når hun
+skal hjem igen?</em></li>
+</ul></li>
+<li><strong>Konklusion:</strong> Hvorfor er det kun Anders’ beregning
+fra Del 1, der er “den sande” for hele forløbet?</li>
+</ul>
+<h3 id="tænkespørgsmål-2">Tænkespørgsmål</h3>
+<p>Hvis Beate havde fløjet med <span class="math inline">\(v =
+0,99c\)</span> i stedet for <span class="math inline">\(0,8c\)</span>,
+hvordan ville aldersforskellen så have set ud? Prøv at lave en hurtig
+beregning og diskuter, hvad det betyder for vores muligheder for at
+udforske universet i fremtiden.</p>
+<h2 id="udledningen-schwarzschild-radiussen-klassisk">Udledningen
+Schwarzschild-radiussen klassisk</h2>
+<p>I klassisk mekanik er undvigelseshastigheden den fart, et objekt skal
+have for at undslippe et himmellegemes tyngdefelt helt. Det sker, når
+den kinetiske energi er lig med den potentielle energi:</p>
+<p><span class="math display">\[\frac{1}{2}mv^2 = \frac{G \cdot M \cdot
+m}{r}\]</span></p>
+<p>Hvor: * <span class="math inline">\(G\)</span> er den universelle
+gravitationskonstant. * <span class="math inline">\(M\)</span> er massen
+af det tunge objekt (f.eks. en stjerne). * <span
+class="math inline">\(m\)</span> er massen af det objekt, der prøver at
+undslippe. * <span class="math inline">\(r\)</span> er afstanden fra
+centrum.</p>
+<h3 id="schwarzschild-radiussen-r_s">Schwarzschild-radiussen (<span
+class="math inline">\(R_s\)</span>)</h3>
+<p>For at finde “the point of no return” – altså begivenhedshorisonten
+for et sort hul – sætter vi undvigelseshastigheden <span
+class="math inline">\(v\)</span> til at være lig med lysets fart <span
+class="math inline">\(c\)</span>. Hvis selv lyset ikke kan slippe væk,
+kan intet andet i universet heller ikke.</p>
+<p>Vi omstiller ligningen (hvor <span class="math inline">\(m\)</span>
+går ud mod hinanden):</p>
+<p><span class="math display">\[\frac{1}{2}c^2 = \frac{G \cdot
+M}{r}\]</span></p>
+<p>Nu isolerer vi <span class="math inline">\(r\)</span>, som vi kalder
+Schwarzschild-radiussen (<span class="math inline">\(R_s\)</span>):</p>
+<p><span class="math display">\[R_s = \frac{2 \cdot G \cdot
+M}{c^2}\]</span></p>
+<h3 id="hvorfor-er-det-lidt-snyd">Hvorfor er det lidt “snyd”?</h3>
+<p>Det fascinerende er, at denne klassiske udledning (som blev foreslået
+af John Michell helt tilbage i 1783) giver præcis det samme resultat som
+Einsteins meget mere komplekse feltligninger fra den almene
+relativitetsteori.</p>
+<p>I virkeligheden er fysikken bagved dog anderledes: 1.
+<strong>Klassisk:</strong> Lyset bremses ned af tyngdekraften, indtil
+det falder tilbage (som en sten kastet i vejret). 2.
+<strong>Relativistisk:</strong> Lyset har altid farten <span
+class="math inline">\(c\)</span>, men selve <strong>rumtiden</strong> er
+krummet så kraftigt inden for Schwarzschild-radiussen, at alle veje for
+lyset peger indad mod centrum.</p>
+<h3 id="eksempel">Eksempel</h3>
+<p>Prøv at lade eleverne beregne Schwarzschild-radiussen for Jorden. *
+Brug <span class="math inline">\(M_{jord} \approx 5,97 \cdot 10^{24}
+\text{ kg}\)</span>. * De vil opdage, at hvis man pressede hele Jorden
+sammen til et sort hul, ville den kun være ca. <strong>9 mm</strong> i
+radius (på størrelse med en glaskugle)!</p>
+<p>Det giver dem en god forståelse for, hvor ekstremt kompakte sorte
+huller er i forhold til de initialsystemer, vi arbejdede med
+tidligere.</p>
+<h3 id="eksterne-ressourcer">eksterne ressourcer</h3>
+<ul>
+<li><a href="https://testtubegames.com/velocityraptor.html">Spil,
+velocityraptor</a></li>
+<li><a href="briliant.org/minutephysicsspecialrelativity">briliant,
+minutephysics</a></li>
+<li><a
+href="https://brilliant.org/classroom/join-v2/1561d2b3-54c2-4619-8050-172115a6c4b7">deltag</a></li>
+<li><a
+href="https://brilliant.org/courses/dynamics-bootcamp/reference-frames-2/reference-frames-special-relativity">special
+relativity brilliant</a></li>
+<li><a href="https://youtu.be/uTyAI1LbdgA">forklaring</a></li>
+<li><a href="https://youtu.be/g8ZO5XvHORI">film</a></li>
+</ul>
+</body>
+</html>

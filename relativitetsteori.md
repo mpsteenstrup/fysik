@@ -229,6 +229,7 @@ I virkeligheden er fysikken bagved dog anderledes:
 2.  **Relativistisk:** Lyset har altid farten $c$, men selve **rumtiden** er krummet så kraftigt inden for Schwarzschild-radiussen, at alle veje for lyset peger indad mod centrum.
 
 ### Eksempel 
+xx
 Prøv at lade eleverne beregne Schwarzschild-radiussen for Jorden. 
 * Brug $M_{jord} \approx 5,97 \cdot 10^{24} \text{ kg}$.
 * De vil opdage, at hvis man pressede hele Jorden sammen til et sort hul, ville den kun være ca. **9 mm** i radius (på størrelse med en glaskugle)!
