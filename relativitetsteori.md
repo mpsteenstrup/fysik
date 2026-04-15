@@ -1,3 +1,11 @@
+---
+layout: default
+title: Relativitetsteori
+---
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # Relativitetsteori
 
 Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **Relativitetsteorien**. Når vi bevæger os med hverdagshastigheder – som når vi cykler til skole eller kører i bil – virker verden logisk og forudsigelig. Men hvad sker der, når hastighederne nærmer sig lysets fart, eller når vi kigger på universets helt store strukturer? Albert Einstein revolutionerede vores forståelse af tid, rum og bevægelse ved at vise, at fysikkens love afhænger af, hvem der kigger, og hvordan de bevæger sig.
@@ -123,7 +131,7 @@ I videoen udsender personen i rumfartøjet to lysstråler og alt efter om man st
 
 **Opgave 6: ikke relativistisk**
 
-Vi lader personen stå i midten af rumfartøjet og kaste to bolde en frem og en tilbage. Lad rumfartøjet være 20 meter langt og hastigheden han kaster med være $\om 10\frac{\text{m}}{\tex{s}}$. 
+Vi lader personen stå i midten af rumfartøjet og kaste to bolde en frem og en tilbage. Lad rumfartøjet være 20 meter langt og hastigheden han kaster med være om $10\text{m/s}$. 
 
 
 ### Set fra rumfartøjet
