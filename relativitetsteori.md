@@ -186,7 +186,7 @@ $$190 \cdot t = -10 + 200 \cdot t$$
 $$-10t = -10$$
 $$t_b = 1,0 \text{ s}$$
 
-* Hvad mener personen op Jorden om samtidigheden af de to begivenheder?
+* Hvad mener personen på Jorden om samtidigheden af de to begivenheder?
 
 Med bolde er begivenhederne altså ens, men hvad med lys.
 
@@ -194,8 +194,8 @@ Med bolde er begivenhederne altså ens, men hvad med lys.
 Hvis vi erstatter bolden med lys, må vi **ikke** bruge $v_{for} = 210\text{ m/s}$ og $v_{bag} = 190 \text{ m/s}$. Vi skal bruge $c$ ($300.000.000 \text{ m/s}$) begge steder.
 
 Hvis du prøver at indsætte $c$ i de samme ligninger:
-* $c \cdot t = 10 + 200 \cdot t \implies t_f = \frac{10}{c - 200}$
-* $c \cdot t = -10 + 200 \cdot t \implies t_b = \frac{10}{c + 200}$
+* $c \cdot t = 10 + 200 \cdot t \Rightarrow t_f = \frac{10}{c - 200}$
+* $c \cdot t = -10 + 200 \cdot t \Rightarrow t_b = \frac{10}{c + 200}$
 
 Her bliver nævnerne forskellige ($c-200$ vs $c+200$), og derfor bliver tiderne observeret forskellige.
 
@@ -220,7 +220,7 @@ Når vi har accepteret Einsteins postulat om, at lysets fart er den samme for al
 
 I filmen udsender astronauten en lysstråle lodret op fra gulvet som rammer loftet. Ved at måle tiden det tager har han nu skabet et ur. Tiden det tager for lyset at nå loftet, kalder vi egen-tiden $t_0$. Da lysets fart er $c$, er distancen til loftet givet ved $c \cdot  t_0$.
 
-Fra Jorden skal vi tage bevægelsen af rumfartøjet med. Lysstrålen bevæger sig ikke kun op men også til siden og bruger tiden $t$. Da lysets fart $c$ skal være den samme, må tiden $ t$ nødvendigvis være længere end $t_0$.
+Fra Jorden skal vi tage bevægelsen af rumfartøjet med. Lysstrålen bevæger sig ikke kun op men også til siden og bruger tiden $t$. Da lysets fart $c$ skal være den samme, må tiden $t$ nødvendigvis være længere end $t_0$.
 
 Dette fænomen kaldes **tidsforlængelse** (eller tidsdilatation).
 
@@ -240,29 +240,37 @@ $$(v \cdot  t)^2 + (c \cdot  t_0)^2 = (c \cdot  t)^2$$
 
 Hvis vi isolerer $ t$ (tiden målt af den stationære observatør), ender vi med den berømte formel for tidsforlængelse:
 
-$$ t = \frac{ t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+$$ t = \frac{1 }{\sqrt{1 - \frac{v^2}{c^2}}} \cdot t_0$$
 
-Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto større bliver nævneren, og $ t$ bliver meget større end $ t_0$.
+Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto mindre bliver nævneren, og $t$ bliver meget større end $t_0$.
+
+$t_0$ er egentiden i rumfartøjet og er altså mindre end $t$ som måles fra Jorden.
+
+**Eksempel**
+Hvis en person rejser i et år med $90$% af lysets hastighed relativt til Jorden vil den tid der er gået på Jorden være
+
+$$
+t = \frac{1}{\sqrt{1-\frac{(0.9c)^2}{c^2}}} = 2.29 \text{år}.
+$$
+
+Der er altså goet over dobbelt så lang tid på Jorden som i rumfartøjet. Tiden er med andre ord gået langsommere på rumfartøjet.
 
 > **Vigtig pointe:** Tiden går langsomst for den person, der bevæger sig hurtigt i forhold til observatøren.
 
-### Tænkespørgsmål
+Vi har udregnet det med et lysur, men det gælder **alt**, både Bornholmerure, armbåndsure men også hjerteslagene i din krop og synapserne i din hjerne. Selve tiden går langsommere og alt der er påvirket af tiden vil gå langsommere. Lige som om noget sker samtidigt er selve det at tiden går relativt. 
 
-  * Hvorfor mærker vi ikke tidsforlængelse, når vi kører i et almindeligt tog med $180$ km/t?
-  * Hvad ville der ske med $ t$, hvis man kunne rejse med præcis lysets hastighed ($v = c$)?
+**Tænkespørgsmål**
 
------
+* Hvorfor mærker vi ikke tidsforlængelse, når vi kører i et almindeligt tog med $180$ km/t?
+* Hvad ville der ske med $t$, hvis man kunne rejse med præcis lysets hastighed ($v = c$)?
 
-**Øvelse: Myonernes rejse**
-Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort levetid ($ t_0 \approx 2,2 \text{ µs}$), hvorefter de henfalder. Selvom de bevæger sig med næsten lysets hastighed, burde de matematisk set ikke kunne nå jordens overflade, før de dør – og alligevel måler vi dem her nede.
+**Opgave: Tidsforlængelse**
 
-  * Brug formlen for tidsforlængelse til at forklare, hvordan myonerne "overlever" turen ned til os.
+I opgave 1,2 og 3 udregnede vi hvor hurtigt vi bevæger os.
+* Brug den fundne hastighed til at beregne hvor meget langsommere 
 
-## Øvelse: Tvillingeparadokset
-
+**Opgave: Tvillingeparadokset**
 Tvillingeparadokset er et af de mest berømte tankeeksperimenter inden for den specielle relativitetsteori. Det illustrerer konsekvenserne af **tidsforlængelse** (tidsdilatation) på en meget menneskelig måde.
-
----
 
 ### Scenariet
 Forestil dig tvillingerne **Anders** og **Beate**, der begge er fyldt 20 år.
@@ -299,6 +307,16 @@ For at løse paradokset skal vi kigge på definitionen af et initialsystem fra d
 
 ### Tænkespørgsmål
 Hvis Beate havde fløjet med $v = 0,99c$ i stedet for $0,8c$, hvordan ville aldersforskellen så have set ud? Prøv at lave en hurtig beregning og diskuter, hvad det betyder for vores muligheder for at udforske universet i fremtiden.
+
+
+
+**Øvelse: Myonernes rejse**
+Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort levetid ($ t_0 \approx 2,2 \text{ µs}$), hvorefter de henfalder. Selvom de bevæger sig med næsten lysets hastighed, burde de matematisk set ikke kunne nå jordens overflade, før de dør – og alligevel måler vi dem her nede.
+
+  * Brug formlen for tidsforlængelse til at forklare, hvordan myonerne "overlever" turen ned til os.
+
+## Øvelse: Tvillingeparadokset
+
 
 
 
