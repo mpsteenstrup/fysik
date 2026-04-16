@@ -16,6 +16,8 @@ Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **
 
 ## Initialsystemer
 
+Vi kommer til at gennemgå en video og dens argumenter. Vi starter med at [Se første minut](https://youtu.be/uTyAI1LbdgA?t=62)
+
 Et **initialsystem** er et koordinatsystem (eller en referenceramme), hvor Newtons første lov gælder. Det betyder kort fortalt, at hvis en genstand ikke påvirkes af en resulterende kraft, vil den enten ligge stille eller bevæge sig med en konstant hastighed i en retlinet bane.
 
 > **Definition:** Et initialsystem er en referenceramme, der ikke accelererer. Alle referencerammer, der bevæger sig med konstant hastighed i forhold til et initialsystem, er selv initialsystemer.
@@ -28,8 +30,8 @@ Forestil dig, at du står i dit fysiklokale og et tog kører forbi, måske kan d
 
 Først eksperimentet i toget, som I kan se gennem vinduerne.
 
-* Beskriv den kurve bolden beskriver vil følge set fra toget.
-* Beskriv den kurve bolden vil følge set fra klasseloklalet. 
+* Beskriv den kurve bolden følger set fra toget.
+* Beskriv den kurve bolden følger  set fra klasseloklalet. 
 
 Nu eksperimentet i fysiklokalet som dem på toget også kan se, vinduer igen.
 
@@ -106,7 +108,32 @@ Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium, der står 
 Lysets fart i vakuum har den samme værdi $c=299 792 458 \text{m/s} \approx 3\cdot 10^8 \text{ m/s}$ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
 
 ## Eksperiment: lysets hastighed
+Vi skal lave et meget simpelt eksperiment hvor vi kan bestemme lysets hastighed. Som i Olsenbanden er udstyrslisten god. Vi skal bruge; 1 mikrobølgeovn, et stykke bøjet pap, en lineal og en æske lys pålægschokolade.
 
+**Teori**
+
+Vi kan bruge bølgeligningen til at estimere lysets hastighed. Bølgeligningen,
+
+$$
+v = \lambda \cdot f,
+$$
+
+hvor $\lambda$ er bølgelængden og $f$ frekvensen.
+
+I en mikrobølgeovn opstår der stående bølger og vi kan måle bølgelængden ved at se på hvor den lyse pålægschokolade smelter. 
+
+Den lyse pålægschokolade smelter der hvor der er bug i de stående bølger. Hvis vi måler afstanden mellem finder vi altså $\lambda/2$. 
+
+**Udførsel**
+
+* Placer det bøjede pap, så chokoladen ikke drejer rundt.
+* Placer den lyse pålægschokolade og tænder ovnen i et minut.
+* Mål afstanden mellem der hvor den er smeltet.
+
+**Databehandling**
+
+* Beregn bølgelængden og hastigheden.
+* Sammenlign med lysets hastighed ved afvigelse i %.
 
 ## Addition af hastigheder 
 
