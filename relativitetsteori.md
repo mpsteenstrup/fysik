@@ -114,12 +114,12 @@ Lysets fart i vakuum har den samme værdi $c=299 792 458 \text{m/s} \approx 3\cd
 
 **Opgave 5: addition af hastigheder**
 
-Vi lader rumfartøjet bevæge sig med en hastighed på $v_s = 200\frac{\text{m}}{\text{s}}$ i forhold til Jorden og bolden blive kastet med en hastighed i forhold til personen på $10\frac{\text{m}}{\text{s}}$.
+Vi lader rumskibet bevæge sig med en hastighed på $v_s = 200\frac{\text{m}}{\text{s}}$ i forhold til Jorden og bolden blive kastet med en hastighed i forhold til personen på $10\frac{\text{m}}{\text{s}}$.
 
 * Beregn den hastighed som en person på Jorden ser bolden bevæge sig med.
 
-Lad os skrue hastigheden af rumfartøjet op til 99% af lysets hastighed og lade personen tænde en lommelygte pegende frem idet han passere Jorden.
-* Med hvilken hastighed ser personen i rumfartøjet lyset bevæge sig med?
+Lad os skrue hastigheden af rumskibet op til 99% af lysets hastighed og lade personen tænde en lommelygte pegende frem idet han passere Jorden.
+* Med hvilken hastighed ser personen i rumskibet lyset bevæge sig med?
 * Med hvilken hastighed ser personen på Jorden lyset bevæge sig med?
 
 Den måde man addere hastigheder gælder altså ikke for lys og hastigheden er altid den samme!
@@ -131,19 +131,19 @@ Vi skal se på hvilken konsekvenser det at lysets hastighed er konstant har. Vi 
 
 * [Se videoen fra 2:33 til 4:22](https://youtu.be/uTyAI1LbdgA?t=62)
 
-I videoen udsender personen i rumfartøjet to lysstråler og alt efter om man står på Jorden eller er i rumfartøjet ser det ikke ud til at de rammer endevæggene samtidigt. Lad os starte med at udregne hvordan det ser ud hvis det ikke er lys, men en bold han kaster.
+I videoen udsender personen i rumskibet to lysstråler og alt efter om man står på Jorden eller er i rumskibet ser det ikke ud til at de rammer endevæggene samtidigt. Lad os starte med at udregne hvordan det ser ud hvis det ikke er lys, men en bold han kaster.
 
 **Opgave 6: ikke relativistisk**
 
-Vi lader personen stå i midten af rumfartøjet og kaste to bolde en frem og en tilbage. Lad rumfartøjet være 20 meter langt og hastigheden han kaster med være om $10\text{m/s}$. 
+Vi lader personen stå i midten af rumskibet og kaste to bolde en frem og en tilbage. Lad rumskibet være 20 meter langt og hastigheden han kaster med være om $10\text{m/s}$. 
 
 
-### Set fra rumfartøjet
+### Set fra rumskibet
 Afstanden bolden har bevæget sig er givet ved hastigheden gange tiden $(x = v\cdot t)$.
 
 * Vis at det taget for at bolden rammer bagvæggen er $t_{bag} = 1\text{s}$.
 * Vis at det taget for at bolden rammer forvæggen er $t_{for} = 1\text{s}$.
-* Hvad kan personen i rumfartøjet konkludere om de to begivenheder?
+* Hvad kan personen i rumskibet konkludere om de to begivenheder?
 
 ### Set fra Jorden
 Fra Jorden ser der lidt anderledes ud.
@@ -152,7 +152,7 @@ Fra Jorden ser der lidt anderledes ud.
 * Bold mod forvæg (fart set fra Jorden): $v_{for} = 200 + 10 = 210 \text{ m/s}$.
 * Bold mod bagvæg (fart set fra Jorden): $v_{bag} = 200 - 10 = 190 \text{ m/s}$.
 
-Vi lader $t = 0$ være affyringstidspunktet, hvor rumfartøjets midte er i $x = 0$.
+Vi lader $t = 0$ være affyringstidspunktet, hvor rumskibets midte er i $x = 0$.
 * Forvæggens startposition: $x = 10 \text{ m}$.
 * Bagvæggens startposition: $x = -10 \text{ m}$.
 
@@ -220,7 +220,7 @@ Når vi har accepteret Einsteins postulat om, at lysets fart er den samme for al
 
 I filmen udsender astronauten en lysstråle lodret op fra gulvet som rammer loftet. Ved at måle tiden det tager har han nu skabet et ur. Tiden det tager for lyset at nå loftet, kalder vi egen-tiden $t_0$. Da lysets fart er $c$, er distancen til loftet givet ved $c \cdot  t_0$.
 
-Fra Jorden skal vi tage bevægelsen af rumfartøjet med. Lysstrålen bevæger sig ikke kun op men også til siden og bruger tiden $t$. Da lysets fart $c$ skal være den samme, må tiden $t$ nødvendigvis være længere end $t_0$.
+Fra Jorden skal vi tage bevægelsen af rumskibet med. Lysstrålen bevæger sig ikke kun op men også til siden og bruger tiden $t$. Da lysets fart $c$ skal være den samme, må tiden $t$ nødvendigvis være længere end $t_0$.
 
 Dette fænomen kaldes **tidsforlængelse** (eller tidsdilatation).
 
@@ -244,7 +244,7 @@ $$ t = \frac{1 }{\sqrt{1 - \frac{v^2}{c^2}}} \cdot t_0$$
 
 Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto mindre bliver nævneren, og $t$ bliver meget større end $t_0$.
 
-$t_0$ er egentiden i rumfartøjet og er altså mindre end $t$ som måles fra Jorden.
+$t_0$ er egentiden i rumskibet og er altså mindre end $t$ som måles fra Jorden.
 
 **Eksempel**
 Hvis en person rejser i et år med $90$% af lysets hastighed relativt til Jorden vil den tid der er gået på Jorden være
@@ -253,7 +253,7 @@ $$
 t = \frac{1}{\sqrt{1-\frac{(0.9c)^2}{c^2}}} = 2.29 \text{år}.
 $$
 
-Der er altså goet over dobbelt så lang tid på Jorden som i rumfartøjet. Tiden er med andre ord gået langsommere på rumfartøjet.
+Der er altså goet over dobbelt så lang tid på Jorden som i rumskibet. Tiden er med andre ord gået langsommere på rumskibet.
 
 > **Vigtig pointe:** Tiden går langsomst for den person, der bevæger sig hurtigt i forhold til observatøren.
 
@@ -340,8 +340,6 @@ $$t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
 Nu indsætter vi dette udtryk for $\Delta t$ i ligningen for $L_0$:
 $$L_0 = v \cdot \left( \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}} \right)$$
 
-
-
 ### 4. Den færdige formel
 Vi ser nu, at leddet $v \cdott_0$ er det samme som $L$ (længden målt fra rumskibet). Vi kan derfor erstatte $v \cdott_0$ med $L$:
 $$L_0 = \frac{L}{\sqrt{1 - \frac{v^2}{c^2}}}$$
@@ -353,7 +351,22 @@ $$L = L_0 \cdot \sqrt{1 - \frac{v^2}{c^2}}$$
 Da udtrykket under kvadratroden altid er mindre end 1 (når $v < c$), vil den målte længde $L$ altid være **mindre** end hvilelængden $L_0$.
 
 
+## Gammafaktor
+Som I kan se er den næsten det samme som bliver gange på tiden eller længden. Denne faktor kaldes gammafaktoren og defineres som,
 
+$$
+\gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}.
+$$
+
+Med den definition er tid og længder defineret som,
+
+$$
+t = \gamma t_0, \text{   } L = \frac{1}{\gamma} L_0
+$$
+
+**Opgave:**
+
+En pensioneret overlærer vil gerne hjælpe sin datter med at male. Da datteren bor højt oppe har den pensionerede overlærer brug for en lang stige. Den pensionerede overlærers stige er 4,2 meter lang og han har en Morris Minor
 
 
 ## Udledningen Schwarzschild-radiussen klassisk
