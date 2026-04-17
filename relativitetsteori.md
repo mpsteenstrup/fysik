@@ -203,10 +203,10 @@ Boldens position: $x_{bold}(t) = 210 \cdot t$
 Løsning: 
 Vi sætter dem lig hinanden:
 $$
-210\text{s} \cdot t = 10\text{s} + 200\text{s} \cdot t \Leftrightarrow
-210\text{s}t - 200\text{s}\cdot t = 10\text{s} \Leftrightarrow
-10\text{s} \cdot t = 10 \Leftrightarrow
-t_{for} = 1 \text{s} 
+210 \cdot t = 10  + 200  \cdot t \Leftrightarrow
+210 t - 200 \cdot t = 10  \Leftrightarrow
+10  \cdot t = 10 \Leftrightarrow
+t_{for} = 1   
 $$
 
 ### 3. Udregning for bagvæggen
@@ -219,7 +219,7 @@ Boldens position: $x_{bold}(t) = 190 \cdot t$
 * Sæt de to ligning lig hinanden og løs for $t$
 
 Løsning:
-$$190\text{s} \cdot t = -10\text{s} + 200\text{s} \cdot t \Leftrightarrow -10\text{s} \cdot t = -10\text{s} \Leftrightarrow t = 1 \text{s}$$
+$$190  \cdot t = -10  + 200  \cdot t \Leftrightarrow -10  \cdot t = -10  \Leftrightarrow t = 1 \text{s}$$
 
 * Hvad mener personen på Jorden om samtidigheden af de to begivenheder?
 
