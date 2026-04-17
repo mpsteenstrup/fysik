@@ -160,7 +160,15 @@ Vi skal se på hvilken konsekvenser det at lysets hastighed er konstant har. Vi 
 
 I videoen udsender personen i rumskibet to lysstråler og alt efter om man står på Jorden eller er i rumskibet ser det ikke ud til at de rammer endevæggene samtidigt. Lad os starte med at udregne hvordan det ser ud hvis det ikke er lys, men en bold han kaster.
 
+
+
+### Udledning
+
 **Opgave 6: ikke relativistisk**
+
+Nedenfor er udledningen skrevet. For at følge den skal I
+* Tegne situationen, rumskib, Jorden, bolden, manden.
+* Skrive udledningen op og diskutere de forskellige dele.
 
 Vi lader personen stå i midten af rumskibet og kaste to bolde en frem og en tilbage. Lad rumskibet være 20 meter langt og hastigheden han kaster med være om $10\text{m/s}$. 
 
@@ -168,16 +176,16 @@ Vi lader personen stå i midten af rumskibet og kaste to bolde en frem og en til
 ### Set fra rumskibet
 Afstanden bolden har bevæget sig er givet ved hastigheden gange tiden $(x = v\cdot t)$.
 
-* Vis at det taget for at bolden rammer bagvæggen er $t_{bag} = 1\text{s}$.
-* Vis at det taget for at bolden rammer forvæggen er $t_{for} = 1\text{s}$.
-* Hvad kan personen i rumskibet konkludere om de to begivenheder?
+* Vis at det tager bolden $t_{bag} = 1\text{s}$ før den rammer bagvæggen.
+* Vis at det tager bolden $t_{bag} = 1\text{s}$ før den rammer forvæggen.
+* Hvad kan personen i rumskibet konkludere om samtidigheden af de to begivenheder?
 
 ### Set fra Jorden
 Fra Jorden ser der lidt anderledes ud.
 * Rumfartøjets fart: $v = 200 \text{ m/s}$.
-* Boldenes fart relativt til skibet: $10 \text{ m/s}$.
-* Bold mod forvæg (fart set fra Jorden): $v_{for} = 200 + 10 = 210 \text{ m/s}$.
-* Bold mod bagvæg (fart set fra Jorden): $v_{bag} = 200 - 10 = 190 \text{ m/s}$.
+* Boldens fart relativt til skibet: $10 \text{ m/s}$.
+* Boldens fart mod fem: $v_{frem} = 200 + 10 = 210 \text{ m/s}$.
+* Boldens fart mod bagud: $v_{bag} = 200 - 10 = 190 \text{ m/s}$.
 
 Vi lader $t = 0$ være affyringstidspunktet, hvor rumskibets midte er i $x = 0$.
 * Forvæggens startposition: $x = 10 \text{ m}$.
@@ -194,10 +202,12 @@ Boldens position: $x_{bold}(t) = 210 \cdot t$
 
 Løsning: 
 Vi sætter dem lig hinanden:
-$$210 \cdot t = 10 + 200 \cdot t$$
-$$210t - 200t = 10$$
-$$10t = 10$$
-$$t_{for} = 1,0 \text{ s}$$
+$$
+210\text{s} \cdot t = 10\text{s} + 200\text{s} \cdot t \Leftrightarrow
+210\text{s}t - 200\text{s}\cdot t = 10\text{s} \Leftrightarrow
+10\text{s} \cdot t = 10 \Leftrightarrow
+t_{for} = 1 \text{s} 
+$$
 
 ### 3. Udregning for bagvæggen
 Bagvæggen bevæger sig mod bolden. Vi skal finde det tidspunkt $t_b$, hvor de mødes.
@@ -206,19 +216,17 @@ Væggens position: $x_{væg}(t) = -10 + 200 \cdot t$
 
 Boldens position: $x_{bold}(t) = 190 \cdot t$
 
-* Sæt de to ligning lig hinanden og løs for $t_for$
+* Sæt de to ligning lig hinanden og løs for $t$
 
 Løsning:
-$$190 \cdot t = -10 + 200 \cdot t$$
-$$-10t = -10$$
-$$t_b = 1,0 \text{ s}$$
+$$190\text{s} \cdot t = -10\text{s} + 200\text{s} \cdot t \Leftrightarrow -10\text{s} \cdot t = -10\text{s} \Leftrightarrow t = 1 \text{s}$$
 
 * Hvad mener personen på Jorden om samtidigheden af de to begivenheder?
 
 Med bolde er begivenhederne altså ens, men hvad med lys.
 
 ### Hvorfor dette knækker med lys (Einstein)
-Hvis vi erstatter bolden med lys, må vi **ikke** bruge $v_{for} = 210\text{ m/s}$ og $v_{bag} = 190 \text{ m/s}$. Vi skal bruge $c$ ($300.000.000 \text{ m/s}$) begge steder.
+Hvis vi erstatter bolden med lys, må vi **ikke** bruge $v_{frem} = 210\text{ m/s}$ og $v_{bag} = 190 \text{ m/s}$. Vi skal bruge $c$  begge steder.
 
 Hvis du prøver at indsætte $c$ i de samme ligninger:
 * $c \cdot t = 10 + 200 \cdot t \Rightarrow t_f = \frac{10}{c - 200}$
@@ -231,11 +239,20 @@ Vi kan nu konkludere, at de to personer ikke ser lyset ramme samtidigt. Helt gen
 
 Hvis man skal svare på spørgsmålet "skete det samtidigt" kræver det at personerne står stille i forhold til hinanden.
 
+**Opgave 7: langsomt lys**
 
+Lad os antage at lyset kun bevæger sig med $c=300\text{m/s}$.
+* Beregn tidsforskellen på at lyset rammer forenden i forhold til bagenden af rumskibet, set fra Jorden, $\Delta t = f_{b}-t_{f}$.
+
+
+**Opgave 8: hurtigt lys**
+
+Lad os nu give lyset sin rigtige fart på $ c = 3\cdot 10^8 \text{m/s}$ og lade rumskibet bevæges sig med samme hastighed som den internationale rumstation, ISS, $v = 7.66 \text{km/s}$.
+* Beregn tidsforskellen på at lyset rammer forenden i forhold til bagenden af rumskibet, set fra Jorden, $\Delta t = f_{b}-t_{f}$.
 
 
 ### Hvorfor er det vigtigt?
-Kombinationen af disse to postulater tvinger os til at opgive tanken om, at tid og rum er absolutte. Hvis lysets fart skal være den samme for alle (postulat 2), mens fysikkens love skal gælde overalt (postulat 1), så bliver **tiden** nødt til at strække sig, og **længder** nødt til at trække sig sammen, når man bevæger sig hurtigt. Det er præcis det, vi så i udledningen af tidsforlængelsen med lysuret.
+Kombinationen af Einsteins to postulater tvinger os til at opgive tanken om, at tid og rum er absolutte. Hvis lysets fart skal være den samme for alle (postulat 2), mens fysikkens love skal gælde overalt (postulat 1), så bliver **tiden** nødt til at strække sig, og **længder** nødt til at trække sig sammen, når man bevæger sig hurtigt. Det er præcis det, vi så i udledningen af tidsforlængelsen med lysuret.
 
 ## Tidsforlængelse: Når tiden strækker sig
 
@@ -273,14 +290,22 @@ Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto m
 
 $t_0$ er egentiden i rumskibet og er altså mindre end $t$ som måles fra Jorden.
 
+Vi kan definere den faktor som skal ganges på $t_0$ for at få $t$. Den kaldes gamma-faktoren og defineres som:
+
+$$
+\gamma = \frac{1 }{\sqrt{1 - \frac{v^2}{c^2}}}.
+$$
+
+Tidsforskellen kan skrives som $t = \gamma t_0$.
+
 **Eksempel**
 Hvis en person rejser i et år med $90$% af lysets hastighed relativt til Jorden vil den tid der er gået på Jorden være
 
 $$
-t = \frac{1}{\sqrt{1-\frac{(0.9c)^2}{c^2}}} = 2.29 \text{år}.
+t = \frac{1}{\sqrt{1-\frac{(0.9c)^2}{c^2}}} \cdot 1\text{år} = 2.29 \text{år}.
 $$
 
-Der er altså goet over dobbelt så lang tid på Jorden som i rumskibet. Tiden er med andre ord gået langsommere på rumskibet.
+Der er altså gået over dobbelt så lang tid på Jorden som i rumskibet. Tiden er med andre ord gået langsommere på rumskibet.
 
 > **Vigtig pointe:** Tiden går langsomst for den person, der bevæger sig hurtigt i forhold til observatøren.
 
@@ -291,54 +316,55 @@ Vi har udregnet det med et lysur, men det gælder **alt**, både Bornholmerure, 
 * Hvorfor mærker vi ikke tidsforlængelse, når vi kører i et almindeligt tog med $180$ km/t?
 * Hvad ville der ske med $t$, hvis man kunne rejse med præcis lysets hastighed ($v = c$)?
 
-**Opgave: Tidsforlængelse**
+**Opgave 9: Tidsforlængelse**
 
 I opgave 1,2 og 3 udregnede vi hvor hurtigt vi bevæger os.
 * Brug den fundne hastighed til at beregne hvor meget langsommere 
 
-**Opgave: Tvillingeparadokset**
-Tvillingeparadokset er et af de mest berømte tankeeksperimenter inden for den specielle relativitetsteori. Det illustrerer konsekvenserne af **tidsforlængelse** (tidsdilatation) på en meget menneskelig måde.
+**Opgave 10: Rumrejser går da hurtige, eller**
+
+Vi vil gerne besøge vores nærmeste stjerne udover Solen som hedder Proxima Centruri og er $4,25$ lysår væk. Lad os rejse med 85% af lysets hastighed.
+
+Set fra Jorden skal rumskibet rejse en afstand på $x = 4,15\text{ly}$ med en fart på $v = 0.85c$.
+
+* Beregn hvor lang tid det tager.
+
+Ombord på rumskibet går tiden langsommere,
+
+* Beregn gamma-faktoren.
+* Beregn tiden i rumskibet, $t$.
+* Overvej hvordan rumskibet kan nå Proxima Centruri så hurtigt, når Proxima Centauri nu ligger $4,25\text{ly}$ væk.
+
+
+**Opgave 11: Tvillingeparadokset**
+Tvillingeparadokset er et af de mest berømte tankeeksperimenter inden for den specielle relativitetsteori. Det illustrerer konsekvenserne af **tidsforlængelse**.
+
+vi vil bruge beregningerne fra før, men lad nu rumskibet svinge omkring Proxima Centauri og vende tilbage til Jorden. Vi antager at den tid det tager at svinge rundt er meget lille og ser bort fra den.
+
+* Beregn hvor lang tid hele rejsen vil tage, set fra Jorden (meget let beregning).
+* Beregn hvor lang tid hele rejsen vil tage, set fra rumskibet (igen meget let beregning).
+
+Tvillingeparadokset går nu ud på at en af astronauterne, om bord på rumskibet har en tvilling. Det kunne jo være Scott på rumsikbet og Mark på Jorden.
 
 ![Scott og Mark Kelly.](billeder/twins.jpg)
 
-### Scenariet
-Forestil dig tvillingerne **Anders** og **Beate**, der begge er fyldt 20 år.
-* **Anders** bliver hjemme på Jorden.
-* **Beate** stiger ombord på et ekstremt hurtigt rumskib og flyver mod en fjern stjerne, der ligger **10 lysår** væk.
-* Rumskibet bevæger sig med en konstant fart på $v = 0,8c$ (80 % af lysets hastighed).
-* Vi ser bort fra accelerationen i denne øvelse og antager, at hun skifter retning øjeblikkeligt ved stjernen.
+* Hvor meget ældre vil Mark være i forhold til Scott, når rumrejsen er slut?
 
-### Del 1: Beregninger fra Jorden (Anders' perspektiv)
-Anders betragter sig selv som værende i et initialsystem. Han ser Beate rejse væk og vende tilbage.
+Det paradoksale ligger altså i at to tvillinger lige pludseligt ikke er lige gamle. Det er også muligt at blive yngre end sin mor, hvis man altså sende hende afsted på i et rumskib!
 
-1.  **Rejsetiden:** Hvor lang tid tager rejsen (tur-retur) ifølge Anders' ure?
-    * *Hint: Brug $t = \frac{s}{v}$ for hele turen på 20 lysår.*
-2.  **Tidsforlængelse:** Anders ved, at tiden går langsommere for Beate, fordi hun bevæger sig i forhold til ham. Beregn Beates alder, når hun lander på Jorden igen, ved hjælp af formlen for tidsforlængelse:
-    $$ t_0 =  t \cdot \sqrt{1 - \frac{v^2}{c^2}}$$
-3.  **Hvem er ældst?** Hvor gamle er Anders og Beate henholdsvis, når de mødes igen?
+Der er en del 2 i paradokset. Ifølge relativitetsteorien er alle initialsystemer lige gode og man kan ikke sige hvem der er i bevægelse og hvem der står stille. Scott Kelly kan altså argumentere for at det er ham som står stille og Mark Kelly på Jorden som bevæger sig. På den måde burde det være Scott som var ældst efter turen. 
 
-### Del 2: Paradokset
-Beate kan også argumentere for, at *hun* er den, der står stille i sit rumskib, og at det er Jorden (og Anders), der suser væk fra hende med $0,8c$.
+Der sker noget på rumrejsen som gør at Scott Kelly ikke er i et initialsystem hele tiden og det er netop derfor Mark er ældst.
 
-* **Spørgsmål:** Hvis relativitetsprincippet siger, at alle initialsystemer er lige gode, hvorfor er det så ikke Anders, der er den yngste, når de mødes igen? Hvorfor er situationen ikke symmetrisk?
+* Prøv at finde ud af hvad det kan være ved at se op definitionen af initialsystemer.
 
-### Del 3: Løsningen
-For at løse paradokset skal vi kigge på definitionen af et initialsystem fra det første kapitel.
+**Opgave 12: Kelly tvillingerne igen**
 
-* **Opgave:** Forklar hvorfor Beates rejse *ikke* kan beskrives som ét samlet initialsystem. 
-    * *Hint: Hvad sker der med Beate ved den fjerne stjerne, når hun skal hjem igen.
-* **Konklusion:** Hvorfor er det kun Anders' beregning fra Del 1, der er "den sande" for hele forløbet?
-
-### Tænkespørgsmål
-Hvis Beate havde fløjet med $v = 0,99c$ i stedet for $0,8c$, hvordan ville aldersforskellen så have set ud? Prøv at lave en hurtig beregning og diskuter, hvad det betyder for vores muligheder for at udforske universet i fremtiden.
-
-### Kelly tvillingerne
 Scott Kelly er den person som har været længst på den internationale rumstation (ISS), 520 dage, men hans bror Mark Kelly blev på Jorden. Rumstationen bevæger sig med en fart på $7,67 \text{ km/s}$ og ifølge Wikipedia betyder det at han ældet ca. $8,6 \text{milli sekunder}$ i forhold til sin tvilling.
 
-**Opgave**
+**Opgave 13:**
 
 * prøv at regn efter om Wikipedia har ret.
-
 
 
 ## længde-formindskelse
@@ -368,31 +394,26 @@ Nu indsætter vi dette udtryk for $\Delta t$ i ligningen for $L_0$:
 $$L_0 = v \cdot \left( \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}} \right)$$
 
 ### 4. Den færdige formel
-Vi ser nu, at leddet $v \cdott_0$ er det samme som $L$ (længden målt fra rumskibet). Vi kan derfor erstatte $v \cdott_0$ med $L$:
+Vi ser nu, at leddet $v \cdot t_0$ er det samme som $L$ (længden målt fra rumskibet). Vi kan derfor erstatte $v \cdot t_0$ med $L$:
 $$L_0 = \frac{L}{\sqrt{1 - \frac{v^2}{c^2}}}$$
 
 Hvis vi isolerer $L$ (den forkortede længde), får vi den endelige formel for længdeforkortelse:
 $$L = L_0 \cdot \sqrt{1 - \frac{v^2}{c^2}}$$
+$$L = \frac{1}{\gamma}L_0$$
 
 ### Konklusion
 Da udtrykket under kvadratroden altid er mindre end 1 (når $v < c$), vil den målte længde $L$ altid være **mindre** end hvilelængden $L_0$.
 
 
-## Gammafaktor
-Som I kan se er den næsten det samme som bliver gange på tiden eller længden. Denne faktor kaldes gammafaktoren og defineres som,
+**Opgave 14: turen til Proxima Centauri**
 
-$$
-\gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}.
-$$
+I opgave 11 udregnede I at det tog $t_0 = 2,64\text{år}$ i rumskibets egentid at tilbagelægge afstanden mellem Jorden og Proxima Centauri. Med en afstand på $4,25\text{ly}$ skal de have en fart på $v = 1,6\cdot c$, men det er jo højere end lysets hastighed.
 
-Med den definition er tid og længder defineret som,
+* Brug formlen for længdeforkortelse til at udregne en ny længde for afstanden mellem Jorden og Proxima Centauri.
+* Undersøg om de kan nå dertil på $2,64\text{år}$ med en fart på $v = 0.85\text{ly}$.
 
-$$
-t = \gamma t_0, \text{   } L = \frac{1}{\gamma} L_0
-$$
 
-**Opgave:**
-
+**Opgave 15: stigen i vognen**
 En pensioneret overlærer vil gerne hjælpe sin datter med at male. Da datteren bor højt oppe har den pensionerede overlærer brug for en lang stige. Den pensionerede overlærers stige er 4,2 meter lang og han har en Morris Minor
 
 
