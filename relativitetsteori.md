@@ -330,6 +330,7 @@ Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto m
 <details>
   <summary><b>Klik her for at se den matematiske udledning</b></summary>
   <br>
+
 Udledning af udtrykken ovenfor:
 
   Ifølge Pythagoras har vi:
@@ -358,6 +359,7 @@ Udledning af udtrykken ovenfor:
   hvor $\gamma$ (Lorentz-faktoren) er $\frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$.
 
   *Konklusion: Da nævneren altid er mindre end 1 (når $v > 0$), vil $t$ altid være større end $t_0$. Tiden går altså langsommere for objektet i bevægelse set fra den stationære observatør.*
+
 </details>
 
 $t_0$ er egentiden i rumskibet og er altså mindre end $t$ som måles fra Jorden.
