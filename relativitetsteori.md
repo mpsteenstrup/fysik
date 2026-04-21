@@ -327,7 +327,7 @@ $$ t = \frac{1 }{\sqrt{1 - \frac{v^2}{c^2}}} \cdot t_0.$$
 
 Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto mindre bliver nævneren, og $t$ bliver meget større end $t_0$.
 
-<details>
+<details markdown="1">
   <summary><b>Klik her for at se den matematiske udledning</b></summary>
 
 Udledning af udtrykken ovenfor:
@@ -446,7 +446,7 @@ Scott Kelly er den person som har været længst på den internationale rumstati
 Bemærk at denne ændring i tiden ikke er den tidsforlængelse vi arbejde med lige ovenfor, men den som kommer af at samtidighed også er relativ.
 
 
-<details>
+<details markdown="1">
 <summary><b>Klik her for at se den matematiske udledning</b></summary>
 
 
