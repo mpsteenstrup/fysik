@@ -449,6 +449,7 @@ Bemærk at denne ændring i tiden ikke er den tidsforlængelse vi arbejde med li
 <details>
 <summary><b>Klik her for at se den matematiske udledning</b></summary>
 
+
 Vi lader igen et rumskib passere Jorden med en relativ hastigheden $v$. Længden af rumskibet bliver målt ved at lade dets bagende passere punkt A samtidigt med at dets forende passere punkt B. Derved måles længden $L_0$. I rumskibet måles der hvor lang tid der går før rumskibets forende passerer først A og så B. Den tid kaldes $t_0$. 
 
 
