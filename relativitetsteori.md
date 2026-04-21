@@ -12,6 +12,21 @@
 
 # Relativitetsteori
 
+<details markdown="1">
+<summary><b>Klik her for at se den matematiske udledning</b></summary>
+
+Udledning af udtrykket ovenfor:
+
+Ifølge Pythagoras har vi:
+
+$$(v \cdot t)^2 + (c \cdot t_0)^2 = (c \cdot t)^2$$
+
+**Trin 1: Hæv parenteserne**
+
+$$v^2 t^2 + c^2 t_0^2 = c^2 t^2$$
+
+</details>
+
 Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **Relativitetsteorien**. Når vi bevæger os med hverdagshastigheder – som når vi cykler til skole eller kører i bil – virker verden logisk og forudsigelig. Men hvad sker der, når hastighederne nærmer sig lysets fart, eller når vi kigger på universets helt store strukturer? Albert Einstein revolutionerede vores forståelse af tid, rum og bevægelse ved at vise, at fysikkens love afhænger af, hvem der kigger, og hvordan de bevæger sig.
 
 ## Initialsystemer
