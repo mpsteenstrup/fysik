@@ -329,7 +329,6 @@ Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto m
 
 <details>
   <summary><b>Klik her for at se den matematiske udledning</b></summary>
-  <br>
 
 Udledning af udtrykken ovenfor:
 
