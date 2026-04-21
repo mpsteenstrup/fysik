@@ -596,7 +596,7 @@ Hvis du red på ryggen af myonen, ville du stadig mene, at du kun lever i $2,2 \
   * Kan myonen nå at "overleve" denne meget kortere distance på sin korte levetid?
 
 <details markdown="1">
-<summary><b>Klik her for at se facit og forklaring</b></summary\>
+<summary><b>Klik her for at se facit og forklaring</b></summary>
 
 **Beregninger:**
 
