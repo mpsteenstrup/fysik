@@ -29,12 +29,12 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="0.77233135"
-     inkscape:cx="395.55561"
-     inkscape:cy="561.28759"
+     inkscape:cx="394.26083"
+     inkscape:cy="250.54013"
      inkscape:window-width="1440"
      inkscape:window-height="842"
-     inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-x="1894"
+     inkscape:window-y="227"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"><inkscape:grid
        id="grid2"
@@ -122,13 +122,13 @@
    id="tspan5">0</tspan> = ct<tspan
    style="font-size:65%;baseline-shift:sub"
    id="tspan2">0</tspan></tspan></text><path
-       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:2.10736;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:2.26772;stroke-opacity:0.929598;marker-start:url(#Stop-6);marker-end:url(#marker3);paint-order:markers fill stroke"
-       d="m 175.30871,107.59687 c 0.3326,-91.67285 0.3326,-91.67285 0.3326,-91.67285"
+       style="fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:1.98804;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:2.26772;stroke-opacity:0.929598;marker-start:url(#Stop-6);marker-end:url(#marker3);paint-order:markers fill stroke"
+       d="m 157.31182,95.332344 c 0.34282,-79.154445 0.34282,-79.154445 0.34282,-79.154445"
        id="path2-3" /><path
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1.95803;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dashoffset:2.26772;stroke-opacity:0.929598;marker-start:url(#Stop);marker-end:url(#Stop);paint-order:markers fill stroke"
-       d="m 15.028433,108.52089 c 138.978227,0 138.978227,0 138.978227,0"
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:2.01117;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dashoffset:2.26772;stroke-opacity:0.929598;marker-start:url(#Stop);marker-end:url(#Stop);paint-order:markers fill stroke"
+       d="m 11.032875,95.820834 c 146.624115,0 146.624115,0 146.624115,0"
        id="path2" /><path
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dashoffset:2.26772;stroke-opacity:0.929598;marker-start:url(#Stop);marker-end:url(#Stop);paint-order:markers fill stroke"
+       style="fill:#1aaaaa;stroke:#ff0000;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:0;stroke-dashoffset:2.26772;stroke-opacity:0.929598;marker-start:url(#Stop);marker-end:url(#Stop);paint-order:markers fill stroke;fill-opacity:1"
        d="M 12.116667,91.404177 152.11667,16.404171"
        id="path3" /><text
        xml:space="preserve"

@@ -16,7 +16,9 @@ Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **
 
 ## Initialsystemer
 
-Vi kommer til at gennemgå en video og dens argumenter. Vi starter med at [Se første minut](https://youtu.be/uTyAI1LbdgA?t=62)
+Vi kommer til at gennemgå en video og dens argumenter. 
+
+Vi starter med at [Se første minut](https://youtu.be/uTyAI1LbdgA?t=62)
 
 Et **initialsystem** er et koordinatsystem (eller en referenceramme), hvor Newtons første lov gælder. Det betyder kort fortalt, at hvis en genstand ikke påvirkes af en resulterende kraft, vil den enten ligge stille eller bevæge sig med en konstant hastighed i en retlinet bane.
 
@@ -40,11 +42,12 @@ Nu eksperimentet i fysiklokalet som dem på toget også kan se, vinduer igen.
 
 Som I kan se er beskrivelsen helt ens eller helt omvendt hvis I vil. Dette er netop **relativitetsprincippet**, hvor I ikke kan afgøre hvem der er i bevægelse og hvem der står stille.
 
-### Tænkespørgsmål
+**Tænkespørgsmål**
 
   * Hvordan ser et fysikforsøg ud på ISS (Den Internationale Rumstation)?
   * Hvorfor føles bevægelser her anderledes end i fysiklokalet?
 
+![Karen Nyberg ser en stor vanddråbe hænge frit i luften på ISS.](/billeder/vand_ISS.jpg)
 
 ## Øvelse: Hvor hurtigt bevæger du dig egentlig?
 
@@ -75,7 +78,7 @@ hvor $T = 24 \text{ timer}$.
 **Opgave 2: Jorden omkring Solen**
 Jorden bevæger sig i en næsten cirkulær bane om solen med en radius på ca. $149,6 \text{ millioner km}$ (1 AE). Tiden for et omløb er 1 år ($365,25$ døgn).
 
-  * Brug formlen for omkredsen i en cirkel til at beregne hvor langt Jorden har bevæget sig på ét år.
+  * Brug formlen for omkredsen i en cirkel, slå den på hvis I ikke kan den i hovedet, til at beregne hvor langt Jorden har bevæget sig på ét år.
   * Beregn Jordens fart i sin bane omkring Solen. 
   
 **Opgave 3: Solen i Galaksen**
@@ -91,21 +94,27 @@ Lige som på ISS så bevæger vi os i cirkler, Jorden om egen akse, Jorden om So
 
 * Hvorfor er det vi oplever det som om vi er i et initialsystem, når vi faktisk bevæger os rundt i cirkler.
 
-Her er en beskrivelse af Einsteins to postulater, som de bør præsenteres i dit undervisningsmateriale. Disse to enkle antagelser er selve fundamentet, som hele den specielle relativitetsteori er bygget på.
-
 ## Einsteins to postulater
-
-I 1905 udgav Albert Einstein artiklen *"Om bevægede legemers elektrodynamik"*. Her opstillede han to grundlæggende antagelser, som udfordrede vores klassiske forståelse af fysikken:
+Vi vil nu se på de to postulater som Einstein kom med i 1905.  I 1905 udgav Albert Einstein artiklen *"Om bevægede legemers elektrodynamik"*. Her opstillede han to grundlæggende antagelser, som udfordrede vores klassiske forståelse af fysikken:
 
 > **1. Det specielle relativitetsprincip**
 Fysikkens love er de samme i alle initialsystemer.
 
-Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium, der står stille på Jorden, vil du få nøjagtig samme resultat, hvis du udfører det i et tog eller et rumskib, der bevæger sig med konstant hastighed. Der findes altså ikke én "rigtig" hviletilstand i universet; al jævn bevægelse er relativ.
+Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium, der står stille på Jorden, vil du få nøjagtig samme resultat, hvis du udfører det i et tog eller et rumskib, der bevæger sig med konstant hastighed. Der findes altså ikke én "rigtig" hviletilstand i universet; **al jævn bevægelse er relativ**.
 
-* **Eksempel:** Hvis du taber en bold i et tog, der kører jævnt, falder den lodret ned præcis som i dit soveværelse.
+**Eksempel:** Hvis du taber en bold i et tog, der kører jævnt, falder den lodret ned præcis som i dit soveværelse.
 
 > **2. Princippet om lysets konstans**
 Lysets fart i vakuum har den samme værdi $c=299 792 458 \text{m/s} \approx 3\cdot 10^8 \text{ m/s}$ for alle observatører, uanset deres egen bevægelse eller lyskildens bevægelse.
+
+**Eksempel:** Hvis I ser et rumskib flyve forbi med halvdelen af lysets hastighed og tænde forlygterne, hvor hurtigt vil I så se lyset bevæge sig frem?
+
+Svaret er at både jer på Jorden og folkene i rumskibet vil se lyset bevæge sig frem med samme hastighed, $c$. 
+
+**Tænkespørgsål**
+
+Det er her er meget mærkeligt eller passer dårligt med vores intuition.
+* Gennemgå eksemplet helt langsomt.
 
 ## Eksperiment: lysets hastighed
 Vi skal lave et meget simpelt eksperiment hvor vi kan bestemme lysets hastighed. Som i Olsenbanden er udstyrslisten god. Vi skal bruge; 1 mikrobølgeovn, et stykke bøjet pap, en lineal og en æske lys pålægschokolade.
@@ -136,8 +145,9 @@ Den lyse pålægschokolade smelter der hvor der er bug i de stående bølger. Hv
 * Sammenlign med lysets hastighed ved afvigelse i %.
 
 ## Addition af hastigheder 
+Vi skal minde os om hvordan man normalt lægger hastigheder sammen og se at det er helt anderledes for lys.
 
-[Se videoen fra 1:00 til 2:33](https://youtu.be/uTyAI1LbdgA?t=62)
+Det bliver beskrevet i videoen: [Se videoen fra 1:00 til 2:33](https://youtu.be/uTyAI1LbdgA?t=62)
 
 **Opgave 5: addition af hastigheder**
 
@@ -160,10 +170,9 @@ Vi skal se på hvilken konsekvenser det at lysets hastighed er konstant har. Vi 
 
 I videoen udsender personen i rumskibet to lysstråler og alt efter om man står på Jorden eller er i rumskibet ser det ikke ud til at de rammer endevæggene samtidigt. Lad os starte med at udregne hvordan det ser ud hvis det ikke er lys, men en bold han kaster.
 
-
+![Lys rammer ikke samtidigt, set fra to initialsystemer som ikke er i hvile i forhold til hinanden](billeder/samtidighed.png)
 
 ### Udledning
-
 **Opgave 6: ikke relativistisk**
 
 Nedenfor er udledningen skrevet. For at følge den skal I
@@ -173,53 +182,60 @@ Nedenfor er udledningen skrevet. For at følge den skal I
 Vi lader personen stå i midten af rumskibet og kaste to bolde en frem og en tilbage. Lad rumskibet være 20 meter langt og hastigheden han kaster med være om $10\text{m/s}$. 
 
 
-### Set fra rumskibet
+**Set fra rumskibet**
+
 Afstanden bolden har bevæget sig er givet ved hastigheden gange tiden $(x = v\cdot t)$.
 
-* Vis at det tager bolden $t_{bag} = 1\text{s}$ før den rammer bagvæggen.
-* Vis at det tager bolden $t_{bag} = 1\text{s}$ før den rammer forvæggen.
+* Vis at det tager bolden $t = 1\text{s}$ før den rammer bagvæggen.
+* Vis at det tager bolden $t = 1\text{s}$ før den rammer forvæggen.
 * Hvad kan personen i rumskibet konkludere om samtidigheden af de to begivenheder?
 
-### Set fra Jorden
+**Set fra Jorden**
+
 Fra Jorden ser der lidt anderledes ud.
 * Rumfartøjets fart: $v = 200 \text{ m/s}$.
 * Boldens fart relativt til skibet: $10 \text{ m/s}$.
-* Boldens fart mod fem: $v_{frem} = 200 + 10 = 210 \text{ m/s}$.
-* Boldens fart mod bagud: $v_{bag} = 200 - 10 = 190 \text{ m/s}$.
+* Boldens fart mod fem: $v_{frem} = 200\text{ m/s} + 10\text{ m/s} = 210 \text{ m/s}$.
+* Boldens fart mod bagud: $v_{bag} = 200\text{ m/s} - 10\text{ m/s} = 190 \text{ m/s}$.
 
 Vi lader $t = 0$ være affyringstidspunktet, hvor rumskibets midte er i $x = 0$.
 * Forvæggens startposition: $x = 10 \text{ m}$.
 * Bagvæggens startposition: $x = -10 \text{ m}$.
 
 
-### 2. Udregning for forvæggen
+**Udregning for forvæggen**
+
 Forvæggen bevæger sig væk fra bolden. Vi skal finde det tidspunkt $t_{for}$, hvor boldens position er lig med væggens position.
 
-Væggens position: $x_{væg}(t) = 10 + 200 \cdot t$
-Boldens position: $x_{bold}(t) = 210 \cdot t$
+Væggens position: $x_{væg}(t) = 10\text{m} + 200\text{m/s} \cdot t$
 
-* Sæt de to ligning lig hinanden og løs for $t_for$
+Boldens position: $x_{bold}(t) = 210\text{m} \cdot t$
+
+Bolden må ramme væggen nå $x_{væg}(t) = x_{bold}(t) $.
+
+* Sæt de to ligning lig hinanden og løs for $t$.
 
 Løsning: 
-Vi sætter dem lig hinanden:
+Vi sætter dem lig hinanden (vi dropper enheder da det hele er i SI-enheder):
 $$
 210 \cdot t = 10  + 200  \cdot t \Leftrightarrow
 210 t - 200 \cdot t = 10  \Leftrightarrow
 10  \cdot t = 10 \Leftrightarrow
-t_{for} = 1   
+t = 1   
 $$
 
-### 3. Udregning for bagvæggen
-Bagvæggen bevæger sig mod bolden. Vi skal finde det tidspunkt $t_b$, hvor de mødes.
+**Udregning for bagvæggen**
 
-Væggens position: $x_{væg}(t) = -10 + 200 \cdot t$
+Bagvæggen bevæger sig mod bolden. Vi skal finde det tidspunkt $t$, hvor de mødes.
 
-Boldens position: $x_{bold}(t) = 190 \cdot t$
+Væggens position: $x_{væg}(t) = -10\text{m}   + 200 \text{m/s} \cdot t$
+
+Boldens position: $x_{bold}(t) = 190\text{m/s}  \cdot t$
 
 * Sæt de to ligning lig hinanden og løs for $t$
 
 Løsning:
-$$190  \cdot t = -10  + 200  \cdot t \Leftrightarrow -10  \cdot t = -10  \Leftrightarrow t = 1 \text{s}$$
+$$190  \cdot t = -10  + 200  \cdot t \Leftrightarrow -10  \cdot t = -10  \Leftrightarrow t = 1$$
 
 * Hvad mener personen på Jorden om samtidigheden af de to begivenheder?
 
@@ -228,9 +244,34 @@ Med bolde er begivenhederne altså ens, men hvad med lys.
 ### Hvorfor dette knækker med lys (Einstein)
 Hvis vi erstatter bolden med lys, må vi **ikke** bruge $v_{frem} = 210\text{ m/s}$ og $v_{bag} = 190 \text{ m/s}$. Vi skal bruge $c$  begge steder.
 
-Hvis du prøver at indsætte $c$ i de samme ligninger:
-* $c \cdot t = 10 + 200 \cdot t \Rightarrow t_f = \frac{10}{c - 200}$
-* $c \cdot t = -10 + 200 \cdot t \Rightarrow t_b = \frac{10}{c + 200}$
+Hvis du prøver at indsætte $c$ får vi at får vi at hastigheden frem er $v_{frem} = c$ og hastigheden bagud er $v_{bagud} = -c$.
+
+For forvægge;
+
+Væggens position: $x_{væg}(t) = 10\text{m} + 200\text{m/s} \cdot t$
+
+Lysets position: $x_{lys}(t) = c \cdot t$
+
+Lyset må ramme væggen nå $x_{væg}(t) = x_{bold}(t) $.
+
+* Sæt de to ligning lig hinanden og løs for $t$.
+
+* $ x_{lys} = c\cdot t $
+* $ x_{forende} = 10+200\cdot t$
+
+x-koordinerter er ens når 
+$$x_{lys} = x_{forende} \Leftrightarrow  c \cdot t = 10 + 200 \cdot t \Rightarrow t = \frac{10}{c - 200}$$
+
+For bagvæggen;
+
+Væggens position: $x_{væg}(t) = -10\text{m} + 200\text{m/s} \cdot t$
+
+Lysets position: $x_{lys}(t) = -c \cdot t$
+
+x-koordinaterne er ens når;
+$$
+x_{lys} = x_{bagende}  \Leftrightarrow -c \cdot t = -10 + 200 \cdot t \Leftrightarrow -c\cdot t - 200 \cdot t = -10 \Leftrightarrow t = \frac{10}{c + 200}
+$$
 
 Her bliver nævnerne forskellige ($c-200$ vs $c+200$), og derfor bliver tiderne observeret forskellige.
 
@@ -251,18 +292,16 @@ Lad os nu give lyset sin rigtige fart på $ c = 3\cdot 10^8 \text{m/s}$ og lade 
 * Beregn tidsforskellen på at lyset rammer forenden i forhold til bagenden af rumskibet, set fra Jorden, $\Delta t = f_{b}-t_{f}$.
 
 
-### Hvorfor er det vigtigt?
-Kombinationen af Einsteins to postulater tvinger os til at opgive tanken om, at tid og rum er absolutte. Hvis lysets fart skal være den samme for alle (postulat 2), mens fysikkens love skal gælde overalt (postulat 1), så bliver **tiden** nødt til at strække sig, og **længder** nødt til at trække sig sammen, når man bevæger sig hurtigt. Det er præcis det, vi så i udledningen af tidsforlængelsen med lysuret.
-
 ## Tidsforlængelse: Når tiden strækker sig
+Det næste vi skal se på er tiden.
 
 Når vi har accepteret Einsteins postulat om, at lysets fart er den samme for alle observatører, uanset deres egen bevægelse, støder vi på en mærkværdig konsekvens: **Tiden går ikke lige hurtigt for alle.** For at forstå dette, bruger vi ofte et tankeeksperiment med et "lysur" placeret i et tog.
 
 ### Tankeeksperimentet med lysuret
 
-[Se videoen fra 7:15 til 9:00](https://youtu.be/uTyAI1LbdgA?t=62)
+* [Se videoen fra 7:15 til 9:00](https://youtu.be/uTyAI1LbdgA?t=62)
 
-I filmen udsender astronauten en lysstråle lodret op fra gulvet som rammer loftet. Ved at måle tiden det tager har han nu skabet et ur. Tiden det tager for lyset at nå loftet, kalder vi egen-tiden $t_0$. Da lysets fart er $c$, er distancen til loftet givet ved $c \cdot  t_0$.
+I filmen udsender astronauten en lysstråle lodret op fra gulvet som rammer loftet. Ved at måle tiden det tager har han nu skabet et ur. Tiden det tager for lyset at nå loftet, kalder vi egen-tiden $t_0$. Da lysets fart er $c$, er distancen til loftet givet ved $d_0 = c \cdot  t_0$.
 
 Fra Jorden skal vi tage bevægelsen af rumskibet med. Lysstrålen bevæger sig ikke kun op men også til siden og bruger tiden $t$. Da lysets fart $c$ skal være den samme, må tiden $t$ nødvendigvis være længere end $t_0$.
 
@@ -284,9 +323,42 @@ $$(v \cdot  t)^2 + (c \cdot  t_0)^2 = (c \cdot  t)^2$$
 
 Hvis vi isolerer $ t$ (tiden målt af den stationære observatør), ender vi med den berømte formel for tidsforlængelse:
 
-$$ t = \frac{1 }{\sqrt{1 - \frac{v^2}{c^2}}} \cdot t_0$$
+$$ t = \frac{1 }{\sqrt{1 - \frac{v^2}{c^2}}} \cdot t_0.$$
 
 Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto mindre bliver nævneren, og $t$ bliver meget større end $t_0$.
+
+<details>
+  <summary><b>Klik her for at se den matematiske udledning</b></summary>
+  <br>
+Udledning af udtrykken ovenfor:
+
+  Ifølge Pythagoras har vi:
+  $$(v \cdot t)^2 + (c \cdot t_0)^2 = (c \cdot t)^2$$
+
+  **Trin 1: Hæv parenteserne**
+  $$v^2 t^2 + c^2 t_0^2 = c^2 t^2$$
+
+  **Trin 2: Saml leddene med $t$ på samme side**
+  $$c^2 t_0^2 = c^2 t^2 - v^2 t^2$$
+
+  **Trin 3: Sæt $t^2$ uden for en parentes**
+  $$c^2 t_0^2 = t^2 (c^2 - v^2)$$
+
+  **Trin 4: Isoler $t^2$**
+  $$t^2 = \frac{c^2 t_0^2}{c^2 - v^2}$$
+
+  **Trin 5: Divider med $c^2$ i tæller og nævner for at forenkle**
+  $$t^2 = \frac{t_0^2}{1 - \frac{v^2}{c^2}}$$
+
+  **Trin 6: Tag kvadratroden på begge sider**
+  $$t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+
+  Dette kan også skrives som:
+  $$t = \gamma \cdot t_0$$
+  hvor $\gamma$ (Lorentz-faktoren) er $\frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$.
+
+  *Konklusion: Da nævneren altid er mindre end 1 (når $v > 0$), vil $t$ altid være større end $t_0$. Tiden går altså langsommere for objektet i bevægelse set fra den stationære observatør.*
+</details>
 
 $t_0$ er egentiden i rumskibet og er altså mindre end $t$ som måles fra Jorden.
 
@@ -325,7 +397,7 @@ I opgave 1,2 og 3 udregnede vi hvor hurtigt vi bevæger os.
 
 Vi vil gerne besøge vores nærmeste stjerne udover Solen som hedder Proxima Centruri og er $4,25$ lysår væk. Lad os rejse med 85% af lysets hastighed.
 
-Set fra Jorden skal rumskibet rejse en afstand på $x = 4,15\text{ly}$ med en fart på $v = 0.85c$.
+Set fra Jorden skal rumskibet rejse en afstand på $x = 4,25\text{ly}$ med en fart på $v = 0.85c$.
 
 * Beregn hvor lang tid det tager.
 
@@ -333,7 +405,7 @@ Ombord på rumskibet går tiden langsommere,
 
 * Beregn gamma-faktoren.
 * Beregn tiden i rumskibet, $t$.
-* Overvej hvordan rumskibet kan nå Proxima Centruri så hurtigt, når Proxima Centauri nu ligger $4,25\text{ly}$ væk.
+* Overvej hvordan rumskibet kan nå Proxima Centauri så hurtigt, når Proxima Centauri nu ligger $4,25\text{ly}$ væk.
 
 
 **Opgave 11: Tvillingeparadokset**
@@ -362,59 +434,76 @@ Der sker noget på rumrejsen som gør at Scott Kelly ikke er i et initialsystem 
 
 Scott Kelly er den person som har været længst på den internationale rumstation (ISS), 520 dage, men hans bror Mark Kelly blev på Jorden. Rumstationen bevæger sig med en fart på $7,67 \text{ km/s}$ og ifølge Wikipedia betyder det at han ældet ca. $8,6 \text{milli sekunder}$ i forhold til sin tvilling.
 
-**Opgave 13:**
-
 * prøv at regn efter om Wikipedia har ret.
+
 
 
 ## længde-formindskelse
 
-[Se videoen fra 5:20 til 6:15](https://youtu.be/uTyAI1LbdgA?t=62)
+* [Se videoen fra 5:20 til 6:15](https://youtu.be/uTyAI1LbdgA?t=62)
 
-Forestil dig et rumskib, der rejser fra en stjerne til en anden med hastigheden $v$.
+Bemærk at denne ændring i tiden ikke er den tidsforlængelse vi arbejde med lige ovenfor, men den som kommer af at samtidighed også er relativ.
 
-* **Observatør på Jorden (System S):** Ser afstanden mellem stjernerne som en fast længde, $L_0$ (hvilelængden). Tiden det tager for rejsen, måles på Jordens ure som $t$.
-* **Observatør i rumskibet (System S'):** Rumskibet står stille i sit eget system. For rumskibet er det stjernerne, der suser forbi. Tiden for rejsen måles på rumskibets eget ur som $t_0$ (egentiden). Rumskibet måler afstanden som $L$.
 
-### 2. Definition af hastighed
-Hastighed er defineret som strækning divideret med tid ($v = \frac{s}{t}$). Da begge observatører skal måle den samme relative hastighed $v$ (ifølge relativitetsprincippet), kan vi opstille to ligninger:
+<details>
+  <summary><b>Klik her for at se den matematiske udledning</b></summary>
 
-1.  **For Jorden:** $v = \frac{L_0}{t}$
-2.  **For rumskibet:** $v = \frac{L}{t_0}$
+Vi lader igen et rumskib passere Jorden med en relativ hastigheden $v$. Længden af rumskibet bliver målt ved at lade dets bagende passere punkt A samtidigt med at dets forende passere punkt B. Derved måles længden $L_0$. I rumskibet måles der hvor lang tid der går før rumskibets forende passerer først A og så B. Den tid kaldes $t_0$. 
 
-Da $v$ er den samme, kan vi sætte de to udtryk for strækning op:
-$$L_0 = v \cdot t$$
-$$L = v \cdot t_0$$
 
-### 3. Substitution af tidsforlængelsen
-Vi ved fra din tidligere udledning, at sammenhængen mellem tiderne er:
-$$t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+* **Observatør på Jorden (System S)** ser længden af rumskibet som $L_0$ og måler tiden $t$.
+* **Observatør i rumskibet (System S')** ser længden af rumskibet som $L$ og måler tiden $t_0$.
 
-Nu indsætter vi dette udtryk for $\Delta t$ i ligningen for $L_0$:
-$$L_0 = v \cdot \left( \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}} \right)$$
+Begge observatører måler den samme relative hastighed og vi kan skrive det som;
 
-### 4. Den færdige formel
-Vi ser nu, at leddet $v \cdot t_0$ er det samme som $L$ (længden målt fra rumskibet). Vi kan derfor erstatte $v \cdot t_0$ med $L$:
-$$L_0 = \frac{L}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+* Jorden: $v = \frac{L_0}{t}$
+* Rumskib: $v = \frac{L}{t_0}$
 
-Hvis vi isolerer $L$ (den forkortede længde), får vi den endelige formel for længdeforkortelse:
-$$L = L_0 \cdot \sqrt{1 - \frac{v^2}{c^2}}$$
-$$L = \frac{1}{\gamma}L_0$$
+Da $v$ er den samme kan vi sætte de to højresider lig hinanden,
+$$
+\frac{L_0}{t} = \frac{L}{t_0} \Leftrightarrow L_0 = \frac{L}{t_0} \cdot t.
+$$
+Vi kan nu bruge formlen for tidsforlængelse, $t = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} t_0$ og indsætte
 
-### Konklusion
-Da udtrykket under kvadratroden altid er mindre end 1 (når $v < c$), vil den målte længde $L$ altid være **mindre** end hvilelængden $L_0$.
+$$
+ L _0= \frac{L}{t_0} \cdot t =\frac{L}{t_0} \cdot \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} t_0 = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} L. 
+$$
+
+Hvis vi bruger gamma-faktoren kan det skrive som;
+$$
+L = \frac{1}{\gamma}L_0
+$$
+</details>
+
+I videoen så vi hvordan længder også er relative. Formlen for længde-formindskelse er;
+
+$$
+L = \sqrt{1-\frac{v^2}{v^2}}\cdot L_0.
+$$
+
+Da $\sqrt{1-\frac{v^2}{v^2}}<1$, må længden i hvile være længere end længden ved et objekt som bevæger sig.
 
 
 **Opgave 14: turen til Proxima Centauri**
 
-I opgave 11 udregnede I at det tog $t_0 = 2,64\text{år}$ i rumskibets egentid at tilbagelægge afstanden mellem Jorden og Proxima Centauri. Med en afstand på $4,25\text{ly}$ skal de have en fart på $v = 1,6\cdot c$, men det er jo højere end lysets hastighed.
+I opgave 11 udregnede I at det tog $t_0 = 2,64$ år i rumskibets egentid at tilbagelægge afstanden mellem Jorden og Proxima Centauri. Men med en afstand på $4,25\text{ly}$ skal de have en fart på $v = 1,6\cdot c$, som er højere end lysets for at nå derhen. Det kan ikke passe.
 
 * Brug formlen for længdeforkortelse til at udregne en ny længde for afstanden mellem Jorden og Proxima Centauri.
-* Undersøg om de kan nå dertil på $2,64\text{år}$ med en fart på $v = 0.85\text{ly}$.
+* Undersøg om de kan nå dertil på $2,64$ år med en fart på $v = 0.85\text{ly}$.
 
 
 **Opgave 15: stigen i vognen**
 En pensioneret overlærer vil gerne hjælpe sin datter med at male. Da datteren bor højt oppe har den pensionerede overlærer brug for en lang stige. Den pensionerede overlærers stige er 4,2 meter lang og han har en Morris Minor
+
+![Stigen og bilen](billeder/stige_morris.png)
+
+* Beregn hvor hurtigt han skal løbe med stigen for at den kan være i bilen.
+
+## Velocityraptor
+Vi har nu argumentet for at længder bliver kortere og tiden bliver længere når vi bevæger os. Det kan kun observeres hvis vi bevæger os meget hurtigt, men hvad nu hvis vi kunne skrue ned for lysets hastighed. Det kan vi selvfølgeligt ikke i virkeligheden, men i et computerspil kan vi godt. 
+
+
+* [Spil, velocityraptor](https://testtubegames.com/velocityraptor.html).
 
 
 ## Udledningen Schwarzschild-radiussen klassisk
