@@ -49,21 +49,23 @@ Som I kan se er beskrivelsen helt ens eller helt omvendt hvis I vil. Dette er ne
   * Hvordan ser et fysikforsøg ud på ISS (Den Internationale Rumstation)?
   * Hvorfor føles bevægelser her anderledes end i fysiklokalet?
 
-![Karen Nyberg ser en stor vanddråbe hænge frit i luften på ISS.](/billeder/vand_ISS.jpg)
+![Karen Nyberg ser en stor vanddråbe hænge frit i luften på ISS.](billeder/vand_ISS.jpg)
 
 ## Øvelse: Hvor hurtigt bevæger du dig egentlig?
 
 Selvom vi føler, at vi sidder stille i fysiklokalet, er vi i konstant og hurtig bevægelse gennem universet. Lad os regne på de hastigheder, vi normalt ignorerer.
 
 **Opgave 1: Jordens rotation**
+
 ![jorden](billeder/jorden.png)
+
 Jorden drejer om sin egen akse én gang pr. døgn. Da jorden er en kugle, afhænger din hastighed af din breddegrad. Ved ækvator er hastigheden højest, mens den er nul ved polerne. Omkredsen i cirklen kan beregnes som,
 
 $$
 d_{omkreds} = 2 \cdot \pi \cdot R_{jord} \cdot \cos(\phi).
 $$
 
-For København ,ca. $\phi = 55.67^{\circ}$ nordlig bredde og $R_{jord} \approx 6371 \text{ km}$.
+For København, ca. $\phi = 55.67^{\circ}$ nordlig bredde og $R_{jord} \approx 6371 \text{ km}$.
 
 * Beregn $d_{omkreds}$.
 
@@ -195,12 +197,14 @@ Afstanden bolden har bevæget sig er givet ved hastigheden gange tiden $(x = v\c
 **Set fra Jorden**
 
 Fra Jorden ser der lidt anderledes ud.
+
 * Rumfartøjets fart: $v = 200 \text{ m/s}$.
 * Boldens fart relativt til skibet: $10 \text{ m/s}$.
 * Boldens fart mod fem: $v_{frem} = 200\text{ m/s} + 10\text{ m/s} = 210 \text{ m/s}$.
 * Boldens fart mod bagud: $v_{bag} = 200\text{ m/s} - 10\text{ m/s} = 190 \text{ m/s}$.
 
 Vi lader $t = 0$ være affyringstidspunktet, hvor rumskibets midte er i $x = 0$.
+
 * Forvæggens startposition: $x = 10 \text{ m}$.
 * Bagvæggens startposition: $x = -10 \text{ m}$.
 
@@ -213,7 +217,7 @@ Væggens position: $x_{væg}(t) = 10\text{m} + 200\text{m/s} \cdot t$
 
 Boldens position: $x_{bold}(t) = 210\text{m} \cdot t$
 
-Bolden må ramme væggen nå $x_{væg}(t) = x_{bold}(t) $.
+Bolden må ramme væggen nå $x_{væg}(t) = x_{bold}(t)$.
 
 * Sæt de to ligning lig hinanden og løs for $t$.
 
@@ -254,12 +258,12 @@ Væggens position: $x_{væg}(t) = 10\text{m} + 200\text{m/s} \cdot t$
 
 Lysets position: $x_{lys}(t) = c \cdot t$
 
-Lyset må ramme væggen nå $x_{væg}(t) = x_{bold}(t) $.
+Lyset må ramme væggen nå $x_{væg}(t) = x_{bold}(t)$.
 
 * Sæt de to ligning lig hinanden og løs for $t$.
 
-* $ x_{lys} = c\cdot t $
-* $ x_{forende} = 10+200\cdot t$
+* $x_{lys} = c\cdot t$
+* $x_{forende} = 10+200\cdot t$
 
 x-koordinerter er ens når 
 $$x_{lys} = x_{forende} \Leftrightarrow  c \cdot t = 10 + 200 \cdot t \Rightarrow t = \frac{10}{c - 200}$$
@@ -285,12 +289,13 @@ Hvis man skal svare på spørgsmålet "skete det samtidigt" kræver det at perso
 **Opgave 7: langsomt lys**
 
 Lad os antage at lyset kun bevæger sig med $c=300\text{m/s}$.
+
 * Beregn tidsforskellen på at lyset rammer forenden i forhold til bagenden af rumskibet, set fra Jorden, $\Delta t = f_{b}-t_{f}$.
 
 
 **Opgave 8: hurtigt lys**
 
-Lad os nu give lyset sin rigtige fart på $ c = 3\cdot 10^8 \text{m/s}$ og lade rumskibet bevæges sig med samme hastighed som den internationale rumstation, ISS, $v = 7.66 \text{km/s}$.
+Lad os nu give lyset sin rigtige fart på $c = 3\cdot 10^8 \text{m/s}$ og lade rumskibet bevæges sig med samme hastighed som den internationale rumstation, ISS, $v = 7.66 \text{km/s}$.
 * Beregn tidsforskellen på at lyset rammer forenden i forhold til bagenden af rumskibet, set fra Jorden, $\Delta t = f_{b}-t_{f}$.
 
 
@@ -547,18 +552,7 @@ Prøv at beregne Schwarzschild-radiussen for Jorden.
 * Brug $M_{jord} \approx 5,97 \cdot 10^{24} \text{ kg}$.
 * De vil opdage, at hvis man pressede hele Jorden sammen til et sort hul, ville den kun være ca. **9 mm** i radius (på størrelse med en glaskugle)!
 
-Det giver dem en god forståelse for, hvor ekstremt kompakte sorte huller er i forhold til de initialsystemer, vi arbejdede med tidligere.
 
-**Øvelse: Myonernes rejse**
-Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort levetid ($ t_0 \approx 2,2 \text{ µs}$), hvorefter de henfalder. Selvom de bevæger sig med næsten lysets hastighed, burde de matematisk set ikke kunne nå jordens overflade, før de dør – og alligevel måler vi dem her nede.
-
-  * Brug formlen for tidsforlængelse til at forklare, hvordan myonerne "overlever" turen ned til os.
-
-Fedt, at det endelig virker med de manglende indrykninger\! Det er præcis den slags "usynlige" fejl, der kan drive én til vanvid i Markdown.
-
-Her er et forslag til en udvidet tekst om myon-øvelsen, som du kan sætte direkte ind. Jeg har gjort den lidt mere "opgave-agtig" ved at dele den op i to perspektiver, så eleverne ser både tidsforlængelse og længdekontraktion (som er den klassiske måde at forstå det på).
-
------
 
 ### **Øvelse: Myonernes rejse – Beviset på relativitet**
 
