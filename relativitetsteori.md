@@ -554,7 +554,67 @@ Myoner er elementarpartikler, der skabes i atmosfæren. De har en meget kort lev
 
   * Brug formlen for tidsforlængelse til at forklare, hvordan myonerne "overlever" turen ned til os.
 
+Fedt, at det endelig virker med de manglende indrykninger\! Det er præcis den slags "usynlige" fejl, der kan drive én til vanvid i Markdown.
 
+Her er et forslag til en udvidet tekst om myon-øvelsen, som du kan sætte direkte ind. Jeg har gjort den lidt mere "opgave-agtig" ved at dele den op i to perspektiver, så eleverne ser både tidsforlængelse og længdekontraktion (som er den klassiske måde at forstå det på).
+
+-----
+
+### **Øvelse: Myonernes rejse – Beviset på relativitet**
+
+Myoner er en form for "tunge elektroner", der skabes i de øverste lag af atmosfæren (ca. 10 km oppe), når kosmisk stråling rammer atomer i luften.
+
+**De tørre tal:**
+
+**Levetid:** En myon lever i gennemsnit kun $t_0 \approx 2,2 \text{ µs}$ ($2,2 \cdot 10^{-6}$ sekunder), før den henfalder.
+
+**Hastighed:** De suser mod Jorden med ca. 99,8 % af lysets hastighed ($v = 0,998c$).
+
+
+#### **Del 1: Den klassiske beregning (Newtons verden)**
+
+Hvis vi ikke kendte til relativitetsteori, ville vi beregne deres rækkevidde sådan her:
+
+1.  Beregn hvor langt en myon kan nå at rejse i sin levetid med hastigheden $0,998c$.
+2.  Kan myonen nå ned til havoverfladen (10 km væk), før den dør?
+
+#### **Del 2: Relativistisk løsning – To sider af samme sag**
+
+I virkeligheden detekterer vi masser af myoner ved jordoverfladen. Dette kan forklares på to måder, alt efter hvilket initialsystem man befinder sig i:
+
+**A) Set fra Jorden (Tidsforlængelse):**
+Set fra Jorden bevæger myonen sig ekstremt hurtigt. Derfor går myonens "indre ur" langsommere i forhold til vores ure.
+
+  * Beregn $\gamma$-faktoren for $v = 0,998c$.
+  * Beregn myonens levetid $t$ set fra Jorden ($t = \gamma \cdot t_0$).
+  * Hvor langt kan myonen nu rejse set fra Jorden?
+
+**B) Set fra Myonen (Længdekontraktion):**
+Hvis du red på ryggen af myonen, ville du stadig mene, at du kun lever i $2,2 \text{ µs}$. Men for den er det Jorden, der suser mod sig med $0,998c$.
+
+  * Brug formlen for længdekontraktion ($L = L_0 / \gamma$) til at beregne, hvor tyk atmosfæren (de 10 km) er set fra myonens perspektiv.
+  * Kan myonen nå at "overleve" denne meget kortere distance på sin korte levetid?
+
+<details markdown="1">
+<summary><b>Klik her for at se facit og forklaring</b></summary\>
+
+**Beregninger:**
+
+1.  **Gamma-faktor:** $$\gamma = \frac{1}{\sqrt{1 - 0,998^2}} \approx 15,8$$
+
+2.  **Tidsforlængelse (Jordens perspektiv):**
+Myonen lever i $15,8 \cdot 2,2 \text{ µs} \approx 34,8 \text{ µs}$.
+Distance: $v \cdot t \approx 3 \cdot 10^8 \text{ m/s} \cdot 34,8 \cdot 10^{-6} \text{ s} \approx 10.440 \text{ m}$.
+*(Den kan altså lige præcis nå ned\!)*
+
+3.  **Længdekontraktion (Myonens perspektiv):**
+Atmosfæren er kun $10.000 \text{ m} / 15,8 \approx 633 \text{ m}$ tyk.
+Tid til at rejse 633 m: $633 \text{ m} / (0,998c) \approx 2,1 \text{ µs}$.
+*(Den når altså ned, lige før dens 2,2 µs er gået\!)*
+
+</details>
+
+**Konklusion:** Begge observatører er enige om, at myonen når Jorden, men deres forklaringer er forskellige (længere tid vs. kortere vej). Det er relativitet i en nøddeskal
 
 ### eksterne ressourcer
 
