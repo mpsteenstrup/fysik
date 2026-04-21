@@ -10,22 +10,9 @@
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-# Relativitetsteori
+# Den Specielle Relativitetsteori
 
-<details markdown="1">
-<summary><b>Klik her for at se den matematiske udledning</b></summary>
 
-Udledning af udtrykket ovenfor:
-
-Ifølge Pythagoras har vi:
-
-$$(v \cdot t)^2 + (c \cdot t_0)^2 = (c \cdot t)^2$$
-
-**Trin 1: Hæv parenteserne**
-
-$$v^2 t^2 + c^2 t_0^2 = c^2 t^2$$
-
-</details>
 
 Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **Relativitetsteorien**. Når vi bevæger os med hverdagshastigheder – som når vi cykler til skole eller kører i bil – virker verden logisk og forudsigelig. Men hvad sker der, når hastighederne nærmer sig lysets fart, eller når vi kigger på universets helt store strukturer? Albert Einstein revolutionerede vores forståelse af tid, rum og bevægelse ved at vise, at fysikkens love afhænger af, hvem der kigger, og hvordan de bevæger sig.
 
@@ -343,36 +330,36 @@ $$ t = \frac{1 }{\sqrt{1 - \frac{v^2}{c^2}}} \cdot t_0.$$
 Denne ligning viser, at jo tættere $v$ kommer på lysets hastighed $c$, desto mindre bliver nævneren, og $t$ bliver meget større end $t_0$.
 
 <details markdown="1">
-  <summary><b>Klik her for at se den matematiske udledning</b></summary>
+<summary><b>Klik her for at se den matematiske udledning</b></summary>
 
 Udledning af udtrykken ovenfor:
 
-  Ifølge Pythagoras har vi:
-  $$(v \cdot t)^2 + (c \cdot t_0)^2 = (c \cdot t)^2$$
+Ifølge Pythagoras har vi:
+$$(v \cdot t)^2 + (c \cdot t_0)^2 = (c \cdot t)^2$$
 
-  **Trin 1: Hæv parenteserne**
-  $$v^2 t^2 + c^2 t_0^2 = c^2 t^2$$
+**Trin 1: Hæv parenteserne**
+$$v^2 t^2 + c^2 t_0^2 = c^2 t^2$$
 
-  **Trin 2: Saml leddene med $t$ på samme side**
-  $$c^2 t_0^2 = c^2 t^2 - v^2 t^2$$
+**Trin 2: Saml leddene med $t$ på samme side**
+$$c^2 t_0^2 = c^2 t^2 - v^2 t^2$$
 
-  **Trin 3: Sæt $t^2$ uden for en parentes**
-  $$c^2 t_0^2 = t^2 (c^2 - v^2)$$
+**Trin 3: Sæt $t^2$ uden for en parentes**
+$$c^2 t_0^2 = t^2 (c^2 - v^2)$$
 
-  **Trin 4: Isoler $t^2$**
-  $$t^2 = \frac{c^2 t_0^2}{c^2 - v^2}$$
+**Trin 4: Isoler $t^2$**
+$$t^2 = \frac{c^2 t_0^2}{c^2 - v^2}$$
 
-  **Trin 5: Divider med $c^2$ i tæller og nævner for at forenkle**
-  $$t^2 = \frac{t_0^2}{1 - \frac{v^2}{c^2}}$$
+**Trin 5: Divider med $c^2$ i tæller og nævner for at forenkle**
+$$t^2 = \frac{t_0^2}{1 - \frac{v^2}{c^2}}$$
 
-  **Trin 6: Tag kvadratroden på begge sider**
-  $$t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
+**Trin 6: Tag kvadratroden på begge sider**
+$$t = \frac{t_0}{\sqrt{1 - \frac{v^2}{c^2}}}$$
 
-  Dette kan også skrives som:
-  $$t = \gamma \cdot t_0$$
-  hvor $\gamma$ (Lorentz-faktoren) er $\frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$.
+Dette kan også skrives som:
+$$t = \gamma \cdot t_0$$
+hvor $\gamma$ (Lorentz-faktoren) er $\frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}$.
 
-  *Konklusion: Da nævneren altid er mindre end 1 (når $v > 0$), vil $t$ altid være større end $t_0$. Tiden går altså langsommere for objektet i bevægelse set fra den stationære observatør.*
+*Konklusion: Da nævneren altid er mindre end 1 (når $v > 0$), vil $t$ altid være større end $t_0$. Tiden går altså langsommere for objektet i bevægelse set fra den stationære observatør.*
 
 </details>
 
