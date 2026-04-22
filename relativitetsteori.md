@@ -488,10 +488,10 @@ $$
 I videoen så vi hvordan længder også er relative. Formlen for længde-formindskelse er;
 
 $$
-L = \sqrt{1-\frac{v^2}{v^2}}\cdot L_0.
+L = \sqrt{1-\frac{v^2}{c^2}}\cdot L_0.
 $$
 
-Da $\sqrt{1-\frac{v^2}{v^2}}<1$, må længden i hvile være længere end længden ved et objekt som bevæger sig.
+Da $\sqrt{1-\frac{v^2}{c^2}}<1$, må længden i hvile være længere end længden ved et objekt som bevæger sig.
 
 
 **Opgave 14: turen til Proxima Centauri**
