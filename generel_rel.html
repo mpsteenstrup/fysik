@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Rumtid - Jorden til højre</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #121212; color: #eee; display: flex; flex-direction: column; align-items: center; }
+        .canvas-container { display: flex; gap: 40px; margin-top: 20px; }
+        canvas { border: 1px solid #333; background: #050505; }
+        .label { text-align: center; margin-bottom: 10px; font-weight: bold; color: #888; }
+    </style>
+</head>
+<body>
+
+    <h1>Geometrisk Relativitet: Jorden til højre</h1>
+
+    <div class="canvas-container">
+        <div>
+            <div class="label">System S' (Krum Rumtid)</div>
+            <canvas id="warpedCanvas" width="400" height="500"></canvas>
+        </div>
+        <div>
+            <div class="label">System S (Klassisk Gitter)</div>
+            <canvas id="flatCanvas" width="400" height="500"></canvas>
+        </div>
+    </div>
+
+<script>
+    const wCanvas = document.getElementById('warpedCanvas');
+    const fCanvas = document.getElementById('flatCanvas');
+    const wCtx = wCanvas.getContext('2d');
+    const fCtx = fCanvas.getContext('2d');
+
+    function draw() {
+        const step = 40;
+        const width = 400;
+        const height = 500;
+
+        // --- SYSTEM S (Højre panel - Fladt) ---
+        fCtx.strokeStyle = "#222";
+        for(let i=0; i<=width; i+=step) { fCtx.beginPath(); fCtx.moveTo(i, 0); fCtx.lineTo(i, height); fCtx.stroke(); }
+        for(let j=0; j<=height; j+=step) { fCtx.beginPath(); fCtx.moveTo(0, j); fCtx.lineTo(width, j); fCtx.stroke(); }
+        
+        fCtx.strokeStyle = "white"; fCtx.lineWidth = 2;
+        fCtx.beginPath(); fCtx.moveTo(50, 450); fCtx.lineTo(350, 450); fCtx.stroke(); // x
+        fCtx.beginPath(); fCtx.moveTo(50, 450); fCtx.lineTo(50, 50); fCtx.stroke();   // t
+        fCtx.fillStyle = "white"; fCtx.fillText("x", 360, 455); fCtx.fillText("t", 45, 40);
+
+        // --- SYSTEM S' (Venstre panel - Jorden til højre) ---
+        wCtx.strokeStyle = "#222";
+        
+        // Rette rumlinjer (x')
+        for (let j = 0; j <= height; j += step) {
+            wCtx.beginPath();
+            wCtx.moveTo(0, j);
+            wCtx.lineTo(400, j);
+            wCtx.stroke();
+        }
+
+        // Bøjede tidslinjer (t') - bøjer ind mod Jorden til højre
+        for (let i = 0; i <= width; i += step) {
+            wCtx.beginPath();
+            for (let j = 0; j <= height; j += 5) {
+                // Krumningen øges jo tættere vi er på højre side (Jorden)
+                // og jo højere vi er i tid (lav j-værdi)
+                let intensity = (i / width); 
+                let warpX = Math.pow((height - j) / height, 2) * (intensity * 100);
+                
+                if (j === 0) wCtx.moveTo(i + warpX, j);
+                else wCtx.lineTo(i + warpX, j);
+            }
+            wCtx.stroke();
+        }
+
+        // Jorden (Masse-streg til højre)
+        wCtx.strokeStyle = "#4444ff";
+        wCtx.lineWidth = 8;
+        wCtx.beginPath();
+        wCtx.moveTo(390, 0);
+        wCtx.lineTo(390, 500);
+        wCtx.stroke();
+
+        // Akser S'
+        wCtx.strokeStyle = "white"; wCtx.lineWidth = 2;
+        wCtx.beginPath(); wCtx.moveTo(50, 450); wCtx.lineTo(350, 450); wCtx.stroke(); // x'
+        wCtx.fillStyle = "white";
+        wCtx.fillText("Jorden", 340, 480);
+        wCtx.fillText("x'", 360, 445);
+        wCtx.fillText("t'", 40, 40);
+    }
+
+    draw();
+</script>
+</body>
+</html>

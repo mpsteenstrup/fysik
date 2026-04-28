@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Fysik Escape Room - Ultra Immersive</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+    <style>
+        body, html { 
+            margin: 0; padding: 0; width: 100%; height: 100%; 
+            overflow: hidden; font-family: 'Segoe UI', sans-serif;
+            background-color: black;
+        }
+
+        /* Zoom-containeren fylder det hele */
+        #zoom-viewer {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 1;
+        }
+
+        /* Top-sektion: Meget diskret */
+        .header-ui {
+            position: absolute; top: 0; left: 0; width: 100%;
+            z-index: 2; padding: 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+            color: white;
+            pointer-events: none;
+        }
+
+        h1 { margin: 0; color: #2ecc71; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; }
+        #description { font-size: 1rem; margin: 5px auto; max-width: 700px; opacity: 0.9; }
+
+        /* Bund-sektion */
+        .footer-ui {
+            position: absolute; bottom: 0; left: 0; width: 100%;
+            z-index: 2; padding: 20px;
+            text-align: center;
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        .input-group { pointer-events: auto; display: inline-flex; gap: 10px; }
+
+        input { 
+            padding: 10px; width: 200px; border: 1px solid rgba(255,255,255,0.2); 
+            border-radius: 4px; font-size: 14px; background: rgba(0,0,0,0.6); color: white;
+        }
+
+        button { 
+            padding: 10px 20px; background-color: #2ecc71; color: white; 
+            border: none; border-radius: 4px; cursor: pointer; font-weight: bold;
+        }
+
+        #pdf-link a { color: #3498db; text-decoration: none; font-size: 0.9rem; pointer-events: auto; }
+        
+        /* Fuldskærm-knap i hjørnet */
+        #fs-button {
+            position: absolute; top: 20px; right: 20px; z-index: 3;
+            background: rgba(255,255,255,0.1); color: white; border: 1px solid white;
+            padding: 5px 10px; cursor: pointer; font-size: 12px; border-radius: 4px;
+        }
+
+        #feedback { margin-top: 8px; font-size: 0.9rem; font-weight: bold; min-height: 20px; }
+        .success { color: #2ecc71; }
+        .error { color: #e74c3c; }
+    </style>
+</head>
+<body>
+<audio id="bg-audio" loop></audio>
+<button id="fs-button" onclick="toggleFullScreen()">FULD SKÆRM</button>
+
+<div id="zoom-viewer"></div>
+
+<div class="header-ui">
+    <h1 id="title">Titlen indlæses...</h1>
+    <p id="description">Beskrivelse indlæses...</p>
+    <div id="pdf-link"></div>
+</div>
+
+<div class="footer-ui">
+    <div class="input-group">
+        <input type="text" id="answerInput" placeholder="Svar..." onkeydown="if(event.key==='Enter') checkAnswer()">
+        <button onclick="checkAnswer()">TJEK</button>
+    </div>
+    <div id="feedback"></div>
+</div>
+
+<script src="opgaver.js"></script>
+
+<script>
+    let currentLevel = 0;
+    let viewer = null;
+
+    function loadLevel() {
+        const level = levels[currentLevel];
+        document.getElementById('title').innerText = level.title;
+        document.getElementById('description').innerText = level.description;
+        document.getElementById('answerInput').value = "";
+        document.getElementById('feedback').innerText = "";
+
+        // PDF håndtering
+        const pdfContainer = document.getElementById('pdf-link');
+        pdfContainer.innerHTML = level.pdf ? `<a href="${level.pdf}" target="_blank">📄 Åbn bilag (PDF)</a>` : "";
+
+        // OpenSeadragon Viewer (Zoom direkte på baggrunden)
+        if (viewer) {
+            viewer.destroy();
+        }
+        
+        viewer = OpenSeadragon({
+            id: "zoom-viewer",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/images/",
+            tileSources: {
+                type: 'image',
+                url: level.image
+            },
+            showNavigationControl: false, // Skjul knapper for renere look
+            defaultZoomLevel: 1,
+            minZoomLevel: 1,
+            maxZoomLevel: 10,
+            visibilityRatio: 1.0,
+            constrainDuringPan: true
+        });
+
+        const audio = document.getElementById('bg-audio');
+    if (level.music) {
+        audio.src = level.music;
+        audio.play().catch(e => console.log("Musik kræver et klik for at starte"));
+    }
+    }
+
+    function toggleFullScreen() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+            document.getElementById('fs-button').innerText = "AFSLUT FULD SKÆRM";
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+                document.getElementById('fs-button').innerText = "FULD SKÆRM";
+            }
+        }
+    }
+
+    function checkAnswer() {
+        const input = document.getElementById('answerInput').value.trim().toLowerCase();
+        const feedback = document.getElementById('feedback');
+
+        if (input === levels[currentLevel].answer.toLowerCase()) {
+            currentLevel++;
+            if (currentLevel < levels.length) {
+                feedback.innerHTML = "<span class='success'>Korrekt! Indlæser næste rum...</span>";
+                setTimeout(loadLevel, 1500);
+            } else {
+                document.body.innerHTML = "<div style='height:100vh; display:flex; justify-content:center; align-items:center; background:black; color:#2ecc71; font-size:3rem; text-align:center;'>🏆 MISSION GENNEMFØRT!</div>";
+            }
+        } else {
+            feedback.innerHTML = "<span class='error'>Adgang nægtet - forkert kode</span>";
+        }
+    }
+
+    loadLevel();
+</script>
+
+</body>
+</html>
