@@ -129,16 +129,20 @@
     }
 
     function toggleFullScreen() {
-        if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen();
-            document.getElementById('fs-button').innerText = "AFSLUT FULD SKÆRM";
-        } else {
-            if (document.exitFullscreen) {
-                document.exitFullscreen();
-                document.getElementById('fs-button').innerText = "FULD SKÆRM";
-            }
+    // Start musikken når de trykker på fuld skærm
+    const audio = document.getElementById('bg-audio');
+    audio.play().catch(e => console.log("Afventer interaktion"));
+
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+        document.getElementById('fs-button').innerText = "AFSLUT FULD SKÆRM";
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+            document.getElementById('fs-button').innerText = "FULD SKÆRM";
         }
     }
+}
 
     function checkAnswer() {
         const input = document.getElementById('answerInput').value.trim().toLowerCase();
