@@ -49,7 +49,3 @@ Når spillet virker perfekt på jeres computer:
 1.  Lav en zip-fil og send den til mig.
 
 **God fornøjelse ! 
-"""
-
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
