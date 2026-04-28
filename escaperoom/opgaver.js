@@ -1,7 +1,7 @@
 const levels = [
     {
         title: "Level 1: Newtons Love",
-        description: "Find det skjulte tal i billedet og divider det med massen (2 kg).",
+        description: "Find det skjulte tal i billedet og divider det med massen (2 kg). eller gør noget andet.",
         answer: "5",
         image: "morris.png" ,
         music: "musik1.mp3"
