@@ -20,6 +20,7 @@ Dette eksempel illustrerer, hvordan både mekaniske bølger (lydbølger) og elek
 Lyd er svingninger som forplanter sig gennem et medie. Oftest oplever vi det når lyde bevæger sig gennem atmosfærisk luft hvor det er luftmolekylerne som svinger frem og tilbage. Når man hører en tone svinger molekylerne periodisk og danner skiftevis over og undertryk. Jo større trykforskellen er jo kraftigere hører vi lyden.
 
 Fysiske størrelser når en tone skal beskrives:
+
 * $f$, Frekvensen, hvor mange gange den svinger hvert sekund, enhed hertz, Hz.
 * $T$, Perioden, hvor lang tid der går mellem hver bølge, enhed sekund, s.
 * $\lambda$ lambda, Bølgelængde, hvor langt der er mellem hver bølge, enhed meter, m.
@@ -38,7 +39,9 @@ eksempel:
 
 ### Illustration af lydbølger
 Videoen viser hvordan en højttaler skubber til luftmolekylerne og derved skaber pulser hvor luftmolekylerne er tæt sammen og hvor de er langt fra hinanden.
+
 [![video af lydbølgers udbredelse](billeder/lyd.png)](https://youtu.be/GnAvquGBmnY)
+[link: video af lydbølgers udbredelse](https://youtu.be/GnAvquGBmnY)
 
 Højttalerens membran bevæger sig frem,
 
@@ -55,21 +58,22 @@ Højttalerens membran bevæger sig tilbage,
 ### Simulering af lyds udbredelse
 
 Simuleringen viser en lydbølge som bevæger sig fra venstre mod højre.
+
 [![Bølger og lyd](billeder/waveSound.png)](https://www.geogebra.org/material/iframe/id/925705)
 [link: lydbølger, kilde ophysics.com](https://www.geogebra.org/material/iframe/id/925705)
+
 ### Øvelse
 De orange linjer illustrere luftmolekyler, så når linjerne er tæt sammen er der overtryk og når linjerne er langt fra hinanden er der undertryk.
-* Kør simuleringen og beskriv i ord hvordan der hvor luftmolekylerne er tæt sammen bevæger sig.
-* Se på en enkelt streg, hvordan bevæger den sig?
-* 
 
+* Kør simuleringen og beskriv i ord hvordan det område hvor luftmolekylerne er tæt sammen bevæger sig.
+* Se på én enkelt streg, hvordan bevæger den sig?
 * Beskriv sammenhængen mellem bevægelsen af luftmolekylerne og grafen nederst, kom ind på overtryk og undertryk.
 * Lav om på amplituden og beskriv hvad der ændrer sig og hvad der ikke ændrer sig.
 * Lav om på frekvensen og beskriv igen hvad der ændrer sig og hvad der ikke ændrer sig.
 * Hvilken sammenhæng finder i mellem bølgelængden og frekvensen?
 * Vurder om fart af bølgen er konstant når frekvensen ændres.
 
-I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt også, måske, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen mellem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
+I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt måske også, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen mellem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
 
 $v = f\cdot\lambda$
 
@@ -179,7 +183,7 @@ Forestil jer at vi har tiden ud af x aksensen.
 * Hvornår er det **konstruktiv interferens**?
 * Hvornår er der **destruktiv interferens**?
 
-### Simulering as stående bølge
+### Simulering af stående bølge
 
 [![Stående bølger](billeder/staaendeboelger.png)](https://mpsteenstrup.github.io/fysik/staaendeboelger.html)
 
