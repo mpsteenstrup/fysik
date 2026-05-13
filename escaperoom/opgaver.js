@@ -8,11 +8,11 @@ const levels = [
         pdf: "grundstoffer.pdf"
     },
     {
-        title: "Level 2: Bølgelængde",
-        description: "Beregn frekvensen for det grønne lys fra bilaget.",
-        answer: "gul",
-        image: "morris.png", 
-        pdf: "eks1.pdf"
+        title: "Lys og energi",
+        description: "Ja ja I er videre! Men hvordan er det nu at vi kan se det lys? hvad er lys og hvorfor har det farver? Det er vist noget med bølger, men hvem udsender den korteste ja og næstkorteste og næst næst korteste?",
+        answer: "HgHeNe",
+        image: "grundstoffer.png" ,
+        music: "musik1.mp3"
     },
     {
         title: "Level 3: Atomfysik",
