@@ -4,12 +4,14 @@ Link til kapitler
 * [energi.](energi.md)
 * [lys.](lys.md)
 * [relativitetsteori.](relativitetsteori.md)
+* [escaperoom.](escaperoom/readme.md)
 
 Vist som hjemmeside
 * [lyd.](https://mpsteenstrup.github.io/fysik/lyd.html)
 * [energi.](https://mpsteenstrup.github.io/fysik/energi.html)
 * [lys.](https://mpsteenstrup.github.io/fysik/lys.html)
 * [relativitetsteori.](https://mpsteenstrup.github.io/fysik/relativitetsteori.html)
+* [escaperoom.](https://mpsteenstrup.github.io/fysik/escaperoom/index.html)
 
 
 ## DIV
