@@ -18,6 +18,10 @@ Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **
 
 ## Initialsystemer
 
+<h2>Fysik Lommeregner</h2>
+    <label>Regnestykke: </label>
+    <input type="text" id="regner" placeholder="f.eks. sind(90) + sqrt(16)" oninput="lynBeregn()">
+
 Vi kommer til at gennemgå en video og dens argumenter. 
 
 Vi starter med at [Se første minut](https://youtu.be/uTyAI1LbdgA?t=62)
