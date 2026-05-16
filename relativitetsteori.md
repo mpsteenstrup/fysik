@@ -21,6 +21,7 @@ Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **
 <h2>Fysik Lommeregner</h2>
     <label>Regnestykke: </label>
     <input type="text" id="regner" placeholder="f.eks. sind(90) + sqrt(16)" oninput="lynBeregn()">
+    <script src="beregner.js"></script>
 
 Vi kommer til at gennemgå en video og dens argumenter. 
 
