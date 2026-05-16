@@ -1,0 +1,837 @@
+<link rel="stylesheet" href="style.css">
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<h1 id="den-specielle-relativitetsteori">Den Specielle
+Relativitetsteori</h1>
+<p>Velkommen til et af de mest fascinerende og kontraintuitive emner i
+fysikken: <strong>Relativitetsteorien</strong>. Når vi bevæger os med
+hverdagshastigheder – som når vi cykler til skole eller kører i bil –
+virker verden logisk og forudsigelig. Men hvad sker der, når
+hastighederne nærmer sig lysets fart, eller når vi kigger på universets
+helt store strukturer? Albert Einstein revolutionerede vores forståelse
+af tid, rum og bevægelse ved at vise, at fysikkens love afhænger af,
+hvem der kigger, og hvordan de bevæger sig.</p>
+<h2 id="initialsystemer">Initialsystemer</h2>
+<h2>
+Fysik Lommeregner
+</h2>
+<pre><code>&lt;label&gt;Regnestykke: &lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;regner&quot; placeholder=&quot;f.eks. sind(90) + sqrt(16)&quot; oninput=&quot;lynBeregn()&quot;&gt;
+&lt;script src=&quot;beregner.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Vi kommer til at gennemgå en video og dens argumenter.</p>
+<p>Vi starter med at <a href="https://youtu.be/uTyAI1LbdgA?t=62">Se
+første minut</a></p>
+<p>Et <strong>initialsystem</strong> er et koordinatsystem (eller en
+referenceramme), hvor Newtons første lov gælder. Det betyder kort
+fortalt, at hvis en genstand ikke påvirkes af en resulterende kraft, vil
+den enten ligge stille eller bevæge sig med en konstant hastighed i en
+retlinet bane.</p>
+<blockquote>
+<p><strong>Definition:</strong> Et initialsystem er en referenceramme,
+der ikke accelererer. Alle referencerammer, der bevæger sig med konstant
+hastighed i forhold til et initialsystem, er selv initialsystemer.</p>
+</blockquote>
+<figure>
+<img src="billeder/initialsystem.png" alt="Initialsystemerne s og s’" />
+<figcaption aria-hidden="true">Initialsystemerne s og s’</figcaption>
+</figure>
+<h3 id="fysik-i-fysiklokalet-vs.-toget">Fysik i fysiklokalet
+vs. toget</h3>
+<p>Forestil dig, at du står i dit fysiklokale og et tog kører forbi,
+måske kan du se Hovedbanegården fra lokalet. I laver eksperiment med 1.d
+bevægelse af en bold som I lader falde. I toget er en klasse i gang med
+præcist det samme forsøg. Toget kører med en hastighed på <span
+class="math inline">$20\frac{\text{km}}{\text{time}}$</span>.</p>
+<p>Først eksperimentet i toget, som I kan se gennem vinduerne.</p>
+<ul>
+<li>Beskriv den kurve bolden følger set fra toget.</li>
+<li>Beskriv den kurve bolden følger set fra klasseloklalet.</li>
+</ul>
+<p>Nu eksperimentet i fysiklokalet som dem på toget også kan se, vinduer
+igen.</p>
+<ul>
+<li>Beskriv den kurve bolden vil følge set fra klasseloklalet.</li>
+<li>Beskriv den kurve bolden beskriver vil følge set fra toget.</li>
+</ul>
+<p>Som I kan se er beskrivelsen helt ens eller helt omvendt hvis I vil.
+Dette er netop <strong>relativitetsprincippet</strong>, hvor I ikke kan
+afgøre hvem der er i bevægelse og hvem der står stille.</p>
+<p><strong>Tænkespørgsmål</strong></p>
+<ul>
+<li>Hvordan ser et fysikforsøg ud på ISS (Den Internationale
+Rumstation)?</li>
+<li>Hvorfor føles bevægelser her anderledes end i fysiklokalet?</li>
+</ul>
+<figure>
+<img src="billeder/vand_ISS.jpg"
+alt="Karen Nyberg ser en stor vanddråbe hænge frit i luften på ISS." />
+<figcaption aria-hidden="true">Karen Nyberg ser en stor vanddråbe hænge
+frit i luften på ISS.</figcaption>
+</figure>
+<h2 id="øvelse-hvor-hurtigt-bevæger-du-dig-egentlig">Øvelse: Hvor
+hurtigt bevæger du dig egentlig?</h2>
+<p>Selvom vi føler, at vi sidder stille i fysiklokalet, er vi i konstant
+og hurtig bevægelse gennem universet. Lad os regne på de hastigheder, vi
+normalt ignorerer.</p>
+<p><strong>Opgave 1: Jordens rotation</strong></p>
+<figure>
+<img src="billeder/jorden.png" alt="jorden" />
+<figcaption aria-hidden="true">jorden</figcaption>
+</figure>
+<p>Jorden drejer om sin egen akse én gang pr. døgn. Da jorden er en
+kugle, afhænger din hastighed af din breddegrad. Ved ækvator er
+hastigheden højest, mens den er nul ved polerne. Omkredsen i cirklen kan
+beregnes som,</p>
+<p><span
+class="math display"><em>d</em><sub><em>o</em><em>m</em><em>k</em><em>r</em><em>e</em><em>d</em><em>s</em></sub> = 2 ⋅ <em>π</em> ⋅ <em>R</em><sub><em>j</em><em>o</em><em>r</em><em>d</em></sub> ⋅ cos (<em>ϕ</em>).</span></p>
+<p>For København, ca. <span
+class="math inline"><em>ϕ</em> = 55.67<sup>∘</sup></span> nordlig bredde
+og <span
+class="math inline"><em>R</em><sub><em>j</em><em>o</em><em>r</em><em>d</em></sub> ≈ 6371
+km</span>.</p>
+<ul>
+<li>Beregn <span
+class="math inline"><em>d</em><sub><em>o</em><em>m</em><em>k</em><em>r</em><em>e</em><em>d</em><em>s</em></sub></span>.</li>
+</ul>
+<p>Hastigheden kan beregnes som længden man har bevæget sig divideret
+med hvor lang tid det har taget,</p>
+<p><span class="math display">$$
+v = \frac{d_{omkreds}}{T},
+$$</span></p>
+<p>hvor <span class="math inline"><em>T</em> = 24 timer</span>.</p>
+<ul>
+<li>Beregn farten i km/t.</li>
+</ul>
+<p><strong>Opgave 2: Jorden omkring Solen</strong> Jorden bevæger sig i
+en næsten cirkulær bane om solen med en radius på ca. <span
+class="math inline">149, 6 millioner km</span> (1 AE). Tiden for et
+omløb er 1 år (<span class="math inline">365, 25</span> døgn).</p>
+<ul>
+<li>Brug formlen for omkredsen i en cirkel, slå den på hvis I ikke kan
+den i hovedet, til at beregne hvor langt Jorden har bevæget sig på ét
+år.</li>
+<li>Beregn Jordens fart i sin bane omkring Solen.</li>
+</ul>
+<p><strong>Opgave 3: Solen i Galaksen</strong> Vores solsystem er ikke
+stationært; det kredser om centrum af Mælkevejen i en afstand af ca.
+<span class="math inline">26.000</span> lysår. Et “galaktisk år” tager
+omkring <span class="math inline">230</span> millioner år.</p>
+<ul>
+<li>Beregn solens (og dermed din) fart omkring galakse-centret i
+km/s?</li>
+</ul>
+<p><strong>Opgave 4: Så sid dog stille</strong></p>
+<ul>
+<li>Forklar, ved at bruge ideen om initialsystemer, hvorfor kan kan
+sidde stille og roligt og drikke en kop te, når nu man bevæger sig så
+hurtigt!</li>
+</ul>
+<p>Lige som på ISS så bevæger vi os i cirkler, Jorden om egen akse,
+Jorden om Solen og Solen om galakse-centret.</p>
+<ul>
+<li>Hvorfor er det vi oplever det som om vi er i et initialsystem, når
+vi faktisk bevæger os rundt i cirkler.</li>
+</ul>
+<h2 id="einsteins-to-postulater">Einsteins to postulater</h2>
+<p>Vi vil nu se på de to postulater som Einstein kom med i 1905. I 1905
+udgav Albert Einstein artiklen <em>“Om bevægede legemers
+elektrodynamik”</em>. Her opstillede han to grundlæggende antagelser,
+som udfordrede vores klassiske forståelse af fysikken:</p>
+<blockquote>
+<p><strong>1. Det specielle relativitetsprincip</strong> Fysikkens love
+er de samme i alle initialsystemer.</p>
+</blockquote>
+<p>Dette betyder, at hvis du udfører et fysikforsøg i et laboratorium,
+der står stille på Jorden, vil du få nøjagtig samme resultat, hvis du
+udfører det i et tog eller et rumskib, der bevæger sig med konstant
+hastighed. Der findes altså ikke én “rigtig” hviletilstand i universet;
+<strong>al jævn bevægelse er relativ</strong>.</p>
+<p><strong>Eksempel:</strong> Hvis du taber en bold i et tog, der kører
+jævnt, falder den lodret ned præcis som i dit soveværelse.</p>
+<blockquote>
+<p><strong>2. Princippet om lysets konstans</strong> Lysets fart i
+vakuum har den samme værdi <span
+class="math inline"><em>c</em> = 299792458m/s ≈ 3 ⋅ 10<sup>8</sup>
+m/s</span> for alle observatører, uanset deres egen bevægelse eller
+lyskildens bevægelse.</p>
+</blockquote>
+<p><strong>Eksempel:</strong> Hvis I ser et rumskib flyve forbi med
+halvdelen af lysets hastighed og tænde forlygterne, hvor hurtigt vil I
+så se lyset bevæge sig frem?</p>
+<p>Svaret er at både jer på Jorden og folkene i rumskibet vil se lyset
+bevæge sig frem med samme hastighed, <span
+class="math inline"><em>c</em></span>.</p>
+<p><strong>Tænkespørgsål</strong></p>
+<p>Det er her er meget mærkeligt eller passer dårligt med vores
+intuition. * Gennemgå eksemplet helt langsomt.</p>
+<h2 id="eksperiment-lysets-hastighed">Eksperiment: lysets hastighed</h2>
+<p>Vi skal lave et meget simpelt eksperiment hvor vi kan bestemme lysets
+hastighed. Som i Olsenbanden er udstyrslisten god. Vi skal bruge; 1
+mikrobølgeovn, et stykke bøjet pap, en lineal og en æske lys
+pålægschokolade.</p>
+<p><strong>Teori</strong></p>
+<p>Vi kan bruge bølgeligningen til at estimere lysets hastighed.
+Bølgeligningen,</p>
+<p><span
+class="math display"><em>v</em> = <em>λ</em> ⋅ <em>f</em>,</span></p>
+<p>hvor <span class="math inline"><em>λ</em></span> er bølgelængden og
+<span class="math inline"><em>f</em></span> frekvensen.</p>
+<p>I en mikrobølgeovn opstår der stående bølger og vi kan måle
+bølgelængden ved at se på hvor den lyse pålægschokolade smelter.</p>
+<p>Den lyse pålægschokolade smelter der hvor der er bug i de stående
+bølger. Hvis vi måler afstanden mellem finder vi altså <span
+class="math inline"><em>λ</em>/2</span>.</p>
+<p><strong>Udførsel</strong></p>
+<ul>
+<li>Placer det bøjede pap, så chokoladen ikke drejer rundt.</li>
+<li>Placer den lyse pålægschokolade og tænder ovnen i et minut.</li>
+<li>Mål afstanden mellem der hvor den er smeltet.</li>
+</ul>
+<p><strong>Databehandling</strong></p>
+<ul>
+<li>Beregn bølgelængden og hastigheden.</li>
+<li>Sammenlign med lysets hastighed ved afvigelse i %.</li>
+</ul>
+<h2 id="addition-af-hastigheder">Addition af hastigheder</h2>
+<p>Vi skal minde os om hvordan man normalt lægger hastigheder sammen og
+se at det er helt anderledes for lys.</p>
+<p>Det bliver beskrevet i videoen: <a
+href="https://youtu.be/uTyAI1LbdgA?t=62">Se videoen fra 1:00 til
+2:33</a></p>
+<p><strong>Opgave 5: addition af hastigheder</strong></p>
+<p>Vi lader rumskibet bevæge sig med en hastighed på <span
+class="math inline">$v_s = 200\frac{\text{m}}{\text{s}}$</span> i
+forhold til Jorden og bolden blive kastet med en hastighed i forhold til
+personen på <span
+class="math inline">$10\frac{\text{m}}{\text{s}}$</span>.</p>
+<ul>
+<li>Beregn den hastighed som en person på Jorden ser bolden bevæge sig
+med.</li>
+</ul>
+<p>Lad os skrue hastigheden af rumskibet op til 99% af lysets hastighed
+og lade personen tænde en lommelygte pegende frem idet han passere
+Jorden. * Med hvilken hastighed ser personen i rumskibet lyset bevæge
+sig med? * Med hvilken hastighed ser personen på Jorden lyset bevæge sig
+med?</p>
+<p>Den måde man addere hastigheder gælder altså ikke for lys og
+hastigheden er altid den samme!</p>
+<blockquote>
+<p><strong>Ifølge relativitetsteorien er alt relativt, undtagen lysets
+hastighed i vacuum som altid er den samme!</strong></p>
+</blockquote>
+<h2 id="samtidighed">Samtidighed</h2>
+<p>Vi skal se på hvilken konsekvenser det at lysets hastighed er
+konstant har. Vi starter med at se på hvad det betyder for forståelsen
+af at noget sker samtidigt.</p>
+<ul>
+<li><a href="https://youtu.be/uTyAI1LbdgA?t=62">Se videoen fra 2:33 til
+4:22</a></li>
+</ul>
+<p>I videoen udsender personen i rumskibet to lysstråler og alt efter om
+man står på Jorden eller er i rumskibet ser det ikke ud til at de rammer
+endevæggene samtidigt. Lad os starte med at udregne hvordan det ser ud
+hvis det ikke er lys, men en bold han kaster.</p>
+<figure>
+<img src="billeder/samtidighed.png"
+alt="Lys rammer ikke samtidigt, set fra to initialsystemer som ikke er i hvile i forhold til hinanden" />
+<figcaption aria-hidden="true">Lys rammer ikke samtidigt, set fra to
+initialsystemer som ikke er i hvile i forhold til hinanden</figcaption>
+</figure>
+<h3 id="udledning">Udledning</h3>
+<p><strong>Opgave 6: ikke relativistisk</strong></p>
+<p>Nedenfor er udledningen skrevet. For at følge den skal I * Tegne
+situationen, rumskib, Jorden, bolden, manden. * Skrive udledningen op og
+diskutere de forskellige dele.</p>
+<p>Vi lader personen stå i midten af rumskibet og kaste to bolde en frem
+og en tilbage. Lad rumskibet være 20 meter langt og hastigheden han
+kaster med være om <span class="math inline">10m/s</span>.</p>
+<p><strong>Set fra rumskibet</strong></p>
+<p>Afstanden bolden har bevæget sig er givet ved hastigheden gange tiden
+<span
+class="math inline">(<em>x</em> = <em>v</em> ⋅ <em>t</em>)</span>.</p>
+<ul>
+<li>Vis at det tager bolden <span
+class="math inline"><em>t</em> = 1s</span> før den rammer
+bagvæggen.</li>
+<li>Vis at det tager bolden <span
+class="math inline"><em>t</em> = 1s</span> før den rammer
+forvæggen.</li>
+<li>Hvad kan personen i rumskibet konkludere om samtidigheden af de to
+begivenheder?</li>
+</ul>
+<p><strong>Set fra Jorden</strong></p>
+<p>Fra Jorden ser der lidt anderledes ud.</p>
+<ul>
+<li>Rumfartøjets fart: <span class="math inline"><em>v</em> = 200
+m/s</span>.</li>
+<li>Boldens fart relativt til skibet: <span class="math inline">10
+m/s</span>.</li>
+<li>Boldens fart mod fem: <span
+class="math inline"><em>v</em><sub><em>f</em><em>r</em><em>e</em><em>m</em></sub> = 200
+m/s + 10 m/s = 210 m/s</span>.</li>
+<li>Boldens fart mod bagud: <span
+class="math inline"><em>v</em><sub><em>b</em><em>a</em><em>g</em></sub> = 200
+m/s − 10 m/s = 190 m/s</span>.</li>
+</ul>
+<p>Vi lader <span class="math inline"><em>t</em> = 0</span> være
+affyringstidspunktet, hvor rumskibets midte er i <span
+class="math inline"><em>x</em> = 0</span>.</p>
+<ul>
+<li>Forvæggens startposition: <span class="math inline"><em>x</em> = 10
+m</span>.</li>
+<li>Bagvæggens startposition: <span class="math inline"><em>x</em> = −10
+m</span>.</li>
+</ul>
+<p><strong>Udregning for forvæggen</strong></p>
+<p>Forvæggen bevæger sig væk fra bolden. Vi skal finde det tidspunkt
+<span
+class="math inline"><em>t</em><sub><em>f</em><em>o</em><em>r</em></sub></span>,
+hvor boldens position er lig med væggens position.</p>
+<p>Væggens position: <span
+class="math inline"><em>x</em><sub><em>v</em><em>æ</em><em>g</em></sub>(<em>t</em>) = 10m + 200m/s ⋅ <em>t</em></span></p>
+<p>Boldens position: <span
+class="math inline"><em>x</em><sub><em>b</em><em>o</em><em>l</em><em>d</em></sub>(<em>t</em>) = 210m ⋅ <em>t</em></span></p>
+<p>Bolden må ramme væggen nå <span
+class="math inline"><em>x</em><sub><em>v</em><em>æ</em><em>g</em></sub>(<em>t</em>) = <em>x</em><sub><em>b</em><em>o</em><em>l</em><em>d</em></sub>(<em>t</em>)</span>.</p>
+<ul>
+<li>Sæt de to ligning lig hinanden og løs for <span
+class="math inline"><em>t</em></span>.</li>
+</ul>
+<p>Løsning: Vi sætter dem lig hinanden (vi dropper enheder da det hele
+er i SI-enheder): <span
+class="math display">210 ⋅ <em>t</em> = 10 + 200 ⋅ <em>t</em> ⇔ 210<em>t</em> − 200 ⋅ <em>t</em> = 10 ⇔ 10 ⋅ <em>t</em> = 10 ⇔ <em>t</em> = 1</span></p>
+<p><strong>Udregning for bagvæggen</strong></p>
+<p>Bagvæggen bevæger sig mod bolden. Vi skal finde det tidspunkt <span
+class="math inline"><em>t</em></span>, hvor de mødes.</p>
+<p>Væggens position: <span
+class="math inline"><em>x</em><sub><em>v</em><em>æ</em><em>g</em></sub>(<em>t</em>) = −10m + 200m/s ⋅ <em>t</em></span></p>
+<p>Boldens position: <span
+class="math inline"><em>x</em><sub><em>b</em><em>o</em><em>l</em><em>d</em></sub>(<em>t</em>) = 190m/s ⋅ <em>t</em></span></p>
+<ul>
+<li>Sæt de to ligning lig hinanden og løs for <span
+class="math inline"><em>t</em></span></li>
+</ul>
+<p>Løsning: <span
+class="math display">190 ⋅ <em>t</em> = −10 + 200 ⋅ <em>t</em> ⇔ −10 ⋅ <em>t</em> = −10 ⇔ <em>t</em> = 1</span></p>
+<ul>
+<li>Hvad mener personen på Jorden om samtidigheden af de to
+begivenheder?</li>
+</ul>
+<p>Med bolde er begivenhederne altså ens, men hvad med lys.</p>
+<h3 id="hvorfor-dette-knækker-med-lys-einstein">Hvorfor dette knækker
+med lys (Einstein)</h3>
+<p>Hvis vi erstatter bolden med lys, må vi <strong>ikke</strong> bruge
+<span
+class="math inline"><em>v</em><sub><em>f</em><em>r</em><em>e</em><em>m</em></sub> = 210
+m/s</span> og <span
+class="math inline"><em>v</em><sub><em>b</em><em>a</em><em>g</em></sub> = 190
+m/s</span>. Vi skal bruge <span class="math inline"><em>c</em></span>
+begge steder.</p>
+<p>Hvis du prøver at indsætte <span
+class="math inline"><em>c</em></span> får vi at får vi at hastigheden
+frem er <span
+class="math inline"><em>v</em><sub><em>f</em><em>r</em><em>e</em><em>m</em></sub> = <em>c</em></span>
+og hastigheden bagud er <span
+class="math inline"><em>v</em><sub><em>b</em><em>a</em><em>g</em><em>u</em><em>d</em></sub> = −<em>c</em></span>.</p>
+<p>For forvægge;</p>
+<p>Væggens position: <span
+class="math inline"><em>x</em><sub><em>v</em><em>æ</em><em>g</em></sub>(<em>t</em>) = 10m + 200m/s ⋅ <em>t</em></span></p>
+<p>Lysets position: <span
+class="math inline"><em>x</em><sub><em>l</em><em>y</em><em>s</em></sub>(<em>t</em>) = <em>c</em> ⋅ <em>t</em></span></p>
+<p>Lyset må ramme væggen nå <span
+class="math inline"><em>x</em><sub><em>v</em><em>æ</em><em>g</em></sub>(<em>t</em>) = <em>x</em><sub><em>b</em><em>o</em><em>l</em><em>d</em></sub>(<em>t</em>)</span>.</p>
+<ul>
+<li><p>Sæt de to ligning lig hinanden og løs for <span
+class="math inline"><em>t</em></span>.</p></li>
+<li><p><span
+class="math inline"><em>x</em><sub><em>l</em><em>y</em><em>s</em></sub> = <em>c</em> ⋅ <em>t</em></span></p></li>
+<li><p><span
+class="math inline"><em>x</em><sub><em>f</em><em>o</em><em>r</em><em>e</em><em>n</em><em>d</em><em>e</em></sub> = 10 + 200 ⋅ <em>t</em></span></p></li>
+</ul>
+<p>x-koordinerter er ens når <span class="math display">$$x_{lys} =
+x_{forende} \Leftrightarrow  c \cdot t = 10 + 200 \cdot t \Rightarrow t
+= \frac{10}{c - 200}$$</span></p>
+<p>For bagvæggen;</p>
+<p>Væggens position: <span
+class="math inline"><em>x</em><sub><em>v</em><em>æ</em><em>g</em></sub>(<em>t</em>) = −10m + 200m/s ⋅ <em>t</em></span></p>
+<p>Lysets position: <span
+class="math inline"><em>x</em><sub><em>l</em><em>y</em><em>s</em></sub>(<em>t</em>) = −<em>c</em> ⋅ <em>t</em></span></p>
+<p>x-koordinaterne er ens når; <span class="math display">$$
+x_{lys} = x_{bagende}  \Leftrightarrow -c \cdot t = -10 + 200 \cdot t
+\Leftrightarrow -c\cdot t - 200 \cdot t = -10 \Leftrightarrow t =
+\frac{10}{c + 200}
+$$</span></p>
+<p>Her bliver nævnerne forskellige (<span
+class="math inline"><em>c</em> − 200</span> vs <span
+class="math inline"><em>c</em> + 200</span>), og derfor bliver tiderne
+observeret forskellige.</p>
+<h3 id="konklusion">Konklusion</h3>
+<p>Vi kan nu konkludere, at de to personer ikke ser lyset ramme
+samtidigt. Helt generelt viser den specielle relativitetsteori at to
+personer i relativ bevægelse i forhold til hinanden ikke er enige om
+hvornår noget sker.</p>
+<p>Hvis man skal svare på spørgsmålet “skete det samtidigt” kræver det
+at personerne står stille i forhold til hinanden.</p>
+<p><strong>Opgave 7: langsomt lys</strong></p>
+<p>Lad os antage at lyset kun bevæger sig med <span
+class="math inline"><em>c</em> = 300m/s</span>.</p>
+<ul>
+<li>Beregn tidsforskellen på at lyset rammer forenden i forhold til
+bagenden af rumskibet, set fra Jorden, <span
+class="math inline"><em>Δ</em><em>t</em> = <em>f</em><sub><em>b</em></sub> − <em>t</em><sub><em>f</em></sub></span>.</li>
+</ul>
+<p><strong>Opgave 8: hurtigt lys</strong></p>
+<p>Lad os nu give lyset sin rigtige fart på <span
+class="math inline"><em>c</em> = 3 ⋅ 10<sup>8</sup>m/s</span> og lade
+rumskibet bevæges sig med samme hastighed som den internationale
+rumstation, ISS, <span class="math inline"><em>v</em> = 7.66km/s</span>.
+* Beregn tidsforskellen på at lyset rammer forenden i forhold til
+bagenden af rumskibet, set fra Jorden, <span
+class="math inline"><em>Δ</em><em>t</em> = <em>f</em><sub><em>b</em></sub> − <em>t</em><sub><em>f</em></sub></span>.</p>
+<h2 id="tidsforlængelse-når-tiden-strækker-sig">Tidsforlængelse: Når
+tiden strækker sig</h2>
+<p>Det næste vi skal se på er tiden.</p>
+<p>Når vi har accepteret Einsteins postulat om, at lysets fart er den
+samme for alle observatører, uanset deres egen bevægelse, støder vi på
+en mærkværdig konsekvens: <strong>Tiden går ikke lige hurtigt for
+alle.</strong> For at forstå dette, bruger vi ofte et tankeeksperiment
+med et “lysur” placeret i et tog.</p>
+<h3 id="tankeeksperimentet-med-lysuret">Tankeeksperimentet med
+lysuret</h3>
+<ul>
+<li><a href="https://youtu.be/uTyAI1LbdgA?t=62">Se videoen fra 7:15 til
+9:00</a></li>
+</ul>
+<p>I filmen udsender astronauten en lysstråle lodret op fra gulvet som
+rammer loftet. Ved at måle tiden det tager har han nu skabet et ur.
+Tiden det tager for lyset at nå loftet, kalder vi egen-tiden <span
+class="math inline"><em>t</em><sub>0</sub></span>. Da lysets fart er
+<span class="math inline"><em>c</em></span>, er distancen til loftet
+givet ved <span
+class="math inline"><em>d</em><sub>0</sub> = <em>c</em> ⋅ <em>t</em><sub>0</sub></span>.</p>
+<p>Fra Jorden skal vi tage bevægelsen af rumskibet med. Lysstrålen
+bevæger sig ikke kun op men også til siden og bruger tiden <span
+class="math inline"><em>t</em></span>. Da lysets fart <span
+class="math inline"><em>c</em></span> skal være den samme, må tiden
+<span class="math inline"><em>t</em></span> nødvendigvis være længere
+end <span class="math inline"><em>t</em><sub>0</sub></span>.</p>
+<p>Dette fænomen kaldes <strong>tidsforlængelse</strong> (eller
+tidsdilatation).</p>
+<h3 id="udledning-via-pythagoras">Udledning via Pythagoras</h3>
+<figure>
+<img src="billeder/tidsforlængelse.png" alt="Tidsforlængelse" />
+<figcaption aria-hidden="true">Tidsforlængelse</figcaption>
+</figure>
+<p>Vi kan bruge figuren til at lave en retvinklet trekant.</p>
+<ul>
+<li><strong>Den lodrette katete (<span
+class="math inline"><em>c</em> ⋅ <em>t</em><sub>0</sub></span>):</strong>
+Dette er den lodrette afstand til loftet (som set af Astrid).</li>
+<li><strong>Den vandrette katete (<span
+class="math inline"><em>v</em> ⋅ <em>t</em></span>):</strong> Dette er
+den afstand, toget har flyttet sig, mens lyset bevæger sig mod loftet
+(som set af Bertil).</li>
+<li><strong>Hypotenusen (<span
+class="math inline"><em>c</em> ⋅ <em>t</em></span>):</strong> Dette er
+den faktiske distance, som lyset tilbagelægger (som set af Bertil).</li>
+</ul>
+<p>Ved at bruge Pythagoras’ læresætning (<span
+class="math inline"><em>a</em><sup>2</sup> + <em>b</em><sup>2</sup> = <em>c</em><sup>2</sup></span>)
+på trekanten får vi:</p>
+<p><span
+class="math display">(<em>v</em> ⋅ <em>t</em>)<sup>2</sup> + (<em>c</em> ⋅ <em>t</em><sub>0</sub>)<sup>2</sup> = (<em>c</em> ⋅ <em>t</em>)<sup>2</sup></span></p>
+<p>Hvis vi isolerer $ t$ (tiden målt af den stationære observatør),
+ender vi med den berømte formel for tidsforlængelse:</p>
+<p><span class="math display">$$ t = \frac{1 }{\sqrt{1 -
+\frac{v^2}{c^2}}} \cdot t_0.$$</span></p>
+<p>Denne ligning viser, at jo tættere <span
+class="math inline"><em>v</em></span> kommer på lysets hastighed <span
+class="math inline"><em>c</em></span>, desto mindre bliver nævneren, og
+<span class="math inline"><em>t</em></span> bliver meget større end
+<span class="math inline"><em>t</em><sub>0</sub></span>.</p>
+<details>
+<summary>
+<b>Klik her for at se den matematiske udledning</b>
+</summary>
+<p>Udledning af udtrykken ovenfor:</p>
+<p>Ifølge Pythagoras har vi: <span
+class="math display">(<em>v</em> ⋅ <em>t</em>)<sup>2</sup> + (<em>c</em> ⋅ <em>t</em><sub>0</sub>)<sup>2</sup> = (<em>c</em> ⋅ <em>t</em>)<sup>2</sup></span></p>
+<p><strong>Trin 1: Hæv parenteserne</strong> <span
+class="math display"><em>v</em><sup>2</sup><em>t</em><sup>2</sup> + <em>c</em><sup>2</sup><em>t</em><sub>0</sub><sup>2</sup> = <em>c</em><sup>2</sup><em>t</em><sup>2</sup></span></p>
+<p><strong>Trin 2: Saml leddene med <span
+class="math inline"><em>t</em></span> på samme side</strong> <span
+class="math display"><em>c</em><sup>2</sup><em>t</em><sub>0</sub><sup>2</sup> = <em>c</em><sup>2</sup><em>t</em><sup>2</sup> − <em>v</em><sup>2</sup><em>t</em><sup>2</sup></span></p>
+<p><strong>Trin 3: Sæt <span
+class="math inline"><em>t</em><sup>2</sup></span> uden for en
+parentes</strong> <span
+class="math display"><em>c</em><sup>2</sup><em>t</em><sub>0</sub><sup>2</sup> = <em>t</em><sup>2</sup>(<em>c</em><sup>2</sup> − <em>v</em><sup>2</sup>)</span></p>
+<p><strong>Trin 4: Isoler <span
+class="math inline"><em>t</em><sup>2</sup></span></strong> <span
+class="math display">$$t^2 = \frac{c^2 t_0^2}{c^2 - v^2}$$</span></p>
+<p><strong>Trin 5: Divider med <span
+class="math inline"><em>c</em><sup>2</sup></span> i tæller og nævner for
+at forenkle</strong> <span class="math display">$$t^2 = \frac{t_0^2}{1 -
+\frac{v^2}{c^2}}$$</span></p>
+<p><strong>Trin 6: Tag kvadratroden på begge sider</strong> <span
+class="math display">$$t = \frac{t_0}{\sqrt{1 -
+\frac{v^2}{c^2}}}$$</span></p>
+<p>Dette kan også skrives som: <span
+class="math display"><em>t</em> = <em>γ</em> ⋅ <em>t</em><sub>0</sub></span>
+hvor <span class="math inline"><em>γ</em></span> (Lorentz-faktoren) er
+<span class="math inline">$\frac{1}{\sqrt{1 -
+\frac{v^2}{c^2}}}$</span>.</p>
+<p><em>Konklusion: Da nævneren altid er mindre end 1 (når <span
+class="math inline"><em>v</em> &gt; 0</span>), vil <span
+class="math inline"><em>t</em></span> altid være større end <span
+class="math inline"><em>t</em><sub>0</sub></span>. Tiden går altså
+langsommere for objektet i bevægelse set fra den stationære
+observatør.</em></p>
+</details>
+<p><span class="math inline"><em>t</em><sub>0</sub></span> er egentiden
+i rumskibet og er altså mindre end <span
+class="math inline"><em>t</em></span> som måles fra Jorden.</p>
+<p>Vi kan definere den faktor som skal ganges på <span
+class="math inline"><em>t</em><sub>0</sub></span> for at få <span
+class="math inline"><em>t</em></span>. Den kaldes gamma-faktoren og
+defineres som:</p>
+<p><span class="math display">$$
+\gamma = \frac{1 }{\sqrt{1 - \frac{v^2}{c^2}}}.
+$$</span></p>
+<p>Tidsforskellen kan skrives som <span
+class="math inline"><em>t</em> = <em>γ</em><em>t</em><sub>0</sub></span>.</p>
+<p><strong>Eksempel</strong> Hvis en person rejser i et år med <span
+class="math inline">90</span>% af lysets hastighed relativt til Jorden
+vil den tid der er gået på Jorden være</p>
+<p><span class="math display">$$
+t = \frac{1}{\sqrt{1-\frac{(0.9c)^2}{c^2}}} \cdot 1\text{år} = 2.29
+\text{år}.
+$$</span></p>
+<p>Der er altså gået over dobbelt så lang tid på Jorden som i rumskibet.
+Tiden er med andre ord gået langsommere på rumskibet.</p>
+<blockquote>
+<p><strong>Vigtig pointe:</strong> Tiden går langsomst for den person,
+der bevæger sig hurtigt i forhold til observatøren.</p>
+</blockquote>
+<p>Vi har udregnet det med et lysur, men det gælder
+<strong>alt</strong>, både Bornholmerure, armbåndsure men også
+hjerteslagene i din krop og synapserne i din hjerne. Selve tiden går
+langsommere og alt der er påvirket af tiden vil gå langsommere. Lige som
+om noget sker samtidigt er selve det at tiden går relativt.</p>
+<p><strong>Tænkespørgsmål</strong></p>
+<ul>
+<li>Hvorfor mærker vi ikke tidsforlængelse, når vi kører i et
+almindeligt tog med <span class="math inline">180</span> km/t?</li>
+<li>Hvad ville der ske med <span class="math inline"><em>t</em></span>,
+hvis man kunne rejse med præcis lysets hastighed (<span
+class="math inline"><em>v</em> = <em>c</em></span>)?</li>
+</ul>
+<p><strong>Opgave 9: Tidsforlængelse</strong></p>
+<p>I opgave 1,2 og 3 udregnede vi hvor hurtigt vi bevæger os. * Brug den
+fundne hastighed til at beregne hvor meget langsommere</p>
+<p><strong>Opgave 10: Rumrejser går da hurtige, eller</strong></p>
+<p>Vi vil gerne besøge vores nærmeste stjerne udover Solen som hedder
+Proxima Centruri og er <span class="math inline">4, 25</span> lysår væk.
+Lad os rejse med 85% af lysets hastighed.</p>
+<p>Set fra Jorden skal rumskibet rejse en afstand på <span
+class="math inline"><em>x</em> = 4, 25ly</span> med en fart på <span
+class="math inline"><em>v</em> = 0.85<em>c</em></span>.</p>
+<ul>
+<li>Beregn hvor lang tid det tager.</li>
+</ul>
+<p>Ombord på rumskibet går tiden langsommere,</p>
+<ul>
+<li>Beregn gamma-faktoren.</li>
+<li>Beregn tiden i rumskibet, <span
+class="math inline"><em>t</em></span>.</li>
+<li>Overvej hvordan rumskibet kan nå Proxima Centauri så hurtigt, når
+Proxima Centauri nu ligger <span class="math inline">4, 25ly</span>
+væk.</li>
+</ul>
+<p><strong>Opgave 11: Tvillingeparadokset</strong> Tvillingeparadokset
+er et af de mest berømte tankeeksperimenter inden for den specielle
+relativitetsteori. Det illustrerer konsekvenserne af
+<strong>tidsforlængelse</strong>.</p>
+<p>vi vil bruge beregningerne fra før, men lad nu rumskibet svinge
+omkring Proxima Centauri og vende tilbage til Jorden. Vi antager at den
+tid det tager at svinge rundt er meget lille og ser bort fra den.</p>
+<ul>
+<li>Beregn hvor lang tid hele rejsen vil tage, set fra Jorden (meget let
+beregning).</li>
+<li>Beregn hvor lang tid hele rejsen vil tage, set fra rumskibet (igen
+meget let beregning).</li>
+</ul>
+<p>Tvillingeparadokset går nu ud på at en af astronauterne, om bord på
+rumskibet har en tvilling. Det kunne jo være Scott på rumsikbet og Mark
+på Jorden.</p>
+<figure>
+<img src="billeder/twins.jpg" alt="Scott og Mark Kelly." />
+<figcaption aria-hidden="true">Scott og Mark Kelly.</figcaption>
+</figure>
+<ul>
+<li>Hvor meget ældre vil Mark være i forhold til Scott, når rumrejsen er
+slut?</li>
+</ul>
+<p>Det paradoksale ligger altså i at to tvillinger lige pludseligt ikke
+er lige gamle. Det er også muligt at blive yngre end sin mor, hvis man
+altså sende hende afsted på i et rumskib!</p>
+<p>Der er en del 2 i paradokset. Ifølge relativitetsteorien er alle
+initialsystemer lige gode og man kan ikke sige hvem der er i bevægelse
+og hvem der står stille. Scott Kelly kan altså argumentere for at det er
+ham som står stille og Mark Kelly på Jorden som bevæger sig. På den måde
+burde det være Scott som var ældst efter turen.</p>
+<p>Der sker noget på rumrejsen som gør at Scott Kelly ikke er i et
+initialsystem hele tiden og det er netop derfor Mark er ældst.</p>
+<ul>
+<li>Prøv at finde ud af hvad det kan være ved at se op definitionen af
+initialsystemer.</li>
+</ul>
+<p><strong>Opgave 12: Kelly tvillingerne igen</strong></p>
+<p>Scott Kelly er den person som har været længst på den internationale
+rumstation (ISS), 520 dage, men hans bror Mark Kelly blev på Jorden.
+Rumstationen bevæger sig med en fart på <span class="math inline">7, 67
+km/s</span> og ifølge Wikipedia betyder det at han ældet ca. <span
+class="math inline">8, 6milli sekunder</span> i forhold til sin
+tvilling.</p>
+<ul>
+<li>prøv at regn efter om Wikipedia har ret.</li>
+</ul>
+<h2 id="længde-formindskelse">længde-formindskelse</h2>
+<ul>
+<li><a href="https://youtu.be/uTyAI1LbdgA?t=62">Se videoen fra 5:20 til
+6:15</a></li>
+</ul>
+<p>Bemærk at denne ændring i tiden ikke er den tidsforlængelse vi
+arbejde med lige ovenfor, men den som kommer af at samtidighed også er
+relativ.</p>
+<details>
+<summary>
+<b>Klik her for at se den matematiske udledning</b>
+</summary>
+<p>Vi lader igen et rumskib passere Jorden med en relativ hastigheden
+<span class="math inline"><em>v</em></span>. Længden af rumskibet bliver
+målt ved at lade dets bagende passere punkt A samtidigt med at dets
+forende passere punkt B. Derved måles længden <span
+class="math inline"><em>L</em><sub>0</sub></span>. I rumskibet måles der
+hvor lang tid der går før rumskibets forende passerer først A og så B.
+Den tid kaldes <span
+class="math inline"><em>t</em><sub>0</sub></span>.</p>
+<ul>
+<li><strong>Observatør på Jorden (System S)</strong> ser længden af
+rumskibet som <span class="math inline"><em>L</em><sub>0</sub></span> og
+måler tiden <span class="math inline"><em>t</em></span>.</li>
+<li><strong>Observatør i rumskibet (System S’)</strong> ser længden af
+rumskibet som <span class="math inline"><em>L</em></span> og måler tiden
+<span class="math inline"><em>t</em><sub>0</sub></span>.</li>
+</ul>
+<p>Begge observatører måler den samme relative hastighed og vi kan
+skrive det som;</p>
+<ul>
+<li>Jorden: <span class="math inline">$v = \frac{L_0}{t}$</span></li>
+<li>Rumskib: <span class="math inline">$v = \frac{L}{t_0}$</span></li>
+</ul>
+<p>Da <span class="math inline"><em>v</em></span> er den samme kan vi
+sætte de to højresider lig hinanden, <span class="math display">$$
+\frac{L_0}{t} = \frac{L}{t_0} \Leftrightarrow L_0 = \frac{L}{t_0} \cdot
+t.
+$$</span> Vi kan nu bruge formlen for tidsforlængelse, <span
+class="math inline">$t = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+t_0$</span> og indsætte</p>
+<p><span class="math display">$$
+L _0= \frac{L}{t_0} \cdot t =\frac{L}{t_0} \cdot \frac{1}{\sqrt{1 -
+\frac{v^2}{c^2}}} t_0 = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} L.
+$$</span></p>
+<p>Hvis vi bruger gamma-faktoren kan det skrive som; <span
+class="math display">$$
+L = \frac{1}{\gamma}L_0
+$$</span></p>
+</details>
+<p>I videoen så vi hvordan længder også er relative. Formlen for
+længde-formindskelse er;</p>
+<p><span class="math display">$$
+L = \sqrt{1-\frac{v^2}{c^2}}\cdot L_0.
+$$</span></p>
+<p>Da <span class="math inline">$\sqrt{1-\frac{v^2}{c^2}}&lt;1$</span>,
+må længden i hvile være længere end længden ved et objekt som bevæger
+sig.</p>
+<p><strong>Opgave 14: turen til Proxima Centauri</strong></p>
+<p>I opgave 11 udregnede I at det tog <span
+class="math inline"><em>t</em><sub>0</sub> = 2, 64</span> år i
+rumskibets egentid at tilbagelægge afstanden mellem Jorden og Proxima
+Centauri. Men med en afstand på <span class="math inline">4, 25ly</span>
+skal de have en fart på <span
+class="math inline"><em>v</em> = 1, 6 ⋅ <em>c</em></span>, som er højere
+end lysets for at nå derhen. Det kan ikke passe.</p>
+<ul>
+<li>Brug formlen for længdeforkortelse til at udregne en ny længde for
+afstanden mellem Jorden og Proxima Centauri.</li>
+<li>Undersøg om de kan nå dertil på <span
+class="math inline">2, 64</span> år med en fart på <span
+class="math inline"><em>v</em> = 0.85ly</span>.</li>
+</ul>
+<p><strong>Opgave 15: stigen i vognen</strong> En pensioneret overlærer
+vil gerne hjælpe sin datter med at male. Da datteren bor højt oppe har
+den pensionerede overlærer brug for en lang stige. Den pensionerede
+overlærers stige er 4,2 meter lang og han har en Morris Minor</p>
+<figure>
+<img src="billeder/stige_morris.png" alt="Stigen og bilen" />
+<figcaption aria-hidden="true">Stigen og bilen</figcaption>
+</figure>
+<ul>
+<li>Beregn hvor hurtigt han skal løbe med stigen for at den kan være i
+bilen.</li>
+</ul>
+<h2 id="velocityraptor">Velocityraptor</h2>
+<p>Vi har nu argumentet for at længder bliver kortere og tiden bliver
+længere når vi bevæger os. Det kan kun observeres hvis vi bevæger os
+meget hurtigt, men hvad nu hvis vi kunne skrue ned for lysets hastighed.
+Det kan vi selvfølgeligt ikke i virkeligheden, men i et computerspil kan
+vi godt.</p>
+<ul>
+<li><a href="https://testtubegames.com/velocityraptor.html">Spil,
+velocityraptor</a>.</li>
+</ul>
+<h2 id="udledningen-schwarzschild-radiussen-klassisk">Udledningen
+Schwarzschild-radiussen klassisk</h2>
+<p>I klassisk mekanik er undvigelseshastigheden den fart, et objekt skal
+have for at undslippe et himmellegemes tyngdefelt helt. Det sker, når
+den kinetiske energi er lig med den potentielle energi:</p>
+<p><span class="math display">$$\frac{1}{2}mv^2 = \frac{G \cdot M \cdot
+m}{r}$$</span></p>
+<p>Hvor: * <span class="math inline"><em>G</em></span> er den
+universelle gravitationskonstant. * <span
+class="math inline"><em>M</em></span> er massen af det tunge objekt
+(f.eks. en stjerne). * <span class="math inline"><em>m</em></span> er
+massen af det objekt, der prøver at undslippe. * <span
+class="math inline"><em>r</em></span> er afstanden fra centrum.</p>
+<h3 id="schwarzschild-radiussen-r_s">Schwarzschild-radiussen (<span
+class="math inline"><em>R</em><sub><em>s</em></sub></span>)</h3>
+<p>For at finde “the point of no return” – altså begivenhedshorisonten
+for et sort hul – sætter vi undvigelseshastigheden <span
+class="math inline"><em>v</em></span> til at være lig med lysets fart
+<span class="math inline"><em>c</em></span>. Hvis selv lyset ikke kan
+slippe væk, kan intet andet i universet heller ikke.</p>
+<p>Vi omstiller ligningen (hvor <span
+class="math inline"><em>m</em></span> går ud mod hinanden):</p>
+<p><span class="math display">$$\frac{1}{2}c^2 = \frac{G \cdot
+M}{r}$$</span></p>
+<p>Nu isolerer vi <span class="math inline"><em>r</em></span>, som vi
+kalder Schwarzschild-radiussen (<span
+class="math inline"><em>R</em><sub><em>s</em></sub></span>):</p>
+<p><span class="math display">$$R_s = \frac{2 \cdot G \cdot
+M}{c^2}$$</span></p>
+<h3 id="hvorfor-er-det-lidt-snyd">Hvorfor er det lidt “snyd”?</h3>
+<p>Det fascinerende er, at denne klassiske udledning (som blev foreslået
+af John Michell helt tilbage i 1783) giver præcis det samme resultat som
+Einsteins meget mere komplekse feltligninger fra den almene
+relativitetsteori.</p>
+<p>I virkeligheden er fysikken bagved dog anderledes: 1.
+<strong>Klassisk:</strong> Lyset bremses ned af tyngdekraften, indtil
+det falder tilbage (som en sten kastet i vejret). 2.
+<strong>Relativistisk:</strong> Lyset har altid farten <span
+class="math inline"><em>c</em></span>, men selve
+<strong>rumtiden</strong> er krummet så kraftigt inden for
+Schwarzschild-radiussen, at alle veje for lyset peger indad mod
+centrum.</p>
+<h3 id="eksempel">Eksempel</h3>
+<p>Prøv at beregne Schwarzschild-radiussen for Jorden. * Brug <span
+class="math inline"><em>M</em><sub><em>j</em><em>o</em><em>r</em><em>d</em></sub> ≈ 5, 97 ⋅ 10<sup>24</sup>
+kg</span>. * De vil opdage, at hvis man pressede hele Jorden sammen til
+et sort hul, ville den kun være ca. <strong>9 mm</strong> i radius (på
+størrelse med en glaskugle)!</p>
+<h3 id="øvelse-myonernes-rejse-beviset-på-relativitet"><strong>Øvelse:
+Myonernes rejse – Beviset på relativitet</strong></h3>
+<p>Myoner er en form for “tunge elektroner”, der skabes i de øverste lag
+af atmosfæren (ca. 10 km oppe), når kosmisk stråling rammer atomer i
+luften.</p>
+<p><strong>De tørre tal:</strong></p>
+<p><strong>Levetid:</strong> En myon lever i gennemsnit kun <span
+class="math inline"><em>t</em><sub>0</sub> ≈ 2, 2 µs</span> (<span
+class="math inline">2, 2 ⋅ 10<sup>−6</sup></span> sekunder), før den
+henfalder.</p>
+<p><strong>Hastighed:</strong> De suser mod Jorden med ca. 99,8 % af
+lysets hastighed (<span
+class="math inline"><em>v</em> = 0, 998<em>c</em></span>).</p>
+<h4 id="del-1-den-klassiske-beregning-newtons-verden"><strong>Del 1: Den
+klassiske beregning (Newtons verden)</strong></h4>
+<p>Hvis vi ikke kendte til relativitetsteori, ville vi beregne deres
+rækkevidde sådan her:</p>
+<ol type="1">
+<li>Beregn hvor langt en myon kan nå at rejse i sin levetid med
+hastigheden <span class="math inline">0, 998<em>c</em></span>.</li>
+<li>Kan myonen nå ned til havoverfladen (10 km væk), før den dør?</li>
+</ol>
+<h4 id="del-2-relativistisk-løsning-to-sider-af-samme-sag"><strong>Del
+2: Relativistisk løsning – To sider af samme sag</strong></h4>
+<p>I virkeligheden detekterer vi masser af myoner ved jordoverfladen.
+Dette kan forklares på to måder, alt efter hvilket initialsystem man
+befinder sig i:</p>
+<p><strong>A) Set fra Jorden (Tidsforlængelse):</strong> Set fra Jorden
+bevæger myonen sig ekstremt hurtigt. Derfor går myonens “indre ur”
+langsommere i forhold til vores ure.</p>
+<ul>
+<li>Beregn <span class="math inline"><em>γ</em></span>-faktoren for
+<span class="math inline"><em>v</em> = 0, 998<em>c</em></span>.</li>
+<li>Beregn myonens levetid <span class="math inline"><em>t</em></span>
+set fra Jorden (<span
+class="math inline"><em>t</em> = <em>γ</em> ⋅ <em>t</em><sub>0</sub></span>).</li>
+<li>Hvor langt kan myonen nu rejse set fra Jorden?</li>
+</ul>
+<p><strong>B) Set fra Myonen (Længdekontraktion):</strong> Hvis du red
+på ryggen af myonen, ville du stadig mene, at du kun lever i <span
+class="math inline">2, 2 µs</span>. Men for den er det Jorden, der suser
+mod sig med <span class="math inline">0, 998<em>c</em></span>.</p>
+<ul>
+<li>Brug formlen for længdekontraktion (<span
+class="math inline"><em>L</em> = <em>L</em><sub>0</sub>/<em>γ</em></span>)
+til at beregne, hvor tyk atmosfæren (de 10 km) er set fra myonens
+perspektiv.</li>
+<li>Kan myonen nå at “overleve” denne meget kortere distance på sin
+korte levetid?</li>
+</ul>
+<details>
+<summary>
+<b>Klik her for at se facit og forklaring</b>
+</summary>
+<p><strong>Beregninger:</strong></p>
+<ol type="1">
+<li><p><strong>Gamma-faktor:</strong> <span
+class="math display">$$\gamma = \frac{1}{\sqrt{1 - 0,998^2}} \approx
+15,8$$</span></p></li>
+<li><p><strong>Tidsforlængelse (Jordens perspektiv):</strong> Myonen
+lever i <span class="math inline">15, 8 ⋅ 2, 2 µs ≈ 34, 8 µs</span>.
+Distance: <span
+class="math inline"><em>v</em> ⋅ <em>t</em> ≈ 3 ⋅ 10<sup>8</sup>
+m/s ⋅ 34, 8 ⋅ 10<sup>−6</sup> s ≈ 10.440 m</span>. <em>(Den kan altså
+lige præcis nå ned!)</em></p></li>
+<li><p><strong>Længdekontraktion (Myonens perspektiv):</strong>
+Atmosfæren er kun <span class="math inline">10.000 m/15, 8 ≈ 633
+m</span> tyk. Tid til at rejse 633 m: <span class="math inline">633
+m/(0, 998<em>c</em>) ≈ 2, 1 µs</span>. <em>(Den når altså ned, lige før
+dens 2,2 µs er gået!)</em></p></li>
+</ol>
+</details>
+<p><strong>Konklusion:</strong> Begge observatører er enige om, at
+myonen når Jorden, men deres forklaringer er forskellige (længere tid
+vs. kortere vej). Det er relativitet i en nøddeskal</p>
+<h3 id="eksterne-ressourcer">eksterne ressourcer</h3>
+<ul>
+<li><a href="https://testtubegames.com/velocityraptor.html">Spil,
+velocityraptor</a></li>
+<li><a href="briliant.org/minutephysicsspecialrelativity">briliant,
+minutephysics</a></li>
+<li><a
+href="https://brilliant.org/classroom/join-v2/1561d2b3-54c2-4619-8050-172115a6c4b7">deltag</a></li>
+<li><a
+href="https://brilliant.org/courses/dynamics-bootcamp/reference-frames-2/reference-frames-special-relativity">special
+relativity brilliant</a></li>
+<li><a href="https://youtu.be/uTyAI1LbdgA">forklaring</a></li>
+<li><a href="https://youtu.be/g8ZO5XvHORI">film</a></li>
+</ul>
