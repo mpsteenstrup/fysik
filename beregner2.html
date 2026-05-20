@@ -1,0 +1,30 @@
+</div>
+
+<script>
+// Du sletter <script src="beregner.js"></script> og indsætter koden direkte her:
+function sind(grader) { return Math.sin(grader * Math.PI / 180); }
+function cosd(grader) { return Math.cos(grader * Math.PI / 180); }
+function tand(grader) { return Math.tan(grader * Math.PI / 180); }
+function asind(værdi) { return Math.asin(værdi) * (180 / Math.PI); }
+function acosd(værdi) { return Math.acos(værdi) * (180 / Math.PI); }
+function atand(værdi) { return Math.atan(værdi) * (180 / Math.PI); }
+function sqrt(x) { return Math.sqrt(x); }
+function abs(x) { return Math.abs(x); }
+
+function lynBeregn() {
+    let input = document.getElementById('regner').value;
+    const svarFelt = document.getElementById('svar');
+    if (input.trim() === "") { svarFelt.innerText = "0"; return; }
+    try {
+        input = input.replace(',', '.');
+        input = input.replace('^', '**');
+        input = input.replace(/pi/gi, 'Math.PI');
+        const resultat = Function('"use strict";return (' + input + ')')();
+        if (isFinite(resultat)) {
+            svarFelt.innerText = Number(resultat.toFixed(4));
+        } else { svarFelt.innerText = "?"; }
+    } catch (e) { svarFelt.innerText = "..."; }
+}
+</script>
+</body>
+</html>

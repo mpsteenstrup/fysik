@@ -4,7 +4,7 @@ Velkommen til projektet! I skal bygge jeres eget interaktive Escape Room i HTML 
 
 ##  Sådan kommer I i gang
 
-1.  **Download projektet:** Download alle filerne fra  GitHub som en .zip-fil)og pak dem ud i en mappe på dit skrivebord.
+1.  **Download projektet:** Download template.zip filen og pak dem ud i en mappe på dit skrivebord.
 2.  **Åbn spillet:** Højreklik på `index.html` og vælg **Åbn med...** -> **Google Chrome** (eller Edge/Safari). Nu kan I se spillet køre.
 3.  **Rediger opgaverne:** Højreklik på filen `opgaver.js` og vælg **Åbn med...**:
     * **Windows:** Vælg **Notesblok** (Notepad).

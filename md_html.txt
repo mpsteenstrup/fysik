@@ -1,0 +1,4 @@
+Markdown til html
+
+pandoc relativitetsteori.md -s --mathjax --css=style.css -o test.html
+

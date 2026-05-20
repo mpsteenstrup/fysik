@@ -9,7 +9,6 @@
   };
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="beregner.js"></script>
 
 # Den Specielle Relativitetsteori
 
@@ -18,11 +17,6 @@
 Velkommen til et af de mest fascinerende og kontraintuitive emner i fysikken: **Relativitetsteorien**. Når vi bevæger os med hverdagshastigheder – som når vi cykler til skole eller kører i bil – virker verden logisk og forudsigelig. Men hvad sker der, når hastighederne nærmer sig lysets fart, eller når vi kigger på universets helt store strukturer? Albert Einstein revolutionerede vores forståelse af tid, rum og bevægelse ved at vise, at fysikkens love afhænger af, hvem der kigger, og hvordan de bevæger sig.
 
 ## Initialsystemer
-
-<h2>Fysik Lommeregner</h2>
-    <label>Regnestykke: </label>
-    <input type="text" id="regner" placeholder="f.eks. sind(90) + sqrt(16)" oninput="lynBeregn()">
-    <span class="resultat-label">= <span id="svar">0</span></span>
     
 
 

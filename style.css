@@ -6,6 +6,25 @@ body {
     margin: 20px auto; 
     padding: 20px; 
     background-color: #f0f2f5; 
+    .calc-box { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        input { 
+            padding: 8px; 
+            font-size: 18px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+            width: 300px; /* Gjort lidt bredere */
+        }
+        .resultat-label { font-weight: bold; margin-left: 10px; color: #007bff; font-size: 18px; }
+        .hint { color: #666; font-size: 0.9em; margin-top: 10px; }
+}
+figure img{
+    width: 100%;
 }
 blockquote {
     background: #fff;               /* Hvid baggrund */
