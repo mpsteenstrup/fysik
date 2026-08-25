@@ -1,3 +1,14 @@
+<link rel="stylesheet" href="style.css">
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 # Energi
 ## Potentiel energi
 Potentiel energi kaldes også beliggenhedsenergi. Energien er afhængig af objektets position i et kraftfelt. På jorden er kraftfeltet tyngdekraften som trækker alle objekter mod centrum af jorden. Den styrke som jorden trækker i genstande afhænger af jordens masse og giver anledning til en acceleration på $g=9,82\text{m/s}^2$.

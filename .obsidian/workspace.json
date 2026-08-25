@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "92d7d7b62ce573a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e6c7cc02a06a066",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d00af9c8ae7f48b3",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Unavngivet.canvas",
+                "viewState": {
+                  "x": 69,
+                  "y": 238,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Unavngivet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "014fc29f9b518b43",
+    "type": "split",
+    "children": [
+      {
+        "id": "7faa20155b5d36e3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c78247b636d0056",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Stifinder"
+            }
+          },
+          {
+            "id": "760be15396fb70d3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Søg"
+            }
+          },
+          {
+            "id": "e8053cb7cff99afa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bogmærker"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8ac3df5891c23125",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9b2100718b7ca2a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b67c1fa3a9871dc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Tilbagelinks"
+            }
+          },
+          {
+            "id": "e80ba7782397a92d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Udgående Links"
+            }
+          },
+          {
+            "id": "87102b0b7d6a0d5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "07f773569129f008",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Alle egenskaber"
+            }
+          },
+          {
+            "id": "75d9d1afa1a1cec1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Unavngivet 2.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Disposition af Unavngivet 2"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Åbn hurtig skifter": false,
+      "graph:Åbn grafvisning": false,
+      "canvas:Opret nyt lærred": false,
+      "daily-notes:Åbn dagens note": false,
+      "templates:Indsæt skabelon": false,
+      "command-palette:Åbn fastgjorte kommandoer": false,
+      "bases:Opret ny base": false
+    }
+  },
+  "active": "5c78247b636d0056",
+  "lastOpenFiles": [
+    "Unavngivet.base",
+    "Unavngivet.canvas",
+    "Unavngivet 2.base",
+    "Unavngivet 1.base",
+    "2026-06-08.md",
+    "relativitetsteori.md",
+    "README.md"
+  ]
+}
