@@ -1,5 +1,6 @@
 # fysik
 Link til kapitler
+
 * [lyd.](lyd.md)
 * [energi.](energi.md)
 * [lys.](lys.md)
@@ -7,6 +8,7 @@ Link til kapitler
 * [escaperoom.](escaperoom/readme.md)
 
 Vist som hjemmeside
+
 * [lyd.](https://mpsteenstrup.github.io/fysik/lyd.html)
 * [energi.](https://mpsteenstrup.github.io/fysik/energi.html)
 * [lys.](https://mpsteenstrup.github.io/fysik/lys.html)
@@ -15,4 +17,6 @@ Vist som hjemmeside
 
 
 ## DIV
-Animationer med manim, både fysik og matematik [https://chrishsmol.github.io/UndervisningsAnimationer/](https://chrishsmol.github.io/UndervisningsAnimationer/)
+
+* Animationer med manim, både fysik og matematik [https://chrishsmol.github.io/UndervisningsAnimationer/](https://chrishsmol.github.io/UndervisningsAnimationer/)
+* Få grafer om til punkter. [https://plotdigitizer.com/app](https://plotdigitizer.com/app)
