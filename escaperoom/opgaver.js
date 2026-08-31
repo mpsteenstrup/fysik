@@ -2,7 +2,7 @@ const levels = [
     {
         title: "Level 1: Lys og energi",
         description: "",
-        answer: "321",
+        answer: "231",
         image: "grundstoffer3.png",
         music: "musik1.mp3"
     },

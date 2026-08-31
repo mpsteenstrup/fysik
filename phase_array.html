@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>1D Phased Array Visualisering</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 { margin-bottom: 5px; font-size: 1.5rem; }
+    p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+    .controls {
+      background: #1e293b;
+      padding: 15px 25px;
+      border-radius: 8px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.3);
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    label { font-size: 0.85rem; font-weight: bold; }
+    input[type=range] { cursor: pointer; }
+    canvas {
+      border: 1px solid #334155;
+      border-radius: 8px;
+      background-color: #000;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>1D Phased Array Visualisering</h1>
+  <p>Juster fasen for at ændre den konstruktive interferensretning (Beamforming)</p>
+
+  <div class="controls">
+    <div class="control-group">
+      <label for="angle">Vinkel ($\theta$): <span id="angleVal">0</span>°</label>
+      <input type="range" id="angle" min="-60" max="60" value="0" step="1">
+    </div>
+
+    <div class="control-group">
+      <label for="elements">Antal elementer ($n$): <span id="numVal">8</span></label>
+      <input type="range" id="elements" min="2" max="16" value="8" step="1">
+    </div>
+
+    <div class="control-group">
+      <label for="spacing">Afstand ($d/\lambda$): <span id="spacingVal">0.5</span></label>
+      <input type="range" id="spacing" min="0.25" max="1.0" value="0.5" step="0.05">
+    </div>
+  </div>
+
+  <canvas id="canvas" width="600" height="500"></canvas>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // UI Elementer
+    const angleInput = document.getElementById('angle');
+    const elementsInput = document.getElementById('elements');
+    const spacingInput = document.getElementById('spacing');
+
+    const angleVal = document.getElementById('angleVal');
+    const numVal = document.getElementById('numVal');
+    const spacingVal = document.getElementById('spacingVal');
+
+    // Fysiske parametre
+    const lambda = 40; // Bølgelængde i pixels
+    const k = (2 * Math.PI) / lambda; // Bølgetal
+    const omega = 0.05; // Vinkelfrekvens (tidsanimation)
+    let time = 0;
+
+    function render() {
+      const N = parseInt(elementsInput.value);
+      const thetaDeg = parseFloat(angleInput.value);
+      const theta = (thetaDeg * Math.PI) / 180; // Konverter til radianer
+      const dRatio = parseFloat(spacingInput.value);
+      const d = dRatio * lambda;
+
+      // Opdater UI-tal
+      angleVal.textContent = thetaDeg;
+      numVal.textContent = N;
+      spacingVal.textContent = dRatio;
+
+      // Faseforskel pr. tilstødende element for at opnå vinklen theta
+      const deltaPhi = k * d * Math.sin(theta);
+
+      // Placering af kilder (centreret i bunden af canvas)
+      const arrayWidth = (N - 1) * d;
+      const startX = (canvas.width - arrayWidth) / 2;
+      const arrayY = canvas.height - 50;
+
+      const sources = [];
+      for (let i = 0; i < N; i++) {
+        sources.push({
+          x: startX + i * d,
+          y: arrayY,
+          phase: i * deltaPhi
+        });
+      }
+
+      // Beregn interferensbillede pixel for pixel
+      const imgData = ctx.createImageData(canvas.width, canvas.height);
+      const data = imgData.data;
+
+      // Optimering: Beregn hver 2. pixel for bedre ydelse
+      const step = 2;
+      for (let y = 0; y < canvas.height; y += step) {
+        for (let x = 0; x < canvas.width; x += step) {
+          let totalAmp = 0;
+
+          for (let i = 0; i < N; i++) {
+            const dx = x - sources[i].x;
+            const dy = y - sources[i].y;
+            const r = Math.sqrt(dx * dx + dy * dy);
+
+            // Bølgeformel: cos(k*r - omega*t + phase)
+            totalAmp += Math.cos(k * r - time + sources[i].phase);
+          }
+
+          // Normaliser amplitude til farveintensitet [0, 255]
+          const normAmp = (totalAmp / N + 1) / 2;
+          const val = Math.floor(normAmp * 255);
+
+          // Fyld en pixel-blok (step x step)
+          for (let dy = 0; dy < step; dy++) {
+            for (let dx = 0; dx < step; dx++) {
+              const px = x + dx;
+              const py = y + dy;
+              if (px < canvas.width && py < canvas.height) {
+                const index = (py * canvas.width + px) * 4;
+                data[index] = val * 0.2;     // Rød
+                data[index + 1] = val * 0.6; // Grøn
+                data[index + 2] = val;       // Blå (Cyan/Blå farvetone)
+                data[index + 3] = 255;       // Alpha
+              }
+            }
+          }
+        }
+      }
+
+      ctx.putImageData(imgData, 0, 0);
+
+      // Tegn emitter-punkterne ovenpå
+      ctx.fillStyle = '#ef4444';
+      for (let i = 0; i < N; i++) {
+        ctx.beginPath();
+        ctx.arc(sources[i].x, sources[i].y, 5, 0, 2 * Math.PI);
+        ctx.fill();
+      }
+
+      // Opdater tid og fortsæt animation
+      time += omega;
+      requestAnimationFrame(render);
+    }
+
+    render();
+  </script>
+</body>
+</html>

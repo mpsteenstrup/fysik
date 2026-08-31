@@ -117,7 +117,7 @@ Lysets fart i vakuum har den samme værdi $c=299 792 458 \text{m/s} \approx 3\cd
 
 Svaret er at både jer på Jorden og folkene i rumskibet vil se lyset bevæge sig frem med samme hastighed, $c$. 
 
-**Tænkespørgsål**
+**Tænkespørgsmål**
 
 Det er her er meget mærkeligt eller passer dårligt med vores intuition.
 * Gennemgå eksemplet helt langsomt.
@@ -162,10 +162,11 @@ Vi lader rumskibet bevæge sig med en hastighed på $v_s = 200\frac{\text{m}}{\t
 * Beregn den hastighed som en person på Jorden ser bolden bevæge sig med.
 
 Lad os skrue hastigheden af rumskibet op til 99% af lysets hastighed og lade personen tænde en lommelygte pegende frem idet han passere Jorden.
+
 * Med hvilken hastighed ser personen i rumskibet lyset bevæge sig med?
 * Med hvilken hastighed ser personen på Jorden lyset bevæge sig med?
 
-Den måde man addere hastigheder gælder altså ikke for lys og hastigheden er altid den samme!
+Den måde man adderer hastigheder gælder altså ikke for lys og hastigheden er altid den samme!
 
 > **Ifølge relativitetsteorien er alt relativt, undtagen lysets hastighed i vacuum som altid er den samme!**
 
@@ -182,6 +183,7 @@ I videoen udsender personen i rumskibet to lysstråler og alt efter om man står
 **Opgave 6: ikke relativistisk**
 
 Nedenfor er udledningen skrevet. For at følge den skal I
+
 * Tegne situationen, rumskib, Jorden, bolden, manden.
 * Skrive udledningen op og diskutere de forskellige dele.
 
@@ -260,7 +262,7 @@ Væggens position: $x_{væg}(t) = 10\text{m} + 200\text{m/s} \cdot t$
 
 Lysets position: $x_{lys}(t) = c \cdot t$
 
-Lyset må ramme væggen nå $x_{væg}(t) = x_{bold}(t)$.
+Lyset må ramme væggen når $x_{væg}(t) = x_{bold}(t)$.
 
 * Sæt de to ligning lig hinanden og løs for $t$.
 
@@ -292,12 +294,14 @@ Hvis man skal svare på spørgsmålet "skete det samtidigt" kræver det at perso
 
 Lad os antage at lyset kun bevæger sig med $c=300\text{m/s}$.
 
+
 * Beregn tidsforskellen på at lyset rammer forenden i forhold til bagenden af rumskibet, set fra Jorden, $\Delta t = f_{b}-t_{f}$.
 
 
 **Opgave 8: hurtigt lys**
 
 Lad os nu give lyset sin rigtige fart på $c = 3\cdot 10^8 \text{m/s}$ og lade rumskibet bevæges sig med samme hastighed som den internationale rumstation, ISS, $v = 7.66 \text{km/s}$.
+
 * Beregn tidsforskellen på at lyset rammer forenden i forhold til bagenden af rumskibet, set fra Jorden, $\Delta t = f_{b}-t_{f}$.
 
 
