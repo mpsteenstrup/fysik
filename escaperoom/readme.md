@@ -1,10 +1,14 @@
 # Guide: Lav dit eget Fysik Escape Room
 
-Velkommen til projektet! I skal bygge jeres eget interaktive Escape Room i HTML og JavaScript. Her er opskriften på, hvordan I arbejder med koden lokalt på jeres computer, så I kan se ændringer med det samme.
+Velkommen til projektet! I skal bygge jeres eget interaktive Escape Room i HTML og JavaScript. I behøver ikke kunne programmere for at I kan få det til at virke.
+
+Først skal I prøve om I kan klare om I kan komme fri: [https://mpsteenstrup.github.io/fysik/escaperoom/index.html](https://mpsteenstrup.github.io/fysik/escaperoom/index.html)
+
+Her er opskriften på, hvordan I arbejder med koden lokalt på jeres computer, så I kan se ændringer med det samme.
 
 ##  Sådan kommer I i gang
 
-1.  **Download projektet:** Download template.zip filen og pak dem ud i en mappe på dit skrivebord.
+1.  **Download projektet:** Download mappen fra linket: [template.zip](https://github.com/mpsteenstrup/fysik/raw/refs/heads/main/escaperoom/template.zip).
 2.  **Åbn spillet:** Højreklik på `index.html` og vælg **Åbn med...** -> **Google Chrome** (eller Edge/Safari). Nu kan I se spillet køre.
 3.  **Rediger opgaverne:** Højreklik på filen `opgaver.js` og vælg **Åbn med...**:
     * **Windows:** Vælg **Notesblok** (Notepad).
@@ -43,9 +47,38 @@ const levels = [
 * **Vigtigt:** Tjek at alle filnavne er stavet præcis ens i koden og i mappen (husk at der er forskel på store og små bogstaver på GitHub, hold jer til små bogstaver!).
 ---
 
-## 🚀 Når I er færdige
+## Når I er færdige
 
 Når spillet virker perfekt på jeres computer:
-1.  Lav en zip-fil og send den til mig.
+1.  Lav en zip-fil og send den til din lærer.
 
-**God fornøjelse ! 
+## Online på Github
+Github til hosting af websider
+
+Github er et online sted hvor udviklere lægger programmer, data og meget mere. Det er et versionsstyringsværktøj lavet til at arbejde på forskellige version af samme software. Vi kommer ikke til at bruge denne feature men kun bruge det til at have vores websider liggenden.
+
+Det anbefales generelt ikke at bruge specialtegn, æøå og mellemrum i filnavne.
+
+Guide til github
+
+* Gå ind på siden [www.github.com](www.github.com).
+* Opret en konto, det er gratis.
+* Tryk på **+** for at oprette et *repository*.
+* Vælg "uploading an existing file".
+* Vælg alle filerne i din mappe, drag and drop.
+* Vælg mappen billeder, drag and drop.
+* Scroll nederst og vælg "commit changes".
+
+Nu er dine filer online, men github har ikke lavet hjemmesiden endnu.
+
+Opgætning af webpage
+
+* Vælg "Settings" til højre, ikke helt øverst.
+* Vælg "Pages" ude til venstre.
+* Under "Branch" og skift fra "NONE" til "main" og vælg "Save".
+
+Nu loader github hjemmesiden. Det kan tage et par minutter og man kan med fordel trykke reload en gang i mellem. Når linket kommer frem kan man jo se om det virker. 
+
+### Flere escaperooms
+
+Hvis der er flere escaperooms fra elever er det letteste at uploade hele mappen fra eleverne. Her er det vigtigt at. 
