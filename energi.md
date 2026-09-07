@@ -32,7 +32,7 @@ Hvis du drister dig til at springe fra $10$ meter vippen så tager det ca. $1{,}
 ### Regning med enheder
 I fysik bruger vi enheder for at vise hvad vi måler. Det giver for en fysiker ikke mening at sige at "temperaturen er 7", for 7 hvad? At temperaturen er "7 grader celcius" er til gængælde en glimrende oplysning, hvis man vil vide om man skal tage en sweater på. På samme måde viser enheden for tyngdeaccelerationen $\text{m/s}^2$ hvordan hastigheden ændrer sig hvert sekund.
 
-Når man regner med enheder skal de ikke indgå i beregningen som tal gør. To heste som hver vejer $400$kg til tilsammen veje $2\cdot 400\text{kg} = 800\text{kg}$. Tilsvarende vil en udspringer efter ét sekund have en hastighed på $v = 9.82\text{m/s}^2\cdot 2\text{s} = 19.6\text{m/s}$. I princippet ganger man her enhederne så, $\frac{\text{m}}{\text{s}^2}\cdot \text{s} = \frac{m}{s}$, men hvis man holder sig til standardenheder i sine beregninger kan man godt nøjes med at sætte den rigtige enhed på til sidst.
+Når man regner med enheder skal de ikke indgå i beregningen som tal gør. To heste som hver vejer $400$kg til tilsammen veje $2\cdot 400\text{kg} = 800\text{kg}$. Tilsvarende vil en udspringer efter ét sekund have en hastighed på $v = 9{,}82\text{m/s}^2\cdot 2\text{s} = 19{,}6\text{m/s}$. I princippet ganger man her enhederne så, $\frac{\text{m}}{\text{s}^2}\cdot \text{s} = \frac{m}{s}$, men hvis man holder sig til standardenheder i sine beregninger kan man godt nøjes med at sætte den rigtige enhed på til sidst.
 
 
 ### Øvelse
@@ -52,7 +52,7 @@ $$
 Jeg påstår at det er lige så hårdt at bære $20$ liter op i runde tårn som at bære 1 liter op i Burj Khalifa, passer der? Vi kan igen udregne energien
 
 $$
-E_{pot} = m\cdot g \cdot h = 20 \cdot 9.82 \cdot 41{,}55 = 8160 J
+E_{pot} = m\cdot g \cdot h = 20 \cdot 9{,}82 \cdot 41{,}55 = 8160 J
 $$
 
 Det kræver altså næste samme mængde energi.
@@ -113,13 +113,13 @@ $$E_{kin} + E_{pot}= \text{konstant}$$
 I eksemplet fra svømmehallen starter man øverst på vippen. Vi er $5$ meter over vandet og står stille. Nu kan vi beregne båden den potentielle energi og den kinetiske energi. Lad os sige at personen er mig og jeg vejer $m=80$kg.
 
 $$
-E_{pot} = m \cdot g \cdot h = 80 \cdot 9.82 \cdot 5 = 3928\text{J} 
+E_{pot} = m \cdot g \cdot h = 80 \cdot 9{,}82 \cdot 5 = 3928\text{J} 
 $$
 $$
 E_{kin} = \frac{1}{2}⋅m⋅v^2 = 0.5 \cdot 80  \cdot 0^2 = 0J
 $$
 Den kinetiske energi er nul fordi vi står stille. 
-
+![udspringer genereret med AI.](billeder/udspring.png)
 Farten ved overfladen regnede vi ovenfor til $v = 9{,}82\text{m/s}$. Vi kan nu regne energierne ud igen,
 
 $$
@@ -190,7 +190,7 @@ $$
 $$
 
 ### Eksempel
-En 17kg kettle-bell løftes af stærke Torben fra gulvet og $2{,}0$ meter op. Stærke Torben bruger $E_{tilført} = 400\text{J}$ på løftet. Den tilførte potentielle energi er $E_{nytte} = m \cdot g \cdot h = 17\text{kg} \cdot 9.82\frac{\text{m}}{\text{s}^2} \cdot 2.0\text{m} = 334\text{J}$. Nyttevirkningen af Torbens løft er
+En 17kg kettle-bell løftes af stærke Torben fra gulvet og $2{,}0$ meter op. Stærke Torben bruger $E_{tilført} = 400\text{J}$ på løftet. Den tilførte potentielle energi er $E_{nytte} = m \cdot g \cdot h = 17\text{kg} \cdot 9{,}82\frac{\text{m}}{\text{s}^2} \cdot 2.0\text{m} = 334\text{J}$. Nyttevirkningen af Torbens løft er
 
 $$
 \eta = \frac{E_{nyttig}}{E_{tilført}} = \frac{334\text{J}}{400\text{J}} = 0.84
@@ -204,7 +204,7 @@ Torben bruger altså $84\%$ af energien på løftet mens $16\%$ går til spilde 
 
 Forestil dig, at Gravitricity bruger et system, hvor en vægt på 5000 kg løftes op til en højde af 100 meter for at lagre energi. Når energien skal bruges, sænkes vægten, og den potentielle energi omdannes til elektrisk energi. Systemet bruger 5.5 MJ (megajoule) energi på at løfte vægten. Beregn nyttevirkningen af systemet.
 
-1. Beregn den tilførte potentielle energi ved hjælp af formlen $E_{nytte} = m \cdot g \cdot h$, hvor $m = 5000 \text{kg}$, $g = 9.82 \frac{\text{m}}{\text{s}^2}$ og $h = 100 \text{m}$.
+1. Beregn den tilførte potentielle energi ved hjælp af formlen $E_{nytte} = m \cdot g \cdot h$, hvor $m = 5000 \text{kg}$, $g = 9{,}82 \frac{\text{m}}{\text{s}^2}$ og $h = 100 \text{m}$.
 2. Brug resultatet fra trin 1 til at beregne nyttevirkningen ved hjælp af formlen $\eta = \frac{E_{nyttig}}{E_{tilført}}$.
 3. Diskuter, hvad resultatet fortæller om systemets effektivitet.
 
