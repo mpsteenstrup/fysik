@@ -12,14 +12,22 @@
 
 # Energi
 ## Potentiel energi
-Potentiel energi kaldes også beliggenhedsenergi. Energien er afhængig af objektets position i et kraftfelt. På jorden er kraftfeltet tyngdekraften som trækker alle objekter mod centrum af jorden. Den styrke som jorden trækker i genstande afhænger af jordens masse og giver anledning til en acceleration på $g=9,82\text{m/s}^2$.
-Et objekt som falder frit mod jorden vil derfor forøge sin fart med $9,82\text{m/s}$ hvert sekund.
+Potentiel energi kaldes også beliggenhedsenergi. Energien er afhængig af objektets position i et kraftfelt. På Jorden er kraftfeltet tyngdekraften som trækker alle objekter mod centrum af Jorden. Den styrke som Jorden trækker i genstande afhænger af jordens masse og giver anledning til en acceleration på $g=9,82\text{m/s}^2$.
+Et objekt som falder frit mod Jorden vil derfor forøge sin fart med $9,82\text{m/s}$ hvert sekund.
 
 
 ### øvelse
-* Hvor meget forøges farten med hvert sekund omregnet til km/time? Ved frit fald.
+Du står på toppen af $5$ meter vippen og skal til at springe ud. Det tager ca. $t=1$ sekund før I rammer vandet, men hvad er jeres fart? 
 
-Hvert sekund forøges farten altså med ca. $35\text{km/time}$.
+* Beregn farten ved at gange tiden med acccelerationen ($t\cdot g$).
+
+Man kan omregne om til km/time ved at gange med $3,6$.
+
+* Hvad er jeres fart når I rammer vandet i km/time? 
+
+Hvis du drister dig til at springe fra $10$ meter vippen så tager det ca. $1,43$ sekunder.
+
+* Beregn farten når du rammer vandet.
 
 ### Regning med enheder
 I fysik bruger vi enheder for at vise hvad vi måler. Det giver for en fysiker ikke mening at sige at "temperaturen er 7", for 7 hvad? At temperaturen er "7 grader celcius" er til gængælde en glimrende oplysning, hvis man vil vide om man skal tage en sweater på. På samme måde viser enheden for tyngdeaccelerationen $\text{m/s}^2$ hvordan hastigheden ændrer sig hvert sekund.
@@ -28,21 +36,56 @@ Når man regner med enheder skal de ikke indgå i beregningen som tal gør. To h
 
 
 ### Øvelse
-* Beregn faldskærmsudspringerens hastighed ved frit fald efter. 1s, 2s, 10s, 20s.
+
 * Sæt streg over de forkerte formlen for hastigheden som funktion af tiden og accelerationen.     $v=t⋅g$, $v=g/t$, $v=t/g$.
 
-Den potentielle energien afhænger af højden, h, på følgende måde
+Den potentielle energien afhænger af højden, h, og massen, m, sådan at jo højere man er oppe og jo mere et objekt vejer, jo større er den potentielle energi.
+
+### Eksempel
+
+Burj Khalifa i Dubai er i øjeblikket, 2026, verdens højeste bygning med en højde på $h=828$m. Til sammenligning er Runde tårn kun $41,55$ meter højt. Vi kan nu regne energien det kræver at slæbe en drikkedunk hele vejen op. Min drikkedunk vejer $m=1$kg og energien for at få den op i Burj Khalifa kan beregnes med
+
+$$
+E_{pot} = m\cdot g \cdot h = 1\cdot 9,82 \cdot 828 = 8131 J 
+$$
+
+Jeg påstår at det er lige så hårdt at bære $20$ liter op i runde tårn som at bære 1 liter op i Burj Khalifa, passer der? Vi kan igen udregne energien
+
+$$
+E_{pot} = m\cdot g \cdot h = 20 \cdot 9.82 \cdot 41,55 = 8160 J
+$$
+
+Det kræver altså næste samme mængde energi.
+
+### Tænkespørgsmål
+
+* Hvorfor bliver du meget mere træt at at bære 1 liter op i Burj Khalifa end 20 liter op i Runde tårn?
+
+### Formlen for potentiel energi
+
+Vi kan sætte de tre variable som betyder noget for den potentielle energi ind i en formel. Variablene er, massen $m$ enhed [kg], tyngdeaccelerationen $g$ enhed [m/s$^2$] og højden $h$ enhed [m]. Formlen er
+
 $$E_{pot}=m⋅g⋅h$$
 
 ### Øvelse
+
 * Angiv navnene for $m,g,h$.
 * Angiv enhederne for $m,g,h$
 * lidt svær men prøv. Hvilken mærkelig enhed må energi også have udover joule  når man ser på enhederne i udtrykket $m⋅g⋅h$         ( svar; $\text{J=kg⋅m}^2/\text{s}^2$, hvilket jo bare er $E=m⋅c^2$ ).
 
 # Kinetisk energi.
-Kinetisk energi eller bevægelsesenergi er den energi der er i et objekt der bevæger sig. Sammenhængen mellem energi og bevægelse er
+Kinetisk energi eller bevægelsesenergi er den energi der er i et objekt der bevæger sig. Jo hurtigere noget bevæger sig jo større er den den kinetiske energi. Den kinetiske energi afhænger også af massem, jo større masse jo mere kinetisk energi.
+
+### Formlen for kinetisk energi
+
+Variablene er massen, $m$ enhed [kg] og farten, $v$ ( kommer af velocity) enhed [m/s].
+
+
+Sammenhængen mellem energi og bevægelse er
 
 $$E_{kin}=\frac{1}{2}⋅m⋅v^2$$
+
+Den kinetiske energi afhænger altså af hastigheden i anden! Hvis man fordobler farten bliver den kinetiske energi fire gange større. Det er derfor det er farligt at køre hurtigt.
 
 ### Øvelse
 * Hvad er $v$ og hvad er enheden?
@@ -53,36 +96,67 @@ $$E_{kin}=\frac{1}{2}⋅m⋅v^2$$
 En bil har en masse på $m=1200\text{kg}$ og vil med en fart på
  $v=50\text{km}/\text{time}=13\text{m/s}$ have en kinetisk energi på
 
-$E_{kin}=\frac{1}{2}\cdot1200\text{kg}\cdot13\text{m}/\text{s}^2 = 116000\text{J}$
+$E_{kin}=\frac{1}{2}\cdot1200\text{kg}\cdot (13\text{m}/\text{s})^2 = 101400\text{J}$
 
 ### Øvelse
-* Hvad er bilens energi hvis den kører 100 km/timen og 130 km/timen
+* Hvad er bilens energi hvis den kører 100 km/timen ($28$m/s) og 130 km/timen ( $36$m/s ). 
 * Overvej hvad disse beregninger kan,fortælle jer om risikoen ved at køre hurtigt.
 
 ## Energien er bevaret.
 Energibevarelse gælder selvfølgeligt også for potentiel og kinetisk energi. Vi kan omdanne potentiel energi til kinetisk energi ved eks. at lade et objekt falde, eller omvendt fra kinetisk til potentiel energi ved at lave kaste en bold op i luften.
+
 Hvis vi kun ser på potentiel og kinetisk energi kan bevarelsessætningen skrives som,
 
-$$\Delta E_{kin}+\Delta E_{pot}=0$$
+$$E_{kin} + E_{pot}= \text{konstant}$$
+
+### Eksempel
+I eksemplet fra svømmehallen starter man øverst på vippen. Vi er $5$ meter over vandet og står stille. Nu kan vi beregne båden den potentielle energi og den kinetiske energi. Lad os sige at personen er mig og jeg vejer $m=80$kg.
+
+$$
+E_{pot} = m \cdot g \cdot h = 80 \cdot 9.82 \cdot 5 = 3928\text{J} 
+$$
+$$
+E_{kin} = \frac{1}{2}⋅m⋅v^2 = 0.5 \cdot 80  \cdot 0^2 = 0J
+$$
+Den kinetiske energi er nul fordi vi står stille. 
+
+Farten ved overfladen regnede vi ovenfor til $v = 9,82\text{m/s}$. Vi kan nu regne energierne ud igen,
+
+$$
+E_{pot} = m \cdot g \cdot h = 80 \cdot 9.91 \cdot 0 = 0\text{J} 
+$$
+$$
+E_{kin} = \frac{1}{2}⋅m⋅v^2 = 0.5 \cdot 80  \cdot 9.91^2 = 3928J
+$$
+
+Alt den potentielle energi er lavet om til kinetisk energi, så den samlede energi er bevaret. 
 
 Vi kan bruge denne vide til at finde hastigheden af et faldende objekt hvis vi kender den potentielle energi. Den ligning man skal løse er $m⋅g⋅h=\frac{1}{2}m⋅v^2$, hvor det er $v$ vi gerne vil finde.
 
-Hvad hvis vi kan se bort fra luftmodstanden? [Brian Cox feather drop experiment video](https://www.youtube.com/watch?v=E43-CfukEgs).
+Kan  vi se bort fra luftmodstanden? [Brian Cox feather drop experiment video](https://www.youtube.com/watch?v=E43-CfukEgs).
 
 ### Øvelse
-Rundetårn er 34,8 meter højt.
-* Løs ligningen og vis at hastigheden er $v= \sqrt{2\cdot g\cdot h}$.
-* Hvor meget er den kinetiske og potentielle energi af en liter mælk på toppen af rundetårn?
-* Hvis man lader den falde, med hvilken hastighed rammer den så jorden?
+Rundetårn er 41,55 meter højt. Hvis man kaster en liter mælk ned, det må man ikke, vil den ramme Jorden med en stor hastighed, men hvor stor er den? Hvis vi isolerer farten $v$ i ligningen $m⋅g⋅h=\frac{1}{2}m⋅v^2$ får vi $v= \sqrt{2\cdot g\cdot h}$
+
+* Brug ligningen til at finde ud af hvad farten er når mælken rammer Jorden ( gang med 3,6 hvis I vil se det i km/timen). 
+* Beregn den potentielle energi i toppen og den kinetiske i bunden.
+* Er energien bevaret?
+
 <center><img src="billeder/rundetaarn.jpg" width="160"></center>
 
 ### Forsøg
-Forsøg 1.
-Sammenhængen mellem potentiel og kinetisk energi gælder også når vi kaster bolde op i luften. I skal finde ud med hvilken hastighed I kan kaste bolde op i luften.
-Vurder hvor højt op I kan kaster en bolden og brug jeres viden om potentiel og kinetisk energi til at bestemme hastigheden af bolden da den slap hånden.
 
-Forsøg 2.
-Kast igen bolden op i luften, men tag her tid på hvor langt tid det tager før den lander. Brug formlen $v = g\cdot t^2$, til at bestemme starthastigheden.
+**Forsøg 1.*
+
+Sammenhængen mellem potentiel og kinetisk energi gælder også når vi kaster bolde op i luften. I skal finde ud med hvilken hastighed I kan kaste bolde op i luften. I skal bruge formlen fra før, $v= \sqrt{2\cdot g\cdot h}$ hvor $h$ er højden bolden kommer op.
+
+* Kast en bold op i luften.
+* Vurder hvor højt op I kan kaster en bolden.
+* Udregn boldens hastighed.
+
+**Forsøg 2.**
+
+Kast igen bolden op i luften, men tag her tid på hvor langt tid det tager før den lander. Brug formlen $v = 2\cdot g\cdot t$, til at bestemme starthastigheden.
 
 ### Øvelse
 Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboarder, [LINK](https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html)
