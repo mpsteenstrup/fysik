@@ -12,8 +12,8 @@
 
 # Energi
 ## Potentiel energi
-Potentiel energi kaldes også beliggenhedsenergi. Energien er afhængig af objektets position i et kraftfelt. På Jorden er kraftfeltet tyngdekraften som trækker alle objekter mod centrum af Jorden. Den styrke som Jorden trækker i genstande afhænger af jordens masse og giver anledning til en acceleration på $g=9,82\text{m/s}^2$.
-Et objekt som falder frit mod Jorden vil derfor forøge sin fart med $9,82\text{m/s}$ hvert sekund.
+Potentiel energi kaldes også beliggenhedsenergi. Energien er afhængig af objektets position i et kraftfelt. På Jorden er kraftfeltet tyngdekraften som trækker alle objekter mod centrum af Jorden. Den styrke som Jorden trækker i genstande afhænger af jordens masse og giver anledning til en acceleration på $g=9{,}82\text{m/s}^2$.
+Et objekt som falder frit mod Jorden vil derfor forøge sin fart med $9{,}82\text{m/s}$ hvert sekund.
 
 
 ### øvelse
@@ -21,11 +21,11 @@ Du står på toppen af $5$ meter vippen og skal til at springe ud. Det tager ca.
 
 * Beregn farten ved at gange tiden med acccelerationen ($t\cdot g$).
 
-Man kan omregne om til km/time ved at gange med $3,6$.
+Man kan omregne om til km/time ved at gange med $3{,}6$.
 
 * Hvad er jeres fart når I rammer vandet i km/time? 
 
-Hvis du drister dig til at springe fra $10$ meter vippen så tager det ca. $1,43$ sekunder.
+Hvis du drister dig til at springe fra $10$ meter vippen så tager det ca. $1{,}43$ sekunder.
 
 * Beregn farten når du rammer vandet.
 
@@ -43,16 +43,16 @@ Den potentielle energien afhænger af højden, h, og massen, m, sådan at jo hø
 
 ### Eksempel
 
-Burj Khalifa i Dubai er i øjeblikket, 2026, verdens højeste bygning med en højde på $h=828$m. Til sammenligning er Runde tårn kun $41,55$ meter højt. Vi kan nu regne energien det kræver at slæbe en drikkedunk hele vejen op. Min drikkedunk vejer $m=1$kg og energien for at få den op i Burj Khalifa kan beregnes med
+Burj Khalifa i Dubai er i øjeblikket, 2026, verdens højeste bygning med en højde på $h=828$m. Til sammenligning er Runde tårn kun $41{,}55$ meter højt. Vi kan nu regne energien det kræver at slæbe en drikkedunk hele vejen op. Min drikkedunk vejer $m=1$kg og energien for at få den op i Burj Khalifa kan beregnes med
 
 $$
-E_{pot} = m\cdot g \cdot h = 1\cdot 9,82 \cdot 828 = 8131 J 
+E_{pot} = m\cdot g \cdot h = 1\cdot 9{,}82 \cdot 828 = 8131 J 
 $$
 
 Jeg påstår at det er lige så hårdt at bære $20$ liter op i runde tårn som at bære 1 liter op i Burj Khalifa, passer der? Vi kan igen udregne energien
 
 $$
-E_{pot} = m\cdot g \cdot h = 20 \cdot 9.82 \cdot 41,55 = 8160 J
+E_{pot} = m\cdot g \cdot h = 20 \cdot 9.82 \cdot 41{,}55 = 8160 J
 $$
 
 Det kræver altså næste samme mængde energi.
@@ -120,7 +120,7 @@ E_{kin} = \frac{1}{2}⋅m⋅v^2 = 0.5 \cdot 80  \cdot 0^2 = 0J
 $$
 Den kinetiske energi er nul fordi vi står stille. 
 
-Farten ved overfladen regnede vi ovenfor til $v = 9,82\text{m/s}$. Vi kan nu regne energierne ud igen,
+Farten ved overfladen regnede vi ovenfor til $v = 9{,}82\text{m/s}$. Vi kan nu regne energierne ud igen,
 
 $$
 E_{pot} = m \cdot g \cdot h = 80 \cdot 9.91 \cdot 0 = 0\text{J} 
@@ -136,9 +136,9 @@ Vi kan bruge denne vide til at finde hastigheden af et faldende objekt hvis vi k
 Kan  vi se bort fra luftmodstanden? [Brian Cox feather drop experiment video](https://www.youtube.com/watch?v=E43-CfukEgs).
 
 ### Øvelse
-Rundetårn er 41,55 meter højt. Hvis man kaster en liter mælk ned, det må man ikke, vil den ramme Jorden med en stor hastighed, men hvor stor er den? Hvis vi isolerer farten $v$ i ligningen $m⋅g⋅h=\frac{1}{2}m⋅v^2$ får vi $v= \sqrt{2\cdot g\cdot h}$
+Rundetårn er 41{,}55 meter højt. Hvis man kaster en liter mælk ned, det må man ikke, vil den ramme Jorden med en stor hastighed, men hvor stor er den? Hvis vi isolerer farten $v$ i ligningen $m⋅g⋅h=\frac{1}{2}m⋅v^2$ får vi $v= \sqrt{2\cdot g\cdot h}$
 
-* Brug ligningen til at finde ud af hvad farten er når mælken rammer Jorden ( gang med 3,6 hvis I vil se det i km/timen). 
+* Brug ligningen til at finde ud af hvad farten er når mælken rammer Jorden ( gang med 3{,}6 hvis I vil se det i km/timen). 
 * Beregn den potentielle energi i toppen og den kinetiske i bunden.
 * Er energien bevaret?
 
@@ -146,7 +146,7 @@ Rundetårn er 41,55 meter højt. Hvis man kaster en liter mælk ned, det må man
 
 ### Forsøg
 
-**Forsøg 1.*
+#### Forsøg 1.
 
 Sammenhængen mellem potentiel og kinetisk energi gælder også når vi kaster bolde op i luften. I skal finde ud med hvilken hastighed I kan kaste bolde op i luften. I skal bruge formlen fra før, $v= \sqrt{2\cdot g\cdot h}$ hvor $h$ er højden bolden kommer op.
 
@@ -154,7 +154,7 @@ Sammenhængen mellem potentiel og kinetisk energi gælder også når vi kaster b
 * Vurder hvor højt op I kan kaster en bolden.
 * Udregn boldens hastighed.
 
-**Forsøg 2.**
+#### Forsøg 2.
 
 Kast igen bolden op i luften, men tag her tid på hvor langt tid det tager før den lander. Brug formlen $v = 2\cdot g\cdot t$, til at bestemme starthastigheden.
 
@@ -190,7 +190,7 @@ $$
 $$
 
 ### Eksempel
-En 17kg kettle-bell løftes af stærke Torben fra gulvet og 2,0 meter op. Stærke Torben bruger $E_{tilført} = 400\text{J}$ på løftet. Den tilførte potentielle energi er $E_{nytte} = m \cdot g \cdot h = 17\text{kg} \cdot 9.82\frac{\text{m}}{\text{s}^2} \cdot 2.0\text{m} = 334\text{J}$. Nyttevirkningen af Torbens løft er
+En 17kg kettle-bell løftes af stærke Torben fra gulvet og $2{,}0$ meter op. Stærke Torben bruger $E_{tilført} = 400\text{J}$ på løftet. Den tilførte potentielle energi er $E_{nytte} = m \cdot g \cdot h = 17\text{kg} \cdot 9.82\frac{\text{m}}{\text{s}^2} \cdot 2.0\text{m} = 334\text{J}$. Nyttevirkningen af Torbens løft er
 
 $$
 \eta = \frac{E_{nyttig}}{E_{tilført}} = \frac{334\text{J}}{400\text{J}} = 0.84
@@ -220,7 +220,7 @@ $$
 Energiforbruget i kWh kan også omregnes til joule (J), som er den grundlæggende enhed for energi i det internationale enhedssystem (SI). En kWh svarer til 3.6 millioner joule (J):
 
 $$
-1 \text{kWh} = 3.6 \cdot 10^6 \text{J}
+1 \text{kWh} = 3{,}6 \cdot 10^6 \text{J}
 $$
 
 Kilowatt-timer bruges ofte på elregninger for at vise, hvor meget energi en husstand har brugt i en given periode, og dermed hvor meget de skal betale for deres elforbrug.
@@ -232,9 +232,9 @@ Energiforbruget kan opgøres på mange måder alt efter hvor meget man tager med
 
 $$
 \begin{align*}
-&E_{total} &= 90.6 \text{kWh} \\
-&E_{el} &= 15.6 \text{kWh} \\
-&E_{el-husholdninger} &= 4.38 \text{kWh}
+&E_{total} &= 90{,}6 \text{kWh} \\
+&E_{el} &= 15{,}6 \text{kWh} \\
+&E_{el-husholdninger} &= 4{,}38 \text{kWh}
 \end{align*}
 $$
 
@@ -285,5 +285,5 @@ Nedenfor er en oversigt over energiomsætningen ved elektriske køretøjer. Den 
 ### Løsning
 1. Beregn den tilførte potentielle energi:
 $$
-E_{nytte} = 5000 \text{kg} \cdot 9.82 \frac{\text{m}}{\text{s}^2} \cdot 100 \text{m} = 4.91 \times 10^6 \text{J} = 4.91 \text{MJ}
+E_{nytte} = 5000 \text{kg} \cdot 9{,}82 \frac{\text{m}}{\text{s}^2} \cdot 100 \text{m} = 4{,}91 \times 10^6 \text{J} = 4{,}91 \text{MJ}
 $$
