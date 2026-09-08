@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Træning & Opgaver: Energi i Fysik</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #2980b9;
+            --accent-color: #27ae60;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 25px 30px;
+            border-radius: var(--border-radius);
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.05em;
+        }
+
+        .section-header {
+            background-color: #34495e;
+            color: white;
+            padding: 12px 20px;
+            border-radius: var(--border-radius);
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .rule-card {
+            background-color: #eaf2f8;
+            border: 1px solid #aeb6bf;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 25px;
+        }
+
+        .instruction-card {
+            background-color: #eef9f1;
+            border: 1px solid #c3e6cb;
+            padding: 15px 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 25px;
+            color: #155724;
+        }
+
+        .task-card {
+            background-color: var(--card-bg);
+            padding: 22px 25px;
+            border-radius: var(--border-radius);
+            margin-bottom: 22px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .concept-card {
+            background-color: var(--card-bg);
+            padding: 22px 25px;
+            border-radius: var(--border-radius);
+            margin-top: 25px;
+            margin-bottom: 22px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+            border-left: 5px solid #8e44ad;
+        }
+
+        .task-title {
+            font-weight: bold;
+            font-size: 1.15em;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .sub-task {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px dashed #e0e0e0;
+        }
+
+        .sub-task-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #34495e;
+        }
+
+        .input-group {
+            margin: 12px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        input[type="text"], select, textarea {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+
+        input[type="text"] {
+            min-width: 160px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 70px;
+            font-family: inherit;
+            resize: vertical;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        .btn-hint {
+            background-color: #f39c12;
+            color: white;
+        }
+        .btn-hint:hover { background-color: #d68910; }
+
+        .btn-check {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        .btn-check:hover { background-color: #1f618d; }
+
+        .btn-concept {
+            background-color: #8e44ad;
+            color: white;
+        }
+        .btn-concept:hover { background-color: #702e8a; }
+
+        .hint-box, .feedback-box {
+            display: none;
+            margin-top: 12px;
+            padding: 12px 15px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .hint-box {
+            background-color: #fff9e6;
+            border: 1px solid #ffe399;
+            color: #d35400;
+        }
+
+        .feedback-correct {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .feedback-wrong {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .formula-card {
+            background-color: #f4f6f7;
+            border-left: 4px solid #16a085;
+            padding: 12px 18px;
+            margin: 15px 0;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .radio-option {
+            display: block;
+            margin: 6px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Interaktive Opgaver: Energi i Fysik</h1>
+        <p>Test og styrk din forståelse af potentiel energi, kinetisk energi, energibevarelse og nyttevirkning.</p>
+    </header>
+
+    <!-- FORMELOVERSIGT -->
+    <div class="rule-card">
+        <h3>Vigtige Formler:</h3>
+        <ul>
+            <li><strong>Potentiel energi:</strong> \( E_{pot} = m \cdot g \cdot h \)</li>
+            <li><strong>Kinetisk energi:</strong> \( E_{kin} = \frac{1}{2} \cdot m \cdot v^2 \)</li>
+            <li><strong>Hastighed ved frit fald:</strong> \( v = \sqrt{2 \cdot g \cdot h} \) eller \( v = g \cdot t \)</li>
+            <li><strong>Nyttevirkning:</strong> \( \eta = \frac{E_{nyttig}}{E_{tilført}} \)</li>
+            <li><strong>Enhedsomregning:</strong> \( 1 \text{ m/s} = 3.6 \text{ km/t} \), \( 1 \text{ kWh} = 3.6 \cdot 10^6 \text{ J} \)</li>
+        </ul>
+    </div>
+
+    <!-- SEKTION 1: POTENTIEL ENERGI -->
+    <div class="section-header">1. Potentiel Energi & Frit Fald</div>
+
+    <!-- OPGAVE 1 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 1: Udspring fra vippen</div>
+        <p>Du står på toppen af 5-meter vippen. Det tager ca. \( t = 1 \) sekund at ramme vandet (\( g = 9.82 \text{ m/s}^2 \)).</p>
+        
+        <div class="sub-task">
+            <div class="sub-task-title">a) Beregn farten i m/s ved at gange tiden med accelerationen (\( v = t \cdot g \)):</div>
+            <div class="input-group">
+                <label>Svar (m/s):</label>
+                <input type="text" id="opg1a-ans" placeholder="f.eks. 9.82">
+                <button class="btn-check" onclick="checkOpg1a()">Tjek svar</button>
+            </div>
+            <div id="feedback1a" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">b) Hvad er farten i km/t? (Gange med 3,6):</div>
+            <div class="input-group">
+                <label>Svar (km/t):</label>
+                <input type="text" id="opg1b-ans" placeholder="f.eks. 35.35">
+                <button class="btn-check" onclick="checkOpg1b()">Tjek svar</button>
+            </div>
+            <div id="feedback1b" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">c) Fra 10-meter vippen tager faldet ca. 1,43 sekunder. Beregn farten i m/s:</div>
+            <div class="input-group">
+                <label>Svar (m/s):</label>
+                <input type="text" id="opg1c-ans" placeholder="f.eks. 14.04">
+                <button class="btn-check" onclick="checkOpg1c()">Tjek svar</button>
+            </div>
+            <div id="feedback1c" class="feedback-box"></div>
+        </div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 2: Formel for hastighed</div>
+        <p>Hvilken af følgende formler beskriver korrekt hastigheden \( v \) som funktion af tiden \( t \) og accelerationen \( g \)?</p>
+        
+        <div class="input-group">
+            <select id="opg2-ans">
+                <option value="">-- Vælg formel --</option>
+                <option value="v=t*g">v = t · g</option>
+                <option value="v=g/t">v = g / t</option>
+                <option value="v=t/g">v = t / g</option>
+            </select>
+            <button class="btn-check" onclick="checkOpg2()">Tjek svar</button>
+        </div>
+        <div id="feedback2" class="feedback-box"></div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 3: Tænkespørgsmål – Bære op i Burj Khalifa vs. Rundetårn</div>
+        <p>Det kræver ca. 8131 J at bære 1 liter vand op i Burj Khalifa (828 m) og ca. 8160 J at bære 20 liter op i Rundetårn (41,55 m).</p>
+        <p><strong>Hvorfor bliver du typisk meget mere træt af at bære 1 liter op i Burj Khalifa end 20 liter op i Rundetårn?</strong></p>
+        
+        <textarea id="opg3-ans" placeholder="Skriv din forklaring her..."></textarea>
+        <div style="margin-top:10px;">
+            <button class="btn-hint" onclick="toggleBox('hint3')">Vis forklaring / Hint</button>
+        </div>
+        <div id="hint3" class="hint-box">
+            <strong>Forklaring:</strong> Selvom den udførte mekaniske energi (arbejde) på genstandene er næsten identisk, skal du i Burj Khalifa også bære din egen kropsvægt op af 828 meters trapper! Desuden tager turen op i Burj Khalifa væsentligt længere tid, hvilket kræver vedvarende biologisk energiforbrug (stofskifte).
+        </div>
+    </div>
+
+    <!-- OPGAVE 4 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 4: Størrelser og enheder i Potentiel Energi</div>
+        <p>I formlen \( E_{pot} = m \cdot g \cdot h \):</p>
+
+        <div class="sub-task">
+            <div class="sub-task-title">a) Angiv hvad bogstaverne står for (navne):</div>
+            <div class="input-group">
+                <label>\( m \):</label> <input type="text" id="opg4a-m" placeholder="Masse">
+                <label>\( g \):</label> <input type="text" id="opg4a-g" placeholder="Tyngdeacceleration">
+                <label>\( h \):</label> <input type="text" id="opg4a-h" placeholder="Højde">
+            </div>
+            <button class="btn-check" onclick="checkOpg4a()">Tjek navne</button>
+            <div id="feedback4a" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">b) Angiv standardenhederne for variablerne:</div>
+            <div class="input-group">
+                <label>\( m \):</label> <input type="text" id="opg4b-m" placeholder="kg">
+                <label>\( g \):</label> <input type="text" id="opg4b-g" placeholder="m/s^2">
+                <label>\( h \):</label> <input type="text" id="opg4b-h" placeholder="m">
+            </div>
+            <button class="btn-check" onclick="checkOpg4b()">Tjek enheder</button>
+            <div id="feedback4b" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">c) Hvilken sammensat enhed svarer Joule (J) til ud fra \( m \cdot g \cdot h \)?</div>
+            <div class="input-group">
+                <select id="opg4c-ans">
+                    <option value="">-- Vælg sammensat enhed --</option>
+                    <option value="kg*m/s">kg · m / s</option>
+                    <option value="kg*m^2/s^2">kg · m² / s²</option>
+                    <option value="kg^2*m/s^2">kg² · m / s²</option>
+                </select>
+                <button class="btn-check" onclick="checkOpg4c()">Tjek svar</button>
+            </div>
+            <div id="feedback4c" class="feedback-box"></div>
+        </div>
+    </div>
+
+
+    <!-- SEKTION 2: KINETISK ENERGI -->
+    <div class="section-header">2. Kinetisk Energi</div>
+
+    <!-- OPGAVE 5 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 5: Variabler i Kinetisk Energi</div>
+        <p>I formlen \( E_{kin} = \frac{1}{2} \cdot m \cdot v^2 \):</p>
+        
+        <div class="sub-task">
+            <div class="sub-task-title">a) Hvad står \( v \) for, og hvad er enheden?</div>
+            <div class="input-group">
+                <label>Navn:</label> <input type="text" id="opg5a-name" placeholder="f.eks. Fart / Hastighed">
+                <label>Enhed:</label> <input type="text" id="opg5a-unit" placeholder="f.eks. m/s">
+            </div>
+            <button class="btn-check" onclick="checkOpg5a()">Tjek svar</button>
+            <div id="feedback5a" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">b) Hvad er enheden for \( v^2 \)?</div>
+            <div class="input-group">
+                <input type="text" id="opg5b-ans" placeholder="f.eks. m^2/s^2">
+                <button class="btn-check" onclick="checkOpg5b()">Tjek svar</button>
+            </div>
+            <div id="feedback5b" class="feedback-box"></div>
+        </div>
+    </div>
+
+    <!-- OPGAVE 6 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 6: Bilens kinetiske energi</div>
+        <p>En bil har en masse på \( m = 1200 \text{ kg} \).</p>
+
+        <div class="sub-task">
+            <div class="sub-task-title">a) Beregn \( E_{kin} \) ved 100 km/t (\( v \approx 27.78 \text{ m/s} \)):</div>
+            <div class="input-group">
+                <label>Energi i Joule (J):</label>
+                <input type="text" id="opg6a-ans" placeholder="f.eks. 462963">
+                <button class="btn-check" onclick="checkOpg6a()">Tjek svar</button>
+            </div>
+            <div id="feedback6a" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">b) Beregn \( E_{kin} \) ved 130 km/t (\( v \approx 36.11 \text{ m/s} \)):</div>
+            <div class="input-group">
+                <label>Energi i Joule (J):</label>
+                <input type="text" id="opg6b-ans" placeholder="f.eks. 782407">
+                <button class="btn-check" onclick="checkOpg6b()">Tjek svar</button>
+            </div>
+            <div id="feedback6b" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">c) Overvejelse: Hvad fortæller disse beregninger om risikoen ved høj fart?</div>
+            <textarea id="opg6c-ans" placeholder="Dine tanker om fartsøgning og bremselængde/energi..."></textarea>
+            <div style="margin-top:10px;">
+                <button class="btn-hint" onclick="toggleBox('hint6c')">Vis løsning / refleksion</button>
+            </div>
+            <div id="hint6c" class="hint-box">
+                 Da hastigheden indgår i anden magt (\( v^2 \)), giver en hastighedsøgning fra 100 til 130 km/t (en stigning på 30%) næsten en stigning på 69% i kinetisk energi! Det betyder, at bilen skal afsætte langt mere energi ved opbremsning eller kollision, hvilket øger bremselængden og skadesomfanget markant.
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SEKTION 3: ENERGIBEVARELSE -->
+    <div class="section-header">3. Energibevarelse</div>
+
+    <!-- OPGAVE 7 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 7: Mælkekarton fra Rundetårn</div>
+        <p>Rundetårn er \( h = 41.55 \text{ m} \) højt. En liter mælk (\( m = 1 \text{ kg} \)) tabes fra toppen.</p>
+
+        <div class="sub-task">
+            <div class="sub-task-title">a) Brug formlen \( v = \sqrt{2 \cdot g \cdot h} \) til at beregne sluthastigheden ved jorden:</div>
+            <div class="input-group">
+                <label>Hastighed i m/s:</label> <input type="text" id="opg7a-ms" placeholder="f.eks. 28.57">
+                <label>Hastighed i km/t:</label> <input type="text" id="opg7a-kmt" placeholder="f.eks. 102.8">
+            </div>
+            <button class="btn-check" onclick="checkOpg7a()">Tjek svar</button>
+            <div id="feedback7a" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">b) Beregn den potentielle energi i toppen og kinetiske energi i bunden:</div>
+            <div class="input-group">
+                <label>\( E_{pot} \) i toppen (J):</label> <input type="text" id="opg7b-epot" placeholder="f.eks. 408.02">
+                <label>\( E_{kin} \) i bunden (J):</label> <input type="text" id="opg7b-ekin" placeholder="f.eks. 408.02">
+            </div>
+            <button class="btn-check" onclick="checkOpg7b()">Tjek svar</button>
+            <div id="feedback7b" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">c) Er den mekaniske energi bevaret?</div>
+            <div class="input-group">
+                <select id="opg7c-ans">
+                    <option value="">-- Vælg svar --</option>
+                    <option value="ja">Ja, E_pot omdannes fuldstændigt til E_kin (når luftmodstand ignoreres)</option>
+                    <option value="nej">Nej, energien forsvinder helt</option>
+                </select>
+                <button class="btn-check" onclick="checkOpg7c()">Tjek svar</button>
+            </div>
+            <div id="feedback7c" class="feedback-box"></div>
+        </div>
+    </div>
+
+    <!-- OPGAVE 8 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 8: Skateboard-pigen (PhET Simulation)</div>
+        <p>Baseret på undersøgelsen af PhET Skateboard-animationen, svar på følgende spørgsmål:</p>
+
+        <div class="sub-task">
+            <div class="sub-task-title">a) Hvad sker der med den samlede energi (Total Energy), når der INGEN friktion er?</div>
+            <div class="input-group">
+                <select id="opg8a-ans">
+                    <option value="">-- Vælg svar --</option>
+                    <option value="konstant">Den samlede energi forbliver konstant</option>
+                    <option value="stiger">Den samlede energi stiger</option>
+                    <option value="fald">Den samlede energi falder</option>
+                </select>
+                <button class="btn-check" onclick="checkOpg8a()">Tjek svar</button>
+            </div>
+            <div id="feedback8a" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">b) Når friktion tilføjes, hvad omdannes den kinetiske og potentielle energi så gradvist til?</div>
+            <div class="input-group">
+                <select id="opg8b-ans">
+                    <option value="">-- Vælg svar --</option>
+                    <option value="termisk">Termisk energi (varme)</option>
+                    <option value="kemisk">Kemisk energi</option>
+                    <option value="kærne">Kerneenergi</option>
+                </select>
+                <button class="btn-check" onclick="checkOpg8b()">Tjek svar</button>
+            </div>
+            <div id="feedback8b" class="feedback-box"></div>
+        </div>
+    </div>
+
+
+    <!-- SEKTION 4: NYTTEVIRKNING OG ENERGIENHEDER -->
+    <div class="section-header">4. Nyttevirkning & Energienheder</div>
+
+    <!-- OPGAVE 9 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 9: Gravitricity Energilagring</div>
+        <p>En vægt på \( m = 5000 \text{ kg} \) hejses \( h = 100 \text{ m} \) op. Systemet tilføres \( E_{tilført} = 5.5 \text{ MJ} = 5.500.000 \text{ J} \).</p>
+
+        <div class="sub-task">
+            <div class="sub-task-title">a) Beregn den nyttige potentielle energi (\( E_{nytte} = m \cdot g \cdot h \)):</div>
+            <div class="input-group">
+                <label>Joule (J):</label> <input type="text" id="opg9a-j" placeholder="f.eks. 4910000">
+                <label>Megajoule (MJ):</label> <input type="text" id="opg9a-mj" placeholder="f.eks. 4.91">
+            </div>
+            <button class="btn-check" onclick="checkOpg9a()">Tjek svar</button>
+            <div id="feedback9a" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">b) Beregn nyttevirkningen (\( \eta = \frac{E_{nyttig}}{E_{tilført}} \)):</div>
+            <div class="input-group">
+                <label>Nyttevirkning (\( \eta \)):</label> <input type="text" id="opg9b-dec" placeholder="f.eks. 0.893">
+                <label>Procent (%):</label> <input type="text" id="opg9b-pct" placeholder="f.eks. 89.3">
+            </div>
+            <button class="btn-check" onclick="checkOpg9b()">Tjek svar</button>
+            <div id="feedback9b" class="feedback-box"></div>
+        </div>
+    </div>
+
+    <!-- OPGAVE 10 -->
+    <div class="task-card">
+        <div class="task-title">Opgave 10: Danskeres energiforbrug i Joule</div>
+        <p>Omregn følgende daglige energiforbrug pr. dansker fra kWh til Joule (\( 1 \text{ kWh} = 3.6 \cdot 10^6 \text{ J} \)):</p>
+
+        <div class="sub-task">
+            <div class="sub-task-title">a) Totalforbrug: \( E_{total} = 90.6 \text{ kWh} \)</div>
+            <div class="input-group">
+                <label>Joule (J):</label> <input type="text" id="opg10a-ans" placeholder="f.eks. 326160000 eller 3.26e8">
+                <button class="btn-check" onclick="checkOpg10a()">Tjek svar</button>
+            </div>
+            <div id="feedback10a" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">b) Samlet elforbrug: \( E_{el} = 15.6 \text{ kWh} \)</div>
+            <div class="input-group">
+                <label>Joule (J):</label> <input type="text" id="opg10b-ans" placeholder="f.eks. 56160000">
+                <button class="btn-check" onclick="checkOpg10b()">Tjek svar</button>
+            </div>
+            <div id="feedback10b" class="feedback-box"></div>
+        </div>
+
+        <div class="sub-task">
+            <div class="sub-task-title">c) Husholdningers elforbrug: \( E_{el-husholdninger} = 4.38 \text{ kWh} \)</div>
+            <div class="input-group">
+                <label>Joule (J):</label> <input type="text" id="opg10c-ans" placeholder="f.eks. 15768000">
+                <button class="btn-check" onclick="checkOpg10c()">Tjek svar</button>
+            </div>
+            <div id="feedback10c" class="feedback-box"></div>
+        </div>
+    </div>
+
+    <!-- FORSTÅELSESSPØRGSMÅL / SANDT ELLER FALSK -->
+    <div class="concept-card">
+        <h2>Tjek din samlede forståelse: Sandt eller Falsk?</h2>
+
+        <div class="statement-box" style="background:#fcf8e3; border:1px solid #faebcc; padding:15px; border-radius:6px; margin-bottom:15px;">
+            <p><strong>Udsagn A:</strong> "Hvis bilens fart fordobles, bliver dens kinetiske energi også fordoblet."</p>
+            <div class="input-group">
+                <select id="udsagnA-val">
+                    <option value="">-- Vælg --</option>
+                    <option value="sandt">Sandt</option>
+                    <option value="falsk">Falsk</option>
+                </select>
+                <button class="btn-concept" onclick="checkUdsagnA()">Tjek Vurdering</button>
+            </div>
+            <div id="feedbackA" class="feedback-box"></div>
+        </div>
+
+        <div class="statement-box" style="background:#fcf8e3; border:1px solid #faebcc; padding:15px; border-radius:6px; margin-bottom:15px;">
+            <p><strong>Udsagn B:</strong> "Nyttevirkningen \(\eta\) for en reel maskine kan aldrig overstige 1.0 (eller 100%)."</p>
+            <div class="input-group">
+                <select id="udsagnB-val">
+                    <option value="">-- Vælg --</option>
+                    <option value="sandt">Sandt</option>
+                    <option value="falsk">Falsk</option>
+                </select>
+                <button class="btn-concept" onclick="checkUdsagnB()">Tjek Vurdering</button>
+            </div>
+            <div id="feedbackB" class="feedback-box"></div>
+        </div>
+
+        <div class="statement-box" style="background:#fcf8e3; border:1px solid #faebcc; padding:15px; border-radius:6px; margin-bottom:15px;">
+            <p><strong>Udsagn C:</strong> "1 kWh svarer til nøjagtig 3.600 Joule."</p>
+            <div class="input-group">
+                <select id="udsagnC-val">
+                    <option value="">-- Vælg --</option>
+                    <option value="sandt">Sandt</option>
+                    <option value="falsk">Falsk</option>
+                </select>
+                <button class="btn-concept" onclick="checkUdsagnC()">Tjek Vurdering</button>
+            </div>
+            <div id="feedbackC" class="feedback-box"></div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function toggleBox(id) {
+        const box = document.getElementById(id);
+        box.style.display = (box.style.display === "block") ? "none" : "block";
+    }
+
+    function showFeedback(elementId, isCorrect, text) {
+        const fb = document.getElementById(elementId);
+        fb.style.display = "block";
+        fb.className = "feedback-box " + (isCorrect ? "feedback-correct" : "feedback-wrong");
+        fb.innerHTML = text;
+    }
+
+    function parseVal(str) {
+        if (!str) return NaN;
+        str = str.replace(',', '.').replace(/\s+/g, '').trim();
+        return parseFloat(str);
+    }
+
+    // OPGAVE 1
+    function checkOpg1a() {
+        const val = parseVal(document.getElementById('opg1a-ans').value);
+        if (Math.abs(val - 9.82) < 0.1) {
+            showFeedback('feedback1a', true, 'Korrekt! v = 1 s · 9.82 m/s² = 9.82 m/s.');
+        } else {
+            showFeedback('feedback1a', false, 'Forkert. Husk v = t · g = 1 · 9.82 = 9.82 m/s.');
+        }
+    }
+
+    function checkOpg1b() {
+        const val = parseVal(document.getElementById('opg1b-ans').value);
+        if (Math.abs(val - 35.352) < 0.5) {
+            showFeedback('feedback1b', true, 'Flot! 9.82 m/s · 3.6 = 35.35 km/t.');
+        } else {
+            showFeedback('feedback1b', false, 'Prøv igen. Gang farten i m/s (9.82) med 3.6. Det giver ca. 35.35 km/t.');
+        }
+    }
+
+    function checkOpg1c() {
+        const val = parseVal(document.getElementById('opg1c-ans').value);
+        if (Math.abs(val - 14.0426) < 0.3) {
+            showFeedback('feedback1c', true, 'Korrekt! v = 1.43 s · 9.82 m/s² ≈ 14.04 m/s (ca. 50.5 km/t).');
+        } else {
+            showFeedback('feedback1c', false, 'Forkert. v = 1.43 · 9.82 ≈ 14.04 m/s.');
+        }
+    }
+
+    // OPGAVE 2
+    function checkOpg2() {
+        const val = document.getElementById('opg2-ans').value;
+        if (val === 'v=t*g') {
+            showFeedback('feedback2', true, 'Rigtigt! v = t · g.');
+        } else {
+            showFeedback('feedback2', false, 'Forkert. Hastigheden findes ved at gange tid med acceleration: v = t · g.');
+        }
+    }
+
+    // OPGAVE 4
+    function checkOpg4a() {
+        const m = document.getElementById('opg4a-m').value.toLowerCase();
+        const g = document.getElementById('opg4a-g').value.toLowerCase();
+        const h = document.getElementById('opg4a-h').value.toLowerCase();
+        
+        let ok = m.includes('masse') && (g.includes('tyngde') || g.includes('accel')) && h.includes('høj');
+        if (ok) {
+            showFeedback('feedback4a', true, 'Rigtigt! m = masse, g = tyngdeacceleration, h = højde.');
+        } else {
+            showFeedback('feedback4a', false, 'Tjek dine navne: m er masse, g er tyngdeacceleration, h er højde.');
+        }
+    }
+
+    function checkOpg4b() {
+        const m = document.getElementById('opg4b-m').value.toLowerCase();
+        const g = document.getElementById('opg4b-g').value.toLowerCase();
+        const h = document.getElementById('opg4b-h').value.toLowerCase();
+        
+        let ok = m.includes('kg') && (g.includes('m/s') || g.includes('m/s^2')) && (h === 'm' || h.includes('meter'));
+        if (ok) {
+            showFeedback('feedback4b', true, 'Helt rigtigt! m [kg], g [m/s²], h [m].');
+        } else {
+            showFeedback('feedback4b', false, 'Prøv igen. Standardenheder: masse i kg, g i m/s², højde i m.');
+        }
+    }
+
+    function checkOpg4c() {
+        const val = document.getElementById('opg4c-ans').value;
+        if (val === 'kg*m^2/s^2') {
+            showFeedback('feedback4c', true, 'Korrekt! 1 Joule = 1 kg · m²/s².');
+        } else {
+            showFeedback('feedback4c', false, 'Forkert. Da E = m · g · h, bliver enheden kg · (m/s²) · m = kg · m²/s².');
+        }
+    }
+
+    // OPGAVE 5
+    function checkOpg5a() {
+        const name = document.getElementById('opg5a-name').value.toLowerCase();
+        const unit = document.getElementById('opg5a-unit').value.toLowerCase();
+        if ((name.includes('fart') || name.includes('hastighed') || name.includes('velocity')) && unit.includes('m/s')) {
+            showFeedback('feedback5a', true, 'Korrekt! v er fart/hastighed i m/s.');
+        } else {
+            showFeedback('feedback5a', false, 'Tjek igen: v står for fart/hastighed, og enheden er m/s.');
+        }
+    }
+
+    function checkOpg5b() {
+        const val = document.getElementById('opg5b-ans').value.toLowerCase();
+        if (val.includes('m^2/s^2') || val.includes('m²/s²') || val.includes('(m/s)^2')) {
+            showFeedback('feedback5b', true, 'Rigtigt! Enheden for v² er m²/s².');
+        } else {
+            showFeedback('feedback5b', false, 'Forkert. Da v er i m/s, bliver v² i m²/s².');
+        }
+    }
+
+    // OPGAVE 6
+    function checkOpg6a() {
+        const val = parseVal(document.getElementById('opg6a-ans').value);
+        // E = 0.5 * 1200 * (100/3.6)^2 = 600 * 771.605 = 462963 J
+        if (Math.abs(val - 462963) < 5000) {
+            showFeedback('feedback6a', true, 'Flot! E_kin = 0.5 · 1200 · (27.78)² ≈ 462.963 J.');
+        } else {
+            showFeedback('feedback6a', false, 'Forkert. Omregn først 100 km/t til m/s (27.78 m/s), og beregn 0.5 · 1200 · 27.78².');
+        }
+    }
+
+    function checkOpg6b() {
+        const val = parseVal(document.getElementById('opg6b-ans').value);
+        // E = 0.5 * 1200 * (130/3.6)^2 = 600 * 1304.01 = 782407 J
+        if (Math.abs(val - 782407) < 8000) {
+            showFeedback('feedback6b', true, 'Korrekt! E_kin = 0.5 · 1200 · (36.11)² ≈ 782.407 J.');
+        } else {
+            showFeedback('feedback6b', false, 'Forkert. Omregn 130 km/t til m/s (36.11 m/s), og beregn 0.5 · 1200 · 36.11².');
+        }
+    }
+
+    // OPGAVE 7
+    function checkOpg7a() {
+        const ms = parseVal(document.getElementById('opg7a-ms').value);
+        const kmt = parseVal(document.getElementById('opg7a-kmt').value);
+        // v = sqrt(2 * 9.82 * 41.55) = sqrt(816.042) = 28.566 m/s -> 102.84 km/h
+        if (Math.abs(ms - 28.57) < 0.5 && Math.abs(kmt - 102.8) < 2) {
+            showFeedback('feedback7a', true, 'Perfekt! v = √(2 · 9.82 · 41.55) ≈ 28.57 m/s ≈ 102.8 km/t.');
+        } else {
+            showFeedback('feedback7a', false, 'Tjek beregningen: v = √(2 · 9.82 · 41.55) ≈ 28.57 m/s. Gang med 3.6 for km/t (102.8 km/t).');
+        }
+    }
+
+    function checkOpg7b() {
+        const epot = parseVal(document.getElementById('opg7b-epot').value);
+        const ekin = parseVal(document.getElementById('opg7b-ekin').value);
+        // E_pot = 1 * 9.82 * 41.55 = 408.021 J
+        if (Math.abs(epot - 408.02) < 5 && Math.abs(ekin - 408.02) < 5) {
+            showFeedback('feedback7b', true, 'Korrekt! Begge energier er ca. 408 J.');
+        } else {
+            showFeedback('feedback7b', false, 'Prøv igen. E_pot = 1 · 9.82 · 41.55 ≈ 408 J. Ved energibevarelse er E_kin i bunden også 408 J.');
+        }
+    }
+
+    function checkOpg7c() {
+        const val = document.getElementById('opg7c-ans').value;
+        if (val === 'ja') {
+            showFeedback('feedback7c', true, 'Korrekt! Den mekaniske energi er bevaret (\(E_{pot} = E_{kin}\)).');
+        } else {
+            showFeedback('feedback7c', false, 'Forkert. Hvis vi ser bort fra luftmodstand, er den samlede mekaniske energi bevaret.');
+        }
+    }
+
+    // OPGAVE 8
+    function checkOpg8a() {
+        const val = document.getElementById('opg8a-ans').value;
+        if (val === 'konstant') {
+            showFeedback('feedback8a', true, 'Korrekt! Uden friktion er den samlede energi helt konstant.');
+        } else {
+            showFeedback('feedback8a', false, 'Forkert. Energibevarelse gør, at den samlede energi er konstant.');
+        }
+    }
+
+    function checkOpg8b() {
+        const val = document.getElementById('opg8b-ans').value;
+        if (val === 'termisk') {
+            showFeedback('feedback8b', true, 'Rigtigt! Friktion omdanner den mekaniske energi til termisk energi (varme).');
+        } else {
+            showFeedback('feedback8b', false, 'Forkert. Friktion skaber varme, altså termisk energi.');
+        }
+    }
+
+    // OPGAVE 9
+    function checkOpg9a() {
+        const j = parseVal(document.getElementById('opg9a-j').value);
+        const mj = parseVal(document.getElementById('opg9a-mj').value);
+        // E_nytte = 5000 * 9.82 * 100 = 4,910,000 J = 4.91 MJ
+        if (Math.abs(j - 4910000) < 50000 && Math.abs(mj - 4.91) < 0.1) {
+            showFeedback('feedback9a', true, 'Rigtigt! E_nytte = 5000 · 9.82 · 100 = 4.910.000 J = 4,91 MJ.');
+        } else {
+            showFeedback('feedback9a', false, 'Tjek beregningen: 5000 · 9.82 · 100 = 4.910.000 J (4,91 MJ).');
+        }
+    }
+
+    function checkOpg9b() {
+        const dec = parseVal(document.getElementById('opg9b-dec').value);
+        const pct = parseVal(document.getElementById('opg9b-pct').value);
+        // eta = 4.91 / 5.5 = 0.8927 -> 89.3%
+        if (Math.abs(dec - 0.893) < 0.02 && Math.abs(pct - 89.3) < 2) {
+            showFeedback('feedback9b', true, 'Korrekt! Nyttevirkningen er 4.91 MJ / 5.5 MJ ≈ 0.893 eller 89.3%.');
+        } else {
+            showFeedback('feedback9b', false, 'Forkert. Divider E_nyttig (4.91 MJ) med E_tilført (5.5 MJ) = ca. 0.893 (89.3%).');
+        }
+    }
+
+    // OPGAVE 10
+    function checkOpg10a() {
+        const val = parseVal(document.getElementById('opg10a-ans').value);
+        // 90.6 * 3.6e6 = 326,160,000 J
+        if (Math.abs(val - 326160000) < 1000000) {
+            showFeedback('feedback10a', true, 'Rigtigt! 90.6 · 3.6 · 10⁶ = 326.160.000 J (326,16 MJ).');
+        } else {
+            showFeedback('feedback10a', false, 'Forkert. Gang 90.6 med 3.600.000.');
+        }
+    }
+
+    function checkOpg10b() {
+        const val = parseVal(document.getElementById('opg10b-ans').value);
+        // 15.6 * 3.6e6 = 56,160,000 J
+        if (Math.abs(val - 56160000) < 500000) {
+            showFeedback('feedback10b', true, 'Korrekt! 15.6 · 3.6 · 10⁶ = 56.160.000 J (56,16 MJ).');
+        } else {
+            showFeedback('feedback10b', false, 'Forkert. Gang 15.6 med 3.600.000.');
+        }
+    }
+
+    function checkOpg10c() {
+        const val = parseVal(document.getElementById('opg10c-ans').value);
+        // 4.38 * 3.6e6 = 15,768,000 J
+        if (Math.abs(val - 15768000) < 200000) {
+            showFeedback('feedback10c', true, 'Flot! 4.38 · 3.6 · 10⁶ = 15.768.000 J (15,77 MJ).');
+        } else {
+            showFeedback('feedback10c', false, 'Forkert. Gang 4.38 med 3.600.000.');
+        }
+    }
+
+    // UDSAGN
+    function checkUdsagnA() {
+        const val = document.getElementById('udsagnA-val').value;
+        if (val === 'falsk') {
+            showFeedback('feedbackA', true, 'Korrekt! Udsagnet er FALSK. Da E_kin afhænger af v², vil en fordobling af farten gøre energien 4 gange større (2² = 4).');
+        } else {
+            showFeedback('feedbackA', false, 'Forkert. Husk at E_kin afhænger af v². 2² = 4, så energien firfoldiggøres.');
+        }
+    }
+
+    function checkUdsagnB() {
+        const val = document.getElementById('udsagnB-val').value;
+        if (val === 'sandt') {
+            showFeedback('feedbackB', true, 'Korrekt! Udsagnet er SANDT. På grund af energibevarelse og tab til termisk energi kan nyttevirkningen aldrig overstige 1.0 (100%).');
+        } else {
+            showFeedback('feedbackB', false, 'Forkert. Man kan aldrig få mere nytteenergi ud, end man tilfører.');
+        }
+    }
+
+    function checkUdsagnC() {
+        const val = document.getElementById('udsagnC-val').value;
+        if (val === 'falsk') {
+            showFeedback('feedbackC', true, 'Korrekt! Udsagnet er FALSK. 1 kWh = 1 kW · 1 time = 1000 W · 3600 s = 3.600.000 Joule (3,6 MJ).');
+        } else {
+            showFeedback('feedbackC', false, 'Forkert. 1 kWh er 3.600.000 J, ikke 3.600 J. Husk at der er 3600 sekunder på en time og 1000 W i en kW.');
+        }
+    }
+</script>
+
+</body>
+</html>

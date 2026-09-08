@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Fysiske Formler - Mekanik og Energi</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #1e293b;
+            background-color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 24px 30px;
+            border-radius: 8px;
+            border-bottom: 4px solid #0284c7;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            margin: 0 0 8px 0;
+            font-size: 22pt;
+            font-weight: 700;
+        }
+
+        .header p {
+            margin: 0;
+            color: #94a3b8;
+            font-size: 11pt;
+        }
+
+        .formula-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 14px;
+            padding: 16px 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .formula-title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #0369a1;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .formula-body {
+            display: table;
+            width: 100%;
+        }
+
+        .formula-math {
+            display: table-cell;
+            vertical-align: middle;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 14pt;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        .formula-desc {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+            font-size: 9.5pt;
+            color: #64748b;
+            width: 40%;
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0.9em;
+            padding: 0 4px;
+        }
+
+        .fraction .top {
+            border-bottom: 1px solid #0f172a;
+            display: block;
+            padding-bottom: 2px;
+        }
+
+        .fraction .bottom {
+            display: block;
+            padding-top: 2px;
+        }
+
+        .math-symbol {
+            font-style: italic;
+        }
+
+        .unit {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 0.85em;
+            font-weight: normal;
+            color: #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Formelsamling: Energi & Mekanik</h1>
+        <p>Korrekt gengivelse og oversigt over fysikformler</p>
+    </div>
+
+    <!-- Potentiel Energi -->
+    <div class="formula-card">
+        <div class="formula-title">Potentiel energi (Beliggenhedsenergi)</div>
+        <div class="formula-body">
+            <div class="formula-math">
+                <span class="math-symbol">E</span><sub>pot</sub> = <span class="math-symbol">m</span> · <span class="math-symbol">g</span> · <span class="math-symbol">h</span>
+            </div>
+            <div class="formula-desc">
+                <span class="math-symbol">m</span>: masse, <span class="math-symbol">g</span>: tyngdeacceleration, <span class="math-symbol">h</span>: højde
+            </div>
+        </div>
+    </div>
+
+    <!-- Kinetisk Energi -->
+    <div class="formula-card">
+        <div class="formula-title">Kinetisk energi (Bevægelsesenergi)</div>
+        <div class="formula-body">
+            <div class="formula-math">
+                <span class="math-symbol">E</span><sub>kin</sub> = 
+                <div class="fraction"><span class="top">1</span><span class="bottom">2</span></div>
+                · <span class="math-symbol">m</span> · <span class="math-symbol">v</span><sup>2</sup>
+            </div>
+            <div class="formula-desc">
+                <span class="math-symbol">m</span>: masse, <span class="math-symbol">v</span>: hastighed
+            </div>
+        </div>
+    </div>
+
+    <!-- Hastighed ved frit fald -->
+    <div class="formula-card">
+        <div class="formula-title">Hastighed ved frit fald</div>
+        <div class="formula-body">
+            <div class="formula-math">
+                <span class="math-symbol">v</span> = &radic;<span style="border-top: 1px solid #0f172a; padding-top: 1px;">2 · <span class="math-symbol">g</span> · <span class="math-symbol">h</span></span>
+                &nbsp;&nbsp;<span style="font-size: 0.8em; font-weight: normal; color: #64748b;">eller</span>&nbsp;&nbsp;
+                <span class="math-symbol">v</span> = <span class="math-symbol">g</span> · <span class="math-symbol">t</span>
+            </div>
+            <div class="formula-desc">
+                <span class="math-symbol">t</span>: faldtid, <span class="math-symbol">g</span>: 9,82 m/s²
+            </div>
+        </div>
+    </div>
+
+    <!-- Nyttevirkning -->
+    <div class="formula-card">
+        <div class="formula-title">Nyttevirkning (Virkningsgrad)</div>
+        <div class="formula-body">
+            <div class="formula-math">
+                <span class="math-symbol">&eta;</span> = 
+                <div class="fraction"><span class="top"><span class="math-symbol">E</span><sub>nyttig</sub></span><span class="bottom"><span class="math-symbol">E</span><sub>tilført</sub></span></div>
+                &nbsp;&nbsp;<span style="font-size: 0.8em; font-weight: normal; color: #64748b;">eller</span>&nbsp;&nbsp;
+                <span class="math-symbol">&eta;</span> = 
+                <div class="fraction"><span class="top"><span class="math-symbol">P</span><sub>nyttig</sub></span><span class="bottom"><span class="math-symbol">P</span><sub>tilført</sub></span></div>
+            </div>
+            <div class="formula-desc">
+                Forholdet mellem udnyttet og tilført energi/effekt
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhedsomregning -->
+    <div class="formula-card">
+        <div class="formula-title">Enhedsomregning</div>
+        <div class="formula-body">
+            <div class="formula-math">
+                1 <span class="unit">m/s</span> = 3,6 <span class="unit">km/t</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                1 <span class="unit">kWh</span> = 3,6 · 10<sup>6</sup> <span class="unit">J</span>
+            </div>
+            <div class="formula-desc">
+                Standard fysikomregninger
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

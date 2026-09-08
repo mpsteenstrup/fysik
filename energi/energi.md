@@ -113,20 +113,22 @@ $$E_{kin} + E_{pot}= \text{konstant}$$
 I eksemplet fra svømmehallen starter man øverst på vippen. Vi er $5$ meter over vandet og står stille. Nu kan vi beregne båden den potentielle energi og den kinetiske energi. Lad os sige at personen er mig og jeg vejer $m=80$kg.
 
 $$
-E_{pot} = m \cdot g \cdot h = 80 \cdot 9{,}82 \cdot 5 = 3928\text{J} 
-$$
-$$
+\begin{align*}
+E_{pot} = m \cdot g \cdot h = 80 \cdot 9{,}82 \cdot 5 = 3928\text{J} \\
 E_{kin} = \frac{1}{2}⋅m⋅v^2 = 0.5 \cdot 80  \cdot 0^2 = 0J
+\end{align*}
 $$
+
+
 Den kinetiske energi er nul fordi vi står stille. 
 ![udspringer genereret med AI.](billeder/udspring.png)
 Farten ved overfladen regnede vi ovenfor til $v = 9{,}82\text{m/s}$. Vi kan nu regne energierne ud igen,
 
 $$
-E_{pot} = m \cdot g \cdot h = 80 \cdot 9.91 \cdot 0 = 0\text{J} 
-$$
-$$
+\begin{align*}
+E_{pot} = m \cdot g \cdot h = 80 \cdot 9.91 \cdot 0 = 0\text{J} \\
 E_{kin} = \frac{1}{2}⋅m⋅v^2 = 0.5 \cdot 80  \cdot 9.91^2 = 3928J
+\end{align*}
 $$
 
 Alt den potentielle energi er lavet om til kinetisk energi, så den samlede energi er bevaret. 
