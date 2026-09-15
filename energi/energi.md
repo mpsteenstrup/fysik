@@ -121,7 +121,7 @@ $$
 
 
 Den kinetiske energi er nul fordi vi står stille. 
-![udspringer genereret med AI.](billeder/udspring.png)
+![udspringer genereret med AI.](../billeder/udspring.png)
 Farten ved overfladen regnede vi ovenfor til $v = 9{,}82\text{m/s}$. Vi kan nu regne energierne ud igen,
 
 $$
@@ -144,7 +144,7 @@ Rundetårn er 41{,}55 meter højt. Hvis man kaster en liter mælk ned, det må m
 * Beregn den potentielle energi i toppen og den kinetiske i bunden.
 * Er energien bevaret?
 
-<center><img src="billeder/rundetaarn.jpg" width="160"></center>
+<center><img src="../billeder/rundetaarn.jpg" width="160"></center>
 
 ### Forsøg
 
@@ -247,7 +247,7 @@ $$
 ## Danmarks energiforbrug
 Danmarks energiforbrug fordeler sig på forskellige typer
 
-![energiforbrug](billeder/energy_supply_demand_2022.png)
+![energiforbrug](../billeder/energy_supply_demand_2022.png)
 
 Danmarks produktion af vind og sol i 2022 var $79\text{PJ} = 79\cdot 10^{15}\text{J}$.
 
@@ -263,7 +263,8 @@ Brug figur 1.2 ovenfor til at komme med et estimat af.
 
 # Den globale udvikling i energi
 Globalt set ser fordelingen af energi sådan ud i 2023 og en meget optimistisk fremskrigning til 2050.
-![energi_2050](billeder/Energy_2050.png)
+
+![energi_2050](../billeder/Energy_2050.png)
 
 Antagelser:
 * Energiforbruget er det samme i 2050 som i 2023
@@ -280,7 +281,7 @@ Nedenfor er en oversigt over energiomsætningen ved elektriske køretøjer. Den 
 * Find ud af hvad de forskellige trin gør og diskuter hvorfor der er energitab ved hver.
 * Bestem nyttevirkningen af den forskellige teknologier.
 
-![Batteri eller brint](billeder/elektriskbil.jpg)
+![Batteri eller brint](../billeder/elektriskbil.jpg)
 
 
 
