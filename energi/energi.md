@@ -121,7 +121,9 @@ $$
 
 
 Den kinetiske energi er nul fordi vi står stille. 
+
 ![udspringer genereret med AI.](../billeder/udspring.png)
+
 Farten ved overfladen regnede vi ovenfor til $v = 9{,}82\text{m/s}$. Vi kan nu regne energierne ud igen,
 
 $$
