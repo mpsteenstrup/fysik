@@ -12,34 +12,26 @@
 
 # Energi
 ## Potentiel energi
-Potentiel energi kaldes også beliggenhedsenergi. Energien er afhængig af objektets position i et kraftfelt. På Jorden er kraftfeltet tyngdekraften som trækker alle objekter mod centrum af Jorden. Den styrke som Jorden trækker i genstande afhænger af jordens masse og giver anledning til en acceleration på $g=9{,}82\text{m/s}^2$.
-Et objekt som falder frit mod Jorden vil derfor forøge sin fart med $9{,}82\text{m/s}$ hvert sekund.
+Potentiel energi kaldes også beliggenhedsenergi.
 
+Den potentielle energien afhænger af **højden**, \(h\), og **massen**, \(m\), sådan at jo højere man er oppe og jo mere et objekt vejer, jo større er den potentielle energi. Derudover afhænger den af hvor hurtigt objekter accelerere mod den planet man er på. Den kaldes **tyngdeaccelerationen**, og har bogstavet \(g\).  På Jorden er den \(g = 9{,}82\), mens den på Månen er \(1{,}6\).
 
-### øvelse
-Du står på toppen af $5$ meter vippen og skal til at springe ud. Det tager ca. $t=1$ sekund før I rammer vandet, men hvad er jeres fart? 
+Den potentielle energi kan skrives som 
+$$
+\text{potentiel energi} = \text{masse} \cdot \text{tyngdeacceleration} \cdot \text{højde}
+$$
 
-* Beregn farten ved at gange tiden med acccelerationen ($t\cdot g$).
+Hvis vi skriver det med bogstaver er det,
 
-Man kan omregne om til km/time ved at gange med $3{,}6$.
+$$E_{pot}=m⋅g⋅h$$
 
-* Hvad er jeres fart når I rammer vandet i km/time? 
+Hvis du løfter en liter mælk, \(m = 1\) to meter op, \(h=2\) i luften tilfører du den potentiel energi,
 
-Hvis du drister dig til at springe fra $10$ meter vippen så tager det ca. $1{,}43$ sekunder.
+$$
+E_{pot} = 1 \cdot 2 \cdot 9{,}82 = 19{,}64 \text{J}
+$$
 
-* Beregn farten når du rammer vandet.
-
-### Regning med enheder
-I fysik bruger vi enheder for at vise hvad vi måler. Det giver for en fysiker ikke mening at sige at "temperaturen er 7", for 7 hvad? At temperaturen er "7 grader celcius" er til gængælde en glimrende oplysning, hvis man vil vide om man skal tage en sweater på. På samme måde viser enheden for tyngdeaccelerationen $\text{m/s}^2$ hvordan hastigheden ændrer sig hvert sekund.
-
-Når man regner med enheder skal de ikke indgå i beregningen som tal gør. To heste som hver vejer $400$kg til tilsammen veje $2\cdot 400\text{kg} = 800\text{kg}$. Tilsvarende vil en udspringer efter ét sekund have en hastighed på $v = 9{,}82\text{m/s}^2\cdot 2\text{s} = 19{,}6\text{m/s}$. I princippet ganger man her enhederne så, $\frac{\text{m}}{\text{s}^2}\cdot \text{s} = \frac{m}{s}$, men hvis man holder sig til standardenheder i sine beregninger kan man godt nøjes med at sætte den rigtige enhed på til sidst.
-
-
-### Øvelse
-
-* Sæt streg over de forkerte formlen for hastigheden som funktion af tiden og accelerationen.     $v=t⋅g$, $v=g/t$, $v=t/g$.
-
-Den potentielle energien afhænger af højden, h, og massen, m, sådan at jo højere man er oppe og jo mere et objekt vejer, jo større er den potentielle energi.
+Enheden for energi er joules med bogstavet J.
 
 ### Eksempel
 
@@ -61,17 +53,110 @@ Det kræver altså næste samme mængde energi.
 
 * Hvorfor bliver du meget mere træt at at bære 1 liter op i Burj Khalifa end 20 liter op i Runde tårn?
 
-### Formlen for potentiel energi
+### Enheder
+I fysik bruger vi enheder for at vise hvad vi måler. Det giver for en fysiker ikke mening at sige at "temperaturen er 7", for 7 hvad? At temperaturen er "7 grader celcius" er til gængælde en glimrende oplysning, hvis man vil vide om man skal tage en sweater på.
 
-Vi kan sætte de tre variable som betyder noget for den potentielle energi ind i en formel. Variablene er, massen $m$ enhed [kg], tyngdeaccelerationen $g$ enhed [m/s$^2$] og højden $h$ enhed [m]. Formlen er
+Tabel: Fysiske størrelser og standard-enheder for potentiel energi
 
-$$E_{pot}=m⋅g⋅h$$
+Fysisk størrelse  | Symbol    | Standard enhed       | Symbol 
+------------------|-----------|-----------------------|---------------------------------
+Energi             | E         | Joule                 | $\text{J}$
+Højde              | h         | Meter                 | $\text{m}$
+Masse              | m         | Kilogram               | $\text{kg}$
+Tyngdeaccelerering  | g        | Meter per sekund i anden | $\text{m}/\text{s}^2$
+
+
+
+#### Regnemed enheder
+Hvis man bruger standard-enheder kan man lade være med at tage dem med i beregningerne. 
+
+Man skriver det med enheder, men regner uden dem.
+
+**Eksempel**
+
+Massen af to heste som hver vejer 400kg beregnes som 
+
+$$
+m = 2\cdot 400 \text{kg} = 800 \text{kg}
+$$
+
+eller
+
+$$
+m = 2\cdot 400 = 800 \text{kg}.
+$$
+
+Resultatet skal altid være med enheder.
+
+Hvis vi vil beregne hastigheden efter 2 sekunders frit fald gøres det ved,
+
+$$
+v = 9{,}82\text{m/s}^2\cdot 2\text{s} = 19{,}6\text{m/s}
+$$
+
+eller
+
+$$
+v = 9{,}82 \cdot 2 = 19{,}6\text{m/s}
+$$
+
+#### Omregning til standardenheder
+
+For at regne rigtigt skal man først omregne til standard enheder. Hvis man er oppe i 2 km's højde og vejer 80 kg og skal beregne energien bliver det,
+
+$$
+E_{pot} = m \cdot g \cdot h =  80 \cdot 9{,}82 \cdot 2000 = 1.571.200 \text{J}
+$$
+
+
+### Øvelse
+
+* Beregn den potentielle energi af en pony som er gået op på Himmelbjerget. Ponyens masse er $m=xx$ og højden af Himmelbjerget er $h= xx$.
+
+* Beregn den potentielle energi en fodbold tilføjes når den sparkes 20 meter op i luften. Bolden vejer $m=400$ gram ( husk at omregn til kg).
+
+Hvis vi skriver om på formlen for potentiel energi kan højden findes ved, $h = \frac{E_{pot}}{m \cdot g}$.
+
+* $100$ gram chokolade indeholder ca. $620\text{kCal} = 148.000\text{J}$ energi. Beregn hvor langt op du kan komme, hvis du laver alt energien om til potentiel energi. 
+
+På Månen er tyngdeaccelerationen $g=1{,}62$
+
+* Hvor meget energi kræver det at løfte håndvægte med en masse på $20$kg, $1$ meter op, på Måne og på Jorden?
+
 
 ### Øvelse
 
 * Angiv navnene for $m,g,h$.
 * Angiv enhederne for $m,g,h$
 * lidt svær men prøv. Hvilken mærkelig enhed må energi også have udover joule  når man ser på enhederne i udtrykket $m⋅g⋅h$         ( svar; $\text{J=kg⋅m}^2/\text{s}^2$, hvilket jo bare er $E=m⋅c^2$ ).
+
+
+
+
+#### Tyngdeaccelerationen
+Den styrke som Jorden trækker i genstande afhænger af jordens masse og giver anledning til en acceleration på $g=9{,}82\text{m/s}^2$. Et objekt som falder frit mod Jorden vil derfor forøge sin fart med $9{,}82\text{m/s}$ hvert sekund.
+
+
+### øvelse
+Du står på toppen af $5$ meter vippen og skal til at springe ud. Det tager ca. $t=1$ sekund før I rammer vandet, men hvad er jeres fart? 
+
+* Beregn farten ved at gange tiden med acccelerationen ($t\cdot g$).
+
+Man kan omregne om til km/time ved at gange med $3{,}6$.
+
+* Hvad er jeres fart når I rammer vandet i km/time? 
+
+Hvis du drister dig til at springe fra $10$ meter vippen så tager det ca. $1{,}43$ sekunder.
+
+* Beregn farten når du rammer vandet.
+
+
+
+
+### Øvelse
+
+* Sæt streg over de forkerte formlen for hastigheden som funktion af tiden og accelerationen.     $v=t⋅g$, $v=g/t$, $v=t/g$.
+
 
 # Kinetisk energi.
 Kinetisk energi eller bevægelsesenergi er den energi der er i et objekt der bevæger sig. Jo hurtigere noget bevæger sig jo større er den den kinetiske energi. Den kinetiske energi afhænger også af massem, jo større masse jo mere kinetisk energi.
@@ -87,20 +172,57 @@ $$E_{kin}=\frac{1}{2}⋅m⋅v^2$$
 
 Den kinetiske energi afhænger altså af hastigheden i anden! Hvis man fordobler farten bliver den kinetiske energi fire gange større. Det er derfor det er farligt at køre hurtigt.
 
-### Øvelse
+
+tabel: Fysiske størrelser, potentiel energi.
+
+Fysisk Størrelse       | Symbol    | Enhed             | Symbolet På Den Standardenhed
+------------------------|-----------|--------------------|-----------------------------------
+Potentielt Energi      | $\text{E}_{\text{pot}}$  | Joule               | J
+Masse                   | m         | Kilogram           | $\text{kg}$
+Hastighed               | v         | Meter per sekund   | $\text{m/s}$
+
+
+
+#### Eksempel
+
+En cyklist med en samlet masse på $70$ kg cykler $20\frac{km}{time} = 5{,}6 \frac{m}{s}$. Den kinetiske energi er,
+
+$$
+E_{kin} =  0{,}5 \cdot 70 \cdot 5{,}6^2 = 1097{,}6 \text{J}.
+$$
+
+En Tesla Cybertruck med en masse på $m = 2{,}6\text{tons} = 2600\text{kg}$ kører med $130\frac{km}{time} = 36\frac{m}{s}$. Den kinetiske energi er,
+
+$$
+E_{kin} = 0.5\cdot 2600\cdot 36^2 = 1.684.800 \text{J}.
+$$
+
+### Øvelse udregning af kinetisk energi.
+
+Du rammes af en basketball med en hastighed på $v = 7{,}2\frac{\text{m}}{\text{s}}$. Boldens masse er $m = 880$ gram.
+
+* Omregn til standardenheder (kg) og udregn den kinetiske energi.
+
+Et projektil vejer $m=10$g og skydes med $v = 900\frac{\text{km}}{\text{time}} = 250\frac{\text{m}}{\text{s}}$.
+
+* Omregn til standar-enheder og udregn den kinetiske energi. 
+* Brug resultaterne til at forklare hvorfor det er meget værre at blive ramt af et prosektil end en basketball.
+
+En bil har en masse på $m=1200\text{kg}$.
+
+Beregn den kinetisk energi ved:
+
+* Hastighed på $v=50\text{km}/\text{time}=13\text{m/s}$.
+* Hastighed på $v =100\text{km}/\text{time}=28\text{m/s} $
+* Hastighed på $v =130\text{km}/\text{time}=36\text{m/s} $
+* Brug resultatet til at forklare hvorfor det er meget farligere at køre $130\text{km}/\text{time}$ end $100 \text{km}/\text{time}$.
+
+
+
+### Øvelse enheder og fysiske størrelser
 * Hvad er $v$ og hvad er enheden?
 * I ligningen står den $v^2$ hvad er enheden nu?
 * Tjek at $E_{kin}$ har samme enhed som $E_{pot}$.
-
-### Eksempel
-En bil har en masse på $m=1200\text{kg}$ og vil med en fart på
- $v=50\text{km}/\text{time}=13\text{m/s}$ have en kinetisk energi på
-
-$E_{kin}=\frac{1}{2}\cdot1200\text{kg}\cdot (13\text{m}/\text{s})^2 = 101400\text{J}$
-
-### Øvelse
-* Hvad er bilens energi hvis den kører 100 km/timen ($28$m/s) og 130 km/timen ( $36$m/s ). 
-* Overvej hvad disse beregninger kan,fortælle jer om risikoen ved at køre hurtigt.
 
 ## Energien er bevaret.
 Energibevarelse gælder selvfølgeligt også for potentiel og kinetisk energi. Vi kan omdanne potentiel energi til kinetisk energi ved eks. at lade et objekt falde, eller omvendt fra kinetisk til potentiel energi ved at lave kaste en bold op i luften.
@@ -128,21 +250,21 @@ Farten ved overfladen regnede vi ovenfor til $v = 9{,}82\text{m/s}$. Vi kan nu r
 
 $$
 \begin{align*}
-E_{pot} = m \cdot g \cdot h = 80 \cdot 9.91 \cdot 0 = 0\text{J} \\
-E_{kin} = \frac{1}{2}⋅m⋅v^2 = 0.5 \cdot 80  \cdot 9.91^2 = 3928J
+E_{pot} = m \cdot g \cdot h = 80 \cdot 9{,}92 \cdot 0 = 0\text{J} \\
+E_{kin} = \frac{1}{2}⋅m⋅v^2 = 0.5 \cdot 80  \cdot 9{,}91^2 = 3928J
 \end{align*}
 $$
 
-Alt den potentielle energi er lavet om til kinetisk energi, så den samlede energi er bevaret. 
+Alt den potentielle energi er lavet om til kinetisk energi, så den samlede energi er bevaret.
 
 Vi kan bruge denne vide til at finde hastigheden af et faldende objekt hvis vi kender den potentielle energi. Den ligning man skal løse er $m⋅g⋅h=\frac{1}{2}m⋅v^2$, hvor det er $v$ vi gerne vil finde.
 
 Kan  vi se bort fra luftmodstanden? [Brian Cox feather drop experiment video](https://www.youtube.com/watch?v=E43-CfukEgs).
 
 ### Øvelse
-Rundetårn er 41{,}55 meter højt. Hvis man kaster en liter mælk ned, det må man ikke, vil den ramme Jorden med en stor hastighed, men hvor stor er den? Hvis vi isolerer farten $v$ i ligningen $m⋅g⋅h=\frac{1}{2}m⋅v^2$ får vi $v= \sqrt{2\cdot g\cdot h}$
+Rundetårn er $41{,}55$ meter højt. Hvis man kaster en liter mælk ned, det må man ikke, vil den ramme Jorden med en stor hastighed, men hvor stor er den? Hvis vi isolerer farten $v$ i ligningen $m⋅g⋅h=\frac{1}{2}m⋅v^2$ får vi $v= \sqrt{2\cdot g\cdot h}$
 
-* Brug ligningen til at finde ud af hvad farten er når mælken rammer Jorden ( gang med 3{,}6 hvis I vil se det i km/timen). 
+* Brug ligningen til at finde ud af hvad farten er når mælken rammer Jorden ( gang med $3{,}6$ hvis I vil se det i km/timen). 
 * Beregn den potentielle energi i toppen og den kinetiske i bunden.
 * Er energien bevaret?
 
@@ -160,7 +282,7 @@ Sammenhængen mellem potentiel og kinetisk energi gælder også når vi kaster b
 
 #### Forsøg 2.
 
-Kast igen bolden op i luften, men tag her tid på hvor langt tid det tager før den lander. Brug formlen $v = 2\cdot g\cdot t$, til at bestemme starthastigheden.
+Kast igen bolden op i luften, men tag her tid på hvor langt tid det tager før den lander. Brug formlen $v = \frac{1}{2}\cdot g\cdot t$, til at bestemme starthastigheden.
 
 ### Øvelse
 Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboarder, [LINK](https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park_en.html)
@@ -172,6 +294,7 @@ Phet har lavet en fin interaktiv animation med en skateboardbane og en skateboar
 *  Tilføj friktion, Friction, og beskriv hvad der sker med den kinetiske og potentielle energi. Hvad er der blevet af energien?
 * Prøv selv at lave en bane i Playground.
 
+#### Rapportforsøg: 1.d boldkast, energibevarelse.
 
 ## Energiformer
 Dokumentet giver forskellige energiformer fordelt efter om de hører til potentiel eller kinetisk energi.
@@ -185,6 +308,7 @@ Energikvalitet refererer til det brugbare arbejde, som en given mængde energi k
 
 ## Termisk ligevægt
 Termisk ligevægt er en tilstand, hvor temperaturen er den samme i alle deler af et system. Det betyder, at varmen ikke længere flyder fra det ene område til det andet, og at der ikke længere er nogen nettovarmestrøm i systemet. Når et system er i termisk ligevægt, er det i en form for energi-ligevægt, hvilket betyder, at der ikke er nogen nettovarmestrøm i systemet.
+
 
 ## Nyttevirkning
 Nyttevirkningen er forholdet mellem den nyttiggjorte energi og den tilførte energi. Den har det græske bogstav **eta**, $\eta$ og beregnes med
@@ -206,11 +330,11 @@ Torben bruger altså $84\%$ af energien på løftet mens $16\%$ går til spilde 
 
 ![Gravitricity](https://gravitricity.com/wp-content/uploads/2023/11/gravistore-system-features-graphic.png)
 
-Forestil dig, at Gravitricity bruger et system, hvor en vægt på 5000 kg løftes op til en højde af 100 meter for at lagre energi. Når energien skal bruges, sænkes vægten, og den potentielle energi omdannes til elektrisk energi. Systemet bruger 5.5 MJ (megajoule) energi på at løfte vægten. Beregn nyttevirkningen af systemet.
+Forestil dig, at Gravitricity bruger et system, hvor en vægt på 5000 kg løftes op til en højde af 100 meter for at lagre energi. Når energien skal bruges, sænkes vægten, og den potentielle energi omdannes til elektrisk energi. Systemet bruger $E_{tilført} = 5{,}5\text{MJ} = 5.500.000\text{J}$ energi på at løfte vægten.
 
-1. Beregn den tilførte potentielle energi ved hjælp af formlen $E_{nytte} = m \cdot g \cdot h$, hvor $m = 5000 \text{kg}$, $g = 9{,}82 \frac{\text{m}}{\text{s}^2}$ og $h = 100 \text{m}$.
-2. Brug resultatet fra trin 1 til at beregne nyttevirkningen ved hjælp af formlen $\eta = \frac{E_{nyttig}}{E_{tilført}}$.
-3. Diskuter, hvad resultatet fortæller om systemets effektivitet.
+* Beregn den tilførte potentielle energi ved hjælp af formlen $E_{nytte} = m \cdot g \cdot h$, hvor $m = 5000 \text{kg}$, $g = 9{,}82 \frac{\text{m}}{\text{s}^2}$ og $h = 100 \text{m}$.
+* Brug resultatet til at beregne nyttevirkningen ved hjælp af formlen $\eta = \frac{E_{nyttig}}{E_{tilført}}$.
+* Diskuter, hvad resultatet fortæller om systemets effektivitet.
 
 ## Energienheden kWh
 Kilowatt-time (kWh) er en enhed for energi, der ofte bruges til at måle elektrisk energi. En kilowatt-time svarer til den energi, der bruges, når en effekt på én kilowatt (1000 watt) forbruges i én time. Det er en praktisk enhed til at beskrive energiforbrug i husholdninger og industri, da det giver en nem måde at forstå, hvor meget energi der bruges over tid.
@@ -231,20 +355,28 @@ Kilowatt-timer bruges ofte på elregninger for at vise, hvor meget energi en hus
 
 ### Danskers energiforbrug
 
+Det samlede energiforbrug er enormt men hvis vi deler det op i hvor meget hver person bruger hver dag bliver det mere overskueligt. Det samlede danske energiforbrug per person per dag er:
 
-Energiforbruget kan opgøres på mange måder alt efter hvor meget man tager med. Vi kalder det samlede energiforbrug fra det offentlige, private virksomheder og i husholdninger i Danmark, for $E_{total}$ . Hvis man kun ser på elforbruget, kalder vi det $E_{el}$. Elforbruget for husholdninger kaldes $E_{el-husholdninger}$. Tallene er fra 2023, ourworldindata.org. og viser det daglige forbrug
+$$
+E_{total} = 90{,}6 \text{kWh}. 
+$$
+
+Det svarer ca. til at have to elkedler kørende hele tiden. Det er kun en lille del af vores forbrug som er i form af elektricitet. Det samlede danske elforbrug fordeler sig som.
 
 $$
 \begin{align*}
-&E_{total} &= 90{,}6 \text{kWh} \\
+\\
 &E_{el} &= 15{,}6 \text{kWh} \\
 &E_{el-husholdninger} &= 4{,}38 \text{kWh}
 \end{align*}
 $$
 
+
 ### Øvelse
 
-* Brug Maple til at omregne til joulse.
+* Beregn hvor stor en del af det danske energiforbrug er elforbrug ved at udregne $\frac{E_{el}}{E_{total}}\cdot 100\%$.
+* Udregn hvor stor del af husholdningernes elforbrug udgør af det totale energiforbrug. Gør som ved opgave 1. 
+* Forklar hvorfor det er vigtigt at skelne mellem energi og elektricitet.
 
 ## Danmarks energiforbrug
 Danmarks energiforbrug fordeler sig på forskellige typer
