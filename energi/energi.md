@@ -67,7 +67,7 @@ Tyngdeaccelerering  | g        | Meter per sekund i anden | $\text{m}/\text{s}^2
 
 
 
-#### Regnemed enheder
+#### Regne med enheder
 Hvis man bruger standard-enheder kan man lade være med at tage dem med i beregningerne. 
 
 Man skriver det med enheder, men regner uden dem.
