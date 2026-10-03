@@ -14,7 +14,7 @@
 ## Potentiel energi
 Potentiel energi kaldes også beliggenhedsenergi.
 
-Den potentielle energien afhænger af **højden**, \(h\), og **massen**, \(m\), sådan at jo højere man er oppe og jo mere et objekt vejer, jo større er den potentielle energi. Derudover afhænger den af hvor hurtigt objekter accelerere mod den planet man er på. Den kaldes **tyngdeaccelerationen**, og har bogstavet \(g\).  På Jorden er den \(g = 9{,}82\), mens den på Månen er \(1{,}6\).
+Den potentielle energien afhænger af **højden**, $h$, og **massen**, $m$, sådan at jo højere man er oppe og jo mere et objekt vejer, jo større er den potentielle energi. Derudover afhænger den af hvor hurtigt objekter accelerere mod den planet man er på. Den kaldes **tyngdeaccelerationen**, og har bogstavet $g$.  På Jorden er den $g = 9{,}82\frac{\text{m}}{\text{s}^2}$, mens den på Månen er $1{,}6\frac{\text{m}}{\text{s}^2}$.
 
 Den potentielle energi kan skrives som 
 $$
@@ -25,7 +25,7 @@ Hvis vi skriver det med bogstaver er det,
 
 $$E_{pot}=m⋅g⋅h$$
 
-Hvis du løfter en liter mælk, \(m = 1\) to meter op, \(h=2\) i luften tilfører du den potentiel energi,
+Hvis du løfter en liter mælk, $m = 1\text{kg}$ to meter op, $h=2\text{m}$ i luften tilfører du den potentiel energi,
 
 $$
 E_{pot} = 1 \cdot 2 \cdot 9{,}82 = 19{,}64 \text{J}
