@@ -11,7 +11,7 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
-# Lys
+# Lys xx
 mange gode simuleringer her
 *[http://ophysics.com/l.html](http://ophysics.com/l.html)
 
@@ -29,7 +29,7 @@ På billedet vises et eksempel på destruktiv interferens
 * Undersøg om der er en sammenhæng mellem positionen $Y$ ved konstruktiv interferens og bølgeløngden $\lambda$.
 
 ## Gitterligningen
-Når lys med en bestemt bølgelængde sendes gennem et gitter opstår der pletter med konstruktiv interferens. Gitterligningen giver sammenhængen melle afbejningsvinklen, $\theta_n$, bølgelængden, $\lambda$ og afstanden mellem spalterne, $d$. Sammenhængen er givet ved
+Når lys med en bestemt bølgelængde sendes gennem et gitter opstår der pletter med konstruktiv interferens. Gitterligningen giver sammenhængen melle afbøjningsvinklen, $\theta_n$, bølgelængden, $\lambda$ og afstanden mellem spalterne, $d$. Sammenhængen er givet ved
 
 $$
 \sin(\theta_n) = \frac{n\cdot\lambda}{d}
