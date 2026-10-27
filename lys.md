@@ -11,7 +11,7 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
-# Lys xx
+# Lys
 mange gode simuleringer her
 *[http://ophysics.com/l.html](http://ophysics.com/l.html)
 

@@ -14,48 +14,109 @@
 
 Bølger er et grundlæggende fænomen i fysikken, der beskriver, hvordan energi udbredes gennem forskellige medier. De kan observeres i mange former, fra lydbølger i luften til lysbølger i rummet og vandbølger på havet. Bølger kan klassificeres som mekaniske eller elektromagnetiske. Mekaniske bølger, såsom lydbølger og seismiske bølger, kræver et medium for at udbrede sig, mens elektromagnetiske bølger, såsom lys og radiobølger, kan bevæge sig gennem vakuum. Forståelsen af bølger er afgørende for at forklare mange fysiske fænomener, herunder lydens udbredelse, lysbrydning og interferens. I de følgende kapitler vil vi udforske de forskellige typer af bølger, deres egenskaber og anvendelser i både naturen og teknologien.
 
-## Eksempel: En person taler i en mobiltelefon
+##  En person taler i en mobiltelefon
 
-Forestil dig, at du taler i din mobiltelefon. Når du taler, skaber dine stemmebånd lydbølger, der bevæger sig gennem luften og fanges af mikrofonen i din telefon. Mikrofonen omdanner disse lydbølger til elektriske signaler, som derefter konverteres til digitale data.
+Tegneserien viser hvordan informationen bliver sendt fra en person til en anden.
 
-Disse digitale data sendes som elektromagnetiske bølger fra din telefon til den nærmeste telefonmast. Telefonmasten modtager signalet og videresender det gennem et netværk af master og kabler til modtagerens telefon. Undervejs kan signalet blive forstærket og behandlet for at sikre, at det når frem i god kvalitet.
+![lydens rejse](billeder/samtale.jpg)
 
-Når signalet når modtagerens telefon, omdannes de digitale data tilbage til elektriske signaler, som driver telefonens højttaler. Højttaleren omdanner de elektriske signaler tilbage til lydbølger, som modtageren kan høre. Hele denne proces sker næsten øjeblikkeligt, hvilket gør det muligt for folk at tale sammen i realtid, selvom de befinder sig langt fra hinanden.
+### Øvelse, bølgers udbredelse
 
-Dette eksempel illustrerer, hvordan både mekaniske bølger (lydbølger) og elektromagnetiske bølger (radiosignaler) spiller en afgørende rolle i moderne kommunikationsteknologi.
 
-### Øvelse: 
-* Lav en tegning af dig som ringer hjem. På tegningen skal man kunne se hvordan informationen bevæger sig som bølger.
 
+* Beskriv hvordan beskeden fra pigen kommer frem til drengen.
+* Find ud af hvilke billeder der indeholder bølger.
+
+* Hvad er det som bevæger sig når pigen skaber bølger og når drengen hører lyden?
+* Hvad er det som bevæger sig i ledningerne og inde i mobiltelefonen?
+
+* Match bølgetyperne og det de bruger til at bevæge sig, mediet.
+
+**lydbølger**, **elektrisk signal i mobiltelefonen**, **Wifi**, **elektriske signal i kablerne**
+
+**elektroner**, **intet medie**, **elektroner**, **luftmolekyler**
+
+
+
+<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <thead>
+    <tr style="background-color: RGB(150,250,150);">
+      <th style="padding: 12px; border: 1px solid black; width: 50%;">Bøger</th>
+      <th style="padding: 12px; border: 1px solid black; width: 50%;">Medie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
+      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
+      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
+      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
+      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+Dette eksempel illustrerer, hvordan både mekaniske bølger (lydbølger) og elektromagnetiske bølger (radiosignaler) spiller en afgørende rolle i moderne kommunikationsteknologi. Nogle bølger har brug for et medie til at udbrede sig, mens andre kan klare sig uden.
+
+# Periodiske fænomener
+Når noget gentager sig, kan man beskrive det som et periodisk fænomen. På billedet kan man se et barn gynge, hvor barnet svinger frem og tilbage.
+
+![gynge](billeder/gynge.jpg)
+
+Bevægelsen er periodisk og kan beskrives med den tid det tager at svinge helt frem og helt tilbage igen. Dette kaldes en fuld svingning.
+
+<div class="formula-box">
+  <strong>Periode<br> </strong> Tiden i sekunder det tager for en hel svingning, frem og tilbage.<br>
+  symbol: T, enhed: [s], sekund
+</div>
+
+### Eksempel
+Hvis det tager barenet $2$ sekunder at svinge frem og tilbage siger vi at perioden, $T = 2\text{s}$.
+
+### Øvelse
+* Tag tid på hvor lang tid det tager at gå 10 skridt. Hvor lang tid tager ét skridt og hvad er perioden?
+* Her er en video at bølger som kommer ind over en strand, [Bølger](https://www.youtube.com/watch?v=sR_e6GLz4ms). Bestem perioden for bølgerne.
+* Månen bevæger sig også periodisk omkring Jorden. Hvad er perioden?
+
+Vi kan også finde ud af hvor mange svingninger der er hvert sekund. Det kaldes frekvensen og beregnes som én divideret med perioden.
+
+<div class="formula-box">
+  <strong>Frekvens
+  $$ f = \frac{1}{T} $$
+  </strong> Hvor mange svingninger der er hvert sekund<br>
+  symbol: f, enhed: [1/s] eller [Hz], per sekund eller hertz.
+</div>
+
+### Eksempel
+Barnet som gynger har en perioden på $T = 2\text{s}$ hvilket giver en frekvens på $f = \frac{1}{T} = \frac{1}{2\text{s}} = 0{,}5 \frac{1}{\text{s}}$.
+
+### Øvelse
+* Mål din puls ved at tælle antal slag på $20$ sekunder. Find frekvensen ved at dividere med $20$. Normalt bruger vi slag i minuttet, så skal du gange med $60$.
+* Udregn frekvensen for dine skridt og bølgerne på stranden, som I fandt ovenfor.
+* Beskriv i ord hvad **periode** betyder og hvad **frekvens** betyder.
 
 # Lyd og Bølger
 Lyd er svingninger som forplanter sig gennem et medie. Oftest oplever vi det når lyde bevæger sig gennem atmosfærisk luft hvor det er luftmolekylerne som svinger frem og tilbage. Når man hører en tone svinger molekylerne periodisk og danner skiftevis over og undertryk. Jo større trykforskellen er jo kraftigere hører vi lyden.
-
-Fysiske størrelser når en tone skal beskrives:
-
-* $f$, Frekvensen, hvor mange gange den svinger hvert sekund, enhed hertz, Hz.
-* $T$, Perioden, hvor lang tid der går mellem hver bølge, enhed sekund, s.
-* $\lambda$ lambda, Bølgelængde, hvor langt der er mellem hver bølge, enhed meter, m.
-* $v$, Fart, hvor hurtigt bølgen bevæger sig, enhed m/s.
-
-Sammenhængen mellem perioden og frekvensen er
-$f = \frac{1}{T}$
-
-eksempel:
-* Du gynger frem og tilbage og en hel svingning tager 2 sekunder. Efter 1 sekund er du kommet halvejs frem og tibage og frekvensen er derfor $f = \frac{1}{2\text{s}} = 0,5\text{Hz}$. Du foretager altså en halv svingning, hvert sekund.
-* En elitesportskvinde kan have en hvilepuls på 30 slag per minut. Omregnet til sekunder giver det en frekvens på $f = \frac{30}{60 \text{s}} = 0.5\text{Hz}$. Vi får derfor igen en perioden på 2 sekunder som ved gyngeturen.
-
-# Øvelse
-* Mål din puls ved at tage tid på 10 slag og omregn til slag per minut.
-* Udregn frekvensen og perioden for din puls.
 
 ### Illustration af lydbølger
 Videoen viser hvordan en højttaler skubber til luftmolekylerne og derved skaber pulser hvor luftmolekylerne er tæt sammen og hvor de er langt fra hinanden.
 
 [![video af lydbølgers udbredelse](billeder/lyd.png)](https://youtu.be/GnAvquGBmnY)
+
 [link: video af lydbølgers udbredelse](https://youtu.be/GnAvquGBmnY)
 
-Højttalerens membran bevæger sig frem,
+Højttalerens membran bevæger sig frem:
 
 * Højttaleren bevæger sig frem og skubber til luftmolekylerne lige foran højttaleren.
 * Luftmolekylerne bevæger sig mod højre og rammer ind i andre luftmolekyler.
@@ -82,10 +143,13 @@ De orange linjer illustrere luftmolekyler, så når linjerne er tæt sammen er d
 * Beskriv sammenhængen mellem bevægelsen af luftmolekylerne og grafen nederst, kom ind på overtryk og undertryk.
 * Lav om på amplituden og beskriv hvad der ændrer sig og hvad der ikke ændrer sig.
 * Lav om på frekvensen og beskriv igen hvad der ændrer sig og hvad der ikke ændrer sig.
-* Hvilken sammenhæng finder i mellem bølgelængden og frekvensen?
+* Kom med et bud på hvad bølgelængden, wavelength, betyder. 
 * Vurder om fart af bølgen er konstant når frekvensen ændres.
 
-I simuleringen fandt I at bølgelængden bliver mindre når frekvensen bliver større. I fandt måske også, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen mellem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
+Simuleringen viser, at bølgelængden bliver mindre når frekvensen bliver større. 
+
+
+I fandt måske også, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen mellem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
 
 $v = f\cdot\lambda$
 
@@ -96,6 +160,7 @@ Hvis farten er konstant må bølgelænden altså gå blive mindre når frekvense
 ![bølger og strand](billeder/wave.png)
 
 Forestil dig at du står på en strand og ser bølgerne kommer ind. Du vurderer bølgelængden til at være 8 meter. Du tager et stopur og vurdere at der går 2 sekunder mellem hver bælge. Vi kender nu følgende:
+
 * $\lambda = 8\text{m}$
 * $T = 2\text{s}$
 
@@ -266,3 +331,14 @@ Source er på vej hen mod Observer og på vej væk.
 
 Sæt Source velocity = 0 og Obsever velocity forskelligt fra nul
 * Hvordan opfatter observer denne situation?
+
+
+Fysiske størrelser når en tone skal beskrives:
+
+* $f$, Frekvensen, hvor mange gange den svinger hvert sekund, enhed hertz, Hz.
+* $T$, Perioden, hvor lang tid der går mellem hver bølge, enhed sekund, s.
+* $\lambda$ lambda, Bølgelængde, hvor langt der er mellem hver bølge, enhed meter, m.
+* $v$, Fart, hvor hurtigt bølgen bevæger sig, enhed m/s.
+
+Sammenhængen mellem perioden og frekvensen er
+$f = \frac{1}{T}$
