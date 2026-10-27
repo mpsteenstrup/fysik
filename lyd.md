@@ -1,3 +1,15 @@
+<link rel="stylesheet" href="style.css">
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 ## Introduktion til bølger
 
 Bølger er et grundlæggende fænomen i fysikken, der beskriver, hvordan energi udbredes gennem forskellige medier. De kan observeres i mange former, fra lydbølger i luften til lysbølger i rummet og vandbølger på havet. Bølger kan klassificeres som mekaniske eller elektromagnetiske. Mekaniske bølger, såsom lydbølger og seismiske bølger, kræver et medium for at udbrede sig, mens elektromagnetiske bølger, såsom lys og radiobølger, kan bevæge sig gennem vakuum. Forståelsen af bølger er afgørende for at forklare mange fysiske fænomener, herunder lydens udbredelse, lysbrydning og interferens. I de følgende kapitler vil vi udforske de forskellige typer af bølger, deres egenskaber og anvendelser i både naturen og teknologien.
