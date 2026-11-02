@@ -36,36 +36,7 @@ Tegneserien viser hvordan informationen bliver sendt fra en person til en anden.
 
 **elektroner**, **intet medie**, **elektroner**, **luftmolekyler**
 
-
-
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
-  <thead>
-    <tr style="background-color: RGB(150,250,150);">
-      <th style="padding: 12px; border: 1px solid black; width: 50%;">Bøger</th>
-      <th style="padding: 12px; border: 1px solid black; width: 50%;">Medie</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
-      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
-      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
-      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
-      <td style="padding: 18px; border: 1px solid black;">&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
-
-
+![Bølger og medie](billeder/boelger_medie.png)
 
 Dette eksempel illustrerer, hvordan både mekaniske bølger (lydbølger) og elektromagnetiske bølger (radiosignaler) spiller en afgørende rolle i moderne kommunikationsteknologi. Nogle bølger har brug for et medie til at udbrede sig, mens andre kan klare sig uden.
 
