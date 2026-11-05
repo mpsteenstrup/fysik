@@ -7,6 +7,7 @@ Link til kapitler
 * [relativitetsteori.](relativitetsteori.md)
 * [escaperoom.](escaperoom/readme.md)
 
+
 Vist som hjemmeside
 
 * [lyd.](https://mpsteenstrup.github.io/fysik/lyd.html)
@@ -14,7 +15,7 @@ Vist som hjemmeside
 * [lys.](https://mpsteenstrup.github.io/fysik/lys.html)
 * [relativitetsteori.](https://mpsteenstrup.github.io/fysik/relativitetsteori.html)
 * [escaperoom.](https://mpsteenstrup.github.io/fysik/escaperoom/index.html)
-
+* [opgaver formelsamling](https://mpsteenstrup.github.io/fysik/opgaver/opgaver.html)
 
 ## DIV
 
