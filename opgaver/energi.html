@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energi, Varme og Mekanik - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Energi, Varme og Arbejde</h3>
+        <p>Oversigt over formler for energi, varme, nyttevirkning, arbejde og mekanisk energi.</p>
+        
+        <div class="formula-group">
+            <div><strong>Energi & Effekt:</strong> \( E = P \cdot t \), \( P = \frac{E}{t} \)</div>
+            <div><strong>Varme & Temperatur:</strong> \( TK = T^\circ\text{C} + 273{,}15 \), \( E = m \cdot c \cdot \Delta T \), \( E = m \cdot L_s \), \( E = m \cdot L_f \)</div>
+            <div><strong>Nyttevirkning & Gas:</strong> \( \eta = \frac{\Delta E_{\text{nytte}}}{\Delta E_{\text{tilført}}} \), \( \overline{E_{\text{kin}}} = \frac{3}{2} \cdot k \cdot T \)</div>
+            <div><strong>Arbejde:</strong> \( A = F \cdot \Delta s \cdot \cos(\theta) \), \( A = \int_{s_1}^{s_2} F(s)\,\text{d}s \)</div>
+            <div><strong>Mekanisk energi:</strong> \( E_{\text{kin}} = 0{,}5 \cdot m \cdot v^2 \), \( E_{\text{pot}} = m \cdot g \cdot h \), \( E_{\text{mek}} = E_{\text{kin}} + E_{\text{pot}} \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Opvarmning af vand</h4>
+            <p>Energi der skal bruges til at opvarme \( m = 2{,}0\,\text{kg} \) vand med den specifikke varmekapacitet \( c = 4{,}18\,\frac{\text{kJ}}{\text{kg} \cdot {}^\circ\text{C}} \) med \( \Delta T = 10\,{}^\circ\text{C} \):</p>
+            <p>$$ E = m \cdot c \cdot \Delta T = 2{,}0\,\text{kg} \cdot 4{,}18\,\frac{\text{kJ}}{\text{kg} \cdot {}^\circ\text{C}} \cdot 10\,{}^\circ\text{C} = 83{,}6\,\text{kJ} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Elkedlens opvarmning og nyttevirkning</span>
+        <p>En elkedel med en effekt på \( P = 2000\,\text{W} \) benyttes til at opvarme \( m = 0{,}80\,\text{kg} \) vand fra \( 20\,{}^\circ\text{C} \) til kogepunktet på \( 100\,{}^\circ\text{C} \). Vandets specifikke varmekapacitet er \( c = 4180\,\frac{\text{J}}{\text{kg} \cdot {}^\circ\text{C}} \).</p>
+        
+        <p><strong>a)</strong> Beregn den minimale nyttige varmemængde \( \Delta E_{\text{nytte}} \), der skal tilføres vandet for at opvarme det til kogepunktet.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="1" placeholder="Energi i J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 267520)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for specifik varmekapacitet \( E = m \cdot c \cdot \Delta T \), hvor temperaturændringen er \( \Delta T = 100 - 20 = 80\,{}^\circ\text{C} \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \Delta E_{\text{nytte}} = 0{,}80\,\text{kg} \cdot 4180\,\frac{\text{J}}{\text{kg} \cdot {}^\circ\text{C}} \cdot (100 - 20)\,{}^\circ\text{C} = 267.520\,\text{J} \) (eller \( 267{,}5\,\text{kJ} \)).</div>
+
+        <br>
+        <p><strong>b)</strong> Elkedlen er tændt i \( t = 150\,\text{s} \). Bestem den samlede elektriske energi \( \Delta E_{\text{tilført}} \), som elkedlen har forbrugt, samt elkedlens nyttevirkning \( \eta \).</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="0.01" placeholder="Nyttevirkning (f.eks. 0.89)...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 0.89)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Beregn først tilført energi med \( E = P \cdot t \), og beregn herefter nyttevirkningen \( \eta = \frac{\Delta E_{\text{nytte}}}{\Delta E_{\text{tilført}}} \).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \Delta E_{\text{tilført}} = 2000\,\text{W} \cdot 150\,\text{s} = 300.000\,\text{J} \). Nyttevirkningen er \( \eta = \frac{267.520\,\text{J}}{300.000\,\text{J}} \approx 0{,}892 \) (dvs. \( 89{,}2\% \)).</div>
+
+        <br>
+        <p><strong>c)</strong> Efter kogepunktet på \( 100\,{}^\circ\text{C} \) nås, fortsætter elkedlen med at koge i et stykke tid, hvorved \( 0{,}050\,\text{kg} \) vand fordamper. Beregn den påkrævede energi til fordampningen når vandets specifikke fordampningsvarme er \( L_f = 2260\,\frac{\text{kJ}}{\text{kg}} \).</p>
+        <div class="input-section">
+            <input type="number" id="q1c" step="1" placeholder="Fordampningsenergi i J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1c', 113000)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1c')">Løsning</button>
+        </div>
+        <div id="feedback-q1c" class="feedback"></div>
+        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for fordampningsvarme \( E = m \cdot L_f \). Omregn \( L_f \) til J/kg.</div>
+        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( E = 0{,}050\,\text{kg} \cdot 2.260.000\,\frac{\text{J}}{\text{kg}} = 113.000\,\text{J} \) (eller \( 113\,\text{kJ} \)).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Skiløber på en bakke – Mekanisk energi og arbejde</span>
+        <p>En skiløber med en samlet masse på \( m = 70\,\text{kg} \) starter i hvile i toppen af en skibakke i højden \( h = 25\,\text{m} \) over bakkens bund (hvor tyngdeaccelerationen er \( g = 9{,}82\,\frac{\text{m}}{\text{s}^2} \)).</p>
+        
+        <p><strong>a)</strong> Beregn skiløberens potentielle energi \( E_{\text{pot}} \) i toppen af bakken samt den mekaniske energi \( E_{\text{mek}} \).</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="1" placeholder="Potentiel energi i J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 17185)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for potentiel energi \( E_{\text{pot}} = m \cdot g \cdot h \). Da farten i toppen er 0, er \( E_{\text{kin}} = 0 \).</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( E_{\text{pot}} = 70\,\text{kg} \cdot 9{,}82\,\frac{\text{m}}{\text{s}^2} \cdot 25\,\text{m} = 17.185\,\text{J} \). Da \( E_{\text{kin}} = 0 \), er \( E_{\text{mek}} = 17.185\,\text{J} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Antag at friktion kan ignoreres, og at den mekaniske energi er bevaret. Beregn skiløberens fart \( v \) i bunden af bakken.</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.1" placeholder="Fart i m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 22.16)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> I bunden er all potentiel energi omdannet til kinetisk energi \( E_{\text{kin}} = 0{,}5 \cdot m \cdot v^2 \). Isoler \( v \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( 17.185 = 0{,}5 \cdot 70 \cdot v^2 \implies v = \sqrt{\frac{17.185}{35}} \approx 22{,}16\,\frac{\text{m}}{\text{s}} \).</div>
+
+        <br>
+        <p><strong>c)</strong> I et fladt stykke efter bakken trækker en hjælper skiløberens slæde over en strækning på \( \Delta s = 40\,\text{m} \) med en konstant kraft på \( F = 150\,\text{N} \), som danner en vinkel på \( \theta = 30^\circ \) med bevægelsesretningen. Beregn det udførte arbejde \( A \).</p>
+        <div class="input-section">
+            <input type="number" id="q2c" step="1" placeholder="Arbejde i J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2c', 5196)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2c')">Løsning</button>
+        </div>
+        <div id="feedback-q2c" class="feedback"></div>
+        <div id="hint-q2c" class="hint-box" style="display:none;"><strong>Hint:</strong> Anvend formlen for arbejde med konstant kraft: \( A = F \cdot \Delta s \cdot \cos(\theta) \). Husk at indstille lommeregneren til grader.</div>
+        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( A = 150\,\text{N} \cdot 40\,\text{m} \cdot \cos(30^\circ) = 6000 \cdot 0{,}8660 \approx 5196\,\text{J} \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Gasmolekylers termiske energi og variabel kraft</span>
+        <p>En beholder indeholder en gas ved en temperatur på \( 27\,{}^\circ\text{C} \). Boltzmanns konstant er \( k = 1{,}3806 \cdot 10^{-23}\,\frac{\text{J}}{\text{K}} \).</p>
+        
+        <p><strong>a)</strong> Omregn temperaturen til den absolutte temperatur \( T \) i Kelvin, og beregn den gennemsnitlige kinetiske energi \( \overline{E_{\text{kin}}} \) for et gasmolekyle.</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="0.01" placeholder="Energi i 10^-21 J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 6.21)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug Kelvin-omregningen \( TK = 27 + 273{,}15 = 300{,}15\,\text{K} \) og derefter formlen \( \overline{E_{\text{kin}}} = \frac{3}{2} \cdot k \cdot T \). Indtast svaret i enheden \( 10^{-21}\,\text{J} \).</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( T = 27 + 273{,}15 = 300{,}15\,\text{K} \). Derved fås \( \overline{E_{\text{kin}}} = \frac{3}{2} \cdot 1{,}3806 \cdot 10^{-23} \cdot 300{,}15 \approx 6{,}216 \cdot 10^{-21}\,\text{J} \approx 6{,}22 \cdot 10^{-21}\,\text{J} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Gassen i beholderen presser et stempel ud fra positionen \( s_1 = 0\,\text{m} \) til \( s_2 = 2\,\text{m} \) med en variabel kraft givet ved funktionen \( F(s) = 300 - 50s \) (hvor \( F \) måles i Newton og \( s \) i meter). Beregn det udførte arbejde \( A \) ved hjælp af integration.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="1" placeholder="Arbejde i J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 500)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Beregn det bestemte integral \( A = \int_{0}^{2} (300 - 50s)\,\text{d}s \). Stamfunktionen er \( F(s) = 300s - 25s^2 \).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( A = \int_{0}^{2} (300 - 50s)\,\text{d}s = \left[ 300s - 25s^2 \right]_0^2 = (300 \cdot 2 - 25 \cdot 2^2) - 0 = 600 - 100 = 500\,\text{J} \).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.05 * Math.abs(correctVal); // 5% tolerance
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= Math.max(tolerance, 0.05)) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

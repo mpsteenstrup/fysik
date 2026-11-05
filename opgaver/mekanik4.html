@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tryk og Densitet - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Tryk og Densitet</h3>
+        <p>Oversigt over formler for tryk, tryk i væsker, Archimedes' lov, atmosfærisk tryk samt densitet.</p>
+        
+        <div class="formula-group">
+            <div><strong>Tryk & Densitet:</strong> \( p = \frac{F}{a} \) (hvor \( [p] = \text{Pa} = \frac{\text{N}}{\text{m}^2} \)), \( \rho = \frac{m}{V} \)</div>
+            <div><strong>Tryk i væske:</strong> \( p = p_0 + h \cdot \rho \cdot g \), Væskesøjletryk: \( p_{\text{væske}} = h \cdot \rho \cdot g \)</div>
+            <div><strong>Archimedes' lov:</strong> \( F_{\text{opdrift}} = m_{\text{væske}} \cdot g = \rho_{\text{væske}} \cdot V \cdot g \)</div>
+            <div><strong>Atmosfærisk tryk:</strong> \( 1\,\text{atm} = 101325\,\text{Pa} \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Hydrostatisk tryk i en sø</h4>
+            <p>Trykket \( p \) i en dybde på \( h = 5{,}0\,\text{m} \) i ferskvand (\( \rho = 1000\,\frac{\text{kg}}{\text{m}^3} \)) ved overfladetryk \( p_0 = 101325\,\text{Pa} \) og tyngdeacceleration \( g = 9{,}82\,\frac{\text{m}}{\text{s}^2} \):</p>
+            <p>$$ p = 101325\,\text{Pa} + 5{,}0\,\text{m} \cdot 1000\,\frac{\text{kg}}{\text{m}^3} \cdot 9{,}82\,\frac{\text{m}}{\text{s}^2} = 101325 + 49100 = 150425\,\text{Pa} \approx 150{,}4\,\text{kPa} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Dykkers tryk i havet og densitet</span>
+        <p>En dykker befinder sig på en dybde på \( h = 15{,}0\,\text{m} \) i havvand. Havvand har en densitet på \( \rho = 1025\,\frac{\text{kg}}{\text{m}^3} \). Lufttrykket ved overfladen er \( p_0 = 1\,\text{atm} = 101325\,\text{Pa} \), og tyngdeaccelerationen er \( g = 9{,}82\,\frac{\text{m}}{\text{s}^2} \).</p>
+        
+        <p><strong>a)</strong> Beregn trykket fra selve væskesøjlen \( p_{\text{væske}} \) over dykkeren i Pa.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="1" placeholder="Væsketryk i Pa...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 150983)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for tryk fra væskesøjle: \( p_{\text{væske}} = h \cdot \rho \cdot g \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( p_{\text{væske}} = 15{,}0\,\text{m} \cdot 1025\,\frac{\text{kg}}{\text{m}^3} \cdot 9{,}82\,\frac{\text{m}}{\text{s}^2} = 150.982{,}5\,\text{Pa} \approx 150.983\,\text{Pa} \) (eller \( 151{,}0\,\text{kPa} \)).</div>
+
+        <br>
+        <p><strong>b)</strong> Beregn det totale tryk \( p \), som dykkeren oplever på de 15,0 meters dybde.</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="1" placeholder="Total tryk i Pa...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 252308)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Læg overfladetrykket \( p_0 \) sammen med væsketrykket \( p_{\text{væske}} \): \( p = p_0 + h \cdot \rho \cdot g \).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( p = 101325\,\text{Pa} + 150.982{,}5\,\text{Pa} = 252.307{,}5\,\text{Pa} \approx 252.308\,\text{Pa} \) (eller \( 252{,}3\,\text{kPa} \)).</div>
+
+        <br>
+        <p><strong>c)</strong> Dykkerens ur har et cirkulært glas med et areal på \( a = 0{,}0012\,\text{m}^2 \). Beregn den totale kraft \( F \), som vandet og luften tilsammen udøver vinkelret på urskiven.</p>
+        <div class="input-section">
+            <input type="number" id="q1c" step="0.1" placeholder="Kraft i N...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1c', 302.8)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1c')">Løsning</button>
+        </div>
+        <div id="feedback-q1c" class="feedback"></div>
+        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Isoler kraften ud fra trykformlen \( p = \frac{F}{a} \implies F = p \cdot a \).</div>
+        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( F = 252.307{,}5\,\text{Pa} \cdot 0{,}0012\,\text{m}^2 \approx 302{,}77\,\text{N} \approx 302{,}8\,\text{N} \).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Klods af metal – Densitet og kraft</span>
+        <p>En massiv rektangulær metallods har en masse på \( m = 5{,}40\,\text{kg} \) og et volumen på \( V = 0{,}0020\,\text{m}^3 \) (\( 2{,}0\,\text{L} \)).</p>
+        
+        <p><strong>a)</strong> Beregn metallegeringens densitet \( \rho \) i \( \frac{\text{kg}}{\text{m}^3} \).</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="1" placeholder="Densitet i kg/m^3...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 2700)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for densitet \( \rho = \frac{m}{V} \).</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \rho = \frac{5{,}40\,\text{kg}}{0{,}0020\,\text{m}^3} = 2700\,\frac{\text{kg}}{\text{m}^3} \) (hvilket svarer til aluminium).</div>
+
+        <br>
+        <p><strong>b)</strong> Klodsen placeres på et bord, hvor den hviler på sin flade side med arealet \( a = 0{,}040\,\text{m}^2 \). Beregn trykket \( p \), som klodsen udøver mod bordpladen (tyngdeaccelerationen er \( g = 9{,}82\,\frac{\text{m}}{\text{s}^2} \)).</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.1" placeholder="Tryk i Pa...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 1325.7)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Beregn tyngdekraften \( F = m \cdot g \) og divider med arealet \( a \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( F = 5{,}40\,\text{kg} \cdot 9{,}82\,\frac{\text{m}}{\text{s}^2} = 53{,}028\,\text{N} \). Trykket er \( p = \frac{53{,}028\,\text{N}}{0{,}040\,\text{m}^2} = 1325{,}7\,\text{Pa} \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Archimedes' lov og flydende legemer</span>
+        <p>En træklods med volumen \( V = 0{,}0080\,\text{m}^3 \) nedsænkes helt i ferskvand med densiteten \( \rho_{\text{væske}} = 1000\,\frac{\text{kg}}{\text{m}^3} \). Tyngdeaccelerationen er \( g = 9{,}82\,\frac{\text{m}}{\text{s}^2} \).</p>
+        
+        <p><strong>a)</strong> Beregn massen \( m_{\text{væske}} \) af det fortrængte vand, samt opdriftskraften \( F_{\text{opdrift}} \), der virker på klodsen.</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="0.1" placeholder="Opdrift i N...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 78.56)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug Archimedes' lov \( F_{\text{opdrift}} = \rho_{\text{væske}} \cdot V \cdot g \).</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( m_{\text{væske}} = 1000\,\frac{\text{kg}}{\text{m}^3} \cdot 0{,}0080\,\text{m}^3 = 8{,}0\,\text{kg} \). Opdriftskraften er \( F_{\text{opdrift}} = 8{,}0\,\text{kg} \cdot 9{,}82\,\frac{\text{m}}{\text{s}^2} = 78{,}56\,\text{N} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Træklodsens egen masse er \( m_{\text{træ}} = 4{,}80\,\text{kg} \). Når klodsen slippes i vandet, stiger den til overfladen og flyder i ligevægt. Beregn det fortrængte volumen vand \( V_{\text{under}} \), når klodsen flyder frit.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="0.0001" placeholder="Fortrængt volumen i m^3...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 0.0048)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Når klodsen flyder, er opdriftskraften lig med klodsens tyngdekraft (\( F_{\text{opdrift}} = F_g \implies m_{\text{væske}} = m_{\text{træ}} \)). Brug derefter \( V = \frac{m}{\rho_{\text{væske}}} \).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> I ligevægt er \( m_{\text{væske}} = m_{\text{træ}} = 4{,}80\,\text{kg} \). Det fortrængte volumen under overfladen er \( V_{\text{under}} = \frac{4{,}80\,\text{kg}}{1000\,\frac{\text{kg}}{\text{m}^3}} = 0{,}0048\,\text{m}^3 \) (svarende til 60% af klodsens volumen).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.05 * Math.abs(correctVal); // 5% tolerance
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= Math.max(tolerance, 0.05)) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

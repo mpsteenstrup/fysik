@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevægelse i 1 og 2 Dimensioner - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Bevægelse i 1 og 2 dimensioner</h3>
+        <p>Oversigt over formler for kinematiske sammenhænge i en og to dimensioner samt det skrå kast.</p>
+        
+        <div class="formula-group">
+            <div><strong>Bevægelse i 1D:</strong> \( v = \frac{\text{d}s}{\text{d}t} \), \( a = \frac{\text{d}v}{\text{d}t} \), \( v_{\text{avg}} = \frac{\Delta s}{\Delta t} \), \( a_{\text{avg}} = \frac{\Delta v}{\Delta t} \)</div>
+            <div><strong>Konstant hastighed & acceleration:</strong> \( s = v \cdot t + s_0 \), \( s = \frac{1}{2} \cdot a \cdot t^2 + v_0 \cdot t + s_0 \), \( v = a \cdot t + v_0 \)</div>
+            <div><strong>Bremseformlen:</strong> \( v^2 = 2 \cdot a \cdot (s - s_0) + v_0^2 \)</div>
+            <div><strong>Det skrå kast (2D):</strong> \( x = v_0 \cdot \cos(\alpha) \cdot t + x_0 \), \( y = -\frac{1}{2} \cdot g \cdot t^2 + v_0 \cdot \sin(\alpha) \cdot t + y_0 \)</div>
+            <div><strong>Hastigheder i 2D:</strong> \( v_x = v_0 \cdot \cos(\alpha) \), \( v_y = -g \cdot t + v_0 \cdot \sin(\alpha) \), \( a_x = 0 \), \( a_y = -g \)</div>
+            <div><strong>Banekurve:</strong> \( y = -\frac{g}{2 \cdot v_{0,x}^2} \cdot x^2 + \frac{v_{0,y}}{v_{0,x}} \cdot x \)</div>
+            <div><strong>Længde, fart og acceleration i 2D:</strong> \( l = \sqrt{x^2 + y^2} \), \( v = \sqrt{v_x^2 + v_y^2} \), \( a = \sqrt{a_x^2 + a_y^2} \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Bremselængde for en bil</h4>
+            <p>En bil kører med startfart \( v_0 = 20\,\frac{\text{m}}{\text{s}} \) og bremses med konstant acceleration \( a = -5{,}0\,\frac{\text{m}}{\text{s}^2} \). Bremselængden til slutstillingen \( v = 0\,\frac{\text{m}}{\text{s}} \) beregnes som:</p>
+            <p>$$ 0^2 = 2 \cdot (-5{,}0) \cdot (s - s_0) + 20^2 \implies s - s_0 = \frac{-400}{-10} = 40\,\text{m} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Togets acceleration og bremsning i 1D</span>
+        <p>Et tog starter fra hvile (\( v_0 = 0\,\frac{\text{m}}{\text{s}} \), \( s_0 = 0\,\text{m} \)) ved en station og accelererer med en konstant acceleration på \( a = 1{,}2\,\frac{\text{m}}{\text{s}^2} \) i et tidsrum på \( t = 20\,\text{s} \).</p>
+        
+        <p><strong>a)</strong> Beregn togets hastighed \( v \) og den tilbagelagte strækning \( s \) efter de 20 sekunder.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="0.1" placeholder="Hastighed i m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 24)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for konstant acceleration \( v = a \cdot t + v_0 \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( v = 1{,}2\,\frac{\text{m}}{\text{s}^2} \cdot 20\,\text{s} + 0 = 24\,\frac{\text{m}}{\text{s}} \). Strækningen er \( s = \frac{1}{2} \cdot 1{,}2 \cdot 20^2 = 240\,\text{m} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Efter at have nået farten \( 24\,\frac{\text{m}}{\text{s}} \) bremses toget med en konstant acceleration på \( a = -2{,}0\,\frac{\text{m}}{\text{s}^2} \) til det holder helt stille (\( v = 0\,\frac{\text{m}}{\text{s}} \)). Beregn togets bremselængde \( s - s_0 \) ved brug af bremseformlen.</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="1" placeholder="Bremselængde i m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 144)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Isoler bremselængden \( s - s_0 \) i bremseformlen \( v^2 = 2 \cdot a \cdot (s - s_0) + v_0^2 \) med \( v = 0 \).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( 0^2 = 2 \cdot (-2{,}0) \cdot (s - s_0) + 24^2 \implies -4{,}0 \cdot (s - s_0) = -576 \implies s - s_0 = 144\,\text{m} \).</div>
+
+        <br>
+        <p><strong>c)</strong> Et andet køretøj bevæger sig med en tidsafhængig acceleration givet ved \( a(t) = 0{,}6 \cdot t \) (målt i \( \frac{\text{m}}{\text{s}^2} \)). Beregn hastighedsændringen \( \Delta v \) fra tiden \( t_1 = 0\,\text{s} \) til \( t_2 = 10\,\text{s} \) ved hjælp af integration.</p>
+        <div class="input-section">
+            <input type="number" id="q1c" step="1" placeholder="Hastighedsændring i m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1c', 30)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1c')">Løsning</button>
+        </div>
+        <div id="feedback-q1c" class="feedback"></div>
+        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Beregn det bestemte integral \( \Delta v = \int_{0}^{10} (0{,}6 \cdot t)\,\text{d}t \).</div>
+        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \Delta v = \int_{0}^{10} 0{,}6 \cdot t\,\text{d}t = \left[ 0{,}3 \cdot t^2 \right]_0^{10} = 0{,}3 \cdot 100 - 0 = 30\,\frac{\text{m}}{\text{s}} \).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Fodbolds spark – Det skrå kast</span>
+        <p>En fodbold sparkes fra banen (\( x_0 = 0\,\text{m} \), \( y_0 = 0\,\text{m} \)) med en startfart på \( v_0 = 25{,}0\,\frac{\text{m}}{\text{s}} \) i en vinkel på \( \alpha = 30{,}0^\circ \) i forhold til vandret. Tyngdeaccelerationen sættes til \( g = 9{,}82\,\frac{\text{m}}{\text{s}^2} \).</p>
+        
+        <p><strong>a)</strong> Beregn start-hastighedskomponenterne i vandret retning \( v_{0,x} \) og i lodret retning \( v_{0,y} \).</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="0.01" placeholder="Vandret hastighed v0,x i m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 21.65)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug trigonometri for startkomponenterne: \( v_{0,x} = v_0 \cdot \cos(\alpha) \) og \( v_{0,y} = v_0 \cdot \sin(\alpha) \).</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( v_{0,x} = 25{,}0 \cdot \cos(30{,}0^\circ) \approx 21{,}65\,\frac{\text{m}}{\text{s}} \) og \( v_{0,y} = 25{,}0 \cdot \sin(30{,}0^\circ) = 12{,}50\,\frac{\text{m}}{\text{s}} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Bestem tidspunktet \( t_{\text{toppunkt}} \), hvor bolden når sit højeste punkt (hvor \( v_y = 0 \)), og beregn boldens maksimale højde \( y_{\text{max}} \).</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.01" placeholder="Maksimal højde y_max i m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 7.96)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Sæt \( v_y = 0 \implies -g \cdot t + v_{0,y} = 0 \implies t = \frac{v_{0,y}}{g} \). Indsæt derefter tiden \( t \) i stedfunktionen for \( y \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> Toppunktstid \( t = \frac{12{,}50}{9{,}82} \approx 1{,}273\,\text{s} \). Højden er \( y_{\text{max}} = -\frac{1}{2} \cdot 9{,}82 \cdot (1{,}273)^2 + 12{,}50 \cdot 1{,}273 \approx 7{,}956\,\text{m} \approx 7{,}96\,\text{m} \).</div>
+
+        <br>
+        <p><strong>c)</strong> Beregn boldens samlede kastelængde (hvor bolden igen rammer jorden \( y = 0 \)).</p>
+        <div class="input-section">
+            <input type="number" id="q2c" step="0.1" placeholder="Kastelængde i m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2c', 55.1)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2c')">Løsning</button>
+        </div>
+        <div id="feedback-q2c" class="feedback"></div>
+        <div id="hint-q2c" class="hint-box" style="display:none;"><strong>Hint:</strong> Bolden er i luften i dobbelt så lang tid som toppunktstiden (\( t_{\text{samlet}} = 2 \cdot t_{\text{toppunkt}} \)). Beregn derved kastelængden som \( x = v_{0,x} \cdot t_{\text{samlet}} \).</div>
+        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( t_{\text{samlet}} = 2 \cdot 1{,}2729\,\text{s} = 2{,}5458\,\text{s} \). Derved er kastelængden \( x = 21{,}651\,\frac{\text{m}}{\text{s}} \cdot 2{,}5458\,\text{s} \approx 55{,}12\,\text{m} \approx 55{,}1\,\text{m} \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Resultatfart og baneafstands-vektor</span>
+        <p>En drone flyver i et plan, hvor dens position til et givet tidspunkt \( t = 4{,}0\,\text{s} \) har koordinaterne \( x = 30{,}0\,\text{m} \) og \( y = 40{,}0\,\text{m} \). Dronehastigheden til dette tidspunkt har komponenterne \( v_x = 6{,}0\,\frac{\text{m}}{\text{s}} \) og \( v_y = -8{,}0\,\frac{\text{m}}{\text{s}} \).</p>
+        
+        <p><strong>a)</strong> Beregn den direkte afstands-længde \( l \) fra origo til dronen til tiden \( t = 4{,}0\,\text{s} \).</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="0.1" placeholder="Afstand l i m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 50)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug afstandskombinationen ud fra Pythagoras: \( l = \sqrt{x^2 + y^2} \).</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( l = \sqrt{30{,}0^2 + 40{,}0^2} = \sqrt{900 + 1600} = \sqrt{2500} = 50{,}0\,\text{m} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Beregn den samlede resulterende fart \( v \) af dronen til samme tidspunkt.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="0.1" placeholder="Fart v i m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 10)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug Pythagoras formlen for samlet fart: \( v = \sqrt{v_x^2 + v_y^2} \).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( v = \sqrt{6{,}0^2 + (-8{,}0)^2} = \sqrt{36 + 64} = \sqrt{100} = 10{,}0\,\frac{\text{m}}{\text{s}} \).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.05 * Math.abs(correctVal); // 5% tolerance
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= Math.max(tolerance, 0.05)) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

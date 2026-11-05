@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralbevægelse og Bevægelsesmængde - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Centralbevægelse & Bevægelsesmængde</h3>
+        <p>Oversigt over formler for cirkelbevægelse, gravitationskraft, bevægelsesmængde, impulssætningen samt stødprocessor.</p>
+        
+        <div class="formula-group">
+            <div><strong>Jævn cirkelbevægelse:</strong> \(v = \frac{2 \cdot \pi \cdot r}{T}\), \(a = \frac{4 \cdot \pi^2 \cdot r}{T^2} = \frac{v^2}{r}\)</div>
+            <div><strong>Gravitation:</strong> \(F_G = G \cdot \frac{m \cdot M}{r^2}\), \(E_{\text{pot}} = -G \cdot \frac{m \cdot M}{r}\)</div>
+            <div><strong>Bevægelsesmængde & Impuls:</strong> \(p = m \cdot v\), \(\Delta p = F \cdot \Delta t\), Bevarelse: \(\Delta p_{\text{total}} = 0\)</div>
+            <div><strong>Centralt stød:</strong> \(m_1 \cdot u_1 + m_2 \cdot u_2 = m_1 \cdot v_1 + m_2 \cdot v_2\)</div>
+            <div><strong>Elastisk stød:</strong> \(\frac{1}{2} \cdot m_1 \cdot u_1^2 + \frac{1}{2} \cdot m_2 \cdot u_2^2 = \frac{1}{2} \cdot m_1 \cdot v_1^2 + \frac{1}{2} \cdot m_2 \cdot v_2^2\)</div>
+            <div><strong>Fuldstændigt uelastisk stød:</strong> \(v = \frac{m_1 \cdot u_1 + m_2 \cdot u_2}{m_1 + m_2}\)</div>
+            <div><strong>Fotonens bevægelsesmængde:</strong> \(p_{\text{foton}} = \frac{h \cdot f}{c} = \frac{h}{\lambda}\)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Centripetalacceleration for en satellit</h4>
+            <p>En satellit bevæger sig i en cirkulær bane med radius \(r = 7000\,\text{km} = 7{,}0 \cdot 10^6\,\text{m}\) og omløbstid \(T = 5800\,\text{s}\). Hastigheden og centripetalaccelerationen beregnes som:</p>
+            <p>$$v = \frac{2 \cdot \pi \cdot 7{,}0 \cdot 10^6\,\text{m}}{5800\,\text{s}} \approx 7584\,\frac{\text{m}}{\text{s}}$$</p>
+            <p>$$a = \frac{v^2}{r} = \frac{(7584\,\frac{\text{m}}{\text{s}})^2}{7{,}0 \cdot 10^6\,\text{m}} \approx 8{,}22\,\frac{\text{m}}{\text{s}^2}$$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Satellit i bane om Jorden</span>
+        <p>En kommunikationssatellit med masse \(m = 1200\,\text{kg}\) bevæger sig i en jævn cirkulær bane om Jorden med en baneradius på \(r = 4{,}22 \cdot 10^7\,\text{m}\). Jordens masse er \(M_J = 5{,}972 \cdot 10^{24}\,\text{kg}\), og gravitationskonstanten er \(G = 6{,}674 \cdot 10^{-11}\,\frac{\text{m}^3}{\text{kg} \cdot \text{s}^2}\).</p>
+        
+        <p><strong>a)</strong> Beregn gravitationskraften \(F_G\), som Jorden påvirker satellitten med.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="1" placeholder="Kraft i N...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 268)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug Newtons gravitationslov \(F_G = G \cdot \frac{m \cdot M_J}{r^2}\).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(F_G = 6{,}674 \cdot 10^{-11} \cdot \frac{1200 \cdot 5{,}972 \cdot 10^{24}}{(4{,}22 \cdot 10^7)^2} \approx 268{,}4\,\text{N} \approx 268\,\text{N}\).</div>
+
+        <br>
+        <p><strong>b)</strong> Da gravitationskraften leverer centripetalkraften (\(F_G = m \cdot a\)), beregnes satellittens banehastighed til \(v = 3073\,\frac{\text{m}}{\text{s}}\). Bestem satellittens omløbstid \(T\) i sekunder.</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="1" placeholder="Omløbstid i s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 86278)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Isoler omløbstiden \(T\) i formlen for jævn cirkelbevægelse: \(v = \frac{2 \cdot \pi \cdot r}{T} \implies T = \frac{2 \cdot \pi \cdot r}{v}\).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(T = \frac{2 \cdot \pi \cdot 4{,}22 \cdot 10^7\,\text{m}}{3073\,\frac{\text{m}}{\text{s}}} \approx 86.278\,\text{s}\) (hvilket svarer til cirka 24 timer).</div>
+
+        <br>
+        <p><strong>c)</strong> Beregn den potentielle energi \(E_{\text{pot}}\) for systemet af Jorden og satellitten.</p>
+        <div class="input-section">
+            <input type="number" id="q1c" step="0.01" placeholder="Potentiel energi i 10^10 J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1c', -1.13)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1c')">Løsning</button>
+        </div>
+        <div id="feedback-q1c" class="feedback"></div>
+        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for potentiel energi i tyngdefelt: \(E_{\text{pot}} = -G \cdot \frac{m \cdot M_J}{r}\). Indtast svaret i \(10^{10}\,\text{J}\) (husk minusfortegn).</div>
+        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(E_{\text{pot}} = -6{,}674 \cdot 10^{-11} \cdot \frac{1200 \cdot 5{,}972 \cdot 10^{24}}{4{,}22 \cdot 10^7} \approx -1{,}133 \cdot 10^{10}\,\text{J} = -1{,}13 \cdot 10^{10}\,\text{J}\).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Bilkollisioner og impulssætningen</span>
+        <p>En testbil A med masse \(m_1 = 1200\,\text{kg}\) kører mod højre med hastigheden \(u_1 = 15{,}0\,\frac{\text{m}}{\text{s}}\). Bilen kolliderer centralt med en holdende testbil B med masse \(m_2 = 800\,\text{kg}\) (\(u_2 = 0\,\frac{\text{m}}{\text{s}}\)).</p>
+        
+        <p><strong>a)</strong> Beregn den samlede start-bevægelsesmængde \(p_{\text{total}}\) før stødet.</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="1" placeholder="Bevægelsesmængde i kg*m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 18000)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen \(p = m \cdot v\) for bil A. Bil B holder stille, så hendes bevægelsesmængde er 0.</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(p_{\text{total}} = m_1 \cdot u_1 + m_2 \cdot u_2 = 1200 \cdot 15{,}0 + 800 \cdot 0 = 18.000\,\text{kg}\cdot\frac{\text{m}}{\text{s}}\).</div>
+
+        <br>
+        <p><strong>b)</strong> Antag at kollisionen er et fuldstændigt uelastisk stød, hvor de er koblet sammen efter stødet. Beregn den fælles hastighed \(v\) efter stødet.</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.1" placeholder="Fælles hastighed i m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 9.0)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for fuldstændigt uelastisk stød: \(v = \frac{m_1 \cdot u_1 + m_2 \cdot u_2}{m_1 + m_2}\).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(v = \frac{18.000\,\text{kg}\cdot\frac{\text{m}}{\text{s}}}{1200\,\text{kg} + 800\,\text{kg}} = \frac{18.000}{2000} = 9{,}0\,\frac{\text{m}}{\text{s}}\).</div>
+
+        <br>
+        <p><strong>c)</strong> Under sammenstødet varer kontakten i et tidsrum på \(\Delta t = 0{,}15\,\text{s}\). Beregn den gennemsnitlige kraft \(F\), som påvirkede bil B for at ændre dens bevægelsesmængde fra 0 til \(m_2 \cdot v\).</p>
+        <div class="input-section">
+            <input type="number" id="q2c" step="1" placeholder="Kraft i N...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2c', 48000)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2c')">Løsning</button>
+        </div>
+        <div id="feedback-q2c" class="feedback"></div>
+        <div id="hint-q2c" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug impulssætningen \(\Delta p = F \cdot \Delta t \implies F = \frac{\Delta p}{\Delta t}\), hvor \(\Delta p = 800\,\text{kg} \cdot 9{,}0\,\frac{\text{m}}{\text{s}} - 0\).</div>
+        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(\Delta p = 800 \cdot 9{,}0 = 7200\,\text{kg}\cdot\frac{\text{m}}{\text{s}}\). Kraften er \(F = \frac{7200\,\text{kg}\cdot\frac{\text{m}}{\text{s}}}{0{,}15\,\text{s}} = 48.000\,\text{N}\) (eller \(48\,\text{kN}\)).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Elastisk stød og fotonens bevaegelsesmængde</span>
+        <p>I et atomart fysikeksperiment stder en gammakvant-foton med bølgelængde \(\lambda = 2{,}42 \cdot 10^{-12}\,\text{m}\) ind i en elektron. Plancks konstant er \(h = 6{,}626 \cdot 10^{-34}\,\text{J}\cdot\text{s}\).</p>
+        
+        <p><strong>a)</strong> Beregn bevægelsesmængden \(p_{\text{foton}}\) for gammakvanten før stødet.</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="0.01" placeholder="p_foton i 10^-22 kg*m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 2.74)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for fotonens bevægelsesmængde \(p_{\text{foton}} = \frac{h}{\lambda}\). Indtast svaret i \(10^{-22}\,\text{kg}\cdot\text{m/s}\).</div>

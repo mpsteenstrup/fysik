@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elastisk Kraft og Gnidning - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Elastisk kraft, gnidning og luftmodstand</h3>
+        <p>Oversigt over formler for fjedre (Hookes lov, harmonisk svingning, potentiel energi) samt gnidnings- og luftmodstand.</p>
+        
+        <div class="formula-group">
+            <div><strong>Hookes lov & Periode:</strong> \( F = -k \cdot x \), \( T = \frac{2 \cdot \pi}{\omega} \), \( T = 2 \cdot \pi \cdot \sqrt{\frac{m}{k}} \)</div>
+            <div><strong>Potentiel energi i en fjeder:</strong> \( E_{\text{pot}} = \frac{1}{2} \cdot k \cdot x^2 \)</div>
+            <div><strong>Luftmodstand:</strong> \( F_{\text{luft}} = \frac{1}{2} \cdot c_w \cdot \rho \cdot A \cdot v^2 \)</div>
+            <div><strong>Gnidningsmodstand:</strong> \( F_{\text{gnid}} = \mu \cdot F_N \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Periode for en fjeder-masse svinger</h4>
+            <p>En masse på \( m = 0{,}50\,\text{kg} \) hænger i en fjeder med fjederkonstanten \( k = 50\,\frac{\text{N}}{\text{m}} \). Svingningstiden \( T \) beregnes som:</p>
+            <p>$$ T = 2 \cdot \pi \cdot \sqrt{\frac{0{,}50\,\text{kg}}{50\,\frac{\text{N}}{\text{m}}}} = 2 \cdot \pi \cdot \sqrt{0{,}01} = 2 \cdot \pi \cdot 0{,}10 \approx 0{,}628\,\text{s} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Fjedersvingning og elastisk energi</span>
+        <p>En kloss med masse \( m = 0{,}40\,\text{kg} \) er fastgjort til en vandret fjeder med fjederkonstant \( k = 160\,\frac{\text{N}}{\text{m}} \). Klossen trækkes stykket \( x = 0{,}15\,\text{m} \) ud fra sin ligevægtsposition og slippes fra hvile på et gnidningsfrit underlag.</p>
+        
+        <p><strong>a)</strong> Beregn den maksimale tilbagetrækkende kraft \( F \) ifølge Hookes lov, samt den potentielle energi \( E_{\text{pot}} \) gemt i fjederen i udstrækket tilstand.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="0.01" placeholder="Fjederkraft i N (størrelse)...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 24)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Størrelsen af kraften findes ved \( F = k \cdot x \). Energien beregnes som \( E_{\text{pot}} = \frac{1}{2} \cdot k \cdot x^2 \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> Kraftens størrelse er \( F = 160\,\frac{\text{N}}{\text{m}} \cdot 0{,}15\,\text{m} = 24\,\text{N} \). Den potentielle energi er \( E_{\text{pot}} = \frac{1}{2} \cdot 160 \cdot (0{,}15)^2 = 1{,}8\,\text{J} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Beregn svingningsperioden \( T \) og vinkelfrekvensen \( \omega \) for klossens harmoniske svingning.</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="0.01" placeholder="Svingningstid T i s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 0.314)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for svingningsperiode for en harmonisk svingning: \( T = 2 \cdot \pi \cdot \sqrt{\frac{m}{k}} \). Vinkelfrekvensen er derefter \( \omega = \frac{2 \cdot \pi}{T} \).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( T = 2 \cdot \pi \cdot \sqrt{\frac{0{,}40}{160}} = 2 \cdot \pi \cdot \sqrt{0{,}0025} = 2 \cdot \pi \cdot 0{,}05 \approx 0{,}314\,\text{s} \). Vinkelfrekvensen er \( \omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{160}{0{,}40}} = 20\,\text{rad/s} \).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Opbremsning med gnidningsmodstand</span>
+        <p>En kasse med masse \( m = 25\,\text{kg} \) skubbes hen ad et vandret gulv med normalkraft \( F_N = m \cdot g \), hvor tyngdeaccelerationen er \( g = 9{,}82\,\frac{\text{m}}{\text{s}^2} \). Gnidningskoefficienten mellem kasse og gulv er \( \mu = 0{,}35 \).</p>
+        
+        <p><strong>a)</strong> Beregn gnidningskraften \( F_{\text{gnid}} \), der virker mod kassens bevægelse.</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="0.1" placeholder="Gnidningskraft i N...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 85.93)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Beregn først normalkraften \( F_N = 25 \cdot 9{,}82 \) N, og brug derefter \( F_{\text{gnid}} = \mu \cdot F_N \).</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( F_N = 25\,\text{kg} \cdot 9{,}82\,\frac{\text{m}}{\text{s}^2} = 245{,}5\,\text{N} \). Derved er \( F_{\text{gnid}} = 0{,}35 \cdot 245{,}5\,\text{N} \approx 85{,}93\,\text{N} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Kassen har en starthastighed på \( v_0 = 6{,}0\,\frac{\text{m}}{\text{s}} \). Beregn kassens opbremsnings-acceleration \( a \), samt den strækning \( s \), den glider før den standser helt.</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.1" placeholder="Glidestrikning i m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 5.24)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Accelerationen er \( a = -\frac{F_{\text{gnid}}}{m} = -\mu \cdot g \). Brug herefter bremseformlen \( v^2 = 2 \cdot a \cdot s + v_0^2 \) med \( v = 0 \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( a = -0{,}35 \cdot 9{,}82 = -3{,}437\,\frac{\text{m}}{\text{s}^2} \). Ud fra bremseformlen fås \( 0 = 2 \cdot (-3{,}437) \cdot s + 6{,}0^2 \implies s = \frac{36}{6{,}874} \approx 5{,}24\,\text{m} \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Cyklist og luftmodstand</span>
+        <p>En cyklist kører på en lige, vandret vej. Cyklistens tværsnitsareal er \( A = 0{,}55\,\text{m}^2 \), formfaktoren for cyklisten er \( c_w = 0{,}90 \), og luftens densitet er \( \rho = 1{,}225\,\frac{\text{kg}}{\text{m}^3} \).</p>
+        
+        <p><strong>a)</strong> Beregn luftmodstanden \( F_{\text{luft}} \), når cyklisten kører med en fart på \( v = 10{,}0\,\frac{\text{m}}{\text{s}} \) (36 km/t).</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="0.1" placeholder="Luftmodstand i N...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 30.32)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for luftmodstand: \( F_{\text{luft}} = \frac{1}{2} \cdot c_w \cdot \rho \cdot A \cdot v^2 \).</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( F_{\text{luft}} = \frac{1}{2} \cdot 0{,}90 \cdot 1{,}225\,\frac{\text{kg}}{\text{m}^3} \cdot 0{,}55\,\text{m}^2 \cdot (10{,}0\,\frac{\text{m}}{\text{s}})^2 \approx 30{,}32\,\text{N} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Cyklisten øger sin fart med 50% til \( v = 15{,}0\,\frac{\text{m}}{\text{s}} \) (54 km/t). Bestem den nye luftmodstand, og beregn hvor mange procent luftmodstanden er steget.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="1" placeholder="Stigning i procent...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 125)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Da luftmodstanden er proportional med \( v^2 \), vil en hastighedsændring med faktor \( 1{,}5 \) medføre en ændring på faktor \( 1{,}5^2 = 2{,}25 \).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> Ny luftmodstand \( F_{\text{luft, ny}} = \frac{1}{2} \cdot 0{,}90 \cdot 1{,}225 \cdot 0{,}55 \cdot 15{,}0^2 \approx 68{,}22\,\text{N} \). Kraften øges med faktor \( 1{,}5^2 = 2{,}25 \), hvilket svarer til en stigning på \( 125\% \).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.05 * Math.abs(correctVal); // 5% tolerance
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= Math.max(tolerance, 0.05)) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

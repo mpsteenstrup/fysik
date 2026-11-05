@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosmologi - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Kosmologi</h3>
+        <p>Oversigt over formler for rødforskydning, Hubbles lov, universets alder, kosmologisk udvidelse samt luminositet og afstandskvadratloven.</p>
+        
+        <div class="formula-group">
+            <div><strong>Rødforskydning & Flugthastighed (\( z < 0{,}1 \)):</strong> \( z = \frac{\lambda_{\text{obs}} - \lambda}{\lambda} \), \( v = z \cdot c \)</div>
+            <div><strong>Hubbles lov & Hubble-tiden:</strong> \( v = H_0 \cdot r \), \( T_0 = \frac{1}{H_0} \)</div>
+            <div><strong>Kosmologisk rødforskydning:</strong> \( 1 + z = \frac{\lambda_0}{\lambda} = \frac{r_0}{r} \)</div>
+            <div><strong>Luminositet & Afstandskvadratloven:</strong> \( L = \frac{E_{\text{udstrålet}}}{\Delta t} \), \( I_{\text{lys}} = \frac{L}{4 \cdot \pi \cdot r^2} \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Flugthastighed ud fra rødforskydning</h4>
+            <p>Hvis en galakse udviser en rødforskydning på \( z = 0{,}02 \), beregnes galaksens flugthastighed \( v \) ved:</p>
+            <p>$$ v = z \cdot c = 0{,}02 \cdot 2{,}998 \cdot 10^8\,\frac{\text{m}}{\text{s}} = 5{,}996 \cdot 10^6\,\frac{\text{m}}{\text{s}} = 5996\,\frac{\text{km}}{\text{s}} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Observational rødforskydning og galaksers afstand</span>
+        <p>I et astronomisk observatorium måles en brintlinje (\( \lambda = 656{,}3\,\text{nm} \)) fra et lysspektrum af en fjern galakse. Den observerede bølgelængde måles til \( \lambda_{\text{obs}} = 676{,}0\,\text{nm} \). Hubble-konstanten sættes til \( H_0 = 70{,}0\,\frac{\text{km/s}}{\text{Mpc}} = 2{,}27 \cdot 10^{-18}\,\text{s}^{-1} \), og lysets fart er \( c = 2{,}998 \cdot 10^8\,\frac{\text{m}}{\text{s}} \).</p>
+        
+        <p><strong>a)</strong> Beregn galaksens rødforskydning \( z \).</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="0.0001" placeholder="Rødforskydning z...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 0.0300)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for rødforskydning \( z = \frac{\lambda_{\text{obs}} - \lambda}{\lambda} \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( z = \frac{676{,}0\,\text{nm} - 656{,}3\,\text{nm}}{656{,}3\,\text{nm}} = \frac{19{,}7}{656{,}3} \approx 0{,}0300 \).</div>
+
+        <br>
+        <p><strong>b)</strong> Da \( z < 0{,}1 \), kan galaksens flugthastighed \( v \) beregnes. Bestem \( v \) i km/s.</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="1" placeholder="Flugthastighed i km/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 8994)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug sammenhængen \( v = z \cdot c \). Husk at omregne \( c \) til km/s (\( c \approx 299.800\,\text{km/s} \)).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( v = 0{,}0300 \cdot 299.800\,\frac{\text{km}}{\text{s}} \approx 8994\,\frac{\text{km}}{\text{s}} \).</div>
+
+        <br>
+        <p><strong>c)</strong> Beregn afstanden \( r \) til galaksen i megaparsec (Mpc) ved hjælp af Hubbles lov.</p>
+        <div class="input-section">
+            <input type="number" id="q1c" step="0.1" placeholder="Afstand i Mpc...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1c', 128.5)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1c')">Løsning</button>
+        </div>
+        <div id="feedback-q1c" class="feedback"></div>
+        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Isoler afstanden \( r \) i Hubbles lov \( v = H_0 \cdot r \implies r = \frac{v}{H_0} \).</div>
+        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( r = \frac{8994\,\text{km/s}}{70{,}0\,\frac{\text{km/s}}{\text{Mpc}}} \approx 128{,}5\,\text{Mpc} \).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Hubble-tiden og skalaændring i universet</span>
+        <p>Hubble-konstanten måles i SI-enheder til \( H_0 = 2{,}27 \cdot 10^{-18}\,\text{s}^{-1} \).</p>
+        
+        <p><strong>a)</strong> Beregn Hubble-tiden \( T_0 \) (universets anslåede alder) i sekunder og omregn til milliarder år (\( 1\,\text{år} \approx 3{,}156 \cdot 10^7\,\text{s} \)).</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="0.1" placeholder="Alder i milliarder år...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 13.98)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for Hubble-tiden \( T_0 = \frac{1}{H_0} \), og divider derefter med antalle af sekunder på et år.</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( T_0 = \frac{1}{2{,}27 \cdot 10^{-18}\,\text{s}^{-1}} \approx 4{,}405 \cdot 10^{17}\,\text{s} \). I år fås \( \frac{4{,}405 \cdot 10^{17}}{3{,}156 \cdot 10^7} \approx 13{,}96 \cdot 10^9\,\text{år} = 13{,}98\,\text{milliarder år} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Et lyssignal blev udsendt fra en ur-galakse på et tidspunkt i universets fortid, hvor afstandene i universet kun var halvdelen af i dag (\( \frac{r_0}{r} = 2{,}0 \)). Beregn den kosmologiske rødforskydning \( z \) for dette lys.</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.1" placeholder="Rødforskydning z...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 1.0)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug sammenhængen for kosmologisk rødforskydning \( 1 + z = \frac{r_0}{r} \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( 1 + z = 2{,}0 \implies z = 2{,}0 - 1 = 1{,}0 \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Supernovaer som "standard-stearinlys" (Luminositet og afstand)</span>
+        <p>En Type Ia supernova anvendes som standard-stearinlys, da den udstråler en kendt samlet energi på \( E_{\text{udstrålet}} = 1{,}50 \cdot 10^{44}\,\text{J} \) i løbet af et tidsrum på \( \Delta t = 40{,}0\,\text{døgn} \) (\( 1\,\text{døgn} = 86.400\,\text{s} \)).</p>
+        
+        <p><strong>a)</strong> Beregn supernovaens middel-luminositet (udstrålede effekt) \( L \) i Watt.</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="0.01" placeholder="Luminositet i 10^37 W...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 4.34)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Omregn tidsrummet til sekunder (\( \Delta t = 40{,}0 \cdot 86.400\,\text{s} = 3.456.000\,\text{s} \)) og brug \( L = \frac{E_{\text{udstrålet}}}{\Delta t} \). Indtast svaret i \( 10^{37}\,\text{W} \).</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( L = \frac{1{,}50 \cdot 10^{44}\,\text{J}}{3.456.000\,\text{s}} \approx 4{,}340 \cdot 10^{37}\,\text{W} \approx 4{,}34 \cdot 10^{37}\,\text{W} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Supernovaen observeres fra Jorden med en målt intensitet på \( I_{\text{lys}} = 3{,}50 \cdot 10^{-13}\,\frac{\text{W}}{\text{m}^2} \). Beregn afstanden \( r \) til supernovaen i meter ved hjælp af afstandskvadratloven.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="0.01" placeholder="Afstand i 10^24 m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 3.14)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Isoler \( r \) fra afstandskvadratloven \( I_{\text{lys}} = \frac{L}{4 \cdot \pi \cdot r^2} \implies r = \sqrt{\frac{L}{4 \cdot \pi \cdot I_{\text{lys}}}} \). Indtast svaret i \( 10^{24}\,\text{m} \).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( r = \sqrt{\frac{4{,}340 \cdot 10^{37}}{4 \cdot \pi \cdot 3{,}50 \cdot 10^{-13}}} = \sqrt{\frac{4{,}340 \cdot 10^{37}}{4{,}398 \cdot 10^{-12}}} = \sqrt{9{,}868 \cdot 10^{48}} \approx 3{,}141 \cdot 10^{24}\,\text{m} \approx 3{,}14 \cdot 10^{24}\,\text{m} \).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.05 * Math.abs(correctVal); // 5% tolerance
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= Math.max(tolerance, 0.05)) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

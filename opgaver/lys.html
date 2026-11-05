@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lys og Atomer - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Elektromagnetisk stråling & Atomer</h3>
+        <p>Oversigt over formler for udbredelsesfart, fotoners energi og bevægelsesmængde, kvantespring samt brintatomets energiniveauer.</p>
+        
+        <div class="formula-group">
+            <div><strong>Udbredelsesfart:</strong> \( c = \lambda \cdot f \)</div>
+            <div><strong>Fotonens energi:</strong> \( E_\gamma = h \cdot f = h \cdot \frac{c}{\lambda} \)</div>
+            <div><strong>Fotonens bevægelsesmængde:</strong> \( p = \frac{h \cdot f}{c} = \frac{h}{\lambda} \)</div>
+            <div><strong>Absorption og emission:</strong> \( E_\gamma = E_2 - E_1 \)</div>
+            <div><strong>Energiniveauer i brint:</strong> \( E_n = -\frac{h \cdot c \cdot R}{n^2} \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Energi af en rød foton</h4>
+            <p>En foton med bølgelængde \( \lambda = 656{,}3\,\text{nm} = 656{,}3 \cdot 10^{-9}\,\text{m} \) har energien:</p>
+            <p>$$ E_\gamma = \frac{h \cdot c}{\lambda} = \frac{6{,}626 \cdot 10^{-34}\,\text{J}\cdot\text{s} \cdot 2{,}998 \cdot 10^8\,\frac{\text{m}}{\text{s}}}{656{,}3 \cdot 10^{-9}\,\text{m}} \approx 3{,}027 \cdot 10^{-19}\,\text{J} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Fotoners energi og impuls</span>
+        <p>En ultraviolet foton udsendes fra en udladningslampe med bølgelængden \( \lambda = 121{,}6\,\text{nm} = 121{,}6 \cdot 10^{-9}\,\text{m} \). Plancks konstant er \( h = 6{,}626 \cdot 10^{-34}\,\text{J}\cdot\text{s} \), og lysets fart i vacuum er \( c = 2{,}998 \cdot 10^8\,\frac{\text{m}}{\text{s}} \).</p>
+        
+        <p><strong>a)</strong> Beregn frekvensen \( f \) af den ultraviolette foton.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="0.01" placeholder="Frekvens i 10^15 Hz...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 2.47)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for udbredelsesfart \( c = \lambda \cdot f \) omformuleret til \( f = \frac{c}{\lambda} \). Indtast svaret i \( 10^{15}\,\text{Hz} \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( f = \frac{2{,}998 \cdot 10^8\,\frac{\text{m}}{\text{s}}}{121{,}6 \cdot 10^{-9}\,\text{m}} \approx 2{,}4655 \cdot 10^{15}\,\text{Hz} \approx 2{,}47 \cdot 10^{15}\,\text{Hz} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Beregn fotonens energi \( E_\gamma \).</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="0.01" placeholder="Energi i 10^-18 J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 1.63)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Anvend formlen \( E_\gamma = h \cdot f \) eller \( E_\gamma = h \cdot \frac{c}{\lambda} \). Indtast svaret i \( 10^{-18}\,\text{J} \).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( E_\gamma = 6{,}626 \cdot 10^{-34} \cdot 2{,}4655 \cdot 10^{15} \approx 1{,}634 \cdot 10^{-18}\,\text{J} \approx 1{,}63 \cdot 10^{-18}\,\text{J} \).</div>
+
+        <br>
+        <p><strong>c)</strong> Beregn fotonens bevægelsesmængde (impuls) \( p \).</p>
+        <div class="input-section">
+            <input type="number" id="q1c" step="0.01" placeholder="Bevægelsesmængde i 10^-27 kg*m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1c', 5.45)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1c')">Løsning</button>
+        </div>
+        <div id="feedback-q1c" class="feedback"></div>
+        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Anvend formlen \( p = \frac{h}{\lambda} \). Indtast svaret i \( 10^{-27}\,\text{kg}\cdot\text{m/s} \).</div>
+        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( p = \frac{6{,}626 \cdot 10^{-34}\,\text{J}\cdot\text{s}}{121{,}6 \cdot 10^{-9}\,\text{m}} \approx 5{,}449 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s} \approx 5{,}45 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s} \).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Brintatomets energiniveauer</span>
+        <p>Energiniveauerne i et brintatom kan beregnes ved formlen \( E_n = -\frac{h \cdot c \cdot R}{n^2} \), hvor produktet af konstanterne er \( h \cdot c \cdot R \approx 2{,}179 \cdot 10^{-18}\,\text{J} \) (svarende til \( 13{,}60\,\text{eV} \)).</p>
+        
+        <p><strong>a)</strong> Beregn brintatomets energi i grundtilstanden \( E_1 \) (\( n = 1 \)) samt i 3. tilstand \( E_3 \) (\( n = 3 \)).</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="0.01" placeholder="Energi E3 i 10^-19 J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', -2.42)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Sæt \( n = 3 \) ind i formlen \( E_3 = -\frac{2{,}179 \cdot 10^{-18}}{3^2} \). Indtast svaret i \( 10^{-19}\,\text{J} \) (husk fortegn).</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( E_1 = -2{,}179 \cdot 10^{-18}\,\text{J} \). For \( n = 3 \) fås \( E_3 = -\frac{2{,}179 \cdot 10^{-18}\,\text{J}}{9} \approx -2{,}421 \cdot 10^{-19}\,\text{J} = -2{,}42 \cdot 10^{-19}\,\text{J} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Beregn energien \( E_2 \) for næstlaveste niveau (\( n = 2 \)).</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.01" placeholder="Energi E2 i 10^-19 J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', -5.45)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Sæt \( n = 2 \) ind i energiniveau-formlen. Indtast svaret i \( 10^{-19}\,\text{J} \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( E_2 = -\frac{2{,}179 \cdot 10^{-18}\,\text{J}}{2^2} = -\frac{2{,}179 \cdot 10^{-18}\,\text{J}}{4} \approx -5{,}448 \cdot 10^{-19}\,\text{J} = -5{,}45 \cdot 10^{-19}\,\text{J} \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Kvantespring og Balmer-linien (Emission)</span>
+        <p>I et brintatom foretager en elektron et kvantespring fra niveau \( n = 3 \) ned til niveau \( n = 2 \) (Balmer-\(\alpha\) linjen), hvorved der udsendes en foton.</p>
+        
+        <p><strong>a)</strong> Beregn energiforskellen \( E_\gamma = E_3 - E_2 \) mellem de to niveauer.</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="0.01" placeholder="Fotonenergi i 10^-19 J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 3.03)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Træk \( E_2 \) fra \( E_3 \): \( E_\gamma = (-2{,}421 \cdot 10^{-19}\,\text{J}) - (-5{,}448 \cdot 10^{-19}\,\text{J}) \). Indtast svaret i \( 10^{-19}\,\text{J} \).</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( E_\gamma = (-2{,}421 \cdot 10^{-19}\,\text{J}) - (-5{,}448 \cdot 10^{-19}\,\text{J}) = 3{,}027 \cdot 10^{-19}\,\text{J} \approx 3{,}03 \cdot 10^{-19}\,\text{J} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Bestem bølgelængden \( \lambda \) af den emitterede foton.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="0.1" placeholder="Bølgelængde i nm...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 656.1)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Isoler bølgelængden ud fra fotonens energi \( E_\gamma = \frac{h \cdot c}{\lambda} \implies \lambda = \frac{h \cdot c}{E_\gamma} \). Omregn til nanometer (nm).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \lambda = \frac{6{,}626 \cdot 10^{-34} \cdot 2{,}998 \cdot 10^8}{3{,}027 \cdot 10^{-19}\,\text{J}} \approx 6{,}561 \cdot 10^{-7}\,\text{m} = 656{,}1\,\text{nm} \).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.05 * Math.abs(correctVal); // 5% tolerance
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= Math.max(tolerance, 0.05)) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

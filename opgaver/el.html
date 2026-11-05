@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektriske Kredsløb - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Elektriske kredsløb</h3>
+        <p>Oversigt over de vigtigste formler for elektrisk strøm, energi, effekt, modstand og Kirchhoffs love.</p>
+        
+        <div class="formula-group">
+            <div><strong>Strømstyrke & Energi:</strong> \( I = \frac{q}{\Delta t} \), \( E = U \cdot q \), \( E = P \cdot \Delta t \)</div>
+            <div><strong>Effekt & Ohms lov:</strong> \( P = U \cdot I = R \cdot I^2 = \frac{U^2}{R} \), \( U = R \cdot I \)</div>
+            <div><strong>Kredsløb:</strong> \( I_1 = I_2 + I_3 \) (Kirchhoff), Serie: \( R = R_1 + R_2 \), Parallel: \( R = \left(\frac{1}{R_1} + \frac{1}{R_2}\right)^{-1} \)</div>
+            <div><strong>Spændingsdeler:</strong> \( U_1 = \frac{R_1}{R_1 + R_2} \cdot U \), \( U_2 = \frac{R_2}{R_1 + R_2} \cdot U \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Omsat effekt i en modstand</h4>
+            <p>En modstand på \( 10\,\Omega \) tilsluttes en spænding på \( 12\,\text{V} \). Den omsatte effekt beregnes som:</p>
+            <p>$$ P = \frac{U^2}{R} = \frac{(12\,\text{V})^2}{10\,\Omega} = 14{,}4\,\text{W} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Kaffevarmerens effekt og ladning</span>
+        <p>En bærbar kaffevarmer tilsluttes et genopladeligt batteri. Kaffevarmerens varmelegeme har en modstand på \( R = 4{,}8\,\Omega \) og tilsluttes en konstant spænding på \( U = 12\,\text{V} \).</p>
+        
+        <p><strong>a)</strong> Beregn strømstyrken \( I \) gennem varmelegemet.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="0.01" placeholder="Strømstyrke i A...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 2.5)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug Ohms lov: \( U = R \cdot I \) isoleret i forhold til \( I \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( I = \frac{U}{R} = \frac{12\,\text{V}}{4{,}8\,\Omega} = 2{,}5\,\text{A} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Kaffevarmeren er tændt i \( \Delta t = 300\,\text{s} \) (5 minutter). Bestem den omsatte elektriske energi \( E \).</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="1" placeholder="Energi i J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 9000)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Beregn først effekten \( P = U \cdot I \), og brug derefter \( E = P \cdot \Delta t \).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( P = 12\,\text{V} \cdot 2{,}5\,\text{A} = 30\,\text{W} \). Derefter er \( E = 30\,\text{W} \cdot 300\,\text{s} = 9000\,\text{J} \) (eller \( 9{,}0\,\text{kJ} \)).</div>
+
+        <br>
+        <p><strong>c)</strong> Bestem den samlede elektriske ladning \( q \), der passerer gennem varmelegemet i løbet af de 300 sekunder.</p>
+        <div class="input-section">
+            <input type="number" id="q1c" step="1" placeholder="Ladning i C...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1c', 750)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1c')">Løsning</button>
+        </div>
+        <div id="feedback-q1c" class="feedback"></div>
+        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for strømstyrke \( I = \frac{q}{\Delta t} \) omformuleret til ladningen \( q \).</div>
+        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( q = I \cdot \Delta t = 2{,}5\,\text{A} \cdot 300\,\text{s} = 750\,\text{C} \). Bemærk også, at \( E = U \cdot q = 12\,\text{V} \cdot 750\,\text{C} = 9000\,\text{J} \).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Forgrening i et cykellygte-kredsløb</span>
+        <p>I en cykellygte forgrener strømmen fra et batteri sig ud til en forlygte og en baglygte, som er parallelforbundne. Den samlede strøm fra batteriet ind i knudepunktet er \( I_1 = 0{,}45\,\text{A} \), og strømmen igennem baglygten er målt til \( I_2 = 0{,}15\,\text{A} \).</p>
+        
+        <p><strong>a)</strong> Bestem strømstyrken \( I_3 \), der løber igennem forlygten.</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="0.01" placeholder="Strømstyrke i A...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 0.3)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Anvend Kirchhoffs 1. lov for knudepunkter: \( I_1 = I_2 + I_3 \).</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( I_3 = I_1 - I_2 = 0{,}45\,\text{A} - 0{,}15\,\text{A} = 0{,}30\,\text{A} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Kredsløbet forsynes med en spænding på \( U = 6{,}0\,\text{V} \). Beregn modstanden i forlygten (\( R_2 \)).</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.1" placeholder="Modstand i Ω...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 20)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> I en parallelforbindelse er spændingsfaldet det samme over begge grenkomponenter. Brug Ohms lov på forlygten med \( I_3 = 0{,}30\,\text{A} \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( R_2 = \frac{U}{I_3} = \frac{6{,}0\,\text{V}}{0{,}30\,\text{A}} = 20\,\Omega \).</div>
+
+        <br>
+        <p><strong>c)</strong> Baglygtens modstand er \( R_1 = 40\,\Omega \). Beregn den samlede erstatningsmodstand \( R \) for parallelforbindelsen.</p>
+        <div class="input-section">
+            <input type="number" id="q2c" step="0.01" placeholder="Erstatningsmodstand i Ω...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2c', 13.33)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2c')">Løsning</button>
+        </div>
+        <div id="feedback-q2c" class="feedback"></div>
+        <div id="hint-q2c" class="hint-box" style="display:none;"><strong>Hint:</strong> Anvend formlen for erstatningsmodstand i parallelforbindelser: \( R = \left(\frac{1}{R_1} + \frac{1}{R_2}\right)^{-1} \).</div>
+        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( R = \left(\frac{1}{40} + \frac{1}{20}\right)^{-1} = \left(\frac{3}{40}\right)^{-1} = \frac{40}{3} \approx 13{,}33\,\Omega \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Spændingsdeler i en sensorkreds</span>
+        <p>I et elektronisk kredsløb benyttes en spændingsdeler bestående af to serieforbundne modstande, \( R_1 = 150\,\Omega \) og \( R_2 = 350\,\Omega \). Kredsløbet tilsluttes en strømforsyning med en samlet spænding på \( U = 9{,}0\,\text{V} \).</p>
+        
+        <p><strong>a)</strong> Bestem den samlede erstatningsmodstand \( R \) for serieforbindelsen.</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="1" placeholder="Erstatningsmodstand i Ω...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 500)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Modstande i serie lægges direkte sammen: \( R = R_1 + R_2 \).</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( R = 150\,\Omega + 350\,\Omega = 500\,\Omega \).</div>
+
+        <br>
+        <p><strong>b)</strong> Beregn spændingsfaldet \( U_1 \) over modstanden \( R_1 \) ved hjælp af spændingsdelerformlen.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="0.01" placeholder="Spænding U1 i V...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 2.7)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen \( U_1 = \frac{R_1}{R_1 + R_2} \cdot U \).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( U_1 = \frac{150\,\Omega}{150\,\Omega + 350\,\Omega} \cdot 9{,}0\,\text{V} = \frac{150}{500} \cdot 9{,}0\,\text{V} = 2{,}7\,\text{V} \).</div>
+
+        <br>
+        <p><strong>c)</strong> Beregn spændingsfaldet \( U_2 \) over modstanden \( R_2 \), og bekræft at spændingsreglen \( U = U_1 + U_2 \) er opfyldt.</p>
+        <div class="input-section">
+            <input type="number" id="q3c" step="0.01" placeholder="Spænding U2 i V...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3c', 6.3)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3c')">Løsning</button>
+        </div>
+        <div id="feedback-q3c" class="feedback"></div>
+        <div id="hint-q3c" class="hint-box" style="display:none;"><strong>Hint:</strong> Du kan enten bruge spændingsdelerformlen for \( U_2 \) eller trække \( U_1 \) fra den samlede spænding \( U \).</div>
+        <div id="sol-q3c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( U_2 = \frac{350\,\Omega}{500\,\Omega} \cdot 9{,}0\,\text{V} = 6{,}3\,\text{V} \). Det ses let, at \( U_1 + U_2 = 2{,}7\,\text{V} + 6{,}3\,\text{V} = 9{,}0\,\text{V} = U \).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.05;
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= tolerance) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

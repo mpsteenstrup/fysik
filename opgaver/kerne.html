@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kernefysik - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Atomkerner & Radioaktivitet</h3>
+        <p>Oversigt over formler for atomkerner, henfaldsskemaer, masse/energi, Q-værdi samt henfaldsloven og aktivitet.</p>
+        
+        <div class="formula-group">
+            <div><strong>Nukleontal:</strong> \( A = Z + N \)</div>
+            <div><strong>Henfaldsskemaer:</strong> \( \alpha \): \( {}_{Z}^{A}\text{X} \rightarrow {}_{Z-2}^{A-4}\text{Y} + {}_{2}^{4}\text{He} \), \( \beta^- \): \( {}_{Z}^{A}\text{X} \rightarrow {}_{Z+1}^{A}\text{Y} + {}_{-1}^{0}e + \overline{\nu}_e \), \( \beta^+ \): \( {}_{Z}^{A}\text{X} \rightarrow {}_{Z-1}^{A}\text{Y} + {}_{+1}^{0}e + \nu_e \)</div>
+            <div><strong>Masse, Energi & Q-værdi:</strong> \( E = m \cdot c^2 \), \( Q = \Delta E_{\text{kin}} = -\Delta m \cdot c^2 \)</div>
+            <div><strong>Henfaldslov & Konstant:</strong> \( N(t) = N_0 \cdot e^{-k \cdot t} = N_0 \cdot \left(\frac{1}{2}\right)^{\frac{t}{T_{0{,}5}}} \), \( k = \frac{\ln(2)}{T_{0{,}5}} \)</div>
+            <div><strong>Aktivitet:</strong> \( A = k \cdot N \), \( A(t) = A_0 \cdot e^{-k \cdot t} = A_0 \cdot \left(\frac{1}{2}\right)^{\frac{t}{T_{0{,}5}}} \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Sammenhæng mellem halveringstid og henfaldskonstant</h4>
+            <p>Hvis en radioaktiv isotope har en halveringstid på \( T_{0{,}5} = 5{,}0\,\text{døgn} = 432.000\,\text{s} \), beregnes henfaldskonstanten \( k \) ved:</p>
+            <p>$$ k = \frac{\ln(2)}{432.000\,\text{s}} \approx 1{,}605 \cdot 10^{-6}\,\text{s}^{-1} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Uran-238 henfald og energifrigørelse</span>
+        <p>Uran-238 (\( {}_{92}^{238}\text{U} \)) undergår et \( \alpha \)-henfald og omdannes til thorium (Th).</p>
+        
+        <p><strong>a)</strong> Bestem protontallet \( Z \) og nukleontallet \( A \) for datterkernen thorium (\( {}_{Z}^{A}\text{Th} \)), og angiv antallet af neutroner \( N \) i datterkernen.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="1" placeholder="Neutrontal N i datterkernen...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 144)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Ved et \( \alpha \)-henfald afgives en heliumkerne (\( {}_{2}^{4}\text{He} \)). Dvs. \( Z_{\text{datter}} = 92 - 2 \) og \( A_{\text{datter}} = 238 - 4 \). Derefter er \( N = A - Z \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> Thorium har \( Z = 90 \) og \( A = 234 \) (\( {}_{90}^{234}\text{Th} \)). Antallet af neutroner er \( N = 234 - 90 = 144 \).</div>
+
+        <br>
+        <p><strong>b)</strong> Ved henfaldet er masseændringen målt til \( \Delta m = -7{,}60 \cdot 10^{-30}\,\text{kg} \). Beregn den frigivne energi (\( Q \)-værdien) ved procesets henfald. Brug lysets fart i vacuum \( c = 2{,}9979 \cdot 10^8\,\frac{\text{m}}{\text{s}} \).</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="0.01" placeholder="Q-værdi i 10^-13 J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 6.83)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Anvend formlen \( Q = -\Delta m \cdot c^2 \). Indtast svaret i enheden \( 10^{-13}\,\text{J} \).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( Q = -(-7{,}60 \cdot 10^{-30}\,\text{kg}) \cdot (2{,}9979 \cdot 10^8\,\frac{\text{m}}{\text{s}})^2 \approx 6{,}830 \cdot 10^{-13}\,\text{J} = 6{,}83 \cdot 10^{-13}\,\text{J} \).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Medicinsk isotop og halveringstid</span>
+        <p>På et hospital benyttes den radioaktive isotop Technetium-99m (\( {}_{43}^{99\text{m}}\text{Tc} \)) til skanninger. Isotopen har en halveringstid på \( T_{0{,}5} = 6{,}00\,\text{timer} \).</p>
+        
+        <p><strong>a)</strong> Beregn henfaldskonstanten \( k \) i enheden \( \text{s}^{-1} \).</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="0.01" placeholder="k i 10^-5 s^-1...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 3.21)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Omregn først halveringstiden til sekunder: \( T_{0{,}5} = 6{,}00 \cdot 3600\,\text{s} = 21.600\,\text{s} \). Brug derefter \( k = \frac{\ln(2)}{T_{0{,}5}} \). Indtast svaret i \( 10^{-5}\,\text{s}^{-1} \).</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( k = \frac{\ln(2)}{21.600\,\text{s}} \approx 3{,}209 \cdot 10^{-5}\,\text{s}^{-1} = 3{,}21 \cdot 10^{-5}\,\text{s}^{-1} \).</div>
+
+        <br>
+        <p><strong>b)</strong> En prøve modtages med en startaktivitet på \( A_0 = 400\,\text{MBq} = 400 \cdot 10^6\,\text{Bq} \). Beregn aktiviteten \( A \) af prøven efter \( t = 18{,}0\,\text{timer} \).</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.1" placeholder="Aktivitet i MBq...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 50)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug henfaldsloven for aktivitet: \( A(t) = A_0 \cdot \left(\frac{1}{2}\right)^{\frac{t}{T_{0{,}5}}} \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( A(18\,\text{h}) = 400\,\text{MBq} \cdot \left(\frac{1}{2}\right)^{\frac{18}{6}} = 400 \cdot \left(\frac{1}{2}\right)^3 = \frac{400}{8} = 50\,\text{MBq} \).</div>
+
+        <br>
+        <p><strong>c)</strong> Bestem det oprindelige antal radioaktive kerner \( N_0 \) i prøven til tiden \( t = 0 \).</p>
+        <div class="input-section">
+            <input type="number" id="q3c" step="0.01" placeholder="N0 i 10^13 kerner...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3c', 1.25)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3c')">Løsning</button>
+        </div>
+        <div id="feedback-q3c" class="feedback"></div>
+        <div id="hint-q3c" class="hint-box" style="display:none;"><strong>Hint:</strong> Sammenhængen mellem aktivitet og antal kerner er \( A_0 = k \cdot N_0 \). Isoler \( N_0 = \frac{A_0}{k} \) (husk at benytte \( k \) i \( \text{s}^{-1} \)).</div>
+        <div id="sol-q3c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( N_0 = \frac{400 \cdot 10^6\,\text{Bq}}{3{,}209 \cdot 10^{-5}\,\text{s}^{-1}} \approx 1{,}246 \cdot 10^{13} \approx 1{,}25 \cdot 10^{13}\,\text{kerner} \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Beta-plus henfald og positron-annihilation</span>
+        <p>Flour-18 (\( {}_{9}^{18}\text{F} \)) anvendes til PET-skanninger og henfalder ved et \( \beta^+ \)-henfald til ilt (O).</p>
+        
+        <p><strong>a)</strong> Opskriv henfaldsskemaet for \( \beta^+ \)-henfaldet af \( {}_{9}^{18}\text{F} \), og angiv det samlede antal nukleoner \( A \) og protontallet \( Z \) for datterkernen ilt.</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="1" placeholder="Protontal Z for ilt...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 8)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Ved et \( \beta^+ \)-henfald udsendes en positron (\( {}_{+1}^{0}e \)) og en neutrino (\( \nu_e \)). Derved falder protontallet med 1, mens nukleontallet er uændret.</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> Reaktionen er \( {}_{9}^{18}\text{F} \rightarrow {}_{8}^{18}\text{O} + {}_{+1}^{0}e + \nu_e \). Datterkernen har \( Z = 8 \) og \( A = 18 \).</div>
+
+        <br>
+        <p><strong>b)</strong> Den udsendte positron (\( {}_{+1}^{0}e \)) møder en elektron (\( {}_{-1}^{0}e \)) og annihilere, hvorved deres samlede hvilemasse omdannes til energi i form af to fotoner. Elektronens masse er \( m_e = 9{,}10938 \cdot 10^{-31}\,\text{kg} \). Beregn den samlede energi \( E \), der frigives ved annihilationen af én elektron og én positron.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="0.01" placeholder="Energi i 10^-13 J...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 1.64)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Positronen har samme masse som elektron. Den samlede masse er \( m = 2 \cdot m_e \). Brug formlen \( E = m \cdot c^2 \). Indtast svaret i \( 10^{-13}\,\text{J} \).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( m = 2 \cdot (9{,}10938 \cdot 10^{-31}\,\text{kg}) = 1{,}82188 \cdot 10^{-30}\,\text{kg} \). Energies er \( E = 1{,}82188 \cdot 10^{-30} \cdot (2{,}9979 \cdot 10^8)^2 \approx 1{,}637 \cdot 10^{-13}\,\text{J} \approx 1{,}64 \cdot 10^{-13}\,\text{J} \).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.05 * Math.abs(correctVal); // 5% tolerance
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= Math.max(tolerance, 0.05)) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

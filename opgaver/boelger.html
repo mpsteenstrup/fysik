@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bølgefænomener - Fysikopgaver</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- FORMULA BOX: TEORI OG FORMELSAMLING -->
+    <div class="formula-box">
+        <h3>Formelsamling: Bølgefænomener & Konstanter</h3>
+        <p>Oversigt over formler for harmoniske bølger, optiske gitre, brydningsindeks samt relevante konstanter.</p>
+        
+        <div class="formula-group">
+            <div><strong>Lysets fart i vacuum:</strong> \( c \approx 2{,}9979 \cdot 10^8\,\frac{\text{m}}{\text{s}} \)</div>
+            <div><strong>Harmoniske bølger:</strong> \( f = \frac{1}{T} \), \( v = \lambda \cdot f \)</div>
+            <div><strong>Gitterligningen:</strong> \( n \cdot \lambda = d \cdot \sin(\theta_n) \), hvor \( n = 0, 1, 2, 3, \dots \)</div>
+            <div><strong>Brydningsindeks:</strong> \( n = \frac{c}{v} \), \( n_{12} = \frac{v_1}{v_2} = \frac{\sin(\theta_1)}{\sin(\theta_2)} \)</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block" style="display:none;">
+            <h4>Eksempel: Lysets fart i glas</h4>
+            <p>Hvis brydningsindekset for glas er \( n = 1{,}50 \), beregnes lysets fart \( v \) i glasset ved:</p>
+            <p>$$ v = \frac{c}{n} = \frac{2{,}9979 \cdot 10^8\,\frac{\text{m}}{\text{s}}}{1{,}50} = 1{,}9986 \cdot 10^8\,\frac{\text{m}}{\text{s}} $$</p>
+        </div>
+    </div>
+
+    <!-- OPGAVE 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Laserlys, frekvens og periode</span>
+        <p>En grøn pege-laser udsender lys med en bølgelængde på \( \lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m} \) i vacuum.</p>
+        
+        <p><strong>a)</strong> Beregn frekvensen \( f \) af det grønne laserlys i vacuum.</p>
+        <div class="input-section">
+            <input type="number" id="q1a" step="0.01" placeholder="Frekvens i 10^14 Hz...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a', 5.64)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
+        </div>
+        <div id="feedback-q1a" class="feedback"></div>
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug bølgeligningen \( v = \lambda \cdot f \), hvor udbredelsesfarten i vacuum er \( v = c = 2{,}9979 \cdot 10^8\,\frac{\text{m}}{\text{s}} \). Angiv svaret i \( 10^{14}\,\text{Hz} \) (dvs. indtast f.eks. 5.64).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( f = \frac{c}{\lambda} = \frac{2{,}9979 \cdot 10^8\,\frac{\text{m}}{\text{s}}}{532 \cdot 10^{-9}\,\text{m}} \approx 5{,}635 \cdot 10^{14}\,\text{Hz} = 5{,}64 \cdot 10^{14}\,\text{Hz} \).</div>
+
+        <br>
+        <p><strong>b)</strong> Bestem perioden \( T \) for svingningerne i laserlyset.</p>
+        <div class="input-section">
+            <input type="number" id="q1b" step="0.01" placeholder="Periode i 10^-15 s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1b', 1.77)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1b')">Løsning</button>
+        </div>
+        <div id="feedback-q1b" class="feedback"></div>
+        <div id="hint-q1b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug sammenhængen \( T = \frac{1}{f} \). Angiv svaret i femtosekunder (\( 10^{-15}\,\text{s} \)).</div>
+        <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( T = \frac{1}{f} = \frac{1}{5{,}635 \cdot 10^{14}\,\text{Hz}} \approx 1{,}775 \cdot 10^{-15}\,\text{s} = 1{,}77\,\text{fs} \).</div>
+    </div>
+
+    <!-- OPGAVE 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Afbøjning i et optisk gitter</span>
+        <p>En røder laser med bølgelængden \( \lambda = 632{,}8\,\text{nm} = 632{,}8 \cdot 10^{-9}\,\text{m} \) sendes vinkelret ind mod et optisk gitter med en gitterkonstant på \( d = 2{,}00\,\mu\text{m} = 2{,}00 \cdot 10^{-6}\,\text{m} \).</p>
+        
+        <p><strong>a)</strong> Beregn afbøjningsvinklen \( \theta_1 \) for 1. orden (\( n = 1 \)).</p>
+        <div class="input-section">
+            <input type="number" id="q2a" step="0.1" placeholder="Vinkel i grader...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a', 18.44)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
+        </div>
+        <div id="feedback-q2a" class="feedback"></div>
+        <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug gitterligningen \( n \cdot \lambda = d \cdot \sin(\theta_n) \) og isoler \( \sin(\theta_1) \).</div>
+        <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \sin(\theta_1) = \frac{1 \cdot 632{,}8 \cdot 10^{-9}\,\text{m}}{2{,}00 \cdot 10^{-6}\,\text{m}} = 0{,}3164 \implies \theta_1 = \arcsin(0{,}3164) \approx 18{,}44^\circ \).</div>
+
+        <br>
+        <p><strong>b)</strong> Beregn afbøjningsvinklen \( \theta_2 \) for 2. orden (\( n = 2 \)).</p>
+        <div class="input-section">
+            <input type="number" id="q2b" step="0.1" placeholder="Vinkel i grader...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b', 39.26)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
+        </div>
+        <div id="feedback-q2b" class="feedback"></div>
+        <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Sæt \( n = 2 \) i gitterligningen.</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \sin(\theta_2) = \frac{2 \cdot 632{,}8 \cdot 10^{-9}\,\text{m}}{2{,}00 \cdot 10^{-6}\,\text{m}} = 0{,}6328 \implies \theta_2 = \arcsin(0{,}6328) \approx 39{,}26^\circ \).</div>
+
+        <br>
+        <p><strong>c)</strong> Bestem det maksimale antal ordener (højeste hele tal \( n \)), der kan observeres med dette gitter.</p>
+        <div class="input-section">
+            <input type="number" id="q2c" step="1" placeholder="Maksimalt n...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2c', 3)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2c')">Løsning</button>
+        </div>
+        <div id="feedback-q2c" class="feedback"></div>
+        <div id="hint-q2c" class="hint-box" style="display:none;"><strong>Hint:</strong> Den maksimale afbøjningsvinkel er \( \theta_n = 90^\circ \), hvor \( \sin(90^\circ) = 1 \). Isoler \( n \) fra \( n \le \frac{d}{\lambda} \).</div>
+        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( n_{\text{max}} \le \frac{d}{\lambda} = \frac{2{,}00 \cdot 10^{-6}\,\text{m}}{632{,}8 \cdot 10^{-9}\,\text{m}} \approx 3{,}16 \). Det største hele tal er dermed \( n = 3 \).</div>
+    </div>
+
+    <!-- OPGAVE 3 -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Lysbrydning i diamantslibning</span>
+        <p>En lysstråle sendes fra luft (\( n_1 = 1{,}00 \)) ind i en diamant med et indfaldsvinkel på \( \theta_1 = 30{,}0^\circ \). Lysets fart i diamanten måles til \( v_2 = 1{,}24 \cdot 10^8\,\frac{\text{m}}{\text{s}} \).</p>
+        
+        <p><strong>a)</strong> Beregn brydningsindekset \( n \) for diamanten ud fra lysets fart i vacuum \( c \).</p>
+        <div class="input-section">
+            <input type="number" id="q3a" step="0.01" placeholder="Brydningsindeks n...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3a', 2.42)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
+        </div>
+        <div id="feedback-q3a" class="feedback"></div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen \( n = \frac{c}{v} \) med konstanter fra Tabel 1.</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( n = \frac{c}{v_2} = \frac{2{,}9979 \cdot 10^8\,\frac{\text{m}}{\text{s}}}{1{,}24 \cdot 10^8\,\frac{\text{m}}{\text{s}}} \approx 2{,}4177 \approx 2{,}42 \).</div>
+
+        <br>
+        <p><strong>b)</strong> Beregn udfaldsvinklen (brydningsvinklen) \( \theta_2 \) for lyset inde i diamanten.</p>
+        <div class="input-section">
+            <input type="number" id="q3b" step="0.1" placeholder="Vinkel i grader...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3b', 11.93)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3b')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3b')">Løsning</button>
+        </div>
+        <div id="feedback-q3b" class="feedback"></div>
+        <div id="hint-q3b" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug brydningsloven: \( \frac{\sin(\theta_1)}{\sin(\theta_2)} = n \implies \sin(\theta_2) = \frac{\sin(\theta_1)}{n} \).</div>
+        <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \sin(\theta_2) = \frac{\sin(30{,}0^\circ)}{2{,}4177} = \frac{0{,}500}{2{,}4177} \approx 0{,}2068 \implies \theta_2 = \arcsin(0{,}2068) \approx 11{,}93^\circ \).</div>
+
+        <br>
+        <p><strong>c)</strong> Bestem bølgelængden \( \lambda_2 \) for det grønne laserlys (\( \lambda_1 = 532\,\text{nm} \)) efter det er trådt ind i diamanten.</p>
+        <div class="input-section">
+            <input type="number" id="q3c" step="0.1" placeholder="Bølgelængde i nm...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3c', 220.05)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3c')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3c')">Løsning</button>
+        </div>
+        <div id="feedback-q3c" class="feedback"></div>
+        <div id="hint-q3c" class="hint-box" style="display:none;"><strong>Hint:</strong> Frekvensen \( f \) ændres ikke ved brydning. Brug sammenhængen \( \lambda_2 = \frac{v_2}{f} \) eller \( \lambda_2 = \frac{\lambda_1}{n} \).</div>
+        <div id="sol-q3c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( \lambda_2 = \frac{\lambda_1}{n} = \frac{532\,\text{nm}}{2{,}4177} \approx 220{,}05\,\text{nm} \).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            const tolerance = 0.1;
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= tolerance) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
