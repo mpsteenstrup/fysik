@@ -1,7 +1,7 @@
 # fysik
 Link til kapitler
 
-* [lyd.](lyd.md)
+* [lyd.](boelger/lyd.md)
 * [energi.](energi/energi.md)
 * [lys.](lys.md)
 * [relativitetsteori.](relativitetsteori.md)
@@ -10,7 +10,7 @@ Link til kapitler
 
 Vist som hjemmeside
 
-* [lyd.](https://mpsteenstrup.github.io/fysik/lyd.html)
+* [lyd.](https://mpsteenstrup.github.io/fysik/boelger/lyd.html)
 * [energi.](https://mpsteenstrup.github.io/fysik/energi/energi.html)
 * [lys.](https://mpsteenstrup.github.io/fysik/lys.html)
 * [relativitetsteori.](https://mpsteenstrup.github.io/fysik/relativitetsteori.html)
