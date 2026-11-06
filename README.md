@@ -10,9 +10,9 @@ Link til kapitler
 
 Vist som hjemmeside
 
-* [lyd.](https://mpsteenstrup.github.io/fysik/boelger/lyd.md)
+* [lyd.](https://mpsteenstrup.github.io/fysik/boelger/lyd.html)
 * [energi.](https://mpsteenstrup.github.io/fysik/energi/energi.html)
-* [lys.](https://mpsteenstrup.github.io/fysik/lys.html)
+* [lys.](https://mpsteenstrup.github.io/fysikboelger/lys.html)
 * [relativitetsteori.](https://mpsteenstrup.github.io/fysik/relativitetsteori.html)
 * [escaperoom.](https://mpsteenstrup.github.io/fysik/escaperoom/index.html)
 * [opgaver formelsamling](https://mpsteenstrup.github.io/fysik/opgaver/opgaver.html)
