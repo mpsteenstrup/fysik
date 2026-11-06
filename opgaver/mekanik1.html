@@ -44,17 +44,32 @@
         <p>Et tog starter fra hvile (\( v_0 = 0\,\frac{\text{m}}{\text{s}} \), \( s_0 = 0\,\text{m} \)) ved en station og accelererer med en konstant acceleration på \( a = 1{,}2\,\frac{\text{m}}{\text{s}^2} \) i et tidsrum på \( t = 20\,\text{s} \).</p>
         
         <p><strong>a)</strong> Beregn togets hastighed \( v \) og den tilbagelagte strækning \( s \) efter de 20 sekunder.</p>
+
+        <!-- Hastighed v -->
+        <p><em>Togets hastighed \( v \):</em></p>
         <div class="input-section">
-            <input type="number" id="q1a" step="0.1" placeholder="Hastighed i m/s...">
+            <input type="number" id="q1a_v" step="0.1" placeholder="Hastighed i m/s...">
         </div>
         <div class="btn-group">
-            <button class="btn-check" onclick="checkAnswer('q1a', 24)">Tjek svar</button>
+            <button class="btn-check" onclick="checkAnswer('q1a_v', 24)">Tjek hastighed</button>
+        </div>
+        <div id="feedback-q1a_v" class="feedback"></div>
+
+        <br>
+        <!-- Strækning s -->
+        <p><em>Tilbagelagt strækning \( s \):</em></p>
+        <div class="input-section">
+            <input type="number" id="q1a_s" step="1" placeholder="Strækning i m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1a_s', 240)">Tjek strækning</button>
             <button class="btn-hint" onclick="toggleBox('hint-q1a')">Hint</button>
             <button class="btn-sol" onclick="toggleBox('sol-q1a')">Løsning</button>
         </div>
-        <div id="feedback-q1a" class="feedback"></div>
-        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for konstant acceleration \( v = a \cdot t + v_0 \).</div>
-        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( v = 1{,}2\,\frac{\text{m}}{\text{s}^2} \cdot 20\,\text{s} + 0 = 24\,\frac{\text{m}}{\text{s}} \). Strækningen er \( s = \frac{1}{2} \cdot 1{,}2 \cdot 20^2 = 240\,\text{m} \).</div>
+        <div id="feedback-q1a_s" class="feedback"></div>
+
+        <div id="hint-q1a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlerne for konstant acceleration: \( v = a \cdot t + v_0 \) og \( s = \frac{1}{2} \cdot a \cdot t^2 + v_0 \cdot t \).</div>
+        <div id="sol-q1a" class="sol-box" style="display:none;"><strong>Løsning:</strong> Hastighed: \( v = 1{,}2 \cdot 20 = 24\,\frac{\text{m}}{\text{s}} \). Strækning: \( s = \frac{1}{2} \cdot 1{,}2 \cdot 20^2 = 240\,\text{m} \).</div>
 
         <br>
         <p><strong>b)</strong> Efter at have nået farten \( 24\,\frac{\text{m}}{\text{s}} \) bremses toget med en konstant acceleration på \( a = -2{,}0\,\frac{\text{m}}{\text{s}^2} \) til det holder helt stille (\( v = 0\,\frac{\text{m}}{\text{s}} \)). Beregn togets bremselængde \( s - s_0 \) ved brug af bremseformlen.</p>
@@ -91,31 +106,61 @@
         <p>En fodbold sparkes fra banen (\( x_0 = 0\,\text{m} \), \( y_0 = 0\,\text{m} \)) med en startfart på \( v_0 = 25{,}0\,\frac{\text{m}}{\text{s}} \) i en vinkel på \( \alpha = 30{,}0^\circ \) i forhold til vandret. Tyngdeaccelerationen sættes til \( g = 9{,}82\,\frac{\text{m}}{\text{s}^2} \).</p>
         
         <p><strong>a)</strong> Beregn start-hastighedskomponenterne i vandret retning \( v_{0,x} \) og i lodret retning \( v_{0,y} \).</p>
+        
+        <!-- v0,x -->
+        <p><em>Vandret hastighed \( v_{0,x} \):</em></p>
         <div class="input-section">
-            <input type="number" id="q2a" step="0.01" placeholder="Vandret hastighed v0,x i m/s...">
+            <input type="number" id="q2a_vx" step="0.01" placeholder="v0,x i m/s...">
         </div>
         <div class="btn-group">
-            <button class="btn-check" onclick="checkAnswer('q2a', 21.65)">Tjek svar</button>
+            <button class="btn-check" onclick="checkAnswer('q2a_vx', 21.65)">Tjek v0,x</button>
+        </div>
+        <div id="feedback-q2a_vx" class="feedback"></div>
+
+        <br>
+        <!-- v0,y -->
+        <p><em>Lodret hastighed \( v_{0,y} \):</em></p>
+        <div class="input-section">
+            <input type="number" id="q2a_vy" step="0.01" placeholder="v0,y i m/s...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2a_vy', 12.50)">Tjek v0,y</button>
             <button class="btn-hint" onclick="toggleBox('hint-q2a')">Hint</button>
             <button class="btn-sol" onclick="toggleBox('sol-q2a')">Løsning</button>
         </div>
-        <div id="feedback-q2a" class="feedback"></div>
+        <div id="feedback-q2a_vy" class="feedback"></div>
+
         <div id="hint-q2a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug trigonometri for startkomponenterne: \( v_{0,x} = v_0 \cdot \cos(\alpha) \) og \( v_{0,y} = v_0 \cdot \sin(\alpha) \).</div>
         <div id="sol-q2a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( v_{0,x} = 25{,}0 \cdot \cos(30{,}0^\circ) \approx 21{,}65\,\frac{\text{m}}{\text{s}} \) og \( v_{0,y} = 25{,}0 \cdot \sin(30{,}0^\circ) = 12{,}50\,\frac{\text{m}}{\text{s}} \).</div>
 
         <br>
         <p><strong>b)</strong> Bestem tidspunktet \( t_{\text{toppunkt}} \), hvor bolden når sit højeste punkt (hvor \( v_y = 0 \)), og beregn boldens maksimale højde \( y_{\text{max}} \).</p>
+        
+        <!-- Toppunktstid t -->
+        <p><em>Toppunktstid \( t_{\text{toppunkt}} \):</em></p>
         <div class="input-section">
-            <input type="number" id="q2b" step="0.01" placeholder="Maksimal højde y_max i m...">
+            <input type="number" id="q2b_t" step="0.01" placeholder="Tid i sekunder...">
         </div>
         <div class="btn-group">
-            <button class="btn-check" onclick="checkAnswer('q2b', 7.96)">Tjek svar</button>
+            <button class="btn-check" onclick="checkAnswer('q2b_t', 1.27)">Tjek tid</button>
+        </div>
+        <div id="feedback-q2b_t" class="feedback"></div>
+
+        <br>
+        <!-- Maksimal højde y_max -->
+        <p><em>Maksimal højde \( y_{\text{max}} \):</em></p>
+        <div class="input-section">
+            <input type="number" id="q2b_ymax" step="0.01" placeholder="y_max i m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2b_ymax', 7.96)">Tjek højde</button>
             <button class="btn-hint" onclick="toggleBox('hint-q2b')">Hint</button>
             <button class="btn-sol" onclick="toggleBox('sol-q2b')">Løsning</button>
         </div>
-        <div id="feedback-q2b" class="feedback"></div>
+        <div id="feedback-q2b_ymax" class="feedback"></div>
+
         <div id="hint-q2b" class="hint-box" style="display:none;"><strong>Hint:</strong> Sæt \( v_y = 0 \implies -g \cdot t + v_{0,y} = 0 \implies t = \frac{v_{0,y}}{g} \). Indsæt derefter tiden \( t \) i stedfunktionen for \( y \).</div>
-        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> Toppunktstid \( t = \frac{12{,}50}{9{,}82} \approx 1{,}273\,\text{s} \). Højden er \( y_{\text{max}} = -\frac{1}{2} \cdot 9{,}82 \cdot (1{,}273)^2 + 12{,}50 \cdot 1{,}273 \approx 7{,}956\,\text{m} \approx 7{,}96\,\text{m} \).</div>
+        <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> Toppunktstid \( t = \frac{12{,}50}{9{,}82} \approx 1{,}27\,\text{s} \). Højden er \( y_{\text{max}} = -\frac{1}{2} \cdot 9{,}82 \cdot (1{,}273)^2 + 12{,}50 \cdot 1{,}273 \approx 7{,}96\,\text{m} \).</div>
 
         <br>
         <p><strong>c)</strong> Beregn boldens samlede kastelængde (hvor bolden igen rammer jorden \( y = 0 \)).</p>
@@ -129,7 +174,7 @@
         </div>
         <div id="feedback-q2c" class="feedback"></div>
         <div id="hint-q2c" class="hint-box" style="display:none;"><strong>Hint:</strong> Bolden er i luften i dobbelt så lang tid som toppunktstiden (\( t_{\text{samlet}} = 2 \cdot t_{\text{toppunkt}} \)). Beregn derved kastelængden som \( x = v_{0,x} \cdot t_{\text{samlet}} \).</div>
-        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( t_{\text{samlet}} = 2 \cdot 1{,}2729\,\text{s} = 2{,}5458\,\text{s} \). Derved er kastelængden \( x = 21{,}651\,\frac{\text{m}}{\text{s}} \cdot 2{,}5458\,\text{s} \approx 55{,}12\,\text{m} \approx 55{,}1\,\text{m} \).</div>
+        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( t_{\text{samlet}} = 2 \cdot 1{,}2729\,\text{s} = 2{,}5458\,\text{s} \). Derved er kastelængden \( x = 21{,}651\,\frac{\text{m}}{\text{s}} \cdot 2{,}5458\,\text{s} \approx 55{,}1\,\text{m} \).</div>
     </div>
 
     <!-- OPGAVE 3 -->
@@ -165,13 +210,15 @@
         <div id="sol-q3b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \( v = \sqrt{6{,}0^2 + (-8{,}0)^2} = \sqrt{36 + 64} = \sqrt{100} = 10{,}0\,\frac{\text{m}}{\text{s}} \).</div>
     </div>
 
-    <!-- JAVASCRIPT TIL INTERAKTIVITET (PLACERET TIL SIDST JFR. REGLER) -->
+    <!-- JAVASCRIPT TIL INTERAKTIVITET -->
     <script>
         function checkAnswer(inputId, correctVal) {
             const inputElement = document.getElementById(inputId);
             const feedbackElement = document.getElementById('feedback-' + inputId);
             const userVal = parseFloat(inputElement.value.replace(',', '.'));
-            const tolerance = 0.05 * Math.abs(correctVal); // 5% tolerance
+            
+            // 5% tolerance
+            const tolerance = Math.max(0.05 * Math.abs(correctVal), 0.05);
 
             if (isNaN(userVal)) {
                 feedbackElement.innerHTML = "Indtast venligst et tal.";
@@ -179,7 +226,7 @@
                 return;
             }
 
-            if (Math.abs(userVal - correctVal) <= Math.max(tolerance, 0.05)) {
+            if (Math.abs(userVal - correctVal) <= tolerance) {
                 feedbackElement.innerHTML = "Korrekt svar!";
                 feedbackElement.className = "feedback correct";
             } else {
