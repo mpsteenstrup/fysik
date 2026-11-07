@@ -72,18 +72,18 @@
         <div id="sol-q1b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(T = \frac{2 \cdot \pi \cdot 4{,}22 \cdot 10^7\,\text{m}}{3073\,\frac{\text{m}}{\text{s}}} \approx 86.278\,\text{s}\) (hvilket svarer til cirka 24 timer).</div>
 
         <br>
-        <p><strong>c)</strong> Beregn den potentielle energi \(E_{\text{pot}}\) for systemet af Jorden og satellitten.</p>
+        <p><strong>c)</strong> Beregn den potentielle energi \(E_{\text{pot}}\) for systemet af Jorden og satellitten angivet i GigaJoule (GJ = \(10^9\,\text{J}\)).</p>
         <div class="input-section">
-            <input type="number" id="q1c" step="0.01" placeholder="Potentiel energi i 10^10 J...">
+            <input type="number" id="q1c" step="0.1" placeholder="Potentiel energi i GJ...">
         </div>
         <div class="btn-group">
-            <button class="btn-check" onclick="checkAnswer('q1c', -1.13)">Tjek svar</button>
+            <button class="btn-check" onclick="checkAnswer('q1c', -11.33)">Tjek svar</button>
             <button class="btn-hint" onclick="toggleBox('hint-q1c')">Hint</button>
             <button class="btn-sol" onclick="toggleBox('sol-q1c')">Løsning</button>
         </div>
         <div id="feedback-q1c" class="feedback"></div>
-        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for potentiel energi i tyngdefelt: \(E_{\text{pot}} = -G \cdot \frac{m \cdot M_J}{r}\). Indtast svaret i \(10^{10}\,\text{J}\) (husk minusfortegn).</div>
-        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(E_{\text{pot}} = -6{,}674 \cdot 10^{-11} \cdot \frac{1200 \cdot 5{,}972 \cdot 10^{24}}{4{,}22 \cdot 10^7} \approx -1{,}133 \cdot 10^{10}\,\text{J} = -1{,}13 \cdot 10^{10}\,\text{J}\).</div>
+        <div id="hint-q1c" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for potentiel energi i tyngdefelt: \(E_{\text{pot}} = -G \cdot \frac{m \cdot M_J}{r}\). Omregn til GJ (husk minusfortegn).</div>
+        <div id="sol-q1c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(E_{\text{pot}} = -6{,}674 \cdot 10^{-11} \cdot \frac{1200 \cdot 5{,}972 \cdot 10^{24}}{4{,}22 \cdot 10^7} \approx -1{,}133 \cdot 10^{10}\,\text{J} = -11{,}33\,\text{GJ}\).</div>
     </div>
 
     <!-- OPGAVE 2 -->
@@ -119,33 +119,72 @@
         <div id="sol-q2b" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(v = \frac{18.000\,\text{kg}\cdot\frac{\text{m}}{\text{s}}}{1200\,\text{kg} + 800\,\text{kg}} = \frac{18.000}{2000} = 9{,}0\,\frac{\text{m}}{\text{s}}\).</div>
 
         <br>
-        <p><strong>c)</strong> Under sammenstødet varer kontakten i et tidsrum på \(\Delta t = 0{,}15\,\text{s}\). Beregn den gennemsnitlige kraft \(F\), som påvirkede bil B for at ændre dens bevægelsesmængde fra 0 til \(m_2 \cdot v\).</p>
+        <p><strong>c)</strong> Under sammenstødet varer kontakten i et tidsrum på \(\Delta t = 0{,}15\,\text{s}\). Beregn den gennemsnitlige kraft \(F\) i kilonewton (kN), som påvirkede bil B for at ændre dens bevægelsesmængde fra 0 til \(m_2 \cdot v\).</p>
         <div class="input-section">
-            <input type="number" id="q2c" step="1" placeholder="Kraft i N...">
+            <input type="number" id="q2c" step="1" placeholder="Kraft i kN...">
         </div>
         <div class="btn-group">
-            <button class="btn-check" onclick="checkAnswer('q2c', 48000)">Tjek svar</button>
+            <button class="btn-check" onclick="checkAnswer('q2c', 48)">Tjek svar</button>
             <button class="btn-hint" onclick="toggleBox('hint-q2c')">Hint</button>
             <button class="btn-sol" onclick="toggleBox('sol-q2c')">Løsning</button>
         </div>
         <div id="feedback-q2c" class="feedback"></div>
-        <div id="hint-q2c" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug impulssætningen \(\Delta p = F \cdot \Delta t \implies F = \frac{\Delta p}{\Delta t}\), hvor \(\Delta p = 800\,\text{kg} \cdot 9{,}0\,\frac{\text{m}}{\text{s}} - 0\).</div>
-        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(\Delta p = 800 \cdot 9{,}0 = 7200\,\text{kg}\cdot\frac{\text{m}}{\text{s}}\). Kraften er \(F = \frac{7200\,\text{kg}\cdot\frac{\text{m}}{\text{s}}}{0{,}15\,\text{s}} = 48.000\,\text{N}\) (eller \(48\,\text{kN}\)).</div>
+        <div id="hint-q2c" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug impulssætningen \(\Delta p = F \cdot \Delta t \implies F = \frac{\Delta p}{\Delta t}\), hvor \(\Delta p = 800\,\text{kg} \cdot 9{,}0\,\frac{\text{m}}{\text{s}} - 0\). Angiv svaret i kN.</div>
+        <div id="sol-q2c" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(\Delta p = 800 \cdot 9{,}0 = 7200\,\text{kg}\cdot\frac{\text{m}}{\text{s}}\). Kraften er \(F = \frac{7200}{0{,}15} = 48.000\,\text{N} = 48\,\text{kN}\).</div>
     </div>
 
     <!-- OPGAVE 3 -->
     <div class="card">
-        <span class="task-title">Opgave 3: Elastisk stød og fotonens bevaegelsesmængde</span>
-        <p>I et atomart fysikeksperiment stder en gammakvant-foton med bølgelængde \(\lambda = 2{,}42 \cdot 10^{-12}\,\text{m}\) ind i en elektron. Plancks konstant er \(h = 6{,}626 \cdot 10^{-34}\,\text{J}\cdot\text{s}\).</p>
+        <span class="task-title">Opgave 3: Elastisk stød og fotonens bevægelsesmængde</span>
+        <p>I et atomart fysikeksperiment støder en gammakvant-foton med bølgelængde \(\lambda = 2{,}42\,\text{pm} = 2{,}42 \cdot 10^{-12}\,\text{m}\) ind i en elektron. Plancks konstant er \(h = 6{,}626 \cdot 10^{-34}\,\text{J}\cdot\text{s}\).</p>
         
-        <p><strong>a)</strong> Beregn bevægelsesmængden \(p_{\text{foton}}\) for gammakvanten før stødet.</p>
+        <p><strong>a)</strong> Beregn bevægelsesmængden \(p_{\text{foton}}\) for gammakvanten før stødet i zepto-enheder (\(10^{-21}\,\text{kg}\cdot\text{m/s}\)).</p>
         <div class="input-section">
-            <input type="number" id="q3a" step="0.01" placeholder="p_foton i 10^-22 kg*m/s...">
+            <input type="number" id="q3a" step="0.01" placeholder="p_foton i 10^-21 kg*m/s...">
         </div>
         <div class="btn-group">
-            <button class="btn-check" onclick="checkAnswer('q3a', 2.74)">Tjek svar</button>
+            <button class="btn-check" onclick="checkAnswer('q3a', 0.274)">Tjek svar</button>
             <button class="btn-hint" onclick="toggleBox('hint-q3a')">Hint</button>
             <button class="btn-sol" onclick="toggleBox('sol-q3a')">Løsning</button>
         </div>
         <div id="feedback-q3a" class="feedback"></div>
-        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for fotonens bevægelsesmængde \(p_{\text{foton}} = \frac{h}{\lambda}\). Indtast svaret i \(10^{-22}\,\text{kg}\cdot\text{m/s}\).</div>
+        <div id="hint-q3a" class="hint-box" style="display:none;"><strong>Hint:</strong> Brug formlen for fotonens bevægelsesmængde \(p_{\text{foton}} = \frac{h}{\lambda}\).</div>
+        <div id="sol-q3a" class="sol-box" style="display:none;"><strong>Løsning:</strong> \(p_{\text{foton}} = \frac{6{,}626 \cdot 10^{-34}}{2{,}42 \cdot 10^{-12}} \approx 2{,}738 \cdot 10^{-22}\,\text{kg}\cdot\text{m/s} = 0{,}274 \cdot 10^{-21}\,\text{kg}\cdot\text{m/s}\).</div>
+    </div>
+
+    <!-- JAVASCRIPT TIL INTERAKTIVITET -->
+    <script>
+        function checkAnswer(inputId, correctVal) {
+            const inputElement = document.getElementById(inputId);
+            const feedbackElement = document.getElementById('feedback-' + inputId);
+            const userVal = parseFloat(inputElement.value.replace(',', '.'));
+            
+            // 5% tolerance
+            const tolerance = Math.max(0.05 * Math.abs(correctVal), 0.05);
+
+            if (isNaN(userVal)) {
+                feedbackElement.innerHTML = "Indtast venligst et tal.";
+                feedbackElement.className = "feedback incorrect";
+                return;
+            }
+
+            if (Math.abs(userVal - correctVal) <= tolerance) {
+                feedbackElement.innerHTML = "Korrekt svar!";
+                feedbackElement.className = "feedback correct";
+            } else {
+                feedbackElement.innerHTML = "Forkert svar. Prøv igen eller se et hint.";
+                feedbackElement.className = "feedback incorrect";
+            }
+        }
+
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "none" || el.style.display === "") {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
