@@ -74,42 +74,32 @@ h2 { color: #7f8c8d; text-align: center; margin-bottom: 30px; font-weight: norma
 /* -------------------------------------------------------------------------- */
 
 /* Boksen der omslutter tabellen */
-.table-box h3 { 
-    margin-top: 0; 
-    text-align: center; 
-    color: #7f8c8d; 
-    font-weight: normal; 
+/* Generel styling af ALLE Markdown-tabeller */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-/* Selve tabellen */
-table.trig-table { 
-    width: 100%;                  /* Fuld bredde */
-    border-collapse: collapse;    /* Klap rammerne sammen til én */
-    margin-top: 10px; 
-    table-layout: fixed;         /* Forhindrer mærkelig celle-bredde */
+table th {
+  background-color: #7AA96B !important; /* Grøn baggrund */
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000000;
 }
 
-/* Rammer og luft i alle celler (th og td) */
-table.trig-table th, 
-table.trig-table td { 
-    border: 1px solid #ddd;       /* Tynd grå ramme */
-    padding: 10px;                /* Luft inde i cellerne */
-    text-align: right;           /* Justér alle tal til højre */
+table td {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: #ffffff;
 }
 
-/* Specifikt for tabeloverskriften (<thead>) */
-table.trig-table th { 
-    background-color: #f8f9fa;   /* Lysegrå baggrund */
-    color: #2c3e50;               /* Mørk tekstfarve */
-    font-weight: bold;            /* Fed skrift */
+/* Hvis du har en specifik trig-tabel, der SKAL have grå overskrift, beholdes denne: */
+table.trig-table th {
+  /* Fjern background-color herfra, hvis trig-tabellen OGSÅ skal være grøn */
 }
-
-/* Den første kolonne (med graderne) skal være venstrejusteret */
-table.trig-table td:first-child,
-table.trig-table th:first-child {
-    text-align: left;
-}
-
 /* -------------------------------------------------------------------------- */
 /* SLUT PÅ NY TABEL-SEKTION                                                   */
 /* -------------------------------------------------------------------------- */

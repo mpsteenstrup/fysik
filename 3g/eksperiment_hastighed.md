@@ -37,6 +37,8 @@ $$v_x = \sqrt{\frac{\left( \frac{e}{m} \right) \cdot E}{2 \cdot a}}$$
 ### Teoretisk sammenligning
 Den teoretiske hastighed $v_{\text{teo}}$ opnået fra accelerationsspændingen $U_{\text{acc}}$ beregnes ved energibevarelse ($E_{\text{kin}} = E_{\text{pot}}$):
 
+* Vis at når $E_{pot} = e\cdot U$ og $E_{kin} = 1/2\cdot m \cdot v^2$ bliver
+
 $$v_{\text{teo}} = \sqrt{2 \cdot \left( \frac{e}{m} \right) \cdot U_{\text{acc}}}$$
 
 ---
@@ -63,7 +65,7 @@ $$v_{\text{teo}} = \sqrt{2 \cdot \left( \frac{e}{m} \right) \cdot U_{\text{acc}}
 
 ## 5. Databehandling og Analyse
 
-1. **Regression:** Indtast de målte koordinater $(x, y)$ i meter i dit behandlingsprogram (f.eks. LoggerPro, Excel, Geogebra, Python eller Maple) og udfør en kvadratisk regression af formen $y = a \cdot x^2 + b \cdot x + c$.
+1. **Regression:** Indtast de målte koordinater $(x, y)$ i meter og udfør en kvadratisk regression af formen $y = a \cdot x^2 + b \cdot x + c$.
 2. **Feltstyrke:** Beregn den elektriske feltstyrke $E = \frac{U_{\text{afb}}}{d}$.
 3. **Eksperimentel hastighed:** Indsæt den udlæste værdi for $a$ og beregn $v_x$:
    $$v_x = \sqrt{\frac{1{,}7588 \times 10^{11} \cdot E}{2 \cdot a}}$$
