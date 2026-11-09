@@ -2,10 +2,8 @@
 
 ## Læringsmål
 
-* Kende begreberne: periode, bølgelængde, frekvens, hastighed, longitudinak, transversal, interferens, tonehøjde, klang.
-* Formler: $T = 1/f$, $v = \lambda * f$, $v_{lyd} = 331{,}3 + 0{,}6 \cdot T$.
-
-
+* Kende begreberne: periode, bølgelængde, frekvens, hastighed, longitudinak, transversal, interferens, tonehøjde, klang, dopplerforskydning.
+* Formler: $T = 1/f$, $v = \lambda \cdot f$.
 
 
 ## Eksperimenter
@@ -16,3 +14,4 @@
 
 ### Virtuelle
 * Simulering af bølgelængde og frekvens, 30 min.
+
