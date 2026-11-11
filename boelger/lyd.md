@@ -129,7 +129,6 @@ I fandt måske også, at lydens fart var konstant når I ændrede på frekvensen
 <div class="formula-box">
   <strong>Hastighed<br> </strong> Sammenhængen mellem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er: 
   $$v = f\cdot\lambda$$
-  <br>
   symbol: $v$, enhed: [m/s], meter per sekund.
 </div>
 
