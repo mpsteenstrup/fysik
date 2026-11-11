@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elektriske Felter</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- Teori og formel-box -->
+    <div class="formula-box">
+        <h3>Elektriske felter - Formeloversigt</h3>
+        <p>Formler for beregninger på elektriske felter og punktladninger :</p>
+        <div class="formula-group">
+            <div><strong>Homogent elektrisk felt:</strong> \( E = \frac{U}{d} \) </div>
+            <div><strong>Elektrisk felt ved punktladning:</strong> \( E = k_c \cdot \frac{|Q|}{r^2} \) </div>
+            <div><strong>Kraft på punktladning:</strong> \( F = |q| \cdot E \) </div>
+            <div><strong>Energiændring:</strong> \( \Delta E_{kin} = U \cdot q \) </div>
+        </div>
+        <p><em>Hvor Coulomb-konstanten er \( k_c = 8{,}99 \times 10^9 \text{ N}\cdot\text{m}^2/\text{C}^2 \) og elementarladningen er \( e = 1{,}602 \times 10^{-19} \text{ C} \).</em></p>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block">
+            <h4>Eksempel på beregning</h4>
+            <p>Hvis spændingsfaldet mellem to parallelle plader med afstanden \( 0{,}05 \text{ m} \) er \( 200 \text{ V} \), udregnes feltstyrken \( E \) :</p>
+            <p>$$ E = \frac{U}{d} = \frac{200 \text{ V}}{0{,}05 \text{ m}} = 4000 \text{ V/m} $$</p>
+        </div>
+    </div>
+
+    <!-- Regneopgave 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Homogent felt mellem parallelle plader</span>
+        <p>To parallelle plader har en afstand på \( d = 0{,}02 \text{ m} \). Spændingsfaldet over pladerne er \( U = 100 \text{ V} \). Beregn den elektriske feltstyrke \( E \) i V/m .</p>
+        <div class="input-section">
+            <input type="number" id="q1" step="0.01" placeholder="Svar i V/m...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1', 5000)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1')">Løsning</button>
+        </div>
+        <div id="feedback-q1" class="feedback"></div>
+        <div id="hint-q1" class="hint-box"><strong>Hint:</strong> Brug formlen for et homogent elektrisk felt: \( E = \frac{U}{d} \) .</div>
+        <div id="sol-q1" class="sol-box"><strong>Løsning:</strong> \( E = \frac{100}{0{,}02} = 5000 \text{ V/m} \).</div>
+    </div>
+
+    <!-- Regneopgave 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Kraft på en ladning</span>
+        <p>En punktladning med ladningen \( q = 3 \times 10^{-6} \text{ C} \) befinder sig i et elektrisk felt med styrken \( E = 4000 \text{ V/m} \). Beregn kraften \( F \) på punktladningen i Newton (N) .</p>
+        <div class="input-section">
+            <input type="number" id="q2" step="0.001" placeholder="Svar i N...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2', 0.012)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2')">Løsning</button>
+        </div>
+        <div id="feedback-q2" class="feedback"></div>
+        <div id="hint-q2" class="hint-box"><strong>Hint:</strong> Benyt sammenhængen mellem kraft og elektrisk feltstyrke: \( F = |q| \cdot E \) .</div>
+        <div id="sol-q2" class="sol-box"><strong>Løsning:</strong> \( F = (3 \times 10^{-6} \text{ C}) \cdot (4000 \text{ V/m}) = 0{,}012 \text{ N} \).</div>
+    </div>
+
+    <!-- Forståelsesopgave -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Retning af kraft på ladninger</span>
+        <p>Vælg det rigtige udsagn om retningen af kraften på en elektrisk ladning i et elektrisk felt :</p>
+        <div class="input-section">
+            <label><input type="radio" name="q3" value="A"> Kraften på en negativ ladning virker i samme retning som det elektriske felt .</label><br>
+            <label><input type="radio" name="q3" value="B"> Kraften på en positiv ladning virker i samme retning som det elektriske felt, mens kraften på en negativ ladning virker modsat .</label><br>
+            <label><input type="radio" name="q3" value="C"> Det elektriske felt påvirker kun positive ladninger med en kraft .</label>
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkRadioAnswer('q3', 'B')">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3')">Løsning</button>
+        </div>
+        <div id="feedback-q3" class="feedback"></div>
+        <div id="hint-q3" class="hint-box"><strong>Hint:</strong> Tænk på feltlinjernes retning fra positiv mod negativ ladning, samt reglerne for tiltrækning og frastødning .</div>
+        <div id="sol-q3" class="sol-box"><strong>Løsning:</strong> Udsagn B er korrekt. Kraften virker i feltets retning for positive ladninger og modsat feltets retning for negative ladninger .</div>
+    </div>
+
+    <!-- Krævende opgave -->
+    <div class="card">
+        <span class="task-title">Opgave 4: Elektrisk felt fra punktladning</span>
+        <p>En punktladning har størrelsen \( Q = 2 \times 10^{-6} \text{ C} \). Beregn størrelsen af det elektriske felt \( E \) i en afstand på \( r = 3 \text{ m} \) fra ladningen . Brug Coulombs konstant \( k_c = 8{,}99 \times 10^9 \text{ N}\cdot\text{m}^2/\text{C}^2 \) . Angiv svaret afrundet til nærmeste hele tal (N/C eller V/m).</p>
+        <div class="input-section">
+            <input type="number" id="q4" step="1" placeholder="Svar i N/C...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q4', 1998)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q4')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q4')">Løsning</button>
+        </div>
+        <div id="feedback-q4" class="feedback"></div>
+        <div id="hint-q4" class="hint-box"><strong>Hint:</strong> Brug formlen \( E = k_c \cdot \frac{|Q|}{r^2} \) . Husk at ophæve \( r \) i anden potense.</div>
+        <div id="sol-q4" class="sol-box"><strong>Løsning:</strong> \( E = 8{,}99 \times 10^9 \cdot \frac{2 \times 10^{-6}}{3^2} = \frac{17980}{9} \approx 1997{,}78 \text{ N/C} \approx 1998 \text{ N/C} \).</div>
+    </div>
+
+    <!-- JavaScript til interaktivitet -->
+    <script>
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "block") {
+                el.style.display = "none";
+            } else {
+                el.style.display = "block";
+            }
+        }
+
+        function checkAnswer(id, correctVal) {
+            const inputVal = parseFloat(document.getElementById(id).value);
+            const feedbackEl = document.getElementById('feedback-' + id);
+            
+            if (isNaN(inputVal)) {
+                feedbackEl.textContent = "Indtast venligst et tal.";
+                feedbackEl.className = "feedback incorrect";
+                return;
+            }
+
+            // Tillader en lille margin for afrundingsfejl
+            const margin = Math.abs(correctVal * 0.01) || 0.1;
+            if (Math.abs(inputVal - correctVal) <= margin) {
+                feedbackEl.textContent = "Korrekt svar! Godt gået.";
+                feedbackEl.className = "feedback correct";
+            } else {
+                feedbackEl.textContent = "Forkert svar, prøv igen.";
+                feedbackEl.className = "feedback incorrect";
+            }
+        }
+
+        function checkRadioAnswer(name, correctVal) {
+            const selected = document.querySelector(`input[name="${name}"]:checked`);
+            const feedbackEl = document.getElementById('feedback-' + name);
+
+            if (!selected) {
+                feedbackEl.textContent = "Vælg Venligst en mulighed.";
+                feedbackEl.className = "feedback incorrect";
+                return;
+            }
+
+            if (selected.value === correctVal) {
+                feedbackEl.textContent = "Korrekt svar! Godt gået.";
+                feedbackEl.className = "feedback correct";
+            } else {
+                feedbackEl.textContent = "Forkert svar, prøv igen.";
+                feedbackEl.className = "feedback incorrect";
+            }
+        }
+    </script>
+</body>
+</html>

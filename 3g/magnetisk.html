@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnetfelter</title>
+    <!-- Link til ekstern style.css jf. retningslinjerne -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- MathJax til matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <!-- Teori og formel-box -->
+    <div class="formula-box">
+        <h3>Magnetfelter - Formeloversigt</h3>
+        <p>Formler for kraftpåvirkninger i magnetfelter :</p>
+        <div class="formula-group">
+            <div><strong>Kraft på en punktladning:</strong> \( F = |q| \cdot v \cdot B \cdot \sin(u) \) </div>
+            <div><strong>Laplaces lov (kraft på strømførende leder):</strong> \( F = I \cdot L \cdot B \cdot \sin(u) \) </div>
+            <div><strong>Højrehåndsreglen:</strong> Bestemmer retningen af kraften \( \vec{F} \) på en ladet partikel eller strømførende leder i et magnetfelt \( \vec{B} \) .</div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-example" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="example-block">
+            <h4>Eksempel på beregning (Laplaces lov)</h4>
+            <p>En leder med længden \( L = 0{,}5 \text{ m} \) har en strømstyrke på \( I = 4 \text{ A} \) og ligger vinkelret (\( u = 90^\circ \), så \( \sin(90^\circ) = 1 \)) på et magnetfelt med feltstyrken \( B = 0{,}2 \text{ T} \) :</p>
+            <p>$$ F = I \cdot L \cdot B \cdot \sin(u) = 4 \text{ A} \cdot 0{,}5 \text{ m} \cdot 0{,}2 \text{ T} \cdot 1 = 0{,}4 \text{ N} $$</p>
+        </div>
+    </div>
+
+    <!-- Regneopgave 1 -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Magnetisk kraft på en ladet partikel</span>
+        <p>En proton med ladningen \( q = 1{,}602 \times 10^{-19} \text{ C} \) bevæger sig med farten \( v = 2 \times 10^6 \text{ m/s} \) vinkelret (\( u = 90^\circ \)) på et magnetfelt med styrken \( B = 0{,}5 \text{ T} \) . Beregn kraften \( F \) på protonen i Newton (N).</p>
+        <div class="input-section">
+            <input type="number" id="q1" step="1e-15" placeholder="Svar i N (f.eks. 1.60e-13)...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q1', 1.602e-13)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q1')">Løsning</button>
+        </div>
+        <div id="feedback-q1" class="feedback"></div>
+        <div id="hint-q1" class="hint-box"><strong>Hint:</strong> Brug formlen for kraft på en punktladning: \( F = |q| \cdot v \cdot B \cdot \sin(u) \) . Da bevægelsen er vinkelret på feltet, er \( \sin(90^\circ) = 1 \) .</div>
+        <div id="sol-q1" class="sol-box"><strong>Løsning:</strong> \( F = (1{,}602 \times 10^{-19} \text{ C}) \cdot (2 \times 10^6 \text{ m/s}) \cdot (0{,}5 \text{ T}) \cdot 1 = 1{,}602 \times 10^{-13} \text{ N} \).</div>
+    </div>
+
+    <!-- Regneopgave 2 -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Laplaces lov for en strømførende leder</span>
+        <p>En ståltråd med længden \( L = 0{,}3 \text{ m} \) fører en strøm på \( I = 5 \text{ A} \) i et homogent magnetfelt \( B = 0{,}8 \text{ T} \) . Vinklen mellem strømretningen og magnetfeltet er \( u = 30^\circ \) . Beregn den magnetiske kraft \( F \) på lederen i Newton (N).</p>
+        <div class="input-section">
+            <input type="number" id="q2" step="0.01" placeholder="Svar i N...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q2', 0.6)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q2')">Løsning</button>
+        </div>
+        <div id="feedback-q2" class="feedback"></div>
+        <div id="hint-q2" class="hint-box"><strong>Hint:</strong> Benyt Laplaces lov: \( F = I \cdot L \cdot B \cdot \sin(u) \) . Bemærk at \( \sin(30^\circ) = 0{,}5 \).</div>
+        <div id="sol-q2" class="sol-box"><strong>Løsning:</strong> \( F = 5 \text{ A} \cdot 0{,}3 \text{ m} \cdot 0{,}8 \text{ T} \cdot \sin(30^\circ) = 5 \cdot 0{,}3 \cdot 0{,}8 \cdot 0{,}5 = 0{,}6 \text{ N} \).</div>
+    </div>
+
+    <!-- Forståelsesopgave -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Parallel bevægelse i et magnetfelt</span>
+        <p>En elektron bevæger sig parallelt med feltlinjerne i et magnetfelt (vinklen \( u = 0^\circ \)) . Hvad sker der med kraften \( F \) på elektronen?</p>
+        <div class="input-section">
+            <label><input type="radio" name="q3" value="A"> Kraften er maksimal, da elektronens hastighed er parallel med feltet.</label><br>
+            <label><input type="radio" name="q3" value="B"> Kraften er 0 N, fordi \( \sin(0^\circ) = 0 \) .</label><br>
+            <label><input type="radio" name="q3" value="C"> Kraften ændrer retning og bliver vinkelret på bevægelsen.</label>
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkRadioAnswer('q3', 'B')">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3')">Løsning</button>
+        </div>
+        <div id="feedback-q3" class="feedback"></div>
+        <div id="hint-q3" class="hint-box"><strong>Hint:</strong> Hvad er værdien af \( \sin(0^\circ) \) i formlen \( F = |q| \cdot v \cdot B \cdot \sin(u) \)? </div>
+        <div id="sol-q3" class="sol-box"><strong>Løsning:</strong> Udsagn B er korrekt. Da \( \sin(0^\circ) = 0 \), bliver den samlede magnetiske kraft \( F = 0 \text{ N} \) . En ladet partikel påvirkes kun af en magnetisk kraft, når den har en hastighedskomponent vinkelret på magnetfeltet.</div>
+    </div>
+
+    <!-- Krævende opgave -->
+    <div class="card">
+        <span class="task-title">Opgave 4: Bestemmelse af magnetisk feltstyrke</span>
+        <p>En ledning på \( L = 0{,}4 \text{ m} \) placeres vinkelret (\( u = 90^\circ \)) i et ukendt magnetfelt . Når der sendes en strøm på \( I = 2{,}5 \text{ A} \) igennem ledningen, måles der en magnetisk kraft på \( F = 0{,}15 \text{ N} \) . Beregn den magnetiske feltstyrke \( B \) i Tesla (T).</p>
+        <div class="input-section">
+            <input type="number" id="q4" step="0.01" placeholder="Svar i T...">
+        </div>
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q4', 0.15)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q4')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q4')">Løsning</button>
+        </div>
+        <div id="feedback-q4" class="feedback"></div>
+        <div id="hint-q4" class="hint-box"><strong>Hint:</strong> Tag Laplaces lov \( F = I \cdot L \cdot B \cdot \sin(u) \) og isolér \( B \) : \( B = \frac{F}{I \cdot L \cdot \sin(u)} \).</div>
+        <div id="sol-q4" class="sol-box"><strong>Løsning:</strong> \( B = \frac{0{,}15}{2{,}5 \cdot 0{,}4 \cdot 1} = \frac{0{,}15}{1{,}0} = 0{,}15 \text{ T} \).</div>
+    </div>
+
+    <!-- JavaScript til interaktivitet -->
+    <script>
+        function toggleBox(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "block") {
+                el.style.display = "none";
+            } else {
+                el.style.display = "block";
+            }
+        }
+
+        function checkAnswer(id, correctVal) {
+            const inputVal = parseFloat(document.getElementById(id).value);
+            const feedbackEl = document.getElementById('feedback-' + id);
+            
+            if (isNaN(inputVal)) {
+                feedbackEl.textContent = "Indtast venligst et tal.";
+                feedbackEl.className = "feedback incorrect";
+                return;
+            }
+
+            // Tillader en lille margin for afrundingsfejl/flydende tal
+            const margin = Math.abs(correctVal * 0.02) || 1e-14;
+            if (Math.abs(inputVal - correctVal) <= margin) {
+                feedbackEl.textContent = "Korrekt svar! Godt gået.";
+                feedbackEl.className = "feedback correct";
+            } else {
+                feedbackEl.textContent = "Forkert svar, prøv igen.";
+                feedbackEl.className = "feedback incorrect";
+            }
+        }
+
+        function checkRadioAnswer(name, correctVal) {
+            const selected = document.querySelector(`input[name="${name}"]:checked`);
+            const feedbackEl = document.getElementById('feedback-' + name);
+
+            if (!selected) {
+                feedbackEl.textContent = "Vælg venligst en mulighed.";
+                feedbackEl.className = "feedback incorrect";
+                return;
+            }
+
+            if (selected.value === correctVal) {
+                feedbackEl.textContent = "Korrekt svar! Godt gået.";
+                feedbackEl.className = "feedback correct";
+            } else {
+                feedbackEl.textContent = "Forkert svar, prøv igen.";
+                feedbackEl.className = "feedback incorrect";
+            }
+        }
+    </script>
+</body>
+</html>

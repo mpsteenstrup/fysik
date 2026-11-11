@@ -19,13 +19,14 @@
 1. Introduktion, periode.
 2. periode, frekvens, bølgelængde og hastighed
     - demoforsøg, stemmegafler og perioden.
+    - tonehøjde.
     - video med højtaler.
-    - Øvelse med slinky, ikke eksperiment.
     - Simulering og øvelse med bølge.
 3. Eksperiment med lydens hastighed.
     - opsamling på transversal og longitudinale bølger.
     - repetition af lydens hastighed.
 4. Interferens.
+    - Øvelse med slinky, ikke eksperiment.
     - eksempel, desmos
     - simulering med vandkar, øvelse.
     - Demoforsøg med højttalere.
@@ -37,3 +38,8 @@
     - eksperiment, den menneskelige stemme.
 6. Opsamling
     - doppler
+
+
+
+eksperiment med skrift og hastighed 1.b mangler.
+
