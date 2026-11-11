@@ -120,7 +120,7 @@ De orange linjer illustrere luftmolekyler, så når linjerne er tæt sammen er d
 Simuleringen viser, at bølgelængden bliver mindre når frekvensen bliver større. 
 
 <div class="formula-box">
-  <strong>Bølgelængde<br> </strong> Afstanden mellem at et periodisk fænomen gentager sig.<br>
+  <strong>Bølgelængde<br> </strong> Afstanden mellem to bølgetoppe.<br>
   symbol (grænsk lambda): $\lambda$, enhed: [m], meter.
 </div>
 
