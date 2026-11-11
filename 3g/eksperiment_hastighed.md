@@ -31,7 +31,7 @@ Når en elektron med ladning $e$ og masse $m$ træder ind i et homogent elektris
   $$y(t) = \frac{1}{2} a_y t^2 = \frac{1}{2} \left( \frac{e \cdot E}{m} \right) t^2$$
 
 ### Parabelligningen
-Indsæt \(t = \frac{x}{v_x}\) i ligningen for $y(t)$, og vis at det giver:
+Indsæt \( t = \frac{x}{v_x} \) i ligningen for $y(t)$, og vis at det giver:
 
 $$y(x) = \frac{1}{2} \cdot \left( \frac{e}{m} \right) \cdot \frac{E}{v_x^2} \cdot x^2$$
 
@@ -77,10 +77,10 @@ $$v_{\text{teo}} = \sqrt{2 \cdot \left( \frac{e}{m} \right) \cdot U_{\text{acc}}
 
 ## 5. Databehandling og Analyse
 
-1. **Regression:** Indtast de målte koordinater $(x, y)$ i meter og udfør en kvadratisk regression af formen $y = a \cdot x^2 + b \cdot x + c$.
+1. **Regression:** Indtast de målte koordinater $(x, y)$ i meter og udfør en kvadratisk regression af formen $y = a \cdot x^2 + b \cdot x + c$. Hvis I regner i meter er enheden for $a=[\frac{1}{\text{m}}]$. 
 2. **Feltstyrke:** Beregn den elektriske feltstyrke $E = \frac{U_{\text{afb}}}{d}$.
 3. **Eksperimentel hastighed:** Indsæt den udlæste værdi for $a$ og beregn $v_x$:
-   $$v_x = \sqrt{\frac{1{,}7588 \times 10^{11} \cdot E}{2 \cdot a}}$$
+   $$v_x = \sqrt{\frac{(e/m) \cdot E}{2 \cdot a}}$$
 4. **Teoretisk hastighed:** Beregn $v_{\text{teo}} = \sqrt{2 \cdot 1{,}7588 \times 10^{11} \cdot U_{\text{acc}}}$.
 5. **Afvigelse:** Beregn den procentvise afvigelse mellem den eksperimentelle hastighed $v_x$ og den teoretiske hastighed $v_{\text{teo}}$:
    $$\text{Afvigelse} = \frac{|v_x - v_{\text{teo}}|}{v_{\text{teo}}} \cdot 100\%$$

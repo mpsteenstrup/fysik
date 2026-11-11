@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bølgelængde og Hastighed - Fysik 1.g</title>
+    <!-- Link til ekstern style.css -->
+    <link rel="stylesheet" href="../../style.css">
+    <!-- MathJax til fysik- og matematikvisning -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <h1>Bølgelængde og Bølgehastighed</h1>
+    <h2>Opgaver til forståelse, skriftlig forklaring og beregning med bølgeligningen</h2>
+
+    <!-- FORMULA BOX -->
+    <div class="formula-box">
+        <h3>Bølgeligningen (Sammenhængen mellem fart, frekvens og bølgelængde)</h3>
+        <p>Bølgeligningen forbinder en bølges hastighed med dens frekvens og bølgelængde:</p>
+        
+        $$v = f \cdot \lambda$$
+
+        <div class="formula-group">
+            <div>
+                <strong>Bølgehastighed (\(v\)):</strong><br>
+                Hvor hurtigt bølgerne bevæger sig gennem mediet.<br>
+                <em>Enhed:</em> \(\text{m/s}\) (meter pr. sekund)
+            </div>
+            <div>
+                <strong>Bølgelængde (\(\lambda\)):</strong><br>
+                Afstanden fra én bølgetop til den næste.<br>
+                <em>Enhed:</em> \(\text{m}\) (meter)
+            </div>
+            <div>
+                <strong>Frekvens (\(f\)):</strong><br>
+                Antal svingninger/bølger pr. sekund (\(f = \frac{1}{T}\)).<br>
+                <em>Enhed:</em> \(\text{Hz}\) (hertz)
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-sol" onclick="toggleBox('example-1')">Vis/Skjul Eksempel</button>
+        </div>
+
+        <div id="example-1" class="sol-box" style="display:none; margin-top:15px; text-align:left;">
+            <strong>Eksempel fra grundbogen (Havbølger):</strong><br>
+            Hvis havbølger kommer ind med en frekvens på \(f = 0{,}5\text{ Hz}\) (halv bølge pr. sekund) og en bølgelængde på \(\lambda = 8\text{ m}\), kan bølgernes hastighed beregnes som:
+            $$v = f \cdot \lambda = 0{,}5\text{ Hz} \cdot 8\text{ m} = 4\text{ m/s}$$
+        </div>
+    </div>
+
+    <!-- OPGAVE 1: FORSTÅELSE (MULTIPLE CHOICE) -->
+    <div class="card">
+        <span class="task-title">Opgave 1: Forståelse – Sammenhæng mellem frekvens og bølgelængde</span>
+        <p>Da lydens hastighed i luft er konstant (ca. \(343\text{ m/s}\) ved \(20^\circ\text{C}\)), gælder bølgeligningen \(v = f \cdot \lambda\) for alle lydbølger i luften. Hvad sker der med <strong>bølgelængden</strong> \(\lambda\), hvis højttaleren skruer op for <strong>frekvensen</strong> \(f\) (laver en lysere tone)?</p>
+        
+        <div class="mc-options">
+            <label><input type="radio" name="q1" value="0"> Bølgelængden bliver større, fordi bølgen bevæger sig hurtigere.</label><br><br>
+            <label><input type="radio" name="q1" value="1"> Bølgelængden bliver mindre, fordi bølgestoppene skal ligge tættere for at nå flere svingninger pr. sekund.</label><br><br>
+            <label><input type="radio" name="q1" value="2"> Bølgelængden ændrer sig ikke, da hastigheden er konstant.</label>
+        </div>
+
+        <div class="btn-group" style="margin-top: 15px;">
+            <button class="btn-check" onclick="checkMultipleChoice('q1', 1)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q1')">Hint</button>
+        </div>
+        
+        <div id="feedback-q1" class="feedback"></div>
+        <div id="hint-q1" class="hint-box" style="display:none;">
+            <strong>Hint:</strong> Da farten \(v\) er konstant, vil isolering af bølgelængden give \(\lambda = \frac{v}{f}\). Hvad sker der med \(\lambda\), når nævneren \(f\) bliver større?
+        </div>
+    </div>
+
+    <!-- OPGAVE 2: FORKLARING (SKRIFTLIG FORMULERING) -->
+    <div class="card">
+        <span class="task-title">Opgave 2: Forklaring – Tankeeksperiment med en udendørskoncert</span>
+        <p>Forestil dig et sjovt tankeeksperiment, hvor lydens hastighed var afhængig af frekvensen, så høje toner (høj frekvens) bevægede sig <em>hurtigere</em> gennem luften end dybe toner (lav frekvens).</p>
+        <p>Forklar med dine egne ord, hvordan musikken til en udendørskoncert ville opleves, hvis du stod \(200\text{ m}\) væk fra scenen. Kom ind på begreberne <em>frekvens</em>, <em>bølgehastighed</em> og <em>ankomsttid</em>.</p>
+        
+        <div class="input-section">
+            <textarea id="q2-text" rows="4" style="width: 100%;" placeholder="Skriv din forklaring her..."></textarea>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-sol" onclick="toggleBox('sol-q2')">Sammenlign med løsningsforslag</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q2')">Hint</button>
+        </div>
+
+        <div id="hint-q2" class="hint-box" style="display:none;">
+            <strong>Hint:</strong> Tænk på en guitarakkord eller et trommeslag, som spilles på nøjagtig samme tid. Hvilken bølge når frem til dit øre først?
+        </div>
+        
+        <div id="sol-q2" class="sol-box" style="display:none;">
+            <strong>Model-forklaring:</strong><br>
+            Hvis høje toner bevægede sig hurtigere end dybe toner, ville det lyde rodløst og ude af takt! Når musikerne slår en akkord an på scenen samtidig, ville fløjterne og de lyse guitartoner (høj frekvens og dermed højere hastighed) nå frem til dine ører <em>før</em> bas- og stortrommeslagene (lav frekvens). De dybe og lyse toner fra det samme musikstykke ville derfor ankomme forskudt til tilskuerne på de bagerste rækker.
+        </div>
+    </div>
+
+    <!-- OPGAVE 3: BEREGNING (LYDENS HASTIGHED FRA VIOLIN) -->
+    <div class="card">
+        <span class="task-title">Opgave 3: Beregning – Bølgehastighed for en violin (Kammertonen)</span>
+        <p>En violin spilles på scenen og udsender en tone med frekvensen \(f = 440\text{ Hz}\) (kammertonen A4). Lydbølgen har en målt bølgelængde i luften på \(\lambda = 0{,}780\text{ m}\).</p>
+        <p>Beregn lydbølgens hastighed \(v\) i luften.</p>
+        
+        <div class="input-section">
+            <input type="number" id="q3" step="0.1" placeholder="Svar i m/s..."> \(\text{m/s}\)
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q3', 343.2, 1.0)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q3')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q3')">Løsning</button>
+        </div>
+
+        <div id="feedback-q3" class="feedback"></div>
+        <div id="hint-q3" class="hint-box" style="display:none;">
+            <strong>Hint:</strong> Brug bølgeligningen \(v = f \cdot \lambda\). Indsæt \(f = 440\text{ Hz}\) og \(\lambda = 0{,}780\text{ m}\).
+        </div>
+        <div id="sol-q3" class="sol-box" style="display:none;">
+            <strong>Løsning:</strong><br>
+            $$v = f \cdot \lambda = 440\text{ Hz} \cdot 0{,}780\text{ m} = 343{,}2\text{ m/s}$$
+            Lyden bevæger sig med ca. \(343\text{ m/s}\), hvilket svarer til standard lydhastighed i luft ved \(20^\circ\text{C}\).
+        </div>
+    </div>
+
+    <!-- OPGAVE 4: BEREGNING (BØLGELÆNGDE AF HØRBAR LYD) -->
+    <div class="card">
+        <span class="task-title">Opgave 4: Beregning – Bølgelængde for den dybeste menneskelige tone</span>
+        <p>Det menneskelige øre kan høre dybe toner ned til omkring \(f = 20\text{ Hz}\). Antag at lydens hastighed i lokalet er \(v = 343\text{ m/s}\).</p>
+        <p>Isolér og beregn bølgelængden \(\lambda\) for denne dybe \(20\text{ Hz}\)-tone.</p>
+        
+        <div class="input-section">
+            <input type="number" id="q4" step="0.01" placeholder="Svar i meter..."> \(\text{m}\)
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-check" onclick="checkAnswer('q4', 17.15, 0.2)">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q4')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q4')">Løsning</button>
+        </div>
+
+        <div id="feedback-q4" class="feedback"></div>
+        <div id="hint-q4" class="hint-box" style="display:none;">
+            <strong>Hint:</strong> Ved at isolere \(\lambda\) i bølgeligningen \(v = f \cdot \lambda\) får du formlen:
+            $$\lambda = \frac{v}{f}$$
+        </div>
+        <div id="sol-q4" class="sol-box" style="display:none;">
+            <strong>Løsning:</strong><br>
+            $$\lambda = \frac{v}{f} = \frac{343\text{ m/s}}{20\text{ Hz}} = 17{,}15\text{ m}$$
+            Bølgelængden for den dybeste hørbare tone er altså mere end \(17\text{ meter}\) lang!
+        </div>
+    </div>
+
+    <!-- OPGAVE 5: PERSPEKTIVERING / TIL DE HURTIGE -->
+    <div class="card trap-card">
+        <span class="info-badge">Til de hurtige</span>
+        <span class="task-title">Opgave 5: Perspektivering – Forsinkelse af lyd og lynafstandsregel</span>
+        <p>Når et lyn slår ned, ser du lysglimtet øjeblikkeligt (fordi lysets fart er \(\approx 300.000\text{ km/s}\)). Du hører først braget et stykke tid efter.</p>
+        <p><strong>a)</strong> Hvis du hører tordenbraget \(3{,}0\text{ sekunder}\) efter glimtet, hvor langt væk slog lynet så ned? (Brug \(v = 343\text{ m/s}\)).</p>
+        <p><strong>b)</strong> Vurder den klassiske tommelfingerregel om tordenvejr: <em>"Antallet af sekunder divideret med 3 giver afstanden i kilometer"</em>. Passer reglen?</p>
+        
+        <div class="input-section">
+            <label for="q5a">Afstand til lyn (i meter): </label>
+            <input type="number" id="q5a" step="1" placeholder="Meter..."> \(\text{m}\)<br><br>
+            <label for="q5b">Er tommelfingerreglen god? </label>
+            <select id="q5b" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+                <option value="">-- Vælg bedømmelse --</option>
+                <option value="ja">Ja, 3 sekunder giver ca. 1 km (1029 m)</option>
+                <option value="nej">Nej, 3 sekunder giver 3 km</option>
+            </select>
+        </div>
+
+        <div class="btn-group" style="margin-top: 15px;">
+            <button class="btn-check" onclick="checkLynOpgave()">Tjek svar</button>
+            <button class="btn-hint" onclick="toggleBox('hint-q5')">Hint</button>
+            <button class="btn-sol" onclick="toggleBox('sol-q5')">Løsning</button>
+        </div>
+
+        <div id="feedback-q5" class="feedback"></div>
+        <div id="hint-q5" class="hint-box" style="display:none;">
+            <strong>Hint:</strong> Brug strækningsformlen for konstant fart: \(s = v \cdot t\).
+        </div>
+        <div id="sol-q5" class="sol-box" style="display:none;">
+            <strong>Løsning:</strong><br>
+            <strong>a) Afstand:</strong><br>
+            $$s = v \cdot t = 343\text{ m/s} \cdot 3{,}0\text{ s} = 1029\text{ m} \approx 1{,}03\text{ km}$$
+            <strong>b) Tommelfingerregel:</strong><br>
+            Ja, tommelfingerreglen er rigtig god! Da lyden tilbagelægger ca. \(330\text{--}340\text{ meter}\) pr. sekund, vil der gå ca. \(3\text{ sekunder}\) for hver kilometer (\(3 \cdot 343\text{ m} \approx 1029\text{ m} = 1{,}03\text{ km}\)).
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIK -->
+    <script>
+      function toggleBox(id) {
+        const box = document.getElementById(id);
+        if (box.style.display === "block") {
+          box.style.display = "none";
+        } else {
+          box.style.display = "block";
+        }
+      }
+
+      function checkMultipleChoice(qName, correctIdx) {
+        const options = document.getElementsByName(qName);
+        const feedback = document.getElementById("feedback-" + qName);
+        let selected = -1;
+        for (let i = 0; i < options.length; i++) {
+          if (options[i].checked) selected = parseInt(options[i].value);
+        }
+        if (selected === -1) {
+          feedback.className = "feedback incorrect";
+          feedback.innerText = "Vælg venligst et svar først.";
+        } else if (selected === correctIdx) {
+          feedback.className = "feedback correct";
+          feedback.innerText = "Korrekt! Bølgelængden bliver mindre, da λ = v / f.";
+        } else {
+          feedback.className = "feedback incorrect";
+          feedback.innerText = "Ikke helt korrekt. Tænk på at bølgehastigheden v er konstant.";
+        }
+      }
+
+      function checkAnswer(id, correctVal, tolerance = 0.1) {
+        const input = document.getElementById(id);
+        const feedback = document.getElementById("feedback-" + id);
+        const val = parseFloat(input.value.replace(',', '.'));
+        
+        if (isNaN(val)) {
+          feedback.className = "feedback incorrect";
+          feedback.innerText = "Indtast venligst et tal.";
+        } else if (Math.abs(val - correctVal) <= tolerance) {
+          feedback.className = "feedback correct";
+          feedback.innerText = "Korrekt beregnet!";
+        } else {
+          feedback.className = "feedback incorrect";
+          feedback.innerText = "Ikke helt rigtigt. Tjek din udregning og formel igen.";
+        }
+      }
+
+      function checkLynOpgave() {
+        const valA = parseFloat(document.getElementById("q5a").value.replace(',', '.'));
+        const valB = document.getElementById("q5b").value;
+        const feedback = document.getElementById("feedback-q5");
+
+        const correctA = 1029;
+
+        if (isNaN(valA) || valB === "") {
+          feedback.className = "feedback incorrect";
+          feedback.innerText = "Besvar venligst både beregningen og rullegardin-menuen.";
+        } else if (Math.abs(valA - correctA) <= 15 && valB === "ja") {
+          feedback.className = "feedback correct";
+          feedback.innerText =

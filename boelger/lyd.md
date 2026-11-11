@@ -119,10 +119,19 @@ De orange linjer illustrere luftmolekyler, så når linjerne er tæt sammen er d
 
 Simuleringen viser, at bølgelængden bliver mindre når frekvensen bliver større. 
 
+<div class="formula-box">
+  <strong>Bølgelængde<br> </strong> Afstanden mellem at et periodisk fænomen gentager sig.<br>
+  symbol (grænsk lambda): $\lambda$, enhed: [m], meter.
+</div>
 
-I fandt måske også, at lydens fart var konstant når I ændrede på frekvensen. Sammenhængen mellem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er:
+I fandt måske også, at lydens fart var konstant når I ændrede på frekvensen.
 
-$v = f\cdot\lambda$
+<div class="formula-box">
+  <strong>Hastighed<br> </strong> Sammenhængen mellem frekvens, $f$, bølgelængde, $\lambda$, og fart, $v$, er: 
+  $$v = f\cdot\lambda$$
+  <br>
+  symbol: $v$, enhed: [m/s], meter per sekund.
+</div>
 
 Hvis farten er konstant må bølgelænden altså gå blive mindre når frekvensen bliver større.
 
@@ -144,6 +153,15 @@ Vi har altså findet bølgernes hastighed til $v = 4m/s$.
 ### Bølger i vandet
 
 ![bølger mod stranden](billeder/strand.png)
+
+### Øvelse, gå hastighed
+Den hastighed I går med kan findes ud fra længden af jeres skridt og frekvensen.
+
+* Mål hvor mange skridt I kan tage på 10 sekunder, $f = \text{antal}/10$.
+* Mål længden på ét skridt, $\lambda$.
+* Find hastigheden ved at udregne $v = \lambda \cdot f$.
+Hastigheden er i meter per sekund. I kan omregne til km per time ved at gange med 3.6.
+* Find hastigheden i km/time og vurder og det kan passe.
 
 ### Øvelse
 En violin udsender en lydbølge som bevæger sig gennem luften med en bølgelængde på $\lambda = 0.780\text{m}$ og får din trommehinde til at vibrere med en frekvens på $f=440\text{Hz}$ så du opfatter det som kaldes kammertonen.
