@@ -6,7 +6,7 @@
 
 ## Eksperimenter
 
-* Bestemmelse af lydens hastighed, 1 modul.
+* Bestemmelse af lydens hastighed, 1 modul. duck://player/X5j_punYrUQ
 * Slinki bølgetyper, 30 min.
 * Den menneskelige stemme, 1 modul. 
 
