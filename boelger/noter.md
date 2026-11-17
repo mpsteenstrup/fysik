@@ -43,3 +43,6 @@
 
 eksperiment med skrift og hastighed 1.b mangler.
 
+
+Lydens hastighed duck://player/5_PLmKXod3E
+Doppler: duck://player/HecqxJeM_K8
