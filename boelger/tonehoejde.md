@@ -37,14 +37,15 @@ Hypotese: Jo mere vand jo højere frekvens af egensvingninger.
 ## Databehandling
 
 * Indsæt screenshot og forklar grundigt hvad I ser.
+* Lav forsøg med fem forskellige vandhøjder, hvor I måler periode og frekvens, og kommer med et kvalitativt bud på tonehøjde.
 
-| Forsøg nr. | Vandhøjde, $h$ [$\text{cm}$] | Periode, $T$, [$\text{s}$] | Frekvens, [$\text{Hz}$] |
-| :--- | :--- | :--- | :--- |
-| **1** | &nbsp; | &nbsp; | &nbsp; |
-| **2** | &nbsp; | &nbsp; | &nbsp; |
-| **3** | &nbsp; | &nbsp; | &nbsp; |
-| **4** | &nbsp; | &nbsp; | &nbsp; |
-| **5** | &nbsp; | &nbsp; | &nbsp; |
+| Forsøg nr. | Vandhøjde, $h$ [$\text{cm}$] | Periode, $T$, [$\text{s}$] | Frekvens, [$\text{Hz}$] | Tonehøjde |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| **2** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| **3** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| **4** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| **5** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 
 * Undersøg om forholdet mellem frekvens og periode, $ T = \frac{1}{f} $ passer ved at udfylde skemaet.
 

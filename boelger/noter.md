@@ -41,8 +41,22 @@
 
 
 
-eksperiment med skrift og hastighed 1.b mangler.
+eksperiment med skridt og hastighed 1.b mangler.
 
+1.c makkerskabsgrupper
+Bord 1: (Terkel + Viggo) og (Max + Aske)
+
+Bord 2: (Sif + Marius) og (Ava + Louis)
+
+Bord 3:  (Liam, Aksel) og (Bertil + Frida)
+
+Bord 4: (Mary + Vito + OttoT) og (Karla + Esther)
+
+Bord 5: (Kiki + Vilma) og (Karen + Tara)
+
+Bord 6: (Otto H + Margareta) og (Wilder + Benjamin)
+
+Bord 7: (Ophelia + Mynthe) og ( Karl + Theodor)
 
 Lydens hastighed duck://player/5_PLmKXod3E
 Doppler: duck://player/HecqxJeM_K8
