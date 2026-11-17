@@ -29,6 +29,7 @@ Vinglasset kan sættes i svingninger ved sin resonans-frekvens. Frekvensen afhæ
 Hypotese: Jo mere vand jo højere frekvens af egensvingninger.
 
 ## Fremgangsmåde
+
 * Fyld vand i et vinglas og mål højden af vandet med en lineal.
 * Sæt glasset i svingninger ved at køre en fugtig finger langs kanten.
 * optag lyden med telefonen og Audio Autocorrelation.
@@ -49,7 +50,7 @@ Hypotese: Jo mere vand jo højere frekvens af egensvingninger.
 
 * Undersøg om forholdet mellem frekvens og periode, $ T = \frac{1}{f} $ passer ved at udfylde skemaet.
 
-| Forsøg nr. | f, [$\text{Hz}$]  |T beregnet, \( T = \frac{1}{f} \) |  $T$, [$\text{s}$] |
+| Forsøg nr. | f, [$\text{Hz}$]  |T beregnet, $T = \frac{1}{f}$ |  $T$, [$\text{s}$] |
 | :--- | :--- | :--- | :--- |
 | **1** | &nbsp; | &nbsp; | &nbsp; |
 | **2** | &nbsp; | &nbsp; | &nbsp; |
