@@ -46,7 +46,7 @@ Hypotese: Jo mere vand jo højere frekvens af egensvingninger.
 | **4** | &nbsp; | &nbsp; | &nbsp; |
 | **5** | &nbsp; | &nbsp; | &nbsp; |
 
-* Undersøg om forholdet mellem frekvens og periode, \( T = \frac{1}{f}\) passer ved at udfylde skemaet.
+* Undersøg om forholdet mellem frekvens og periode, $ T = \frac{1}{f} $ passer ved at udfylde skemaet.
 
 | Forsøg nr. | f, [$\text{Hz}$]  |T beregnet, \( T = \frac{1}{f} \) |  $T$, [$\text{s}$] |
 | :--- | :--- | :--- | :--- |
