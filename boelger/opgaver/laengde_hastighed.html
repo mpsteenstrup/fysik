@@ -250,4 +250,12 @@
           feedback.innerText = "Besvar venligst både beregningen og rullegardin-menuen.";
         } else if (Math.abs(valA - correctA) <= 15 && valB === "ja") {
           feedback.className = "feedback correct";
-          feedback.innerText =
+          feedback.innerText = "Korrekt! Lynet slog ned ca. 1029 m væk, og tommelfingerreglen passer.";
+        } else {
+          feedback.className = "feedback incorrect";
+          feedback.innerText = "Ikke helt rigtigt. Tjek både din beregning (s = v · t) og dit valg i menuen.";
+        }
+      }
+    </script>
+</body>
+</html>
