@@ -1,14 +1,5 @@
-<link rel="stylesheet" href="../style.css">
-<script src="../../copy-math.js" defer></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
-    }
-  };
-</script>
+<script src="../../js-setup.js" defer></script>
+<link rel="stylesheet" href="../../style.css">
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 # Forsøgsvejledning - resonans og toner

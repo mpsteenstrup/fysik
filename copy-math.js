@@ -1,10 +1,22 @@
+// 1. Konfiguration af MathJax (skal ligge øverst)
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  }
+};
+
+// 2. Gør formler kopierbare til Google Docs
 document.addEventListener('copy', function (event) {
   const selection = window.getSelection();
   if (!selection.rangeCount) return;
+
   const container = document.createElement('div');
   for (let i = 0; i < selection.rangeCount; i++) {
     container.appendChild(selection.getRangeAt(i).cloneContents());
   }
+
   container.querySelectorAll('mjx-container').forEach(mjx => {
     const assistiveMml = mjx.querySelector('mjx-assistive-mml');
     if (assistiveMml) {
@@ -13,6 +25,7 @@ document.addEventListener('copy', function (event) {
       mjx.replaceWith(span);
     }
   });
+
   event.clipboardData.setData('text/html', container.innerHTML);
   event.clipboardData.setData('text/plain', container.innerText);
   event.preventDefault();
