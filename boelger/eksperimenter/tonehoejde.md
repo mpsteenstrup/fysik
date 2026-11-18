@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../style.css">
+<script src="../../copy-math.js" defer></script>
 <script>
   window.MathJax = {
     tex: {
