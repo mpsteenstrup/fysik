@@ -20,7 +20,7 @@ Formålet er at undersøge tonehøjden og frekvensen for vinglas.
 * Vinglas.
 * Vand.
 * Lineal.
-* Phyphox: Audio Spectrum.
+* Phyphox: Audio Autocorrelation.
 
 
 ## Teori
@@ -48,7 +48,7 @@ Hypotese: Jo mere vand jo højere frekvens af egensvingninger.
 | **4** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | **5** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 
-* Undersøg om forholdet mellem frekvens og periode, $ T = \frac{1}{f} $ passer ved at udfylde skemaet.
+* Undersøg om forholdet mellem frekvens og periode, $T = \frac{1}{f}$ passer ved at udfylde skemaet.
 
 | Forsøg nr. | f, [$\text{Hz}$]  |T beregnet, $T = \frac{1}{f}$ |  $T$, [$\text{s}$] |
 | :--- | :--- | :--- | :--- |
