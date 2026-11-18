@@ -40,7 +40,7 @@ Hypotese: Jo mere vand jo højere frekvens af egensvingninger.
 * Indsæt screenshot og forklar grundigt hvad I ser.
 * Lav forsøg med fem forskellige vandhøjder, hvor I måler periode og frekvens, og kommer med et kvalitativt bud på tonehøjde.
 
-| Forsøg nr. | Vandhøjde, $h$ [$\text{cm}$] | Periode, $T$, [$\text{s}$] | Frekvens, [$\text{Hz}$] | Tonehøjde |
+| Forsøg nr. | Vandhøjde, $h$ [$\text{cm}$] | Periode, $T$, [$\text{ms}$] | Frekvens, [$\text{Hz}$] | Tonehøjde |
 | :--- | :--- | :--- | :--- | :--- |
 | **1** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | **2** | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
@@ -50,7 +50,7 @@ Hypotese: Jo mere vand jo højere frekvens af egensvingninger.
 
 * Undersøg om forholdet mellem frekvens og periode, $T = \frac{1}{f}$ passer ved at udfylde skemaet.
 
-| Forsøg nr. | f, [$\text{Hz}$]  |T beregnet, $T = \frac{1}{f}$ |  $T$, [$\text{s}$] |
+| Forsøg nr. | f, [$\text{Hz}$]  |T beregnet, $T = \frac{1}{f}$ |  $T$, [$\text{ms}$] |
 | :--- | :--- | :--- | :--- |
 | **1** | &nbsp; | &nbsp; | &nbsp; |
 | **2** | &nbsp; | &nbsp; | &nbsp; |
