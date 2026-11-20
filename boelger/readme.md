@@ -5,5 +5,6 @@
 * [Resonans og tonehøjde](https://mpsteenstrup.github.io/fysik/boelger/eksperimenter/tonehoejde.html)
 
 * [laengde_hastighed.html](https://mpsteenstrup.github.io/fysik/boelger/opgaver/laengde_hastighed.html)
-* [periode_frekvens.html](http://127.0.0.1:5500/boelger/opgaver/periode_frekvens.html)
+* [periode_frekvens.html](https://mpsteenstrup.github.io/fysik/boelger/opgaver/periode_frekvens.html)
+* [tvær og længdebølger eksperiment](https://mpsteenstrup.github.io/fysik/boelger/eksperimenter/slinky.html)
 

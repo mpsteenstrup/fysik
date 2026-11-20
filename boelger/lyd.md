@@ -214,7 +214,7 @@ NB! det er vigtigt at I har samme afstand mellem jer i de to forsøg.
 
 Longitudinalbølger
 
-* Hold slinky mellem jer og sæt én enkelt transversalbølge i gang.
+* Hold slinky mellem jer og sæt én enkelt længdebølge i gang.
 * Tag en film af bevægelsen.
 * Mål hvor lang tid det tager for bølger at komme til enden.
 * Brug formlen $v = x/t$ til at beregne hastigheden.
