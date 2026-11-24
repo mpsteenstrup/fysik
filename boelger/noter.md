@@ -60,3 +60,44 @@ Bord 7: (Ophelia + Mynthe) og ( Karl + Theodor)
 
 Lydens hastighed duck://player/5_PLmKXod3E
 Doppler: duck://player/HecqxJeM_K8
+
+
+
+
+
+[Simulering af stående bølger](http://ophysics.com/waves6.html)
+
+[![Stående bølge på streng](billeder/waveString.png)](http://ophysics.com/waves9.html)
+[Stående bølge på streng](http://ophysics.com/waves9.html)
+
+
+
+
+# Doppler effekten
+
+[![Simulering af Doppler effekten](billeder/doppler.png)](https://ophysics.com/w11.html)
+
+### Øvelse
+
+Sæt Source velocity = 0 og Oberver velocity = 0, 
+* forklar hvad I ser?
+
+Sæt Source velovity = 90 m/s,
+* forklar forskellen i den bølgelængde observeren modtager når 
+
+Source er på vej hen mod Observer og på vej væk.
+* Forøg Source Velocity og forklar hvad der sker.
+
+Sæt Source velocity = 0 og Obsever velocity forskelligt fra nul
+* Hvordan opfatter observer denne situation?
+
+
+Fysiske størrelser når en tone skal beskrives:
+
+* $f$, Frekvensen, hvor mange gange den svinger hvert sekund, enhed hertz, Hz.
+* $T$, Perioden, hvor lang tid der går mellem hver bølge, enhed sekund, s.
+* $\lambda$ lambda, Bølgelængde, hvor langt der er mellem hver bølge, enhed meter, m.
+* $v$, Fart, hvor hurtigt bølgen bevæger sig, enhed m/s.
+
+Sammenhængen mellem perioden og frekvensen er
+$f = \frac{1}{T}$

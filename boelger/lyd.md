@@ -229,45 +229,6 @@ Transversalbølger
 Sammenlign resultatet fra de to forsøg og udregn en procentvis afvigelse mellem dem. Den beregnes med,
 $\text{procentvis afvigelse} = \frac{v_{transversalbølger}-v_{longitudinalbølger}}{v_{transversalbølger}}\cdot 100$%.
 
-## Interferens
-Interferens opstår, når to eller flere bølger mødes og kombineres for at skabe en ny bølge. Hvis bølgen bliver forstærket siges der at være **konstruktiv interferens**. Hvis bølgen bliver formindsket siges der at være **destruktiv interferens**.
-
-
-### Simulering af interferens.
-Simuleringen viser tre bølger. Den stiblede er summen af den  grønne og den røde. 
-
-$$stiplet = grøn + rød $$
-
-[![Interferens](billeder/interferens_1.png)](https://www.desmos.com/calculator/av4cypshx9)
-[link: Interferens](https://www.desmos.com/calculator/av4cypshx9)
-
-### Øvelse
-Forestil jer at vi har tiden ud af x aksensen.
-
-* Beskriv hvordan den stiplede bølge ændrer sig når du flytter på den grønne kurve.
-* Hvornår er det **konstruktiv interferens**?
-* Hvornår er der **destruktiv interferens**?
-
-### Simulering af stående bølge
-
-[![Stående bølger](billeder/staaendeboelger.png)](https://mpsteenstrup.github.io/fysik/staaendeboelger.html)
-
-### Øvelse
-Forestil jer at den blå og den røde bølge er bølger på en guitar-streng som bevæger sig frem og tilbage langs strengen. Den grønne er summen af de to bølger.
-
-* Forklar hvorfor det hedder en stående bølge.
-* Lav om på den relative frekvens så den blå bølge ikke har samme frekvens som den røde. Hvad sker der med den grønne bølge?
-
-
-### Bølger i to dimensioner
-Hvis man ser på bølger i vand udbreder de sig i to dimensioner, $x$ og $y$. Hvis man laver to kilder til bølger får man steder med konstruktiv og destruktiv interferens. 
-
-[![bølger i vand](billeder/boelgerivand.png)](http://ophysics.com/w12.html)
-
-### Øvelse
-
-* Forklar bevægelsen af den orange og den lilla bold. 
-
 
 
 ## Resonans
@@ -292,41 +253,16 @@ Der kan også opstå konstruktiv interferens med meget større ting. Et berømt 
 # Stående bølger
 Simulering af stående bølger.
 [![Simulering af stående bølger](billeder/fundamental.png)](http://ophysics.com/waves6.html)
-[Simulering af stående bølger](http://ophysics.com/waves6.html)
 
-[![Stående bølge på streng](billeder/waveString.png)](http://ophysics.com/waves9.html)
-[Stående bølge på streng](http://ophysics.com/waves9.html)
+Simuleringen viser en streng som vibrere. På dansk kalder man 1. harmonics for **grundtonen** og de højere for overtoner. Som på en guitar sidder strengen fast i enderne og kan vibrere i midten. Der hvor bælgen bevæger sig frem og tilbage hedder **bug** og der hvor den ikke bevæger sig hedder en **knude**.
 
-# Stående bølger i rør
+* Beskriv i ord hvordan grundtonen, 1. og 2. **overtone** svinger.
+* Hvor mange knuder er der for **grundtonen**, 1. og 2. **overtone**?
+* Hvor mange gange har svingningen bug?
 
+### Eksperiment med stående bølger
 
-
-
-# Doppler effekten
-
-[![Simulering af Doppler effekten](billeder/doppler.png)](https://ophysics.com/w11.html)
-
-### Øvelse
-
-Sæt Source velocity = 0 og Oberver velocity = 0, 
-* forklar hvad I ser?
-
-Sæt Source velovity = 90 m/s,
-* forklar forskellen i den bølgelængde observeren modtager når 
-
-Source er på vej hen mod Observer og på vej væk.
-* Forøg Source Velocity og forklar hvad der sker.
-
-Sæt Source velocity = 0 og Obsever velocity forskelligt fra nul
-* Hvordan opfatter observer denne situation?
+[Forsøgevejledning](https://docs.google.com/document/d/1YakcQNLIOLIrD_wxI2QG1PnztPFX-cTeEQlhUEQ-4z8/edit?tab=t.0)
 
 
-Fysiske størrelser når en tone skal beskrives:
 
-* $f$, Frekvensen, hvor mange gange den svinger hvert sekund, enhed hertz, Hz.
-* $T$, Perioden, hvor lang tid der går mellem hver bølge, enhed sekund, s.
-* $\lambda$ lambda, Bølgelængde, hvor langt der er mellem hver bølge, enhed meter, m.
-* $v$, Fart, hvor hurtigt bølgen bevæger sig, enhed m/s.
-
-Sammenhængen mellem perioden og frekvensen er
-$f = \frac{1}{T}$
