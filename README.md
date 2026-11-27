@@ -16,6 +16,8 @@ Vist som hjemmeside
 * [relativitetsteori.](https://mpsteenstrup.github.io/fysik/relativitetsteori.html)
 * [escaperoom.](https://mpsteenstrup.github.io/fysik/escaperoom/index.html)
 * [opgaver formelsamling](https://mpsteenstrup.github.io/fysik/opgaver/opgaver.html)
+* [krydsprodukt præsentation](https://mpsteenstrup.github.io/fysik/3g/3dVektorer.html)
+
 
 ## DIV
 
